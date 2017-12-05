@@ -1,0 +1,225 @@
+//
+//  TopView.m
+//  newInterface
+//
+//  Created by 李强 on 16/5/11.
+//  Copyright © 2016年 李强. All rights reserved.
+//
+
+#import "TopView.h"
+//粗线条的宽度和高度
+#define KNavagationButtomLabelWidth  120/2
+#define KNavagationButtomLabelHeight  4/2
+
+@interface TopView ()
+@property (nonatomic,strong) TopViewChannalButton *selectedButton;
+//创建底部线条
+@property (nonatomic, weak) UIView *colorLabel;
+@property (nonatomic, strong) NSMutableArray *btnArray;
+@end
+
+@implementation TopView
+
+- (void)setModelArray:(NSArray *)modelArray withIndex:(NSInteger)index{
+    _modelArray = modelArray;
+    [self setupUI];
+    [self topViewWithBtn:index];
+//     TopViewChannalButton *btn = self.btnArray[index];
+//    btn.selected = YES;
+//    //获取点击的位置
+//    CGFloat width = btn.width;
+//    NSInteger btnX = btn.x;
+//    NSInteger btnY = btn.frame.origin.y+btn.frame.size.height;
+//    if (btn.width < KNavagationButtomLabelWidth){
+//        width = KNavagationButtomLabelWidth;
+//        btnX = btn.frame.origin.x+btn.frame.size.width/2 - KNavagationButtomLabelWidth/2;
+//    }
+//    //    NSInteger btnX = btn.x;//btn.frame.origin.x+btn.frame.size.width/2 - KNavagationButtomLabelWidth/2;
+//    
+//    weakedSelf
+//    CGRect colorLabelframe = CGRectMake(btnX, btnY, width, KNavagationButtomLabelHeight);
+//    [UIView animateWithDuration:.1 animations:^{
+//        weakSelf.colorLabel.frame = colorLabelframe;
+//    } completion:^(BOOL finished) {
+//        [UIView animateWithDuration:0.5 animations:^{
+//            
+//            CGPoint offset = self.contentOffset;
+//            offset.x = btn.center.x - self.center.x;
+//            if (btn.center.x <self.width / 2) {
+//                self.contentOffset = CGPointMake(0, 0);
+//            } else if (btn.center.x > self.contentSize.width - self.width / 2){
+//                self.contentOffset = CGPointMake(self.contentSize.width - self.width, 0);
+//            }else{
+//                self.contentOffset = offset;
+//            }
+//        }];
+//        
+//    }];
+
+    
+}
+
+- (void)setModelArray:(NSArray *)modelArray{
+    _modelArray = modelArray;
+    [self setupUI];
+}
+
++(instancetype)topViewWithFrame:(CGRect)frame delegate:(id<TopViewDelegate>) delegate{
+    
+    TopView *view = [[TopView alloc]initWithFrame:frame delegate:delegate];
+    return view;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame delegate:(id<TopViewDelegate>) delegate{
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.topViewDelegate = delegate;
+        self.showsHorizontalScrollIndicator = NO;
+        self.showsVerticalScrollIndicator = NO;
+    }
+    return self;
+}
+
+- (void)setupUI{
+
+    //先移除
+    for (UIView *view in self.subviews) {
+//        if([view isKindOfClass:[TopViewChannalButton class]]){
+        [self.btnArray removeAllObjects];
+            [view removeFromSuperview];
+//        }
+    }
+    //创建底部线条
+    UIView *label = [[UIView alloc] initWithFrame:CGRectZero];
+    self.colorLabel = label;
+    label.backgroundColor = HEX2RGB(@"#0095df");
+    [self addSubview:label];
+    
+    //再添加
+    CGFloat x = 33;
+    CGFloat y = 0;
+    CGFloat w = 0;
+    CGFloat h = self.height - KNavagationButtomLabelHeight;
+    for (int i = 0; i < self.modelArray.count; i++) {
+        
+        CategoryListModel *mode = self.modelArray[i];
+        //设置字体大小
+//        NSDictionary *dic = @{NSFontAttributeName:[UIFont systemFontOfSize:18.0f]};
+//        w = [mode.title boundingRectWithSize:CGSizeMake(300, self.height) options:NSStringDrawingUsesLineFragmentOrigin attributes:dic context:nil].size.width;
+        //防止崩溃
+        if ([mode respondsToSelector:@selector(title)]) {
+            
+            w = [mode.title stringWidthFont:20.0f];
+        }
+        
+        TopViewChannalButton *channalButton = [TopViewChannalButton topViewChannalButton];
+        channalButton.index = i;
+        
+        [channalButton setTitleColor:HEX2RGB(@"#666666") forState:UIControlStateNormal];
+        [channalButton setTitleColor:HEX2RGB(@"#009be5") forState:UIControlStateSelected];
+        
+        channalButton.frame = CGRectMake(x, y, w, h);
+//        channalButton.tag = i + 1 + 100;
+        channalButton.categoryModel = mode;
+        [channalButton addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:channalButton];
+        
+//        if (i == 0) {
+////            channalButton.selected = YES;
+////            self.selectedButton = channalButton;
+//            [self btnClick:channalButton];
+//            self.colorLabel.frame = CGRectMake((x+w/2)-KNavagationButtomLabelWidth/2, channalButton.height, KNavagationButtomLabelWidth, KNavagationButtomLabelHeight);
+//        }
+        [self.btnArray addObject:channalButton];
+        
+        x += 72 + w;
+    }
+    self.contentSize = CGSizeMake(x - 72 + 10, 0);
+}
+
+- (void)btnClick:(TopViewChannalButton *)btn{
+    
+//    if ([self.selectedButton isEqual:btn]) {
+//        return;
+//    }
+//    if (![self.selectedButton isEqual:btn]) {
+    
+        self.selectedButton.selected = NO;
+        btn.selected = YES;
+        self.selectedButton = btn;
+//    }
+
+//    [self.selectedButton setTitleColor:HEX2RGB(@"#666666") forState:UIControlStateNormal];
+//    [btn setTitleColor:HEX2RGB(@"#009be5") forState:UIControlStateNormal];
+    
+    //获取点击的位置
+    NSInteger margin = 13;
+    CGFloat width = btn.width+margin*2;
+    NSInteger btnX = btn.x;
+    NSInteger btnY = btn.frame.origin.y+btn.frame.size.height;
+//    if (btn.width < KNavagationButtomLabelWidth){
+//        width = KNavagationButtomLabelWidth;
+        btnX = btn.frame.origin.x - margin;
+//    }
+//    NSInteger btnX = btn.x;//btn.frame.origin.x+btn.frame.size.width/2 - KNavagationButtomLabelWidth/2;
+    
+    weakedSelf
+    CGRect colorLabelframe = CGRectMake(btnX, btnY+1, width, KNavagationButtomLabelHeight);
+    [UIView animateWithDuration:.1 animations:^{
+        weakSelf.colorLabel.frame = colorLabelframe;
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.5 animations:^{
+            
+            CGPoint offset = self.contentOffset;
+            offset.x = btn.center.x - self.center.x;
+            if (btn.center.x <self.width / 2) {
+                self.contentOffset = CGPointMake(0, 0);
+            } else if (btn.center.x > self.contentSize.width - self.width / 2){
+                self.contentOffset = CGPointMake(self.contentSize.width - self.width, 0);
+            }else{
+                self.contentOffset = offset;
+            }
+        }];
+
+    }];
+    
+    self.selectedButton = btn;
+    if ([self.topViewDelegate respondsToSelector:@selector(topView:didClickChannalButton:)]) {
+        [self.topViewDelegate topView:self didClickChannalButton:btn];
+    }
+}
+
+- (NSMutableArray *)btnArray{
+    if (_btnArray == nil) {
+        _btnArray = [[NSMutableArray alloc] init];
+    }
+    return _btnArray;
+}
+
+- (void)topViewWithBtn: (NSInteger)index{
+//    NSLog(@"%d----%d",index,self.btnArray.count - 1);
+//    if (index > self.btnArray.count - 1) {
+//        return;
+//    }
+//    if (self.btnArray.count - 1 < index) {
+//        return;
+//    }
+    if (self.btnArray.count == 0) {
+        return;
+    }
+    TopViewChannalButton *channalButton = self.btnArray[index];
+    [self btnClick:channalButton];
+    //让当前选中的按钮居中
+    //如果当前选中的按钮的center - self.center = offset.x
+    
+    
+    
+//    self.selectedButton.selected = NO;
+//    channalButton.selected = YES;
+//    self.selectedButton = channalButton;
+//    CGFloat x = (channalButton.frame.origin.x + channalButton.frame.size.width/2)-KNavagationButtomLabelWidth/2;
+//    self.colorLabel.frame = CGRectMake(x, channalButton.height, KNavagationButtomLabelWidth, KNavagationButtomLabelHeight);
+}
+
+
+@end

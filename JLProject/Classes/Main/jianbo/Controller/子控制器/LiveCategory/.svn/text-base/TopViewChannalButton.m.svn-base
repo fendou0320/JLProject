@@ -1,0 +1,33 @@
+//
+//  TopViewChannalButton.m
+//  newInterface
+//
+//  Created by 李强 on 16/5/11.
+//  Copyright © 2016年 李强. All rights reserved.
+//
+
+#import "TopViewChannalButton.h"
+
+@implementation TopViewChannalButton
+
++ (instancetype)topViewChannalButton{
+    return [[self alloc]init];
+}
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self setTitleColor:HEX2RGB(@"#666666") forState:UIControlStateNormal];
+//        [self setTitleColor:HEX2RGB(@"#009be5") forState:UIControlStateSelected];
+        self.titleLabel.font = [UIFont systemFontOfSize:20.0f];
+        
+    }
+    return self;
+}
+-(void)setCategoryModel:(CategoryListModel *)categoryModel{
+    _categoryModel = categoryModel;
+    [self setTitle:categoryModel.title forState:UIControlStateNormal];
+}
+
+
+@end

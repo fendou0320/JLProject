@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>headPortrait</key>
+		<string>Steve Jobs.png</string>
+		<key>nickName</key>
+		<string>Steve Jobs</string>
+		<key>context</key>
+		<string>[在线] We&apos;re here to put a dent in the universe. Otherwise why else even be here?</string>
+	</dict>
+	<dict>
+		<key>headPortrait</key>
+		<string>Tim Cook.png</string>
+		<key>nickName</key>
+		<string>Tim Cook</string>
+		<key>context</key>
+		<string>[离线]</string>
+	</dict>
+	<dict>
+		<key>headPortrait</key>
+		<string>Bill Gates.png</string>
+		<key>nickName</key>
+		<string>Bill Gates</string>
+		<key>context</key>
+		<string>[在线] 只要有坚强的持久心，一个庸俗平凡的人也会有成功的一天，否则即使是一个才是卓越的人，也只能遭遇失败的命运。</string>
+	</dict>
+	<dict>
+		<key>headPortrait</key>
+		<string>Ma Yun.png</string>
+		<key>nickName</key>
+		<string>马云</string>
+		<key>context</key>
+		<string>[在线] 人要有专注的东西，人一辈子走下去挑战会更多，你天天换，我就怕了你。</string>
+	</dict>
+	<dict>
+		<key>headPortrait</key>
+		<string>Sun Zhengyi.png</string>
+		<key>nickName</key>
+		<string>孙正义</string>
+		<key>context</key>
+		<string>[在线] 最初所拥有的只是梦想和毫无根据的自信而已，但是所有的一切都从这里开始。</string>
+	</dict>
+</array>
+</plist>

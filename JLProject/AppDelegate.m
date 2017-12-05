@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "MainViewController.h"
+#import "YinDaoViewController.h"
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window = window;
+    [self.window makeKeyAndVisible];
+    self.window.rootViewController = [[MainViewController alloc] init];
+    
+    //启动网络监听
+//    AFNetworkReachabilityStatus status = [MonitoringNetwork monitoringNetworkState];
+
+    //引导页
+//    [YinDaoViewController showInView: self.window.rootViewController.view];
+    
+    //登录页
+//    [LoginViewController showInview: self.window.rootViewController.view];
+
+    
     return YES;
 }
 
