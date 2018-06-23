@@ -48,7 +48,9 @@
                       context:nil];
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"后退" style:UIBarButtonItemStyleDone target:self action:@selector(goback)];
+    
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"前进" style:UIBarButtonItemStyleDone target:self action:@selector(gofarward)];
+    
 }
 -(void)goback{
     if ([self.webView canGoBack]) {
@@ -83,11 +85,10 @@
     config.userContentController = [WKUserContentController new];
     // 注入JS对象名称senderModel，当JS通过senderModel来调用时，我们可以在WKScriptMessageHandler代理中接收到
     [config.userContentController addScriptMessageHandler:self name:@"senderModel"];
+    
     self.webView = [[WKWebView alloc]initWithFrame:self.view.bounds configuration:config];
     
-//    NSURL *path = [[NSBundle mainBundle] URLForResource:@"WKWebViewText" withExtension:@"html"];
-    
-    NSURL *path = [NSURL URLWithString:@"http://103.8.8.10:61528/Template/start/recommend.htm"];
+    NSURL *path = [[NSBundle mainBundle] URLForResource:@"WKWebViewText" withExtension:@"html"];
     
     [self.webView loadRequest:[NSURLRequest requestWithURL:path]];
     
@@ -118,6 +119,7 @@
 
 #pragma mark - WKScriptMessageHandler
 -(void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message{
+    
     //这里可以通过name处理多组交互
     if ([message.name isEqualToString:@"senderModel"]) {
         //body只支持NSNumber, NSString, NSDate, NSArray,NSDictionary 和 NSNull类型
@@ -129,6 +131,7 @@
 #pragma mark = WKNavigationDelegate
 //在发送请求之前，决定是否跳转
 -(void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
+    
     NSString *hostname = navigationAction.request.URL.host.lowercaseString;
     NSLog(@"%@",hostname);
     if (navigationAction.navigationType == WKNavigationTypeLinkActivated
@@ -177,6 +180,7 @@
 
 //alert 警告框
 -(void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler{
+    
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"警告" message:@"调用alert提示框" preferredStyle:UIAlertControllerStyleAlert];
     [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         completionHandler();
@@ -188,6 +192,7 @@
 
 //confirm 确认框
 -(void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL))completionHandler{
+    
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"确认框" message:@"调用confirm提示框" preferredStyle:UIAlertControllerStyleAlert];
     [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         completionHandler(YES);
@@ -202,6 +207,7 @@
 }
 
 - (void)webView:(WKWebView *)webView runJavaScriptTextInputPanelWithPrompt:(NSString *)prompt defaultText:(nullable NSString *)defaultText initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * __nullable result))completionHandler {
+    
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"输入框" message:@"调用输入框" preferredStyle:UIAlertControllerStyleAlert];
     [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
         textField.textColor = [UIColor blackColor];

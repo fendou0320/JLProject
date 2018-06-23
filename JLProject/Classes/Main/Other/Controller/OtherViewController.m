@@ -8,9 +8,7 @@
 
 #import "OtherViewController.h"
 #import "DongHuaViewController.h"
-#import "WKwebOneOneController.h"
 #import "WKWebDemoController.h"
-#import "ZhiHuiController.h"
 #import "BoWenShuiQiuController.h"
 
 @interface OtherViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -53,13 +51,13 @@
     if (indexPath.row == 0){
         cell.textLabel.text = @"各种动画";
     }else if (indexPath.row == 1){
-        cell.textLabel.text = @"智能监播首页地图WKwebview";
+        cell.textLabel.text = @"水波纹圆球";
     }else if (indexPath.row == 2){
         cell.textLabel.text = @"WKwebview网络demo";
     }else if (indexPath.row == 3){
-        cell.textLabel.text = @"智慧影管首页WKwebview";
+        
     }else if (indexPath.row == 4){
-        cell.textLabel.text = @"水波纹圆球";
+        
     }
     
     
@@ -75,7 +73,7 @@
         
     }else if (indexPath.row == 1){
        
-        WKwebOneOneController *donghua = [[WKwebOneOneController alloc] init];
+        BoWenShuiQiuController *donghua = [[BoWenShuiQiuController alloc] init];
         [self.navigationController pushViewController:donghua animated:YES];
         
     }else if (indexPath.row == 2){
@@ -85,13 +83,10 @@
 
     }else if (indexPath.row == 3){
         
-        ZhiHuiController *donghua = [[ZhiHuiController alloc] init];
-        [self.navigationController pushViewController:donghua animated:YES];
         
     }else if (indexPath.row == 4){
         
-        BoWenShuiQiuController *donghua = [[BoWenShuiQiuController alloc] init];
-        [self.navigationController pushViewController:donghua animated:YES];
+       
         
     }
 }

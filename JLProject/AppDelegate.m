@@ -27,10 +27,8 @@
     self.window.rootViewController = [[MainViewController alloc] init];
     
     //启动网络监听
-//    AFNetworkReachabilityStatus status = [MonitoringNetwork monitoringNetworkState];
+    AFNetworkReachabilityStatus status = [MonitoringNetwork monitoringNetworkState];
 
-    //引导页
-//    [YinDaoViewController showInView: self.window.rootViewController.view];
     
     //登录页
 //    [LoginViewController showInview: self.window.rootViewController.view];
