@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		041FF43C20D4A82C001F52FC /* CopyTypeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 041FF43B20D4A82C001F52FC /* CopyTypeVC.m */; };
+		04F1548920DE85A700BE9E25 /* RunLoopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1548820DE85A700BE9E25 /* RunLoopVC.m */; };
 		1C1AE6E81FCFDAB500122E03 /* DownloaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1AE6E71FCFDAB500122E03 /* DownloaderManager.m */; };
 		1C1AE6EB1FCFDE8E00122E03 /* DownLoaderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1AE6EA1FCFDE8E00122E03 /* DownLoaderController.m */; };
 		1C1AE6EE1FCFE2F100122E03 /* FileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1AE6ED1FCFE2F100122E03 /* FileModel.m */; };
@@ -186,6 +187,8 @@
 		03D1E7E516CF262E1767471B /* Pods-JLProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JLProjectUITests/Pods-JLProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		041FF43A20D4A82C001F52FC /* CopyTypeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyTypeVC.h; sourceTree = "<group>"; };
 		041FF43B20D4A82C001F52FC /* CopyTypeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyTypeVC.m; sourceTree = "<group>"; };
+		04F1548720DE85A700BE9E25 /* RunLoopVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopVC.h; sourceTree = "<group>"; };
+		04F1548820DE85A700BE9E25 /* RunLoopVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopVC.m; sourceTree = "<group>"; };
 		05935B623495A3D744DA63BD /* Pods-JLProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-JLProject/Pods-JLProject.release.xcconfig"; sourceTree = "<group>"; };
 		10AED592CBB506BAA44C7EAD /* libPods-JLProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JLProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C1AE6E61FCFDAB500122E03 /* DownloaderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloaderManager.h; sourceTree = "<group>"; };
@@ -518,6 +521,15 @@
 			children = (
 			);
 			path = AFNnetWork;
+			sourceTree = "<group>";
+		};
+		04F1548620DE859300BE9E25 /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				04F1548720DE85A700BE9E25 /* RunLoopVC.h */,
+				04F1548820DE85A700BE9E25 /* RunLoopVC.m */,
+			);
+			path = RunLoop;
 			sourceTree = "<group>";
 		};
 		1C1AE6E51FCFDAA200122E03 /* 下载功能 */ = {
@@ -1341,6 +1353,7 @@
 		1CF17D781F2ED4D000EA3B51 /* 子控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				04F1548620DE859300BE9E25 /* RunLoop */,
 				041FF43920D4A7E7001F52FC /* 深浅拷贝 */,
 				1CF17D9B1F2ED9BE00EA3B51 /* QiDongAndYinDao */,
 				1C21AE261F650DB60039163D /* 星星 */,
@@ -1885,6 +1898,7 @@
 				1C9CD70B1F4A8F5100901EFD /* UIButton+FlowerExporter.m in Sources */,
 				1C2071AE1F4D338A002CD558 /* SDCollectionViewCell.m in Sources */,
 				1C6D3C041F2ECFCD00F699BF /* IndexViewController.m in Sources */,
+				04F1548920DE85A700BE9E25 /* RunLoopVC.m in Sources */,
 				1C6D3C0A1F2ECFCD00F699BF /* LHY_FriendsListCell.m in Sources */,
 				1C6D3C251F2ECFCD00F699BF /* JLRingChart.m in Sources */,
 				1C6D3C391F2ECFCD00F699BF /* CircleView.m in Sources */,

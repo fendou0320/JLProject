@@ -20,6 +20,7 @@
 #import "DownLoaderController.h"
 #import "DropDownController.h"
 #import "CopyTypeVC.h"
+#import "RunLoopVC.h"
 
 @interface IndexViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -79,7 +80,7 @@
     }else if (indexPath.row == 7){
         cell.textLabel.text = @"星星";
     }else if (indexPath.row == 8){
-        cell.textLabel.text = @"TableView删除";
+        cell.textLabel.text = @"RunLoop";
     }else if (indexPath.row == 9){
         cell.textLabel.text = @"随机验证码";
     }else if (indexPath.row == 10){
@@ -140,8 +141,8 @@
         
     }else if (indexPath.row == 8){
         
-//        TableViewDelectController *jd = [[TableViewDelectController alloc] init];
-//        [self.navigationController pushViewController:jd animated:YES];
+        RunLoopVC *jd = [[RunLoopVC alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
         
     }else if (indexPath.row == 9){
         
