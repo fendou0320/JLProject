@@ -141,6 +141,7 @@
 		1C9CD70A1F4A8F5100901EFD /* SprayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9CD6EF1F4A8F5100901EFD /* SprayViewController.m */; };
 		1C9CD70B1F4A8F5100901EFD /* UIButton+FlowerExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9CD6F11F4A8F5100901EFD /* UIButton+FlowerExporter.m */; };
 		1C9CD70C1F4A8F5100901EFD /* DongHuaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9CD6F31F4A8F5100901EFD /* DongHuaViewController.m */; };
+		1CB2844520E3152300504F9B /* BackgroundPlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2844420E3152300504F9B /* BackgroundPlayVC.m */; };
 		1CE3F83B1FBE8BC5001D5D41 /* AutoCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE3F83A1FBE8BC5001D5D41 /* AutoCodeView.m */; };
 		1CE3F83E1FBE8BE7001D5D41 /* SuiJiYanZhengMaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE3F83D1FBE8BE7001D5D41 /* SuiJiYanZhengMaController.m */; };
 		1CF17D921F2ED5A400EA3B51 /* MSSCalendarCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF17D7F1F2ED5A400EA3B51 /* MSSCalendarCollectionReusableView.m */; };
@@ -437,6 +438,8 @@
 		1C9CD6F11F4A8F5100901EFD /* UIButton+FlowerExporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FlowerExporter.m"; sourceTree = "<group>"; };
 		1C9CD6F21F4A8F5100901EFD /* DongHuaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DongHuaViewController.h; sourceTree = "<group>"; };
 		1C9CD6F31F4A8F5100901EFD /* DongHuaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DongHuaViewController.m; sourceTree = "<group>"; };
+		1CB2844320E3152300504F9B /* BackgroundPlayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundPlayVC.h; sourceTree = "<group>"; };
+		1CB2844420E3152300504F9B /* BackgroundPlayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundPlayVC.m; sourceTree = "<group>"; };
 		1CE3F8391FBE8BC5001D5D41 /* AutoCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoCodeView.h; sourceTree = "<group>"; };
 		1CE3F83A1FBE8BC5001D5D41 /* AutoCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoCodeView.m; sourceTree = "<group>"; };
 		1CE3F83C1FBE8BE7001D5D41 /* SuiJiYanZhengMaController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuiJiYanZhengMaController.h; sourceTree = "<group>"; };
@@ -514,13 +517,6 @@
 				041FF43B20D4A82C001F52FC /* CopyTypeVC.m */,
 			);
 			path = "深浅拷贝";
-			sourceTree = "<group>";
-		};
-		04E1BC1020CEB59500669761 /* AFNnetWork */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AFNnetWork;
 			sourceTree = "<group>";
 		};
 		04F1548620DE859300BE9E25 /* RunLoop */ = {
@@ -1168,7 +1164,6 @@
 		1C6D38821F2ECFCC00F699BF /* 子控制器 */ = {
 			isa = PBXGroup;
 			children = (
-				04E1BC1020CEB59500669761 /* AFNnetWork */,
 				1C9CD6CF1F4A8F5100901EFD /* GeZhongDongHua */,
 				1C9CD6C71F4A8EB900901EFD /* BoWenShuiQiu */,
 				1C6D38831F2ECFCC00F699BF /* WKwebViewDEMO */,
@@ -1339,6 +1334,15 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		1CB2844220E314C000504F9B /* 后台播放和锁屏播放 */ = {
+			isa = PBXGroup;
+			children = (
+				1CB2844320E3152300504F9B /* BackgroundPlayVC.h */,
+				1CB2844420E3152300504F9B /* BackgroundPlayVC.m */,
+			);
+			path = "后台播放和锁屏播放";
+			sourceTree = "<group>";
+		};
 		1CE3F8381FBE8BC5001D5D41 /* 生成随机验证码 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1353,6 +1357,7 @@
 		1CF17D781F2ED4D000EA3B51 /* 子控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				1CB2844220E314C000504F9B /* 后台播放和锁屏播放 */,
 				04F1548620DE859300BE9E25 /* RunLoop */,
 				041FF43920D4A7E7001F52FC /* 深浅拷贝 */,
 				1CF17D9B1F2ED9BE00EA3B51 /* QiDongAndYinDao */,
@@ -1857,6 +1862,7 @@
 				1C9CD70C1F4A8F5100901EFD /* DongHuaViewController.m in Sources */,
 				1C2071B01F4D338A002CD558 /* UIView+SDExtension.m in Sources */,
 				1C6D3C271F2ECFCD00F699BF /* JHLineChart.m in Sources */,
+				1CB2844520E3152300504F9B /* BackgroundPlayVC.m in Sources */,
 				1C2071AA1F4D338A002CD558 /* TAAbstractDotView.m in Sources */,
 				1C4086841EE101F500E4E363 /* AppDelegate.m in Sources */,
 				1C4086811EE101F500E4E363 /* main.m in Sources */,

@@ -21,6 +21,7 @@
 #import "DropDownController.h"
 #import "CopyTypeVC.h"
 #import "RunLoopVC.h"
+#import "BackgroundPlayVC.h"
 
 @interface IndexViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -91,6 +92,8 @@
         cell.textLabel.text = @"启动页引导图";
     }else if (indexPath.row == 13){
         cell.textLabel.text = @"深浅拷贝";
+    }else if (indexPath.row == 14){
+        cell.textLabel.text = @"后台播放和锁屏播放";
     }
 
     
@@ -168,6 +171,12 @@
         
         CopyTypeVC *jd = [[CopyTypeVC alloc] init];
         [self.navigationController pushViewController:jd animated:YES];
+        
+    }else if (indexPath.row == 14){
+        
+        BackgroundPlayVC *jd = [[BackgroundPlayVC alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
+        
     }
 
 

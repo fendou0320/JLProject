@@ -10,4 +10,6 @@
 
 @interface BaseViewController : UIViewController
 
+//@propert(noatomic, strong) AFURLSessionManager *manager;
+
 @end
