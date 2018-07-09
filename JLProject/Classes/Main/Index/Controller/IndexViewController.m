@@ -21,6 +21,7 @@
 #import "DropDownController.h"
 #import "CopyTypeVC.h"
 #import "RunLoopVC.h"
+#import "AutoreleasePoolVC.h"
 
 @interface IndexViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -91,6 +92,28 @@
         cell.textLabel.text = @"启动页引导图";
     }else if (indexPath.row == 13){
         cell.textLabel.text = @"深浅拷贝";
+    }else if (indexPath.row == 14){
+        cell.textLabel.text = @"自动释放池";
+    }else if (indexPath.row == 15){
+        cell.textLabel.text = @"";
+    }else if (indexPath.row == 16){
+        cell.textLabel.text = @"";
+    }else if (indexPath.row == 17){
+        cell.textLabel.text = @"";
+    }else if (indexPath.row == 18){
+        cell.textLabel.text = @"";
+    }else if (indexPath.row == 19){
+        cell.textLabel.text = @"";
+    }else if (indexPath.row == 20){
+        cell.textLabel.text = @"";
+    }else if (indexPath.row == 21){
+        cell.textLabel.text = @"";
+    }else if (indexPath.row == 22){
+        cell.textLabel.text = @"";
+    }else if (indexPath.row == 23){
+        cell.textLabel.text = @"";
+    }else if (indexPath.row == 24){
+        cell.textLabel.text = @"";
     }
 
     
@@ -168,6 +191,12 @@
         
         CopyTypeVC *jd = [[CopyTypeVC alloc] init];
         [self.navigationController pushViewController:jd animated:YES];
+        
+    }else if (indexPath.row == 14){
+        
+        AutoreleasePoolVC *jd = [[AutoreleasePoolVC alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
+        
     }
 
 
