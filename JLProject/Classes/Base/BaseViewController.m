@@ -27,14 +27,22 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+////点击返回按钮用
+//-(void)delloc
+//{
+//    [self.manager invalidateSessionCancelingTasks:YES];
+//}
+//
+//-(void)loadNew
+//{
+//    //结束之前的所有请求
+//    [self.manager.tasks makeObjectsPerformSelector:@selector(cancel)];
+//    //网络请求
+//    //code...
+//}
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
+
+
 
 @end

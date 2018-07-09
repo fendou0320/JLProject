@@ -22,6 +22,7 @@
 #import "CopyTypeVC.h"
 #import "RunLoopVC.h"
 #import "AutoreleasePoolVC.h"
+#import "BackgroundPlayVC.h"
 
 @interface IndexViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -33,6 +34,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = RandomColor;
+    
+//MARK    method for handing memry managemrnt（方法）
+//TODO    通知更新需要做的事情
+//FIXME   你想要修改的bug
     
     NSString *identifierForVendor = [[UIDevice currentDevice].identifierForVendor UUIDString];
     NSLog(@"唯一标示符%@", identifierForVendor);
@@ -95,7 +100,7 @@
     }else if (indexPath.row == 14){
         cell.textLabel.text = @"自动释放池";
     }else if (indexPath.row == 15){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"后台播放和锁屏播放";
     }else if (indexPath.row == 16){
         cell.textLabel.text = @"";
     }else if (indexPath.row == 17){
@@ -195,6 +200,11 @@
     }else if (indexPath.row == 14){
         
         AutoreleasePoolVC *jd = [[AutoreleasePoolVC alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
+        
+    }else if (indexPath.row == 15){
+        
+        BackgroundPlayVC *jd = [[BackgroundPlayVC alloc] init];
         [self.navigationController pushViewController:jd animated:YES];
         
     }

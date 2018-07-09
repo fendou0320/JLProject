@@ -91,6 +91,15 @@ static AFHTTPSessionManager *_manager;
         
         if (errorBlock) errorBlock(error);
         if (endBlock) endBlock();
+        
+        //无网络请求失败
+        if (task.error.code == NSURLErrorCancelled) {
+            // 取消了请求
+            
+        } else {
+            // 其他错误
+            
+        }
 
     }];
     return task;
@@ -130,6 +139,16 @@ static AFHTTPSessionManager *_manager;
         
         if (errorBlock) errorBlock(error);
         if (endBlock) endBlock();
+        
+        //无网络请求失败
+        if (task.error.code == NSURLErrorCancelled) {
+            // 取消了请求
+            
+        } else {
+            // 其他错误
+            
+        }
+        
     }];
     
     return task;
@@ -292,6 +311,8 @@ static AFHTTPSessionManager *_manager;
     if ((task.state == NSURLSessionTaskStateRunning)||(task.state == NSURLSessionTaskStateSuspended)) {
         [task cancel];
     }
+    
+    
 }
 
 
