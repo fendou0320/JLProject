@@ -14,7 +14,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
+    
     //添加后台播放代码：
     AVAudioSession *session = [AVAudioSession sharedInstance];
     [session setActive:YES error:nil];

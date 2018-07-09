@@ -34,6 +34,10 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = RandomColor;
     
+//MARK    method for handing memry managemrnt（方法）
+//TODO    通知更新需要做的事情
+//FIXME   你想要修改的bug
+    
     NSString *identifierForVendor = [[UIDevice currentDevice].identifierForVendor UUIDString];
     NSLog(@"唯一标示符%@", identifierForVendor);
     
