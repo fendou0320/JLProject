@@ -23,6 +23,10 @@
 #import "RunLoopVC.h"
 #import "AutoreleasePoolVC.h"
 #import "BackgroundPlayVC.h"
+#import "RunTimeUseCaseVC.h"
+#import "MessageForwardingVC.h"
+#import "MethodSwizzlingVC.h"
+#import "AssociatedObjectsVC.h"
 
 @interface IndexViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -102,13 +106,13 @@
     }else if (indexPath.row == 15){
         cell.textLabel.text = @"后台播放和锁屏播放";
     }else if (indexPath.row == 16){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"RunTime使用情景";
     }else if (indexPath.row == 17){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"消息的转发和实现";
     }else if (indexPath.row == 18){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"MethodSwizzling 黑魔法";
     }else if (indexPath.row == 19){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"AssociatedObjectsVC关联对象";
     }else if (indexPath.row == 20){
         cell.textLabel.text = @"";
     }else if (indexPath.row == 21){
@@ -207,7 +211,30 @@
         BackgroundPlayVC *jd = [[BackgroundPlayVC alloc] init];
         [self.navigationController pushViewController:jd animated:YES];
         
+    }else if (indexPath.row == 16){
+        
+        RunTimeUseCaseVC *jd = [[RunTimeUseCaseVC alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
+        
+    }else if (indexPath.row == 17){
+        
+        MessageForwardingVC *jd = [[MessageForwardingVC alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
+        
+    }else if (indexPath.row == 18){
+        
+        MethodSwizzlingVC *jd = [[MethodSwizzlingVC alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
+        
+    }else if (indexPath.row == 19){
+        
+        AssociatedObjectsVC *jd = [[AssociatedObjectsVC alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
+        
     }
+    
+    
+   
 
 
 

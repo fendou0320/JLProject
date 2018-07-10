@@ -301,12 +301,13 @@
         return [UIImage imageWithContentsOfFile:path];
 }
 
-//判断是视频还是图片
-+ (BOOL)judgeVideoOrImage:(NSString *)url{
+////判断是视频还是图片
+//+ (BOOL)judgeVideoOrImage:(NSString *)url{
 //    AVAsset *asset = [AVURLAsset URLAssetWithURL:url options:dictionary];
 //    NSArray *tracks = [asset tracksWithMediaType:AVMediaTypeVideo];
 //    BOOL hasVideoTrack = [tracks count] > 0;
-}
+//    return hasVideoTrack;
+//}
 
 
 

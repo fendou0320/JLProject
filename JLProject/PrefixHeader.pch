@@ -32,4 +32,8 @@
 
 #import "AppUtily.h"
 
+#import "UILabel+Alignment.h"
+#import "UIFont+Fit.h"
+
+
 #endif /* PrefixHeader_pch */
