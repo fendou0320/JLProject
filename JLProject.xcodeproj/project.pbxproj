@@ -7,19 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		042373A020F22F2600FCA41F /* CopyTypeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423732C20F22F2600FCA41F /* CopyTypeVC.m */; };
-		042373A120F22F2600FCA41F /* TYCyclePagerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423733020F22F2600FCA41F /* TYCyclePagerViewCell.m */; };
-		042373A220F22F2600FCA41F /* CyclePagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423733320F22F2600FCA41F /* CyclePagerView.m */; };
-		042373A320F22F2600FCA41F /* TYPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423733720F22F2600FCA41F /* TYPageControl.m */; };
-		042373A420F22F2600FCA41F /* TYCyclePagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423733820F22F2600FCA41F /* TYCyclePagerView.m */; };
-		042373A520F22F2600FCA41F /* TYCyclePagerTransformLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423733920F22F2600FCA41F /* TYCyclePagerTransformLayout.m */; };
-		042373A620F22F2600FCA41F /* LunBoNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423733C20F22F2600FCA41F /* LunBoNewController.m */; };
-		042373A720F22F2600FCA41F /* DropDownController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423733E20F22F2600FCA41F /* DropDownController.m */; };
-		042373A820F22F2600FCA41F /* DropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423733F20F22F2600FCA41F /* DropdownMenu.m */; };
-		042373A920F22F2600FCA41F /* RunLoopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423734420F22F2600FCA41F /* RunLoopVC.m */; };
-		042373AA20F22F2600FCA41F /* YinDaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423734720F22F2600FCA41F /* YinDaoViewController.m */; };
-		042373AB20F22F2600FCA41F /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423734920F22F2600FCA41F /* LoginController.m */; };
-		042373AC20F22F2600FCA41F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423734A20F22F2600FCA41F /* LoginViewController.m */; };
 		0423745520F2E5B100FCA41F /* CopyTypeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 042373D820F2E5B100FCA41F /* CopyTypeVC.m */; };
 		0423745620F2E5B100FCA41F /* TYCyclePagerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 042373DC20F2E5B100FCA41F /* TYCyclePagerViewCell.m */; };
 		0423745720F2E5B100FCA41F /* CyclePagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042373DF20F2E5B100FCA41F /* CyclePagerView.m */; };
