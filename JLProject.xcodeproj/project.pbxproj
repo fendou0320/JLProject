@@ -70,6 +70,7 @@
 		1C4087B31EE1024700E4E363 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C40876C1EE1024700E4E363 /* MainViewController.m */; };
 		1C46676220F2F53E00CA0989 /* RunTimeUseCaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C46676120F2F53E00CA0989 /* RunTimeUseCaseVC.m */; };
 		1C4DF04D1FD63EFE00C09626 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4DF04C1FD63EFE00C09626 /* XMLDictionary.m */; };
+		1C4F517C20F5D94600D4AF52 /* MethodSwizzlingSonVC+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4F517B20F5D94600D4AF52 /* MethodSwizzlingSonVC+Swizzling.m */; };
 		1C6D3C021F2ECFCD00F699BF /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D37B91F2ECFCC00F699BF /* BaseNavigationController.m */; };
 		1C6D3C031F2ECFCD00F699BF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D37BB1F2ECFCC00F699BF /* BaseViewController.m */; };
 		1C6D3C061F2ECFCD00F699BF /* JianboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D37C81F2ECFCC00F699BF /* JianboViewController.m */; };
@@ -127,6 +128,7 @@
 		1C6D3EB71F2ECFCE00F699BF /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D3BFF1F2ECFCD00F699BF /* RequestManager.m */; };
 		1C6D3EB81F2ECFCE00F699BF /* RequestXMLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D3C011F2ECFCD00F699BF /* RequestXMLManager.m */; };
 		1C6D759A1F2F231D00E54A58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C6D75991F2F231D00E54A58 /* Assets.xcassets */; };
+		1C81BDBC20F5CDE500A40C41 /* MethodSwizzlingSonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C81BDBB20F5CDE500A40C41 /* MethodSwizzlingSonVC.m */; };
 		1C89BA5B1EF7EC43003240EC /* FriendsList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C89BA521EF7EC43003240EC /* FriendsList.plist */; };
 		1C9CD6C31F4A8E5300901EFD /* CircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9CD6C21F4A8E5300901EFD /* CircleProgress.m */; };
 		1C9CD6C61F4A8E7900901EFD /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9CD6C51F4A8E7900901EFD /* OtherViewController.m */; };
@@ -326,6 +328,8 @@
 		1C46676120F2F53E00CA0989 /* RunTimeUseCaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeUseCaseVC.m; sourceTree = "<group>"; };
 		1C4DF04B1FD63EFE00C09626 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
 		1C4DF04C1FD63EFE00C09626 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
+		1C4F517A20F5D94600D4AF52 /* MethodSwizzlingSonVC+Swizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MethodSwizzlingSonVC+Swizzling.h"; sourceTree = "<group>"; };
+		1C4F517B20F5D94600D4AF52 /* MethodSwizzlingSonVC+Swizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MethodSwizzlingSonVC+Swizzling.m"; sourceTree = "<group>"; };
 		1C6D37B81F2ECFCC00F699BF /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		1C6D37B91F2ECFCC00F699BF /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		1C6D37BA1F2ECFCC00F699BF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -442,6 +446,8 @@
 		1C6D3C001F2ECFCD00F699BF /* RequestXMLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestXMLManager.h; sourceTree = "<group>"; };
 		1C6D3C011F2ECFCD00F699BF /* RequestXMLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestXMLManager.m; sourceTree = "<group>"; };
 		1C6D75991F2F231D00E54A58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C81BDBA20F5CDE500A40C41 /* MethodSwizzlingSonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodSwizzlingSonVC.h; sourceTree = "<group>"; };
+		1C81BDBB20F5CDE500A40C41 /* MethodSwizzlingSonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzlingSonVC.m; sourceTree = "<group>"; };
 		1C89BA521EF7EC43003240EC /* FriendsList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FriendsList.plist; sourceTree = "<group>"; };
 		1C9CD6C11F4A8E5300901EFD /* CircleProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleProgress.h; sourceTree = "<group>"; };
 		1C9CD6C21F4A8E5300901EFD /* CircleProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleProgress.m; sourceTree = "<group>"; };
@@ -1526,6 +1532,10 @@
 			children = (
 				1CAF724F20F42F2900387413 /* MethodSwizzlingVC.h */,
 				1CAF725020F42F2900387413 /* MethodSwizzlingVC.m */,
+				1C81BDBA20F5CDE500A40C41 /* MethodSwizzlingSonVC.h */,
+				1C81BDBB20F5CDE500A40C41 /* MethodSwizzlingSonVC.m */,
+				1C4F517A20F5D94600D4AF52 /* MethodSwizzlingSonVC+Swizzling.h */,
+				1C4F517B20F5D94600D4AF52 /* MethodSwizzlingSonVC+Swizzling.m */,
 			);
 			path = "method-swizzling使用";
 			sourceTree = "<group>";
@@ -1942,6 +1952,7 @@
 				1C6D3C191F2ECFCD00F699BF /* butongCircle.m in Sources */,
 				0423747420F2E5B100FCA41F /* BackgroundPlayVC.m in Sources */,
 				1C9CD6C31F4A8E5300901EFD /* CircleProgress.m in Sources */,
+				1C4F517C20F5D94600D4AF52 /* MethodSwizzlingSonVC+Swizzling.m in Sources */,
 				1C9CD6F41F4A8F5100901EFD /* DazViewController.m in Sources */,
 				1C6D3C1C1F2ECFCD00F699BF /* TemplateListViewController.m in Sources */,
 				1C6D3EB61F2ECFCE00F699BF /* MonitoringNetwork.m in Sources */,
@@ -2017,6 +2028,7 @@
 				0423748220F2E5B100FCA41F /* MvvMIndexView.m in Sources */,
 				1C6D3C081F2ECFCD00F699BF /* TopViewChannalButton.m in Sources */,
 				1CAF727420F4550F00387413 /* UIFont+Fit.m in Sources */,
+				1C81BDBC20F5CDE500A40C41 /* MethodSwizzlingSonVC.m in Sources */,
 				1C6D3C2D1F2ECFCD00F699BF /* TemplateOneViewController.m in Sources */,
 				1C4DF04D1FD63EFE00C09626 /* XMLDictionary.m in Sources */,
 				0423745820F2E5B100FCA41F /* TYPageControl.m in Sources */,
