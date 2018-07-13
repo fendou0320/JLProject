@@ -57,6 +57,8 @@
 		0423748420F2E5B100FCA41F /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423744E20F2E5B100FCA41F /* BaseCollectionViewCell.m */; };
 		0423748520F2E5B100FCA41F /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423745120F2E5B100FCA41F /* IndexViewController.m */; };
 		0423748620F2E5B100FCA41F /* TypeOneLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423745320F2E5B100FCA41F /* TypeOneLabel.m */; };
+		04BAF29F20F73F630052E5DA /* ArchivingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BAF29E20F73F630052E5DA /* ArchivingVC.m */; };
+		04BAF2A520F740C30052E5DA /* ArchivingPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BAF2A420F740C30052E5DA /* ArchivingPerson.m */; };
 		1C21AE351F6511340039163D /* backgroundStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C21AE311F6511340039163D /* backgroundStar.png */; };
 		1C21AE361F6511340039163D /* backgroundStar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C21AE321F6511340039163D /* backgroundStar@2x.png */; };
 		1C21AE371F6511340039163D /* foregroundStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C21AE331F6511340039163D /* foregroundStar.png */; };
@@ -302,6 +304,10 @@
 		0423745120F2E5B100FCA41F /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
 		0423745320F2E5B100FCA41F /* TypeOneLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeOneLabel.m; sourceTree = "<group>"; };
 		0423745420F2E5B100FCA41F /* TypeOneLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeOneLabel.h; sourceTree = "<group>"; };
+		04BAF29D20F73F630052E5DA /* ArchivingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchivingVC.h; sourceTree = "<group>"; };
+		04BAF29E20F73F630052E5DA /* ArchivingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchivingVC.m; sourceTree = "<group>"; };
+		04BAF2A320F740C30052E5DA /* ArchivingPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchivingPerson.h; sourceTree = "<group>"; };
+		04BAF2A420F740C30052E5DA /* ArchivingPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchivingPerson.m; sourceTree = "<group>"; };
 		05935B623495A3D744DA63BD /* Pods-JLProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-JLProject/Pods-JLProject.release.xcconfig"; sourceTree = "<group>"; };
 		10AED592CBB506BAA44C7EAD /* libPods-JLProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JLProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C21AE311F6511340039163D /* backgroundStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundStar.png; sourceTree = "<group>"; };
@@ -584,6 +590,7 @@
 		042373D620F2E5B100FCA41F /* 子控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				04BAF29C20F73F250052E5DA /* RunTime归档和解档 */,
 				1CAF725220F431EA00387413 /* associated objects--关联对象 */,
 				1CAF724E20F42F0A00387413 /* method-swizzling使用 */,
 				1CAF724A20F42DAF00387413 /* 消息转发 */,
@@ -896,6 +903,17 @@
 				0423745420F2E5B100FCA41F /* TypeOneLabel.h */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		04BAF29C20F73F250052E5DA /* RunTime归档和解档 */ = {
+			isa = PBXGroup;
+			children = (
+				04BAF29D20F73F630052E5DA /* ArchivingVC.h */,
+				04BAF29E20F73F630052E5DA /* ArchivingVC.m */,
+				04BAF2A320F740C30052E5DA /* ArchivingPerson.h */,
+				04BAF2A420F740C30052E5DA /* ArchivingPerson.m */,
+			);
+			path = "RunTime归档和解档";
 			sourceTree = "<group>";
 		};
 		1C21AE301F6511340039163D /* star */ = {
@@ -1970,6 +1988,7 @@
 				1C6D3C311F2ECFCD00F699BF /* CustomLineChat.m in Sources */,
 				0423745520F2E5B100FCA41F /* CopyTypeVC.m in Sources */,
 				1C6D3C3A1F2ECFCD00F699BF /* JDyuanhuanController.m in Sources */,
+				04BAF29F20F73F630052E5DA /* ArchivingVC.m in Sources */,
 				0423747D20F2E5B100FCA41F /* MSSChineseCalendarManager.m in Sources */,
 				1C6D3C301F2ECFCD00F699BF /* ZuoYouViewController.m in Sources */,
 				0423746C20F2E5B100FCA41F /* SDCollectionViewCell.m in Sources */,
@@ -1989,6 +2008,7 @@
 				1C6D3C1E1F2ECFCD00F699BF /* PictureFourViewController.m in Sources */,
 				0423747A20F2E5B100FCA41F /* MSSCalendarPopView.m in Sources */,
 				1C6D3C3B1F2ECFCD00F699BF /* DashTypeOneView.m in Sources */,
+				04BAF2A520F740C30052E5DA /* ArchivingPerson.m in Sources */,
 				1C6D3C291F2ECFCD00F699BF /* JHPieForeBGView.m in Sources */,
 				0423747820F2E5B100FCA41F /* CostomsStarView.m in Sources */,
 				0423745620F2E5B100FCA41F /* TYCyclePagerViewCell.m in Sources */,

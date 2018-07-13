@@ -1,0 +1,17 @@
+//
+//  ArchivingPerson.h
+//  JLProject
+//
+//  Created by jiangliangwang on 2018/7/12.
+//  Copyright © 2018年 wangjiangliang. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface ArchivingPerson : NSObject<NSCoding>
+
+@property (nonatomic, copy) NSString *name;
+
+@property (nonatomic, copy) NSString *age;
+
+@end

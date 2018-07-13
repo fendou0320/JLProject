@@ -27,6 +27,7 @@
 #import "MessageForwardingVC.h"
 #import "MethodSwizzlingVC.h"
 #import "AssociatedObjectsVC.h"
+#import "ArchivingVC.h"
 
 @interface IndexViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -114,7 +115,7 @@
     }else if (indexPath.row == 19){
         cell.textLabel.text = @"AssociatedObjectsVC关联对象";
     }else if (indexPath.row == 20){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"归档解档";
     }else if (indexPath.row == 21){
         cell.textLabel.text = @"";
     }else if (indexPath.row == 22){
@@ -229,6 +230,11 @@
     }else if (indexPath.row == 19){
         
         AssociatedObjectsVC *jd = [[AssociatedObjectsVC alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
+        
+    }else if (indexPath.row == 20){
+        
+        ArchivingVC *jd = [[ArchivingVC alloc] init];
         [self.navigationController pushViewController:jd animated:YES];
         
     }
