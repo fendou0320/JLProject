@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
-#import "YinDaoViewController.h"
 #import "LoginViewController.h"
 
 @interface AppDelegate ()

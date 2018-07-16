@@ -9,45 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/Index/Controller/&#x5b50;&#x63a7;&#x5236;&#x5668;/&#x81ea;&#x52a8;&#x91ca;&#x653e;&#x6c60;/AutoreleasePoolVC.m"
-            timestampString = "552998960.479829"
+            filePath = "JLProject/MainViewController.m"
+            timestampString = "553436958.98704"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/Index/Controller/&#x5b50;&#x63a7;&#x5236;&#x5668;/&#x81ea;&#x52a8;&#x91ca;&#x653e;&#x6c60;/AutoreleasePoolVC.m"
-            timestampString = "552998960.481734"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "-viewWillAppear:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/Index/Controller/&#x5b50;&#x63a7;&#x5236;&#x5668;/&#x81ea;&#x52a8;&#x91ca;&#x653e;&#x6c60;/AutoreleasePoolVC.m"
-            timestampString = "552998960.4820139"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "-viewDidAppear:"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "-clickAction:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

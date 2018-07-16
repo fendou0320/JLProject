@@ -8,8 +8,11 @@
 
 #import "MainViewController.h"
 #import "IndexViewController.h"
-#import "JianboViewController.h"
-#import "OtherViewController.h"
+#import "SecondFounctionVC.h"
+#import "ThirdFounctionVC.h"
+#import "FourFounctionVC.h"
+#import "FiveFounctionVC.h"
+
 #import "BaseNavigationController.h"
 
 @interface MainViewController ()
@@ -30,18 +33,23 @@
     
     //创建第三级控制器
     IndexViewController *index = [[IndexViewController alloc] init];
-    index.navigationItem.title = @"Index";
+    index.navigationItem.title = @"基础部分";
     
     //创建第三级控制器
-    JianboViewController *jianbo = [[JianboViewController  alloc] init];
-    jianbo.navigationItem.title = @"Second";
+    SecondFounctionVC *secondVC = [[SecondFounctionVC  alloc] init];
+    secondVC.navigationItem.title = @"底层部分";
     
     //创建第三级控制器
-    OtherViewController *other = [[OtherViewController alloc] init];
-    other.navigationItem.title = @"Three";
+    ThirdFounctionVC *thirdVC = [[ThirdFounctionVC alloc] init];
+    thirdVC.navigationItem.title = @"功能部分";
     
+    FourFounctionVC *fourVC = [[FourFounctionVC alloc] init];
+    fourVC.navigationItem.title = @"三方部分";
     
-    NSArray *ctrls =@[index,jianbo,other];
+    FiveFounctionVC *fiveVC = [[FiveFounctionVC alloc] init];
+    fiveVC.navigationItem.title = @"牛逼部分";
+    
+    NSArray *ctrls =@[index,secondVC,thirdVC,fourVC,fiveVC];
     
     //存储导航控制器
     NSMutableArray *array = [NSMutableArray arrayWithCapacity:5];
@@ -71,7 +79,7 @@
 
 - (void)creatTabbar{
     
-    NSArray *titles = @[@"Index",@"Second",@"Three"];
+    NSArray *titles = @[@"基础",@"底层",@"功能",@"三方",@"牛逼"];
     //按钮宽度
     CGFloat width = kScreenWidth / titles.count;
     
@@ -83,21 +91,22 @@
         
         [btn setTitle:title forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor purpleColor] forState:UIControlStateNormal];
+        [btn setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
         [btn addTarget:self action:@selector(clickAction:) forControlEvents:UIControlEventTouchUpInside];
         btn.frame = CGRectMake(i * width, 0, width, kTabBarHeight);
-        btn.backgroundColor = RandomColor;
+//        btn.backgroundColor = RandomColor;
         btn.tag = i;
         
         //调整标题的位置
         btn.titleLabel.font = [UIFont systemFontOfSize:11];
         //调整图片的位置
-        btn.imageEdgeInsets = UIEdgeInsetsMake(0, 10, 20, 0);
+//        btn.imageEdgeInsets = UIEdgeInsetsMake(0, 10, 20, 0);
+//        btn.titleEdgeInsets = UIEdgeInsetsMake(10, 0, 0, 30);
         
-        btn.titleEdgeInsets = UIEdgeInsetsMake(10, 0, 0, 30);
         [self.tabBar addSubview:btn];
         
         if (i == 0) {
-            [btn setTitleColor:[UIColor redColor]forState:UIControlStateNormal];
+            btn.selected = YES;
             self.lastBtn = btn;
         }
         
@@ -108,12 +117,12 @@
 //按钮点击事件
 - (void)clickAction:(UIButton *)btn{
     
+    btn.selected = YES;
+    self.lastBtn.selected = NO;
+    self.lastBtn = btn;
     //移动选中视图
     [UIView animateWithDuration:.3 animations:^{
         
-        [self.lastBtn setTitleColor:[UIColor blackColor]forState:UIControlStateNormal];
-        [btn setTitleColor:[UIColor redColor]forState:UIControlStateNormal];
-        self.lastBtn = btn;
     }];
     //切换子控制器
     self.selectedIndex = btn.tag;
@@ -126,14 +135,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
