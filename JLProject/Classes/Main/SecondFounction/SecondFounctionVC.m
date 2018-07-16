@@ -73,6 +73,12 @@
         cell.textLabel.text = @"归档解档";
     }else if (indexPath.row == 8){
         cell.textLabel.text = @"RunLoop";
+    }else if (indexPath.row == 9){
+        cell.textLabel.text = @"下载功能";
+    }else if (indexPath.row == 10){
+        cell.textLabel.text = @"后台播放和锁屏播放";
+    }else if (indexPath.row == 11){
+        cell.textLabel.text = @"";
     }
     
  

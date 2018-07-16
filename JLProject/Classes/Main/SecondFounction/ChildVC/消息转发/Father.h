@@ -10,4 +10,8 @@
 
 @interface Father : NSObject
 
+- (void)sendMessage;
+
+
+
 @end

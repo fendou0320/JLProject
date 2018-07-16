@@ -49,6 +49,9 @@
     objc_msgSend(son, @selector(sing:withEat:), @"梦想");
 
     
+    
+    [[Father new] sendMessage];
+    
 }
 
 
