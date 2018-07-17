@@ -8,6 +8,8 @@
 
 #import "FourFounctionVC.h"
 
+#import "GPUImageVC.h"
+
 @interface FourFounctionVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @end
@@ -45,7 +47,7 @@
     UITableViewCell *cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
     
     if (indexPath.row == 0){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"GPUImage";
     }else if (indexPath.row == 1){
         cell.textLabel.text = @"";
     }else if (indexPath.row == 2){
@@ -64,7 +66,9 @@
     
     if (indexPath.row == 0){
         
-       
+        GPUImageVC *vc = [[GPUImageVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        
     }else if (indexPath.row == 1){
         
        

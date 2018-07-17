@@ -12,11 +12,6 @@ target 'JLProject' do
     # Pods for testing
   end
 
-  target 'JLProjectUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 
     pod 'JSONModel'
     pod 'FMDB'
@@ -28,6 +23,8 @@ target 'JLProject' do
     pod 'MJExtension'
     pod 'MJRefresh'
     pod 'HYBUIViewExtension', '~> 2.2'
+
+    pod ‘GPUImage’
 
 
 end

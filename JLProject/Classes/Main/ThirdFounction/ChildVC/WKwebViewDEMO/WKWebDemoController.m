@@ -47,11 +47,21 @@
                       options:NSKeyValueObservingOptionNew
                       context:nil];
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"后退" style:UIBarButtonItemStyleDone target:self action:@selector(goback)];
+    //添加多个返回按钮
+    UIBarButtonItem *leftOneBtn = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(backAction)];
+    UIBarButtonItem *leftTwoBtn = [[UIBarButtonItem alloc] initWithTitle:@"后退" style:UIBarButtonItemStyleDone target:self action:@selector(goback)];
+    NSArray *btnArray = @[leftOneBtn,leftTwoBtn];
+    self.navigationItem.leftBarButtonItems = btnArray;
     
+    //右侧
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"前进" style:UIBarButtonItemStyleDone target:self action:@selector(gofarward)];
     
 }
+
+- (void)backAction{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 -(void)goback{
     if ([self.webView canGoBack]) {
         [self.webView goBack];

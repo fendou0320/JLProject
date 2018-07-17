@@ -11,6 +11,7 @@
 #import "DongHuaViewController.h"
 #import "WKWebDemoController.h"
 #import "BoWenShuiQiuController.h"
+#import "AudioVideoVC.h"
 
 @interface ThirdFounctionVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -55,11 +56,11 @@
     }else if (indexPath.row == 1){
         cell.textLabel.text = @"水波纹圆球";
     }else if (indexPath.row == 2){
-        cell.textLabel.text = @"WKwebview网络demo";
+        cell.textLabel.text = @"WKwebview";
     }else if (indexPath.row == 3){
-        
+        cell.textLabel.text = @"音视频编解码";
     }else if (indexPath.row == 4){
-        
+        cell.textLabel.text = @"组件化开发";
     }
     
     
@@ -85,6 +86,8 @@
         
     }else if (indexPath.row == 3){
         
+        AudioVideoVC *VC = [[AudioVideoVC alloc] init];
+        [self.navigationController pushViewController:VC animated:YES];
         
     }else if (indexPath.row == 4){
         
