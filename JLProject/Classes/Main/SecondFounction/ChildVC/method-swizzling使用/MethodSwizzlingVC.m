@@ -16,13 +16,6 @@
 
 @end
 
-@implementation MethodSwizzlingVC
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.title = @"MethodSwizzling的使用和情景";
-    
 //    //判断类中是否包含某个方法的实现
 //    BOOL class_respondsToSelector(Class cls, SEL sel)
 //    //获取类中的方法列表
@@ -75,7 +68,14 @@
 //
 //    //调用target对象的sel方法
 //    id objc_msgSend(id target, SEL sel, 参数列表...)
-    
+
+
+@implementation MethodSwizzlingVC
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    self.title = @"MethodSwizzling的使用和情景";
     
 }
 
@@ -83,6 +83,7 @@
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
+        
         //本类的方法替换
         [self swizzWithClass:[self class] originSel:NSSelectorFromString(@"dealloc") newSel:NSSelectorFromString(@"swizzDealloc")];
         //其他类的方法替换
@@ -99,7 +100,6 @@
     Method originM = class_getInstanceMethod(class, originSel);
     Method newM = class_getInstanceMethod(class, newSel);
     
-    
     IMP newImp = method_getImplementation(newM);
     
 //    BOOL class_addMethod(Class cls, SEL name, IMP imp, const char *types)
@@ -109,11 +109,14 @@
 //    imp：实现这个方法的函数
 //    types：一个定义该函数返回值类型和参数类型的字符串，这个具体会在后面讲
     BOOL addMethodSuccess = class_addMethod(class, newSel, newImp, method_getTypeEncoding(newM));
+    
     if (addMethodSuccess) {
         class_replaceMethod(class, originSel, newImp, method_getTypeEncoding(newM));
     }else{
         method_exchangeImplementations(originM, newM);
     }
+    
+    
 }
 
 - (void)dealloc{

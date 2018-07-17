@@ -578,17 +578,9 @@
 			isa = PBXGroup;
 			children = (
 				04C4C9E020FCC31900560977 /* FiveFounctionVC.h */,
-				04C4C9E120FCC31900560977 /* ChildVC */,
 				04C4C9E220FCC31900560977 /* FiveFounctionVC.m */,
 			);
 			path = FiveFounction;
-			sourceTree = "<group>";
-		};
-		04C4C9E120FCC31900560977 /* ChildVC */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ChildVC;
 			sourceTree = "<group>";
 		};
 		04C4C9E320FCC31900560977 /* IndexFounction */ = {
@@ -1215,10 +1207,10 @@
 			isa = PBXGroup;
 			children = (
 				04C4CAD420FCC31900560977 /* MethodSwizzlingVC.h */,
-				04C4CAD520FCC31900560977 /* MethodSwizzlingSonVC+Swizzling.h */,
-				04C4CAD620FCC31900560977 /* MethodSwizzlingSonVC.h */,
 				04C4CAD720FCC31900560977 /* MethodSwizzlingVC.m */,
+				04C4CAD620FCC31900560977 /* MethodSwizzlingSonVC.h */,
 				04C4CAD820FCC31900560977 /* MethodSwizzlingSonVC.m */,
+				04C4CAD520FCC31900560977 /* MethodSwizzlingSonVC+Swizzling.h */,
 				04C4CAD920FCC31900560977 /* MethodSwizzlingSonVC+Swizzling.m */,
 			);
 			path = "method-swizzling使用";
@@ -1236,8 +1228,8 @@
 		04C4CADD20FCC31900560977 /* associated objects--关联对象 */ = {
 			isa = PBXGroup;
 			children = (
-				04C4CADE20FCC31900560977 /* AssociatedObjectsVC.m */,
 				04C4CADF20FCC31900560977 /* AssociatedObjectsVC.h */,
+				04C4CADE20FCC31900560977 /* AssociatedObjectsVC.m */,
 			);
 			path = "associated objects--关联对象";
 			sourceTree = "<group>";
@@ -1279,17 +1271,9 @@
 			isa = PBXGroup;
 			children = (
 				04C4CAF120FCC31900560977 /* FourFounctionVC.m */,
-				04C4CAF220FCC31900560977 /* ChildVC */,
 				04C4CAF320FCC31900560977 /* FourFounctionVC.h */,
 			);
 			path = FourFounction;
-			sourceTree = "<group>";
-		};
-		04C4CAF220FCC31900560977 /* ChildVC */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ChildVC;
 			sourceTree = "<group>";
 		};
 		04C4CAF420FCC31900560977 /* ThirdFounction */ = {

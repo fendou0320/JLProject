@@ -25,12 +25,6 @@
     DLog(@"替换后的swizzViewDidLoad方法");
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 + (void)load{
     DLog(@"本类中的load方法");
 }
