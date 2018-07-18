@@ -12,11 +12,10 @@
 typedef void(^SuccessBlock)(id responds);
 typedef void(^FailureBlock)(NSError *error);
 
-//typedef NS_ENUM(NSInteger, SupportedLanguage){
-//    
-//    LANGUAGE_CHINESE = 0,
-//    LANGUAGE_ENGILISH = 1
-//};
+typedef NS_ENUM(NSInteger, SupportedLanguage){
+    LANGUAGE_CHINESE = 0,
+    LANGUAGE_ENGILISH = 1
+};
 
 
 

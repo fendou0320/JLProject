@@ -146,6 +146,8 @@
 		1C21AE361F6511340039163D /* backgroundStar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C21AE321F6511340039163D /* backgroundStar@2x.png */; };
 		1C21AE371F6511340039163D /* foregroundStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C21AE331F6511340039163D /* foregroundStar.png */; };
 		1C21AE381F6511340039163D /* foregroundStar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C21AE341F6511340039163D /* foregroundStar@2x.png */; };
+		1C39525A20FF225D0068E37F /* ArchivingFather.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C39525920FF225D0068E37F /* ArchivingFather.m */; };
+		1C39526120FF38150068E37F /* SerializeDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C39526020FF38150068E37F /* SerializeDemo.m */; };
 		1C3F65341F4548410052E821 /* 288x360.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C3F65331F4548410052E821 /* 288x360.jpg */; };
 		1C4086811EE101F500E4E363 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4086801EE101F500E4E363 /* main.m */; };
 		1C4086841EE101F500E4E363 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4086831EE101F500E4E363 /* AppDelegate.m */; };
@@ -459,6 +461,11 @@
 		1C21AE321F6511340039163D /* backgroundStar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backgroundStar@2x.png"; sourceTree = "<group>"; };
 		1C21AE331F6511340039163D /* foregroundStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foregroundStar.png; sourceTree = "<group>"; };
 		1C21AE341F6511340039163D /* foregroundStar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foregroundStar@2x.png"; sourceTree = "<group>"; };
+		1C39525820FF225D0068E37F /* ArchivingFather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchivingFather.h; sourceTree = "<group>"; };
+		1C39525920FF225D0068E37F /* ArchivingFather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchivingFather.m; sourceTree = "<group>"; };
+		1C39525E20FF351A0068E37F /* JLSerializeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLSerializeKit.h; sourceTree = "<group>"; };
+		1C39525F20FF38150068E37F /* SerializeDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SerializeDemo.h; sourceTree = "<group>"; };
+		1C39526020FF38150068E37F /* SerializeDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SerializeDemo.m; sourceTree = "<group>"; };
 		1C3F65331F4548410052E821 /* 288x360.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 288x360.jpg; sourceTree = "<group>"; };
 		1C40867C1EE101F500E4E363 /* JLProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C4086801EE101F500E4E363 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1246,10 +1253,13 @@
 		04C4CAE320FCC31900560977 /* RunTime归档和解档 */ = {
 			isa = PBXGroup;
 			children = (
+				04C4CAE620FCC31900560977 /* ArchivingVC.h */,
 				04C4CAE420FCC31900560977 /* ArchivingVC.m */,
 				04C4CAE520FCC31900560977 /* ArchivingPerson.h */,
-				04C4CAE620FCC31900560977 /* ArchivingVC.h */,
 				04C4CAE720FCC31900560977 /* ArchivingPerson.m */,
+				1C39525820FF225D0068E37F /* ArchivingFather.h */,
+				1C39525920FF225D0068E37F /* ArchivingFather.m */,
+				1C39525B20FF26CE0068E37F /* Demo */,
 			);
 			path = "RunTime归档和解档";
 			sourceTree = "<group>";
@@ -1279,9 +1289,9 @@
 		04C4CAF420FCC31900560977 /* ThirdFounction */ = {
 			isa = PBXGroup;
 			children = (
+				04C4CB2620FCC31900560977 /* ThirdFounctionVC.h */,
 				04C4CAF520FCC31900560977 /* ThirdFounctionVC.m */,
 				04C4CAF620FCC31900560977 /* ChildVC */,
-				04C4CB2620FCC31900560977 /* ThirdFounctionVC.h */,
 			);
 			path = ThirdFounction;
 			sourceTree = "<group>";
@@ -1398,6 +1408,16 @@
 				1C21AE341F6511340039163D /* foregroundStar@2x.png */,
 			);
 			path = star;
+			sourceTree = "<group>";
+		};
+		1C39525B20FF26CE0068E37F /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				1C39525E20FF351A0068E37F /* JLSerializeKit.h */,
+				1C39525F20FF38150068E37F /* SerializeDemo.h */,
+				1C39526020FF38150068E37F /* SerializeDemo.m */,
+			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
 		1C4086731EE101F500E4E363 = {
@@ -1589,12 +1609,12 @@
 		1CAF726720F4550F00387413 /* MVM */ = {
 			isa = PBXGroup;
 			children = (
-				1CAF726920F4550F00387413 /* NSDictionary+SetNullWithStr.m */,
-				1CAF726A20F4550F00387413 /* UIFont+Fit.m */,
-				1CAF726B20F4550F00387413 /* UIView+FontSize.m */,
 				1CAF726D20F4550F00387413 /* NSDictionary+SetNullWithStr.h */,
+				1CAF726920F4550F00387413 /* NSDictionary+SetNullWithStr.m */,
 				1CAF726F20F4550F00387413 /* UIFont+Fit.h */,
+				1CAF726A20F4550F00387413 /* UIFont+Fit.m */,
 				1CAF727020F4550F00387413 /* UIView+FontSize.h */,
+				1CAF726B20F4550F00387413 /* UIView+FontSize.m */,
 			);
 			path = MVM;
 			sourceTree = "<group>";
@@ -1999,6 +2019,7 @@
 				04C4CB4920FCC31900560977 /* JLRingChart.m in Sources */,
 				04C4CB8920FCC31900560977 /* AutoreleasePoolVC.m in Sources */,
 				04C4CB2A20FCC31900560977 /* JHLineChart.m in Sources */,
+				1C39526120FF38150068E37F /* SerializeDemo.m in Sources */,
 				04C4CB8C20FCC31900560977 /* MessageForwardingVC.m in Sources */,
 				04C4CB3120FCC31900560977 /* PictureTwoController.m in Sources */,
 				04C4CB7520FCC31900560977 /* TAAbstractDotView.m in Sources */,
@@ -2066,6 +2087,7 @@
 				1C4087B31EE1024700E4E363 /* MainViewController.m in Sources */,
 				1CAF727420F4550F00387413 /* UIFont+Fit.m in Sources */,
 				04C4CB4420FCC31900560977 /* HistogramView.m in Sources */,
+				1C39525A20FF225D0068E37F /* ArchivingFather.m in Sources */,
 				04C4CB7D20FCC31900560977 /* BaseCollectionViewCell.m in Sources */,
 				04C4CB3220FCC31900560977 /* PictureFourViewController.m in Sources */,
 				04C4CB6320FCC31900560977 /* TYPageControl.m in Sources */,

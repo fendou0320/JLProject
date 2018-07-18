@@ -70,7 +70,7 @@
     }else if (indexPath.row == 6){
         cell.textLabel.text = @"AssociatedObjectsVC关联对象";
     }else if (indexPath.row == 7){
-        cell.textLabel.text = @"归档解档";
+        cell.textLabel.text = @"归档、解档和序列化、反序列化";
     }else if (indexPath.row == 8){
         cell.textLabel.text = @"RunLoop";
     }else if (indexPath.row == 9){
