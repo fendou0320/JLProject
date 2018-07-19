@@ -47,8 +47,6 @@
     objc_msgSend(son, @selector(sing:withEat:), @"梦想", @"红烧肉");
     
     objc_msgSend(son, @selector(sing:withEat:), @"梦想");
-
-    
     
     [[Father new] sendMessage];
     

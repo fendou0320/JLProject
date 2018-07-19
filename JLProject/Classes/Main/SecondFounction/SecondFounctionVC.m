@@ -15,6 +15,7 @@
 #import "AssociatedObjectsVC.h"
 #import "ArchivingVC.h"
 #import "RunLoopVC.h"
+#import "RootClassVC.h"
 
 @interface SecondFounctionVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -26,7 +27,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
     
     //创建一个分组样式的UITableView
     _tableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStyleGrouped];
@@ -46,7 +46,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return 60;
+    return 30;
 }
 
 
@@ -78,10 +78,8 @@
     }else if (indexPath.row == 10){
         cell.textLabel.text = @"后台播放和锁屏播放";
     }else if (indexPath.row == 11){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"实例、类对象、元类";
     }
-    
- 
     
     
     
@@ -132,6 +130,23 @@
         
         RunLoopVC *jd = [[RunLoopVC alloc] init];
         [self.navigationController pushViewController:jd animated:YES];
+        
+    }else if (indexPath.row == 9){
+        
+
+        
+    }else if (indexPath.row == 10){
+        
+       
+        
+    }else if (indexPath.row == 11){
+        
+        RootClassVC *jd = [[RootClassVC alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
+        
+    }else if (indexPath.row == 12){
+        
+       
         
     }
     

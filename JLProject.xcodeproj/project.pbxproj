@@ -181,6 +181,7 @@
 		1CF17DAA1F2EDB6000EA3B51 /* yinDaoYe4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CF17DA51F2EDB6000EA3B51 /* yinDaoYe4.png */; };
 		1CF17DB41F2EF95200EA3B51 /* QiDong1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CF17DB21F2EF95200EA3B51 /* QiDong1@2x.png */; };
 		1CF17DB51F2EF95200EA3B51 /* QiDong2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CF17DB31F2EF95200EA3B51 /* QiDong2.png */; };
+		1CFD3D47210014B400A187D2 /* RootClassVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFD3D46210014B400A187D2 /* RootClassVC.m */; };
 		D6BFBAAB767F367E7E7C8EA4 /* libPods-JLProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3F56CED33ED25FEC3286BA /* libPods-JLProject.a */; };
 		FA6F046E2E6E4C653443469C /* libPods-JLProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA4AD2A39877206B34D66F6 /* libPods-JLProjectTests.a */; };
 /* End PBXBuildFile section */
@@ -530,6 +531,8 @@
 		1CF17DA51F2EDB6000EA3B51 /* yinDaoYe4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yinDaoYe4.png; sourceTree = "<group>"; };
 		1CF17DB21F2EF95200EA3B51 /* QiDong1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QiDong1@2x.png"; sourceTree = "<group>"; };
 		1CF17DB31F2EF95200EA3B51 /* QiDong2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QiDong2.png; sourceTree = "<group>"; };
+		1CFD3D45210014B400A187D2 /* RootClassVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootClassVC.h; sourceTree = "<group>"; };
+		1CFD3D46210014B400A187D2 /* RootClassVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootClassVC.m; sourceTree = "<group>"; };
 		55A6B8A3F421E17450CC4886 /* Pods-JLProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JLProject/Pods-JLProject.debug.xcconfig"; sourceTree = "<group>"; };
 		7AA4AD2A39877206B34D66F6 /* libPods-JLProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JLProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F3F56CED33ED25FEC3286BA /* libPods-JLProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JLProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1208,6 +1211,7 @@
 		04C4CACC20FCC31900560977 /* ChildVC */ = {
 			isa = PBXGroup;
 			children = (
+				1CFD3D442100149200A187D2 /* 实例和类对象和元类 */,
 				04C4CACD20FCC31900560977 /* 深浅拷贝 */,
 				04C4CAD020FCC31900560977 /* RunLoop */,
 				04C4CAD320FCC31900560977 /* method-swizzling使用 */,
@@ -1673,6 +1677,15 @@
 			path = yinDaoYe;
 			sourceTree = "<group>";
 		};
+		1CFD3D442100149200A187D2 /* 实例和类对象和元类 */ = {
+			isa = PBXGroup;
+			children = (
+				1CFD3D45210014B400A187D2 /* RootClassVC.h */,
+				1CFD3D46210014B400A187D2 /* RootClassVC.m */,
+			);
+			path = "实例和类对象和元类";
+			sourceTree = "<group>";
+		};
 		4DE2614ECCD8551261AA527C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2051,6 +2064,7 @@
 				1C4DF04D1FD63EFE00C09626 /* XMLDictionary.m in Sources */,
 				04C4CB3B20FCC31900560977 /* TableTwo.m in Sources */,
 				04C4CB4220FCC31900560977 /* DashTypeOneView.m in Sources */,
+				1CFD3D47210014B400A187D2 /* RootClassVC.m in Sources */,
 				1CAF726420F4541500387413 /* UITextView+Placeholder.m in Sources */,
 				04C4CB3920FCC31900560977 /* NotYUANDIANViewController.m in Sources */,
 				1C6D3EB71F2ECFCE00F699BF /* RequestManager.m in Sources */,

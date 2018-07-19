@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "ArchivingFather.h"
-#import "JLSerializeKit.h"
 
 @interface SerializeDemo : ArchivingFather
 

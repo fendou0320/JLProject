@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JLProject/Classes/Main/SecondFounction/ChildVC/RunTime&#x5f52;&#x6863;&#x548c;&#x89e3;&#x6863;/ArchivingPerson.m"
-            timestampString = "553597915.965516"
+            timestampString = "553655432.215593"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
             landmarkName = "-shareDescription"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JLProject/Classes/Main/SecondFounction/ChildVC/RunTime&#x5f52;&#x6863;&#x548c;&#x89e3;&#x6863;/ArchivingPerson.m"
-            timestampString = "553597915.96584"
+            timestampString = "553655432.215695"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "214"
-            endingLineNumber = "214"
-            landmarkName = "-shareDescription"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
+            landmarkName = "-copyWithZone:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,12 +74,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JLProject/Classes/Main/SecondFounction/ChildVC/RunTime&#x5f52;&#x6863;&#x548c;&#x89e3;&#x6863;/ArchivingPerson.m"
-            timestampString = "553597915.9659621"
+            timestampString = "553655432.2157691"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "219"
-            endingLineNumber = "219"
-            landmarkName = "-shareDescription"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "-copyWithZone:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

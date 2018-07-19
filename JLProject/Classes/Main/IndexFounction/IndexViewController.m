@@ -24,13 +24,12 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = RandomColor;
     
-//MARK    method for handing memry managemrnt（方法）
-//TODO    通知更新需要做的事情
-//FIXME   你想要修改的bug
+//MARK:    method for handing memry managemrnt（方法）
+//TODO:     通知更新需要做的事情
+//FIXME:    你想要修改的bug
     
     NSString *identifierForVendor = [[UIDevice currentDevice].identifierForVendor UUIDString];
     NSLog(@"唯一标示符%@", identifierForVendor);
-    
     
     _tableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStyleGrouped];
     //设置数据源，注意必须实现对应的UITableViewDataSource协议
@@ -48,7 +47,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return 60;
+    return 30;
 }
 
 

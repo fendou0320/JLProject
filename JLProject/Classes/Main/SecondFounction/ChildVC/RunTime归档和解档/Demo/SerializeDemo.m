@@ -7,6 +7,7 @@
 //
 
 #import "SerializeDemo.h"
+#import "JLSerializeKit.h"
 
 @implementation SerializeDemo
 

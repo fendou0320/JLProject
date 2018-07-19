@@ -103,7 +103,7 @@
             id varValue = [self valueForKey:key];   \
             NSArray *filters = @[@"superclass", @"description", @"debugDescription", @"hash"];  \
             if (varValue && ([filters containsObject:key]==NO)) {   \
-                [self setValue:varValue forKey:key];    \
+                [copyClass setValue:varValue forKey:key];    \
             }   \
         }   \
         free(ivarList); \
@@ -116,7 +116,7 @@
 #define JLSERIALIZE_DESCRIPTION() \
 \
 /* 用来打印本类的所有变量(成员变量+属性变量)，所有层级父类的属性变量及其对应的值 */  \
-- (NSString *)shareDescription  \
+- (NSString *)description  \
 {   \
     NSString  *descriptionStr = @"";    \
     Class cls = [self class];   \

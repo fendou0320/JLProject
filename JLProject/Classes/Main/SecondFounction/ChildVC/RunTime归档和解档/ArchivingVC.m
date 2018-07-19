@@ -17,11 +17,8 @@
 
 @implementation ArchivingVC
 
-
-//
 //获取某类的所有属性变量API：
 //objc_property_t *class_copyPropertyList(Class cls, unsigned int *outCount)
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,6 +29,12 @@
     
     //序列化和反序列化
     [self serializeAction];
+    
+    //MARK:  使用请看demo类----SerializeDemo
+    
+    
+    
+    
 }
 
 #pragma mark - 归档和解档
@@ -98,8 +101,8 @@
     //使用copy方法
     ArchivingPerson *copyP = [p copy];
     
-    DLog(@"copy--%@老师%@岁了", p.name, p.age);
-    DLog(@"copy--%@老师父亲%@---%@岁了", p.name, p.fatherName, p.fatherage);
+    DLog(@"copy--%@老师%@岁了", copyP.name, copyP.age);
+    DLog(@"copy--%@老师父亲%@---%@岁了", copyP.name, copyP.fatherName, copyP.fatherage);
     
 //    NSString *descriptionStr = [p shareDescription];
 //    NSLog(@"原属性%@", descriptionStr);
@@ -116,15 +119,13 @@
     SerializeDemo *p = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
     DLog(@"%@老师%@岁了", p.name, p.age);
     DLog(@"%@老师父亲%@---%@岁了", p.name, p.fatherName, p.fatherage);
-    
+    DLog("%@", [p description]);
+
     //使用copy方法
     SerializeDemo *copyP = [p copy];
-    
-    DLog(@"copy--%@老师%@岁了", p.name, p.age);
-    DLog(@"copy--%@老师父亲%@---%@岁了", p.name, p.fatherName, p.fatherage);
-    
-//    DLog("%@", [p ]);
-    
+    DLog(@"copy--%@老师%@岁了", copyP.name, copyP.age);
+    DLog(@"copy--%@老师父亲%@---%@岁了", copyP.name, copyP.fatherName, copyP.fatherage);
+    DLog("%@", [p description]);
     
 }
 
