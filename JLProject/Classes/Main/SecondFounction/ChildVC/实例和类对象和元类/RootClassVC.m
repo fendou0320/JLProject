@@ -35,7 +35,6 @@
         //输出0
         DLog(@"输出%d", object_getClass(rootClass)==object_getClass([rootClass class]));
         
-        
     }
     
     

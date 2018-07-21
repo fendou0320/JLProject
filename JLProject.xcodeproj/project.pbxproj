@@ -158,6 +158,7 @@
 		1C4086A51EE101F500E4E363 /* JLProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4086A41EE101F500E4E363 /* JLProjectUITests.m */; };
 		1C4087B31EE1024700E4E363 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C40876C1EE1024700E4E363 /* MainViewController.m */; };
 		1C4DF04D1FD63EFE00C09626 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4DF04C1FD63EFE00C09626 /* XMLDictionary.m */; };
+		1C527EB42102F8D400B6726F /* BlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C527EB32102F8D400B6726F /* BlockVC.m */; };
 		1C6D3C021F2ECFCD00F699BF /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D37B91F2ECFCC00F699BF /* BaseNavigationController.m */; };
 		1C6D3C031F2ECFCD00F699BF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D37BB1F2ECFCC00F699BF /* BaseViewController.m */; };
 		1C6D3EB31F2ECFCE00F699BF /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D3BF21F2ECFCD00F699BF /* UIViewExt.m */; };
@@ -489,6 +490,8 @@
 		1C40876D1EE1024700E4E363 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		1C4DF04B1FD63EFE00C09626 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
 		1C4DF04C1FD63EFE00C09626 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
+		1C527EB22102F8D400B6726F /* BlockVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockVC.h; sourceTree = "<group>"; };
+		1C527EB32102F8D400B6726F /* BlockVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockVC.m; sourceTree = "<group>"; };
 		1C6D37B81F2ECFCC00F699BF /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		1C6D37B91F2ECFCC00F699BF /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		1C6D37BA1F2ECFCC00F699BF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -1211,6 +1214,7 @@
 		04C4CACC20FCC31900560977 /* ChildVC */ = {
 			isa = PBXGroup;
 			children = (
+				1C527EB12102F8AE00B6726F /* Block分析 */,
 				1CFD3D442100149200A187D2 /* 实例和类对象和元类 */,
 				04C4CACD20FCC31900560977 /* 深浅拷贝 */,
 				04C4CAD020FCC31900560977 /* RunLoop */,
@@ -1542,6 +1546,15 @@
 				1C4DF04C1FD63EFE00C09626 /* XMLDictionary.m */,
 			);
 			path = XMLDictionary;
+			sourceTree = "<group>";
+		};
+		1C527EB12102F8AE00B6726F /* Block分析 */ = {
+			isa = PBXGroup;
+			children = (
+				1C527EB22102F8D400B6726F /* BlockVC.h */,
+				1C527EB32102F8D400B6726F /* BlockVC.m */,
+			);
+			path = "Block分析";
 			sourceTree = "<group>";
 		};
 		1C6D37B71F2ECFCC00F699BF /* Base */ = {
@@ -1944,6 +1957,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C527EB42102F8D400B6726F /* BlockVC.m in Sources */,
 				04C4CB3F20FCC31900560977 /* TopView.m in Sources */,
 				04C4CB5420FCC31900560977 /* YingQianSeCaiLineChat.m in Sources */,
 				04C4CB9020FCC31900560977 /* FourFounctionVC.m in Sources */,

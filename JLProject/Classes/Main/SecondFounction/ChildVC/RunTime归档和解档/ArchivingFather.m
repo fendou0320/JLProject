@@ -8,6 +8,15 @@
 
 #import "ArchivingFather.h"
 
+@interface ArchivingFather (){
+    NSString *fathermFileName;
+    NSString *fathermFileAge;
+}
+@property (nonatomic, copy) NSString *fatherinterfaceName;
+@property (nonatomic, copy) NSString *fatherinterfaceAge;
+@end
+
+
 @implementation ArchivingFather
 
 @end

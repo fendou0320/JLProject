@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/SecondFounction/ChildVC/RunTime&#x5f52;&#x6863;&#x548c;&#x89e3;&#x6863;/ArchivingPerson.m"
-            timestampString = "553655432.215593"
+            filePath = "JLProject/Classes/Main/SecondFounction/ChildVC/&#x6d88;&#x606f;&#x8f6c;&#x53d1;/MessageForwardingVC.m"
+            timestampString = "553751195.278217"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "213"
-            endingLineNumber = "213"
-            landmarkName = "-shareDescription"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "-messageForwardingMethodTwo"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,13 +57,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/SecondFounction/ChildVC/RunTime&#x5f52;&#x6863;&#x548c;&#x89e3;&#x6863;/ArchivingPerson.m"
-            timestampString = "553655432.215695"
+            filePath = "JLProject/Classes/Main/SecondFounction/ChildVC/RunTime&#x5f52;&#x6863;&#x548c;&#x89e3;&#x6863;/ArchivingVC.m"
+            timestampString = "553749884.598381"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
-            landmarkName = "-copyWithZone:"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "-btnOne:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -73,13 +73,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/SecondFounction/ChildVC/RunTime&#x5f52;&#x6863;&#x548c;&#x89e3;&#x6863;/ArchivingPerson.m"
-            timestampString = "553655432.2157691"
+            filePath = "JLProject/Classes/Main/SecondFounction/ChildVC/RunTime&#x5f52;&#x6863;&#x548c;&#x89e3;&#x6863;/ArchivingVC.m"
+            timestampString = "553749908.567107"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "171"
-            endingLineNumber = "171"
-            landmarkName = "-copyWithZone:"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "-demoShow:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

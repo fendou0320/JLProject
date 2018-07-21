@@ -8,7 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ArchivingFather : NSObject
+@interface ArchivingFather : NSObject{
+    
+    NSString *fatherhFileName;
+    NSString *fatherhFileAge;
+}
 
 @property (nonatomic, copy) NSString *fatherName;
 

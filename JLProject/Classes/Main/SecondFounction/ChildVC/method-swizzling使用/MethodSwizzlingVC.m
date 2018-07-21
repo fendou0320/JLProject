@@ -81,6 +81,8 @@
 
 + (void)load{
     
+    return;
+    
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
