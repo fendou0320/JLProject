@@ -16,6 +16,7 @@
 #import "ArchivingVC.h"
 #import "RunLoopVC.h"
 #import "RootClassVC.h"
+#import "BlockVC.h"
 
 @interface SecondFounctionVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -79,6 +80,8 @@
         cell.textLabel.text = @"后台播放和锁屏播放";
     }else if (indexPath.row == 11){
         cell.textLabel.text = @"实例、类对象、元类";
+    }else if (indexPath.row == 12){
+        cell.textLabel.text = @"Block分析";
     }
     
     
@@ -146,7 +149,9 @@
         
     }else if (indexPath.row == 12){
         
-       
+        BlockVC *jd = [[BlockVC alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
+        
         
     }
     

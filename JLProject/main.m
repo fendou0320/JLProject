@@ -8,10 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-#import "RootClassVC.h"
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
+        
+//        NSString * (^myBlcok)(int, NSString *) = ^NSString *(int a, NSString *b){
+//            return [NSString stringWithFormat:@"传入的参数分别为：%d,%@", a , b];
+//        };
+//        NSLog(@"%@", myBlcok(100, @"200"));
+        
+        
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
