@@ -200,9 +200,13 @@
     indexThree = 10;
     self.indexFour = 10;
     
+    strOne = @"20";
+    self.strTwo = @"30";
+//    NSString *str
     
     void (^firstBlock)(int, NSString *) = ^void(int a, NSString *b){
 //        DLog(@"123456");
+        
     };
     
     
