@@ -144,6 +144,7 @@
 		04C4CBAC20FCC31900560977 /* GiftEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4CB1F20FCC31900560977 /* GiftEffectViewController.m */; };
 		04C4CBAD20FCC31900560977 /* SprayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4CB2020FCC31900560977 /* SprayViewController.m */; };
 		04C4CBAE20FCC31900560977 /* DongHuaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4CB2420FCC31900560977 /* DongHuaViewController.m */; };
+		04EFF4052102B07500D89F0D /* AsdkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EFF4042102B07500D89F0D /* AsdkVC.m */; };
 		1C21AE351F6511340039163D /* backgroundStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C21AE311F6511340039163D /* backgroundStar.png */; };
 		1C21AE361F6511340039163D /* backgroundStar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C21AE321F6511340039163D /* backgroundStar@2x.png */; };
 		1C21AE371F6511340039163D /* foregroundStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C21AE331F6511340039163D /* foregroundStar.png */; };
@@ -460,6 +461,8 @@
 		04C4CB2420FCC31900560977 /* DongHuaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DongHuaViewController.m; sourceTree = "<group>"; };
 		04C4CB2520FCC31900560977 /* DongHuaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DongHuaViewController.h; sourceTree = "<group>"; };
 		04C4CB2620FCC31900560977 /* ThirdFounctionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdFounctionVC.h; sourceTree = "<group>"; };
+		04EFF4032102B07500D89F0D /* AsdkVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsdkVC.h; sourceTree = "<group>"; };
+		04EFF4042102B07500D89F0D /* AsdkVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsdkVC.m; sourceTree = "<group>"; };
 		05935B623495A3D744DA63BD /* Pods-JLProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-JLProject/Pods-JLProject.release.xcconfig"; sourceTree = "<group>"; };
 		10AED592CBB506BAA44C7EAD /* libPods-JLProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JLProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C21AE311F6511340039163D /* backgroundStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundStar.png; sourceTree = "<group>"; };
@@ -586,6 +589,7 @@
 		044BC0D820FE2CA20065F8F9 /* ChildVC */ = {
 			isa = PBXGroup;
 			children = (
+				04EFF4022102B05B00D89F0D /* Texture-Asyncdisplaykit */,
 				044BC0D920FE2CBD0065F8F9 /* GPUImage使用 */,
 			);
 			path = ChildVC;
@@ -1433,6 +1437,15 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		04EFF4022102B05B00D89F0D /* Texture-Asyncdisplaykit */ = {
+			isa = PBXGroup;
+			children = (
+				04EFF4032102B07500D89F0D /* AsdkVC.h */,
+				04EFF4042102B07500D89F0D /* AsdkVC.m */,
+			);
+			path = "Texture-Asyncdisplaykit";
+			sourceTree = "<group>";
+		};
 		1C21AE301F6511340039163D /* star */ = {
 			isa = PBXGroup;
 			children = (
@@ -1967,6 +1980,7 @@
 				04C4CB4520FCC31900560977 /* TemplateOneViewController.m in Sources */,
 				04C4CB5520FCC31900560977 /* IndexLineChatTypeOneController.m in Sources */,
 				04C4CB2D20FCC31900560977 /* JHPieForeBGView.m in Sources */,
+				04EFF4052102B07500D89F0D /* AsdkVC.m in Sources */,
 				04C4CB6120FCC31900560977 /* TYCyclePagerViewCell.m in Sources */,
 				04C4CB9320FCC31900560977 /* BoWenShuiQiuController.m in Sources */,
 				04C4CB5E20FCC31900560977 /* MSSCircleLabel.m in Sources */,

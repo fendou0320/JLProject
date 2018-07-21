@@ -26,5 +26,8 @@ target 'JLProject' do
 
     pod ‘GPUImage’
 
+    pod "Texture"
+    pod 'YYKit'
+
 
 end

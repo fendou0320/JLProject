@@ -7,8 +7,8 @@
 //
 
 #import "FourFounctionVC.h"
-
 #import "GPUImageVC.h"
+#import "AsdkVC.h"
 
 @interface FourFounctionVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -49,7 +49,7 @@
     if (indexPath.row == 0){
         cell.textLabel.text = @"GPUImage";
     }else if (indexPath.row == 1){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"Texture-asyncdisplaykit";
     }else if (indexPath.row == 2){
         cell.textLabel.text = @"";
     }else if (indexPath.row == 3){
@@ -70,8 +70,10 @@
         [self.navigationController pushViewController:vc animated:YES];
         
     }else if (indexPath.row == 1){
-        
        
+        AsdkVC *vc = [[AsdkVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        
     }else if (indexPath.row == 2){
         
       
