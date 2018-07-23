@@ -18,6 +18,10 @@
 #import "RootClassVC.h"
 #import "BlockVC.h"
 
+#import "CategoryAddPropertyVC.h"
+#import "CategoryAddPropertyVC+Person.h"
+
+
 @interface SecondFounctionVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -82,6 +86,8 @@
         cell.textLabel.text = @"实例、类对象、元类";
     }else if (indexPath.row == 12){
         cell.textLabel.text = @"Block分析";
+    }else if (indexPath.row == 13){
+        cell.textLabel.text = @"分类添加属性";
     }
     
     
@@ -152,6 +158,17 @@
         BlockVC *jd = [[BlockVC alloc] init];
         [self.navigationController pushViewController:jd animated:YES];
         
+    }else if (indexPath.row == 13){
+        
+        CategoryAddPropertyVC *jd = [[CategoryAddPropertyVC alloc] init];
+        jd.age = @"100岁";
+        jd.name = @"gancao";
+        jd.offset = 50.10;
+        NSLog(@"---%@---", jd.age);
+        NSLog(@"name---%@---", jd.name);
+        NSLog(@"name---%f---", jd.offset);
+//        NSLog(@"name---%@---", jd.name);
+        [self.navigationController pushViewController:jd animated:YES];
         
     }
     

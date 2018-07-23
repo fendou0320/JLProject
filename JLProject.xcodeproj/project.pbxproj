@@ -145,6 +145,8 @@
 		04C4CBAD20FCC31900560977 /* SprayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4CB2020FCC31900560977 /* SprayViewController.m */; };
 		04C4CBAE20FCC31900560977 /* DongHuaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4CB2420FCC31900560977 /* DongHuaViewController.m */; };
 		04EFF4052102B07500D89F0D /* AsdkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EFF4042102B07500D89F0D /* AsdkVC.m */; };
+		1C1C51D221055AB60012E286 /* CategoryAddPropertyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C51D121055AB60012E286 /* CategoryAddPropertyVC.m */; };
+		1C1C51D521055B6F0012E286 /* CategoryAddPropertyVC+Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C51D421055B6F0012E286 /* CategoryAddPropertyVC+Person.m */; };
 		1C21AE351F6511340039163D /* backgroundStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C21AE311F6511340039163D /* backgroundStar.png */; };
 		1C21AE361F6511340039163D /* backgroundStar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C21AE321F6511340039163D /* backgroundStar@2x.png */; };
 		1C21AE371F6511340039163D /* foregroundStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C21AE331F6511340039163D /* foregroundStar.png */; };
@@ -466,6 +468,10 @@
 		04EFF4042102B07500D89F0D /* AsdkVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsdkVC.m; sourceTree = "<group>"; };
 		05935B623495A3D744DA63BD /* Pods-JLProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-JLProject/Pods-JLProject.release.xcconfig"; sourceTree = "<group>"; };
 		10AED592CBB506BAA44C7EAD /* libPods-JLProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JLProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C1C51D021055AB60012E286 /* CategoryAddPropertyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryAddPropertyVC.h; sourceTree = "<group>"; };
+		1C1C51D121055AB60012E286 /* CategoryAddPropertyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryAddPropertyVC.m; sourceTree = "<group>"; };
+		1C1C51D321055B6F0012E286 /* CategoryAddPropertyVC+Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CategoryAddPropertyVC+Person.h"; sourceTree = "<group>"; };
+		1C1C51D421055B6F0012E286 /* CategoryAddPropertyVC+Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CategoryAddPropertyVC+Person.m"; sourceTree = "<group>"; };
 		1C21AE311F6511340039163D /* backgroundStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundStar.png; sourceTree = "<group>"; };
 		1C21AE321F6511340039163D /* backgroundStar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backgroundStar@2x.png"; sourceTree = "<group>"; };
 		1C21AE331F6511340039163D /* foregroundStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foregroundStar.png; sourceTree = "<group>"; };
@@ -1218,6 +1224,7 @@
 		04C4CACC20FCC31900560977 /* ChildVC */ = {
 			isa = PBXGroup;
 			children = (
+				1C1C51CF21055A510012E286 /* 属性添加分类 */,
 				1C527EB12102F8AE00B6726F /* Block分析 */,
 				1CFD3D442100149200A187D2 /* 实例和类对象和元类 */,
 				04C4CACD20FCC31900560977 /* 深浅拷贝 */,
@@ -1448,6 +1455,17 @@
 				04EFF4042102B07500D89F0D /* AsdkVC.m */,
 			);
 			path = "Texture-Asyncdisplaykit";
+			sourceTree = "<group>";
+		};
+		1C1C51CF21055A510012E286 /* 属性添加分类 */ = {
+			isa = PBXGroup;
+			children = (
+				1C1C51D021055AB60012E286 /* CategoryAddPropertyVC.h */,
+				1C1C51D121055AB60012E286 /* CategoryAddPropertyVC.m */,
+				1C1C51D321055B6F0012E286 /* CategoryAddPropertyVC+Person.h */,
+				1C1C51D421055B6F0012E286 /* CategoryAddPropertyVC+Person.m */,
+			);
+			path = "属性添加分类";
 			sourceTree = "<group>";
 		};
 		1C21AE301F6511340039163D /* star */ = {
@@ -2001,6 +2019,7 @@
 				04C4CB5720FCC31900560977 /* LineChatVC.m in Sources */,
 				04C4CB6E20FCC31900560977 /* TemplateOneItemView.m in Sources */,
 				04C4CBAB20FCC31900560977 /* UIButton+FlowerExporter.m in Sources */,
+				1C1C51D521055B6F0012E286 /* CategoryAddPropertyVC+Person.m in Sources */,
 				04C4CB3720FCC31900560977 /* HuanJingJianCeChat.m in Sources */,
 				1CAF726620F4541500387413 /* NSString+Extern.m in Sources */,
 				04C4CB4E20FCC31900560977 /* TemplateListView.m in Sources */,
@@ -2053,6 +2072,7 @@
 				04C4CB6820FCC31900560977 /* DropdownMenu.m in Sources */,
 				04C4CB9220FCC31900560977 /* YAWaveView.m in Sources */,
 				04C4CB8A20FCC31900560977 /* ArchivingVC.m in Sources */,
+				1C1C51D221055AB60012E286 /* CategoryAddPropertyVC.m in Sources */,
 				04C4CB6620FCC31900560977 /* LunBoNewController.m in Sources */,
 				04C4CB3820FCC31900560977 /* JLLineChat.m in Sources */,
 				04C4CBAA20FCC31900560977 /* UIButton+Bubbling.m in Sources */,

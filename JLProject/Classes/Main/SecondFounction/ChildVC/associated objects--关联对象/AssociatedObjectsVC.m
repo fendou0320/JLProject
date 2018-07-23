@@ -14,6 +14,13 @@
 
 @implementation AssociatedObjectsVC
 
+/*
+ 关联对象基本概念
+ 把一个value关联到另外一个object里，类似NSDictionary的 setValue:forKey 。
+ 用 objc_setAssociatedObject 关联以后，用 objc_getAssociatedObject 取出使用。
+ objc_AssociationPolicy  属性 是设定该value在object内的属性，即 assgin, (retain,nonatomic)...等
+ */
+
 //    关联对象是指某个OC对象通过一个唯一的key连接到一个类的实例上。
 //    举个例子：xiaoming是Person类的一个实例，他的dog（一个OC对象）通过一根绳子（key）被他牵着散步，这可以说xiaoming和dog是关联起来的，当然xiaoming可以牵着多个dog。
 
