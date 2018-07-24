@@ -61,7 +61,8 @@ static NSString *pointKey  = @"pointKey";
  */
 
 - (void)setOffset:(CGFloat)offset{
-    objc_setAssociatedObject(self, &offsetKey, @(offset), OBJC_ASSOCIATION_ASSIGN);
+    NSNumber *numberValue = [NSNumber numberWithFloat:offset];
+    objc_setAssociatedObject(self, &offsetKey, numberValue, OBJC_ASSOCIATION_RETAIN);
 }
 
 - (CGFloat)offset{
@@ -69,6 +70,9 @@ static NSString *pointKey  = @"pointKey";
     return [numberValue doubleValue];
 }
 
+/*
+ * 对象类型
+ */
 - (void)setName:(NSString *)name{
     objc_setAssociatedObject(self, &nameKey, name, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
@@ -77,8 +81,27 @@ static NSString *pointKey  = @"pointKey";
     return objc_getAssociatedObject(self, &nameKey);
 }
 
+/*
+ * 添加结构体属性
+ * 需要包装成NSValue
+ */
+- (void)setPoint:(CGPoint)point{
+    
+    NSValue *value = [NSValue value:&point withObjCType:@encode(CGPoint)];
+    objc_setAssociatedObject(self, &pointKey, value, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
 
-
+- (CGPoint)point{
+    
+    NSValue *value = objc_getAssociatedObject(self, &pointKey);
+    if (value) {
+        CGPoint point;
+        [value getValue:&point];
+        return point;
+    }else{
+        return CGPointZero;
+    }
+}
 
 
 

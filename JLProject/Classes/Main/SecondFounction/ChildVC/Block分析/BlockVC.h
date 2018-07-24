@@ -8,6 +8,11 @@
 
 #import "BaseViewController.h"
 
+typedef void(^JLGlobalBlock)(int a, NSString *b);
+
 @interface BlockVC : BaseViewController
+
+@property (nonatomic, copy) JLGlobalBlock formBlcok;
+
 
 @end

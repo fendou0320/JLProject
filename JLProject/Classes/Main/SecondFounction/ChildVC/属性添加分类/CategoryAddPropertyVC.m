@@ -99,9 +99,7 @@
  AssociationsManager 是顶级的对象，维护了一个从 spinlock_t 锁到 AssociationsHashMap 哈希表的单例键值对映射；
  AssociationsHashMap 是一个无序的哈希表，维护了从对象地址到 ObjectAssociationMap 的映射；
  ObjectAssociationMap 是一个 C 中的 map ，维护了从 key 到 ObjcAssociation 的映射，即关联记录；
- ObjcAssociation 是一个 C 的类，表示一个具体的关联结构，主要包括两个实例变量，_policy 表示关联策略，_value 表示关联对象。
-
- 
+ ObjcAssociation 是一个 C 的类，表示一个具体的关联结构，主要包括两个实例变量，_policy 表示关联策略，_value 表示关联对象。 
  
  */
 

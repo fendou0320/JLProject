@@ -85,55 +85,7 @@
  _NSConcreteStackBlock 保存在栈中的 block，当函数返回时会被销毁。
  _NSConcreteMallocBlock 保存在堆中的 block，当引用计数为 0 时会被销毁。
  
- 我们在下面会分别来查看它们各自的实现方式上的差别。
- 研究工具：clang
- 为了研究编译器是如何实现 block 的，我们需要使用 clang。clang 提供一个命令，可以将 Objetive-C 的源码改写成 c 语言的，借此可以研究 block 具体的源码实现方式。该命令是
- clang -rewrite-objc block.c
 
- ------------------(1)NSConcreteGlobalBlock 类型的 block 的实现------------------
- 我们先新建一个名为 block1.c 的源文件：
- 
- #include <stdio.h>
- int main()
- {
- ^{ printf("Hello, World!\n"); } ();
- return 0;
- }
- 
- 下面我们就具体看一下是如何实现的。__main_block_impl_0 就是该 block 的实现，从中我们可以看出：
- 
- 一个 block 实际是一个对象，它主要由一个 isa 和 一个 impl 和 一个 descriptor 组成。
- 在本例中，isa 指向 _NSConcreteGlobalBlock， 主要是为了实现对象的所有特性，在此我们就不展开讨论了。
- 由于 clang 改写的具体实现方式和 LLVM 不太一样，并且这里没有开启 ARC。所以这里我们看到 isa 指向的还是_NSConcreteStackBlock。但在 LLVM 的实现中，开启 ARC 时，block 应该是 _NSConcreteGlobalBlock 类型，具体可以看 《objective-c-blocks-quiz》 第二题的解释。
- impl 是实际的函数指针，本例中，它指向 __main_block_func_0。这里的 impl 相当于之前提到的 invoke 变量，只是 clang 编译器对变量的命名不一样而已。
- descriptor 是用于描述当前这个 block 的附加信息的，包括结构体的大小，需要 capture 和 dispose 的变量列表等。结构体大小需要保存是因为，每个 block 因为会 capture 一些变量，这些变量会加到 __main_block_impl_0 这个结构体中，使其体积变大。在该例子中我们还看不到相关 capture 的代码，后面将会看到。
-
- 
- ------------------(2)NSConcreteStackBlock 类型的 block 的实现------------------
- 
- #include <stdio.h>
- int main() {
- int a = 100;
- void (^block2)(void) = ^{
- printf("%d\n", a);
- };
- block2();
- return 0;
- }
- 
- 在本例中，我们可以看到：
- 本例中，isa 指向 _NSConcreteStackBlock，说明这是一个分配在栈上的实例。
- main_block_impl_0 中增加了一个变量 a，在 block 中引用的变量 a 实际是在申明 block 时，被复制到 main_block_impl_0 结构体中的那个变量 a。因为这样，我们就能理解，在 block 内部修改变量 a 的内容，不会影响外部的实际变量 a。
- main_block_impl_0 中由于增加了一个变量 a，所以结构体的大小变大了，该结构体大小被写在了 main_block_desc_0 中。
- 
- 
- 
- 
- 
- 
- 
- 
- 
  
  
  
@@ -152,12 +104,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //设置各种变量
+    indexTwo = 10;
+    indexThree = 10;
+    self.indexFour = 10;
+    
+    strOne = @"20";
+    self.strTwo = @"20";
+    
     
     //block各种类型
     [self KindsOfBlock];
     
-    //block内存结构
+    
+    //block内存结构--三种类型的block
+    /*
+    _NSConcreteGlobalBlock 全局的静态 block，不会访问任何外部变量。
+    _NSConcreteStackBlock 保存在栈中的 block，当函数返回时会被销毁。
+    _NSConcreteMallocBlock 保存在堆中的 block，当引用计数为 0 时会被销毁。
+     */
     [self blockStructure];
+    
+    
+    //block作为参数使用
+    [self blockMethodUser];
     
     
 }
@@ -195,23 +165,171 @@
 
 - (void)blockStructure{
     
-    int indexOne = 10;
-    indexTwo = 10;
-    indexThree = 10;
-    self.indexFour = 10;
-    
-    strOne = @"20";
-    self.strTwo = @"30";
-//    NSString *str
-    
+    // 开启 ARC 时，block 应该是 _NSConcreteGlobalBlock 类型
+    //--------------_NSConcreteGlobalBlock------------
     void (^firstBlock)(int, NSString *) = ^void(int a, NSString *b){
-//        DLog(@"123456");
-        
+        DLog(@"NSConcreteGlobalBlock");
     };
+    firstBlock(01,@"01");
     
+    
+    int a = 10;
+    __block int i = 50;
+    int indexOne = 10;
+    __block int indexOneOne = 10;
+    NSString *strThree = @"30";
+    __block NSString *strthreethree = @"30";
+    //--------------_NSConcreteStackBlock-----------说明这是一个分配在栈上的实例
+    void (^secondBlock)(void) = ^void(void){
+        NSLog(@"局部变量a==%d, i==%d", a, i);
+        NSLog(@"局部变量%d，%@",indexOne, strThree);
+        NSLog(@"__block修饰-局部变量%d，%@",indexOneOne, strthreethree);
+    };
+    a = 100;
+    i = 500;
+    indexOne = 100;
+    strThree = @"300";
+    indexOneOne = 100;
+    strthreethree = @"300";
+    secondBlock();
+    
+    /*
+     转换后的关键代码如下：
+     struct __main_block_impl_0 {
+     struct __block_impl impl;
+     struct __main_block_desc_0* Desc;
+***********     int a;              ***********
+     __main_block_impl_0(void *fp, struct __main_block_desc_0 *desc, int _a, int flags=0) : a(_a) {
+***********     impl.isa = &_NSConcreteStackBlock;   ***********
+     impl.Flags = flags;
+     impl.FuncPtr = fp;
+     Desc = desc;
+     }
+     };
+     static void __main_block_func_0(struct __main_block_impl_0 *__cself) {
+     int a = __cself->a; // bound by copy
+     printf("%d\n", a);
+     }
+     static struct __main_block_desc_0 {
+     size_t reserved;
+     size_t Block_size;
+     } __main_block_desc_0_DATA = { 0, sizeof(struct __main_block_impl_0)};
+     int main()
+     {
+     int a = 100;
+     void (*block2)(void) = (void (*)())&__main_block_impl_0((void *)__main_block_func_0, &__main_block_desc_0_DATA, a);
+     ((void (*)(__block_impl *))((__block_impl *)block2)->FuncPtr)((__block_impl *)block2);
+     return 0;
+     }
+     在本例中，我们可以看到：
+     本例中，isa 指向 _NSConcreteStackBlock，说明这是一个分配在栈上的实例。
+     main_block_impl_0 中增加了一个变量 a，在 block 中引用的变量 a 实际是在申明 block 时，被复制到 main_block_impl_0 结构体中的那个变量 a。因为这样，我们就能理解，在 block 内部修改变量 a 的内容，不会影响外部的实际变量 a。
+     main_block_impl_0 中由于增加了一个变量 a，所以结构体的大小变大了，该结构体大小被写在了 main_block_desc_0 中。
+    
+     
+     在变量前面增加 __block 关键字：
+     #include <stdio.h>
+     int main()
+     {
+     __block int i = 1024;
+     void (^block1)(void) = ^{
+     printf("%d\n", i);
+     i = 1023;
+     };
+     block1();
+     return 0;
+     }
+
+     生成的关键代码如下，可以看到，差异相当大：
+     struct __Block_byref_i_0 {
+     void *__isa;
+     __Block_byref_i_0 *__forwarding;
+     int __flags;
+     int __size;
+     int i;
+     };
+     struct __main_block_impl_0 {
+     struct __block_impl impl;
+     struct __main_block_desc_0* Desc;
+     __Block_byref_i_0 *i; // by ref
+     __main_block_impl_0(void *fp, struct __main_block_desc_0 *desc, __Block_byref_i_0 *_i, int flags=0) : i(_i->__forwarding) {
+     impl.isa = &_NSConcreteStackBlock;
+     impl.Flags = flags;
+     impl.FuncPtr = fp;
+     Desc = desc;
+     }
+     };
+     static void __main_block_func_0(struct __main_block_impl_0 *__cself) {
+     __Block_byref_i_0 *i = __cself->i; // bound by ref
+     printf("%d\n", (i->__forwarding->i));
+     (i->__forwarding->i) = 1023;
+     }
+     static void __main_block_copy_0(struct __main_block_impl_0*dst, struct __main_block_impl_0*src) {_Block_object_assign((void*)&dst->i, (void*)src->i, 8);}
+     static void __main_block_dispose_0(struct __main_block_impl_0*src) {_Block_object_dispose((void*)src->i, 8);}
+     static struct __main_block_desc_0 {
+     size_t reserved;
+     size_t Block_size;
+     void (*copy)(struct __main_block_impl_0*, struct __main_block_impl_0*);
+     void (*dispose)(struct __main_block_impl_0*);
+     } __main_block_desc_0_DATA = { 0, sizeof(struct __main_block_impl_0), __main_block_copy_0, __main_block_dispose_0};
+     int main()
+     {
+     __attribute__((__blocks__(byref))) __Block_byref_i_0 i = {(void*)0,(__Block_byref_i_0 *)&i, 0, sizeof(__Block_byref_i_0), 1024};
+     void (*block1)(void) = (void (*)())&__main_block_impl_0((void *)__main_block_func_0, &__main_block_desc_0_DATA, (__Block_byref_i_0 *)&i, 570425344);
+     ((void (*)(__block_impl *))((__block_impl *)block1)->FuncPtr)((__block_impl *)block1);
+     return 0;
+     
+     }
+     
+     从代码中我们可以看到：
+     源码中增加一个名为 __Block_byref_i_0 的结构体，用来保存我们要 capture 并且修改的变量 i。
+     main_block_impl_0 中引用的是 Block_byref_i_0 的结构体指针，这样就可以达到修改外部变量的作用。
+     __Block_byref_i_0 结构体中带有 isa，说明它也是一个对象。
+     我们需要负责 Block_byref_i_0 结构体相关的内存管理，所以 main_block_desc_0 中增加了 copy 和 dispose 函数指针，对于在调用前后修改相应变量的引用计数。
+     
+     */
+    
+    
+    //--------------NSConcreteMallocBlock--------------
+
+    /*
+    变量的复制
+    对于 block 外的变量引用，block 默认是将其复制到其数据结构中来实现访问的
+    对于用 __block 修饰的外部变量引用，block 是复制其引用地址来实现访问的
+     */
     
     
 }
+
+
+- (void)blockMethodUser{
+   
+    // 2.声明并赋值定义一个Block变量
+    int (^addfirstBlock)(int, int) = ^int(int a, int b){
+        int aStr = a + b;
+        return aStr;
+    };
+    
+    int index = [self blockUsering:^int(int a, int b) {
+        return a+b;
+    }];
+    
+    NSLog(@"%d", index);
+}
+
+
+- (int )blockUsering: (int(^)(int a, int b))methodBlock{
+    
+//    DLog(@"result=%d", methodBlock(100, 200));
+    return methodBlock(100, 200);
+}
+
+
+
+
+
+
+
 
 
 

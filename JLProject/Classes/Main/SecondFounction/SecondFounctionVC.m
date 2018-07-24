@@ -164,10 +164,11 @@
         jd.age = @"100岁";
         jd.name = @"gancao";
         jd.offset = 50.10;
+        jd.point = CGPointMake(100, 200);
         NSLog(@"---%@---", jd.age);
         NSLog(@"name---%@---", jd.name);
         NSLog(@"name---%f---", jd.offset);
-//        NSLog(@"name---%@---", jd.name);
+        NSLog(@"name---%@---", NSStringFromCGPoint(jd.point));
         [self.navigationController pushViewController:jd animated:YES];
         
     }
