@@ -21,6 +21,9 @@
 #import "CategoryAddPropertyVC.h"
 #import "CategoryAddPropertyVC+Person.h"
 
+#import "CoreAnimationVC.h"
+#import "TransitionAnimationVC.h"
+#import "CustomTransitionAnimationVC.h"
 
 @interface SecondFounctionVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -88,6 +91,12 @@
         cell.textLabel.text = @"Block分析";
     }else if (indexPath.row == 13){
         cell.textLabel.text = @"分类添加属性";
+    }else if (indexPath.row == 14){
+        cell.textLabel.text = @"CoreAnimation";
+    }else if (indexPath.row == 15){
+        cell.textLabel.text = @"转场动画";
+    }else if (indexPath.row == 16){
+        cell.textLabel.text = @"自定义转场动画";
     }
     
     
@@ -171,6 +180,20 @@
         NSLog(@"name---%@---", NSStringFromCGPoint(jd.point));
         [self.navigationController pushViewController:jd animated:YES];
         
+    }else if (indexPath.row == 14){
+        
+        CoreAnimationVC *jd = [[CoreAnimationVC alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
+        
+    }else if (indexPath.row == 15){
+        
+        TransitionAnimationVC *jd = [[TransitionAnimationVC alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
+        
+    }else if (indexPath.row == 16){
+        
+        CustomTransitionAnimationVC *jd = [[CustomTransitionAnimationVC alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
     }
     
     

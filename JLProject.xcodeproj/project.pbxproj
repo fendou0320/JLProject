@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		044BC0D720FE24C50065F8F9 /* AudioVideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BC0D620FE24C50065F8F9 /* AudioVideoVC.m */; };
 		044BC0DC20FE2CC80065F8F9 /* GPUImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BC0DB20FE2CC80065F8F9 /* GPUImageVC.m */; };
+		046961722108A7140069CEC3 /* CoreAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 046961712108A7140069CEC3 /* CoreAnimationVC.m */; };
+		046961742108AA0A0069CEC3 /* AlipayIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 046961732108AA0A0069CEC3 /* AlipayIcon.png */; };
+		046961762108B0CF0069CEC3 /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = 046961752108B0CE0069CEC3 /* car.png */; };
+		0469617A2108BA870069CEC3 /* TransitionAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 046961792108BA870069CEC3 /* TransitionAnimationVC.m */; };
+		0469617F2108BB850069CEC3 /* view2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0469617C2108BB850069CEC3 /* view2.png */; };
+		046961802108BB850069CEC3 /* view1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0469617D2108BB850069CEC3 /* view1.png */; };
+		046961812108BB850069CEC3 /* view0.png in Resources */ = {isa = PBXBuildFile; fileRef = 0469617E2108BB850069CEC3 /* view0.png */; };
+		046961852108BDE80069CEC3 /* CustomTransitionAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 046961842108BDE80069CEC3 /* CustomTransitionAnimationVC.m */; };
 		04C4CB2720FCC31900560977 /* FiveFounctionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4C9E220FCC31900560977 /* FiveFounctionVC.m */; };
 		04C4CB2820FCC31900560977 /* HistogramVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4C9E820FCC31900560977 /* HistogramVC.m */; };
 		04C4CB2920FCC31900560977 /* FZzhuzhuangController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4C9ED20FCC31900560977 /* FZzhuzhuangController.m */; };
@@ -212,6 +220,17 @@
 		044BC0D620FE24C50065F8F9 /* AudioVideoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioVideoVC.m; sourceTree = "<group>"; };
 		044BC0DA20FE2CC80065F8F9 /* GPUImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImageVC.h; sourceTree = "<group>"; };
 		044BC0DB20FE2CC80065F8F9 /* GPUImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImageVC.m; sourceTree = "<group>"; };
+		046961702108A7140069CEC3 /* CoreAnimationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreAnimationVC.h; sourceTree = "<group>"; };
+		046961712108A7140069CEC3 /* CoreAnimationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationVC.m; sourceTree = "<group>"; };
+		046961732108AA0A0069CEC3 /* AlipayIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AlipayIcon.png; sourceTree = "<group>"; };
+		046961752108B0CE0069CEC3 /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
+		046961782108BA870069CEC3 /* TransitionAnimationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransitionAnimationVC.h; sourceTree = "<group>"; };
+		046961792108BA870069CEC3 /* TransitionAnimationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimationVC.m; sourceTree = "<group>"; };
+		0469617C2108BB850069CEC3 /* view2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = view2.png; sourceTree = "<group>"; };
+		0469617D2108BB850069CEC3 /* view1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = view1.png; sourceTree = "<group>"; };
+		0469617E2108BB850069CEC3 /* view0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = view0.png; sourceTree = "<group>"; };
+		046961832108BDE80069CEC3 /* CustomTransitionAnimationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTransitionAnimationVC.h; sourceTree = "<group>"; };
+		046961842108BDE80069CEC3 /* CustomTransitionAnimationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTransitionAnimationVC.m; sourceTree = "<group>"; };
 		04C4C9E020FCC31900560977 /* FiveFounctionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveFounctionVC.h; sourceTree = "<group>"; };
 		04C4C9E220FCC31900560977 /* FiveFounctionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveFounctionVC.m; sourceTree = "<group>"; };
 		04C4C9E420FCC31900560977 /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
@@ -611,6 +630,43 @@
 				044BC0DB20FE2CC80065F8F9 /* GPUImageVC.m */,
 			);
 			path = "GPUImage使用";
+			sourceTree = "<group>";
+		};
+		0469616F2108A7090069CEC3 /* CoreAnimation动画 */ = {
+			isa = PBXGroup;
+			children = (
+				046961702108A7140069CEC3 /* CoreAnimationVC.h */,
+				046961712108A7140069CEC3 /* CoreAnimationVC.m */,
+			);
+			path = "CoreAnimation动画";
+			sourceTree = "<group>";
+		};
+		046961772108BA770069CEC3 /* 转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				046961782108BA870069CEC3 /* TransitionAnimationVC.h */,
+				046961792108BA870069CEC3 /* TransitionAnimationVC.m */,
+			);
+			path = "转场动画";
+			sourceTree = "<group>";
+		};
+		0469617B2108BB840069CEC3 /* 转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				0469617C2108BB850069CEC3 /* view2.png */,
+				0469617D2108BB850069CEC3 /* view1.png */,
+				0469617E2108BB850069CEC3 /* view0.png */,
+			);
+			path = "转场动画";
+			sourceTree = "<group>";
+		};
+		046961822108BDD60069CEC3 /* 自定义转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				046961832108BDE80069CEC3 /* CustomTransitionAnimationVC.h */,
+				046961842108BDE80069CEC3 /* CustomTransitionAnimationVC.m */,
+			);
+			path = "自定义转场动画";
 			sourceTree = "<group>";
 		};
 		04C4C9DE20FCC31900560977 /* Main */ = {
@@ -1224,6 +1280,9 @@
 		04C4CACC20FCC31900560977 /* ChildVC */ = {
 			isa = PBXGroup;
 			children = (
+				046961822108BDD60069CEC3 /* 自定义转场动画 */,
+				046961772108BA770069CEC3 /* 转场动画 */,
+				0469616F2108A7090069CEC3 /* CoreAnimation动画 */,
 				1C1C51CF21055A510012E286 /* 属性添加分类 */,
 				1C527EB12102F8AE00B6726F /* Block分析 */,
 				1CFD3D442100149200A187D2 /* 实例和类对象和元类 */,
@@ -1700,6 +1759,9 @@
 		1CF17D9F1F2EDB6000EA3B51 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				046961752108B0CE0069CEC3 /* car.png */,
+				046961732108AA0A0069CEC3 /* AlipayIcon.png */,
+				0469617B2108BB840069CEC3 /* 转场动画 */,
 				1C21AE301F6511340039163D /* star */,
 				1CF17DA01F2EDB6000EA3B51 /* yinDaoYe */,
 			);
@@ -1868,6 +1930,7 @@
 				1CF17DAA1F2EDB6000EA3B51 /* yinDaoYe4.png in Resources */,
 				04C4CB9A20FCC31900560977 /* ic_menu_bluepig.png in Resources */,
 				1CF17DA71F2EDB6000EA3B51 /* yinDaoYe1.png in Resources */,
+				0469617F2108BB850069CEC3 /* view2.png in Resources */,
 				04C4CBA620FCC31900560977 /* star.png in Resources */,
 				04C4CB9C20FCC31900560977 /* ic_menu_pinkpig.png in Resources */,
 				04C4CBA520FCC31900560977 /* ic_menu_bluepig2.png in Resources */,
@@ -1875,19 +1938,23 @@
 				04C4CB9E20FCC31900560977 /* ic_menu_purplepig.png in Resources */,
 				04C4CB9920FCC31900560977 /* FFRing.png in Resources */,
 				1CF17DB41F2EF95200EA3B51 /* QiDong1@2x.png in Resources */,
+				046961762108B0CF0069CEC3 /* car.png in Resources */,
 				04C4CBA220FCC31900560977 /* ic_menu_greenpig2.png in Resources */,
 				04C4CBA820FCC31900560977 /* rightShoot.png in Resources */,
+				046961802108BB850069CEC3 /* view1.png in Resources */,
 				04C4CBA120FCC31900560977 /* FFTspark.png in Resources */,
 				1C21AE351F6511340039163D /* backgroundStar.png in Resources */,
 				04C4CBA420FCC31900560977 /* ic_menu_greenpig.png in Resources */,
 				04C4CB9D20FCC31900560977 /* ic_menu_purplepig2.png in Resources */,
 				1C6D759A1F2F231D00E54A58 /* Assets.xcassets in Resources */,
+				046961812108BB850069CEC3 /* view0.png in Resources */,
 				1CF17DA91F2EDB6000EA3B51 /* yinDaoYe3.png in Resources */,
 				04C4CBA020FCC31900560977 /* ic_menu_yellowpig2.png in Resources */,
 				1C21AE371F6511340039163D /* foregroundStar.png in Resources */,
 				1CF17DA61F2EDB6000EA3B51 /* yinDaoYe0.png in Resources */,
 				1C89BA5B1EF7EC43003240EC /* FriendsList.plist in Resources */,
 				1C21AE381F6511340039163D /* foregroundStar@2x.png in Resources */,
+				046961742108AA0A0069CEC3 /* AlipayIcon.png in Resources */,
 				04C4CBA720FCC31900560977 /* leftShoot.png in Resources */,
 				04C4CB3420FCC31900560977 /* 123.jpg in Resources */,
 				1C21AE361F6511340039163D /* backgroundStar@2x.png in Resources */,
@@ -2002,6 +2069,7 @@
 				04C4CBAC20FCC31900560977 /* GiftEffectViewController.m in Sources */,
 				1C6D3EB51F2ECFCE00F699BF /* AppUtily.m in Sources */,
 				04C4CB7B20FCC31900560977 /* MvvMIndexView.m in Sources */,
+				046961722108A7140069CEC3 /* CoreAnimationVC.m in Sources */,
 				04C4CB7820FCC31900560977 /* TQStarRatingView.m in Sources */,
 				04C4CB3020FCC31900560977 /* TableViewOpenController.m in Sources */,
 				04C4CB7220FCC31900560977 /* TADotView.m in Sources */,
@@ -2022,6 +2090,7 @@
 				1C1C51D521055B6F0012E286 /* CategoryAddPropertyVC+Person.m in Sources */,
 				04C4CB3720FCC31900560977 /* HuanJingJianCeChat.m in Sources */,
 				1CAF726620F4541500387413 /* NSString+Extern.m in Sources */,
+				046961852108BDE80069CEC3 /* CustomTransitionAnimationVC.m in Sources */,
 				04C4CB4E20FCC31900560977 /* TemplateListView.m in Sources */,
 				04C4CB2F20FCC31900560977 /* LHY_HeaderView.m in Sources */,
 				04C4CB5020FCC31900560977 /* TemplateListViewController.m in Sources */,
@@ -2058,6 +2127,7 @@
 				04C4CB3520FCC31900560977 /* ZoomImageView.m in Sources */,
 				04C4CB6220FCC31900560977 /* CyclePagerView.m in Sources */,
 				04C4CB3320FCC31900560977 /* PictureThreeController.m in Sources */,
+				0469617A2108BA870069CEC3 /* TransitionAnimationVC.m in Sources */,
 				1C6D3C021F2ECFCD00F699BF /* BaseNavigationController.m in Sources */,
 				04C4CB5C20FCC31900560977 /* MSSChineseCalendarManager.m in Sources */,
 				1C6D3C031F2ECFCD00F699BF /* BaseViewController.m in Sources */,
