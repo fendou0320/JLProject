@@ -37,6 +37,9 @@
 #define COLOR_diffButton HEXToRGB(@"#25ff68")
 
 
+#define COLOR_333333 HEXToRGB(@"#333333")
+
+#define COLOR_999999 HEXToRGB(@"#999999")
 
 //登录背景红色
 #define COLOR_LOGO_Red HEXToRGB(@"#961616")

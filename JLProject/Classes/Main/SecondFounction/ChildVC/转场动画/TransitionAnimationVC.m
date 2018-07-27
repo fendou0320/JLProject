@@ -25,6 +25,17 @@
     
     _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 100, kScreenWidth, 500)];
     [self.view addSubview:_imageView];
+
+    //毛玻璃
+//    UIBlurEffectStyleExtraLight
+//    UIBlurEffectStyleLight
+//    UIBlurEffectStyleDark
+    
+//    UIBlurEffect * blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+//    UIVisualEffectView * effe = [[UIVisualEffectView alloc]initWithEffect:blur];
+//    effe.frame = CGRectMake(0, 100, kScreenWidth, 200);
+//    [_imageView addSubview:effe];
+    
     
     
 }
