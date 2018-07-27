@@ -159,6 +159,8 @@
 		1C21AE361F6511340039163D /* backgroundStar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C21AE321F6511340039163D /* backgroundStar@2x.png */; };
 		1C21AE371F6511340039163D /* foregroundStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C21AE331F6511340039163D /* foregroundStar.png */; };
 		1C21AE381F6511340039163D /* foregroundStar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C21AE341F6511340039163D /* foregroundStar@2x.png */; };
+		1C27ADB92109759B0031C7CF /* BlockVarietySituationsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C27ADB82109759B0031C7CF /* BlockVarietySituationsVC.m */; };
+		1C27ADBD210976780031C7CF /* KeyBoardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C27ADBC210976780031C7CF /* KeyBoardVC.m */; };
 		1C39525A20FF225D0068E37F /* ArchivingFather.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C39525920FF225D0068E37F /* ArchivingFather.m */; };
 		1C39526120FF38150068E37F /* SerializeDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C39526020FF38150068E37F /* SerializeDemo.m */; };
 		1C3F65341F4548410052E821 /* 288x360.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C3F65331F4548410052E821 /* 288x360.jpg */; };
@@ -186,6 +188,8 @@
 		1CAF727320F4550F00387413 /* NSDictionary+SetNullWithStr.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CAF726920F4550F00387413 /* NSDictionary+SetNullWithStr.m */; };
 		1CAF727420F4550F00387413 /* UIFont+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CAF726A20F4550F00387413 /* UIFont+Fit.m */; };
 		1CAF727520F4550F00387413 /* UIView+FontSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CAF726B20F4550F00387413 /* UIView+FontSize.m */; };
+		1CCB1EB8210AC76D004486FD /* RichTextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB1EB7210AC76D004486FD /* RichTextVC.m */; };
+		1CCB1EBB210AC8BA004486FD /* ConfigAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB1EBA210AC8B9004486FD /* ConfigAttributedString.m */; };
 		1CF17DA61F2EDB6000EA3B51 /* yinDaoYe0.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CF17DA11F2EDB6000EA3B51 /* yinDaoYe0.png */; };
 		1CF17DA71F2EDB6000EA3B51 /* yinDaoYe1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CF17DA21F2EDB6000EA3B51 /* yinDaoYe1.png */; };
 		1CF17DA81F2EDB6000EA3B51 /* yinDaoYe2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CF17DA31F2EDB6000EA3B51 /* yinDaoYe2.png */; };
@@ -495,6 +499,10 @@
 		1C21AE321F6511340039163D /* backgroundStar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backgroundStar@2x.png"; sourceTree = "<group>"; };
 		1C21AE331F6511340039163D /* foregroundStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foregroundStar.png; sourceTree = "<group>"; };
 		1C21AE341F6511340039163D /* foregroundStar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foregroundStar@2x.png"; sourceTree = "<group>"; };
+		1C27ADB72109759B0031C7CF /* BlockVarietySituationsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockVarietySituationsVC.h; sourceTree = "<group>"; };
+		1C27ADB82109759B0031C7CF /* BlockVarietySituationsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockVarietySituationsVC.m; sourceTree = "<group>"; };
+		1C27ADBB210976780031C7CF /* KeyBoardVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyBoardVC.h; sourceTree = "<group>"; };
+		1C27ADBC210976780031C7CF /* KeyBoardVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyBoardVC.m; sourceTree = "<group>"; };
 		1C39525820FF225D0068E37F /* ArchivingFather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchivingFather.h; sourceTree = "<group>"; };
 		1C39525920FF225D0068E37F /* ArchivingFather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchivingFather.m; sourceTree = "<group>"; };
 		1C39525E20FF351A0068E37F /* JLSerializeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLSerializeKit.h; sourceTree = "<group>"; };
@@ -555,6 +563,10 @@
 		1CAF726D20F4550F00387413 /* NSDictionary+SetNullWithStr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SetNullWithStr.h"; sourceTree = "<group>"; };
 		1CAF726F20F4550F00387413 /* UIFont+Fit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Fit.h"; sourceTree = "<group>"; };
 		1CAF727020F4550F00387413 /* UIView+FontSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FontSize.h"; sourceTree = "<group>"; };
+		1CCB1EB6210AC76D004486FD /* RichTextVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RichTextVC.h; sourceTree = "<group>"; };
+		1CCB1EB7210AC76D004486FD /* RichTextVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RichTextVC.m; sourceTree = "<group>"; };
+		1CCB1EB9210AC8B9004486FD /* ConfigAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigAttributedString.h; sourceTree = "<group>"; };
+		1CCB1EBA210AC8B9004486FD /* ConfigAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigAttributedString.m; sourceTree = "<group>"; };
 		1CF17DA11F2EDB6000EA3B51 /* yinDaoYe0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yinDaoYe0.png; sourceTree = "<group>"; };
 		1CF17DA21F2EDB6000EA3B51 /* yinDaoYe1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yinDaoYe1.png; sourceTree = "<group>"; };
 		1CF17DA31F2EDB6000EA3B51 /* yinDaoYe2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yinDaoYe2.png; sourceTree = "<group>"; };
@@ -703,6 +715,8 @@
 		04C4C9E520FCC31900560977 /* ChildVC */ = {
 			isa = PBXGroup;
 			children = (
+				1CCB1EB5210AC719004486FD /* 富文本 */,
+				1C27ADBA2109766A0031C7CF /* 键盘处理 */,
 				04C4C9E620FCC31900560977 /* 柱状图 */,
 				04C4C9EA20FCC31900560977 /* 折线图 */,
 				04C4CA5F20FCC31900560977 /* UI三方控件 */,
@@ -1280,6 +1294,7 @@
 		04C4CACC20FCC31900560977 /* ChildVC */ = {
 			isa = PBXGroup;
 			children = (
+				1C27ADB6210970580031C7CF /* Block应用情景 */,
 				046961822108BDD60069CEC3 /* 自定义转场动画 */,
 				046961772108BA770069CEC3 /* 转场动画 */,
 				0469616F2108A7090069CEC3 /* CoreAnimation动画 */,
@@ -1538,6 +1553,24 @@
 			path = star;
 			sourceTree = "<group>";
 		};
+		1C27ADB6210970580031C7CF /* Block应用情景 */ = {
+			isa = PBXGroup;
+			children = (
+				1C27ADB72109759B0031C7CF /* BlockVarietySituationsVC.h */,
+				1C27ADB82109759B0031C7CF /* BlockVarietySituationsVC.m */,
+			);
+			path = "Block应用情景";
+			sourceTree = "<group>";
+		};
+		1C27ADBA2109766A0031C7CF /* 键盘处理 */ = {
+			isa = PBXGroup;
+			children = (
+				1C27ADBB210976780031C7CF /* KeyBoardVC.h */,
+				1C27ADBC210976780031C7CF /* KeyBoardVC.m */,
+			);
+			path = "键盘处理";
+			sourceTree = "<group>";
+		};
 		1C39525B20FF26CE0068E37F /* Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1733,6 +1766,8 @@
 		1CAF725D20F4541500387413 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				1CCB1EB9210AC8B9004486FD /* ConfigAttributedString.h */,
+				1CCB1EBA210AC8B9004486FD /* ConfigAttributedString.m */,
 				1CAF725E20F4541500387413 /* UILabel+Alignment.h */,
 				1CAF726220F4541500387413 /* UILabel+Alignment.m */,
 				1CAF726020F4541500387413 /* NSString+Extern.h */,
@@ -1754,6 +1789,15 @@
 				1CAF726B20F4550F00387413 /* UIView+FontSize.m */,
 			);
 			path = MVM;
+			sourceTree = "<group>";
+		};
+		1CCB1EB5210AC719004486FD /* 富文本 */ = {
+			isa = PBXGroup;
+			children = (
+				1CCB1EB6210AC76D004486FD /* RichTextVC.h */,
+				1CCB1EB7210AC76D004486FD /* RichTextVC.m */,
+			);
+			path = "富文本";
 			sourceTree = "<group>";
 		};
 		1CF17D9F1F2EDB6000EA3B51 /* Image */ = {
@@ -2075,6 +2119,7 @@
 				04C4CB7220FCC31900560977 /* TADotView.m in Sources */,
 				04C4CB8120FCC31900560977 /* IndexViewController.m in Sources */,
 				04C4CB7920FCC31900560977 /* CostomsStarView.m in Sources */,
+				1CCB1EB8210AC76D004486FD /* RichTextVC.m in Sources */,
 				04C4CB7020FCC31900560977 /* UIView+SDExtension.m in Sources */,
 				04C4CB8420FCC31900560977 /* MethodSwizzlingVC.m in Sources */,
 				04C4CB4520FCC31900560977 /* TemplateOneViewController.m in Sources */,
@@ -2087,6 +2132,7 @@
 				04C4CB5720FCC31900560977 /* LineChatVC.m in Sources */,
 				04C4CB6E20FCC31900560977 /* TemplateOneItemView.m in Sources */,
 				04C4CBAB20FCC31900560977 /* UIButton+FlowerExporter.m in Sources */,
+				1C27ADB92109759B0031C7CF /* BlockVarietySituationsVC.m in Sources */,
 				1C1C51D521055B6F0012E286 /* CategoryAddPropertyVC+Person.m in Sources */,
 				04C4CB3720FCC31900560977 /* HuanJingJianCeChat.m in Sources */,
 				1CAF726620F4541500387413 /* NSString+Extern.m in Sources */,
@@ -2147,6 +2193,7 @@
 				04C4CB3820FCC31900560977 /* JLLineChat.m in Sources */,
 				04C4CBAA20FCC31900560977 /* UIButton+Bubbling.m in Sources */,
 				04C4CB7420FCC31900560977 /* TAAnimatedDotView.m in Sources */,
+				1C27ADBD210976780031C7CF /* KeyBoardVC.m in Sources */,
 				04C4CB9820FCC31900560977 /* DazViewController.m in Sources */,
 				04C4CB3D20FCC31900560977 /* TableOne.m in Sources */,
 				04C4CB4820FCC31900560977 /* JDyuanhuanController.m in Sources */,
@@ -2164,6 +2211,7 @@
 				1C4086811EE101F500E4E363 /* main.m in Sources */,
 				04C4CB7E20FCC31900560977 /* UIEncapsulationVC.m in Sources */,
 				04C4CB2720FCC31900560977 /* FiveFounctionVC.m in Sources */,
+				1CCB1EBB210AC8BA004486FD /* ConfigAttributedString.m in Sources */,
 				04C4CB5B20FCC31900560977 /* MSSCalendarCollectionReusableView.m in Sources */,
 				04C4CBAD20FCC31900560977 /* SprayViewController.m in Sources */,
 				04C4CB4A20FCC31900560977 /* JLCircleChart.m in Sources */,

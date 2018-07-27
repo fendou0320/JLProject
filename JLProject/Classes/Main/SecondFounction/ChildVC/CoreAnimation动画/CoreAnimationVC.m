@@ -29,7 +29,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 200, 50, 50)];
+    _imageView = [[UIImageView alloc] initWithFrame:CGRectMake((kScreenWidth-50)/2, 100, 50, 50)];
     [self.view addSubview:_imageView];
 //    _imageView.backgroundColor = RandomColor;
     _imageView.image = [UIImage imageNamed:@"AlipayIcon"];
@@ -77,9 +77,10 @@
 - (void)bezierLine{
     
     UIBezierPath *path = [UIBezierPath bezierPath];
-    [path moveToPoint:CGPointMake(50, 300)];
-//    [path addLineToPoint:CGPointMake(300, 280)];
-    [path addCurveToPoint:CGPointMake(300, 280) controlPoint1:CGPointMake(150, 350) controlPoint2:CGPointMake(200, 200)];
+    [path moveToPoint:CGPointMake(30, 300)];
+    [path addLineToPoint:CGPointMake(150, 300)];
+    [path addLineToPoint:CGPointMake(250, 200)];
+    [path addCurveToPoint:CGPointMake(30, 300) controlPoint1:CGPointMake(kScreenWidth-30, 300) controlPoint2:CGPointMake(kScreenWidth/2, 500)];
     
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
     shapeLayer.path = path.CGPath;
@@ -90,7 +91,7 @@
     
     CALayer *carLayer = [CALayer layer];
     carLayer.frame = CGRectMake(0, 100, 36, 36);
-    carLayer.position = CGPointMake(50, 300);
+    carLayer.position = CGPointMake(30, 300);
     carLayer.anchorPoint = CGPointMake(0.5, 0.5);
     carLayer.contents = (__bridge id)[UIImage imageNamed:@"car"].CGImage;
     [self.view.layer addSublayer:carLayer];
@@ -103,7 +104,7 @@
     keyAnimation.rotationMode = kCAAnimationRotateAuto;
     keyAnimation.removedOnCompletion = NO;
     keyAnimation.fillMode = kCAFillModeForwards;
-    
+    keyAnimation.repeatCount = MAXFLOAT;
     [carLayer addAnimation:keyAnimation forKey:nil];
     
 }

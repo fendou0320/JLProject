@@ -21,7 +21,7 @@
 		<key>GPUImage.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>15</integer>
+			<integer>14</integer>
 		</dict>
 		<key>HYBUIColorExtension.xcscheme</key>
 		<dict>
@@ -75,7 +75,7 @@
 		<key>PINCache.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>14</integer>
+			<integer>15</integer>
 		</dict>
 		<key>PINOperation.xcscheme</key>
 		<dict>

@@ -24,6 +24,8 @@
 #import "CoreAnimationVC.h"
 #import "TransitionAnimationVC.h"
 #import "CustomTransitionAnimationVC.h"
+#import "BlockVarietySituationsVC.h"
+
 
 @interface SecondFounctionVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -97,6 +99,8 @@
         cell.textLabel.text = @"转场动画";
     }else if (indexPath.row == 16){
         cell.textLabel.text = @"自定义转场动画";
+    }else if (indexPath.row == 17){
+        cell.textLabel.text = @"block各种情景";
     }
     
     
@@ -193,6 +197,10 @@
     }else if (indexPath.row == 16){
         
         CustomTransitionAnimationVC *jd = [[CustomTransitionAnimationVC alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
+    }else if (indexPath.row == 17){
+        
+        BlockVarietySituationsVC *jd = [[BlockVarietySituationsVC alloc] init];
         [self.navigationController pushViewController:jd animated:YES];
     }
     

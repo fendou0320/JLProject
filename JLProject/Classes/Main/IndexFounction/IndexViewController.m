@@ -12,6 +12,8 @@
 #import "UIThirdVC.h"
 #import "UIEncapsulationVC.h"
 #import "UISystemVC.h"
+#import "KeyBoardVC.h"
+#import "RichTextVC.h"
 
 @interface IndexViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -67,9 +69,9 @@
     }else if (indexPath.row == 4){
         cell.textLabel.text = @"UI系统控件";
     }else if (indexPath.row == 5){
-        
+        cell.textLabel.text = @"键盘";
     }else if (indexPath.row == 6){
-        
+        cell.textLabel.text = @"富文本";
     }else if (indexPath.row == 7){
         
     }else if (indexPath.row == 8){
@@ -99,8 +101,11 @@
         UISystemVC *vc = [[UISystemVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.row == 5){
-//        LineChatVC *vc = [[LineChatVC alloc] init];
-//        [self.navigationController pushViewController:vc animated:YES];
+        KeyBoardVC *vc = [[KeyBoardVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 6){
+        RichTextVC *vc = [[RichTextVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
     
    
