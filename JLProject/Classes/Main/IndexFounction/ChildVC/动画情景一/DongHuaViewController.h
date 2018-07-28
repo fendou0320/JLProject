@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DongHuaViewController : UIViewController
+@interface DongHuaViewController : BaseViewController
 
 @end

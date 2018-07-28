@@ -84,6 +84,7 @@
     return;
     
     static dispatch_once_t onceToken;
+    
     dispatch_once(&onceToken, ^{
         
         //本类的方法替换

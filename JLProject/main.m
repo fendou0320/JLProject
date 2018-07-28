@@ -17,7 +17,6 @@ int main(int argc, char * argv[]) {
 //        };
 //        NSLog(@"%@", myBlcok(100, @"200"));
         
-        
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

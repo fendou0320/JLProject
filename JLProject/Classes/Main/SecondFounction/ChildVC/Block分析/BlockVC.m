@@ -297,22 +297,34 @@
         int aStr = a + b;
         return aStr;
     };
+    NSLog(@"使用一：%d", addfirstBlock(10, 200));
     
+    //使用二
     int index = [self blockUsering:^int(int a, int b) {
         return a+b;
     }];
+    NSLog(@"使用二：%d", index);
     
-    NSLog(@"%d", index);
+    //使用三
+    int newIndex = [self newblockUsering:^int(int a, int b) {
+        return a*b;
+    }];
+    DLog(@"使用三：%d", newIndex);
+    
+    
 }
 
 
-- (int )blockUsering: (int(^)(int a, int b))methodBlock{
+- (int)blockUsering: (int(^)(int a, int b))methodBlock{
     
 //    DLog(@"result=%d", methodBlock(100, 200));
     return methodBlock(100, 200);
 }
 
-
+- (int)newblockUsering: (JLGlobalBlock)methodBlock{
+    
+    return methodBlock(100, 1000);
+}
 
 
 

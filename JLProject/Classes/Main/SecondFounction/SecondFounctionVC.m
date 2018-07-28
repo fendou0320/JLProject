@@ -25,7 +25,7 @@
 #import "TransitionAnimationVC.h"
 #import "CustomTransitionAnimationVC.h"
 #import "BlockVarietySituationsVC.h"
-
+#import "RunTimeKVOVC.h"
 
 @interface SecondFounctionVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -39,7 +39,7 @@
     // Do any additional setup after loading the view.
     
     //创建一个分组样式的UITableView
-    _tableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStyleGrouped];
+    _tableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStylePlain];
     //设置数据源，注意必须实现对应的UITableViewDataSource协议
     _tableView.dataSource=self;
     _tableView.delegate = self;
@@ -72,9 +72,9 @@
     }else if (indexPath.row == 2){
         cell.textLabel.text = @"后台播放和锁屏播放";
     }else if (indexPath.row == 3){
-        cell.textLabel.text = @"RunTime使用情景";
+        cell.textLabel.text = @"RunTime高级应用";
     }else if (indexPath.row == 4){
-        cell.textLabel.text = @"消息的转发和实现";
+        cell.textLabel.text = @"消息转发";
     }else if (indexPath.row == 5){
         cell.textLabel.text = @"MethodSwizzling 黑魔法";
     }else if (indexPath.row == 6){
@@ -101,6 +101,8 @@
         cell.textLabel.text = @"自定义转场动画";
     }else if (indexPath.row == 17){
         cell.textLabel.text = @"block各种情景";
+    }else if (indexPath.row == 18){
+        cell.textLabel.text = @"用RunTime实现KVO";
     }
     
     
@@ -201,6 +203,10 @@
     }else if (indexPath.row == 17){
         
         BlockVarietySituationsVC *jd = [[BlockVarietySituationsVC alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
+    }else if (indexPath.row == 18){
+        
+        RunTimeKVOVC *jd = [[RunTimeKVOVC alloc] init];
         [self.navigationController pushViewController:jd animated:YES];
     }
     

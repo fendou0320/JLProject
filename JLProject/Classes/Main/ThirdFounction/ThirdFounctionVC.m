@@ -8,9 +8,6 @@
 
 #import "ThirdFounctionVC.h"
 
-#import "DongHuaViewController.h"
-#import "WKWebDemoController.h"
-#import "BoWenShuiQiuController.h"
 #import "AudioVideoVC.h"
 
 @interface ThirdFounctionVC ()<UITableViewDelegate,UITableViewDataSource>
@@ -25,7 +22,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     //创建一个分组样式的UITableView
-    _tableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 20, kScreenWidth, kScreenHeight) style:UITableViewStyleGrouped];
+    _tableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 20, kScreenWidth, kScreenHeight) style:UITableViewStylePlain];
     //设置数据源，注意必须实现对应的UITableViewDataSource协议
     _tableView.dataSource=self;
     _tableView.delegate = self;
@@ -43,7 +40,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return 60;
+    return 30;
 }
 
 
@@ -52,11 +49,11 @@
     UITableViewCell *cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
     
     if (indexPath.row == 0){
-        cell.textLabel.text = @"各种动画";
+        cell.textLabel.text = @"";
     }else if (indexPath.row == 1){
-        cell.textLabel.text = @"水波纹圆球";
+        cell.textLabel.text = @"";
     }else if (indexPath.row == 2){
-        cell.textLabel.text = @"WKwebview";
+        cell.textLabel.text = @"";
     }else if (indexPath.row == 3){
         cell.textLabel.text = @"音视频编解码";
     }else if (indexPath.row == 4){
@@ -71,18 +68,18 @@
     
     if (indexPath.row == 0){
         
-        DongHuaViewController *donghua = [[DongHuaViewController alloc] init];
-        [self.navigationController pushViewController:donghua animated:YES];
+//        DongHuaViewController *donghua = [[DongHuaViewController alloc] init];
+//        [self.navigationController pushViewController:donghua animated:YES];
         
     }else if (indexPath.row == 1){
         
-        BoWenShuiQiuController *donghua = [[BoWenShuiQiuController alloc] init];
-        [self.navigationController pushViewController:donghua animated:YES];
+//        BoWenShuiQiuController *donghua = [[BoWenShuiQiuController alloc] init];
+//        [self.navigationController pushViewController:donghua animated:YES];
         
     }else if (indexPath.row == 2){
         
-        WKWebDemoController *donghua = [[WKWebDemoController alloc] init];
-        [self.navigationController pushViewController:donghua animated:YES];
+//        WKWebDemoController *donghua = [[WKWebDemoController alloc] init];
+//        [self.navigationController pushViewController:donghua animated:YES];
         
     }else if (indexPath.row == 3){
         

@@ -19,7 +19,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     //创建一个分组样式的UITableView
-    _tableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 20, kScreenWidth, kScreenHeight) style:UITableViewStyleGrouped];
+    _tableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 20, kScreenWidth, kScreenHeight) style:UITableViewStylePlain];
     //设置数据源，注意必须实现对应的UITableViewDataSource协议
     _tableView.dataSource=self;
     _tableView.delegate = self;

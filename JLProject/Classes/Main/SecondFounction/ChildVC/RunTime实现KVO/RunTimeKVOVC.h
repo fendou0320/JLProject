@@ -1,17 +1,13 @@
 //
-//  Father.h
+//  RunTimeKVOVC.h
 //  JLProject
 //
-//  Created by UCS on 2018/7/10.
+//  Created by jiangliangwang on 2018/7/28.
 //  Copyright © 2018年 wangjiangliang. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface Father : NSObject
-
-- (void)drinkMilk: (NSString *)food;
-
-
+@interface RunTimeKVOVC : BaseViewController
 
 @end

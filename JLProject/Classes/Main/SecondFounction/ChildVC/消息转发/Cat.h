@@ -1,17 +1,15 @@
 //
-//  Father.h
+//  Cat.h
 //  JLProject
 //
-//  Created by UCS on 2018/7/10.
+//  Created by jiangliangwang on 2018/7/29.
 //  Copyright © 2018年 wangjiangliang. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface Father : NSObject
+@interface Cat : NSObject
 
-- (void)drinkMilk: (NSString *)food;
-
-
+- (void)run;
 
 @end

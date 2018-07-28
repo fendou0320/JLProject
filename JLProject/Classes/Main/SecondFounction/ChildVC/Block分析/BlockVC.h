@@ -8,7 +8,8 @@
 
 #import "BaseViewController.h"
 
-typedef void(^JLGlobalBlock)(int a, NSString *b);
+typedef int(^JLGlobalBlock)(int a, int b);
+
 
 @interface BlockVC : BaseViewController
 

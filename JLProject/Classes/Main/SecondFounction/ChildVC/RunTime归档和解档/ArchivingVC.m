@@ -32,9 +32,6 @@
     
     //MARK:  使用请看demo类----SerializeDemo
     
-    
-    
-    
 }
 
 #pragma mark - 归档和解档
@@ -165,6 +162,17 @@
     //runtime中获取某类的所有变量(属性变量以及实例变量)API：
     //Ivar *class_copyIvarList(Class cls, unsigned int *outCount)
     Ivar *vars = class_copyIvarList([ArchivingPerson class], &numIvars);
+    
+//    {
+//        Ivar ivarOne = vars[1];
+//        const char *ivarOnename = ivar_getName(ivarOne);
+//        NSLog(@"%s", ivarOnename);
+//        //会崩溃
+//        Ivar ivarTwo = vars[100];
+//        const char *ivarTwoname = ivar_getName(ivarTwo);
+//        NSLog(@"%s", ivarTwoname);
+//    }
+    
     //    Ivar *vars = class_copyIvarList(NSClassFromString(@"UIView"), &numIvars);
     //key的个数
     NSString *key = nil;
@@ -204,6 +212,9 @@
         //        V: 在大写 V 后面放的是该属性的变量名称(因为我们知道 @property 实际上只是为我们编写好了 getter 和 setter 方法，并创建一个以下划线开头的变量)
         //        输出中看出，T后面放的是 i，那么 i 又是什么类型呢？
     }
+    
+    //class_copyIvarList 带有copy new等的方法有强引用，会retain，需要free（）
+    
     free(propertys);
     
 }

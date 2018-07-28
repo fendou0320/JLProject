@@ -15,6 +15,10 @@
 #import "KeyBoardVC.h"
 #import "RichTextVC.h"
 
+#import "DongHuaViewController.h"
+#import "WKWebDemoController.h"
+#import "BoWenShuiQiuController.h"
+
 @interface IndexViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @end
@@ -33,7 +37,20 @@
     NSString *identifierForVendor = [[UIDevice currentDevice].identifierForVendor UUIDString];
     NSLog(@"唯一标示符%@", identifierForVendor);
     
-    _tableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStyleGrouped];
+    //抛出异常
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:1];
+    if (!array) {
+        // 抛出异常方式一
+        NSException *excp = [NSException exceptionWithName:@"UrlError" reason:@"传入的url有异常！" userInfo:@{@"":@""}];
+        // 抛出异常
+        [excp raise];
+        // 抛出异常方式二
+        @throw [NSException exceptionWithName:@"UrlError" reason:@"传入的url有异常！" userInfo:nil];
+    }
+ 
+    
+    
+    _tableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStylePlain];
     //设置数据源，注意必须实现对应的UITableViewDataSource协议
     _tableView.dataSource=self;
     _tableView.delegate = self;
@@ -78,6 +95,12 @@
         
     }else if (indexPath.row == 9){
 
+    }else if (indexPath.row == 10){
+        cell.textLabel.text = @"各种动画";
+    }else if (indexPath.row == 11){
+        cell.textLabel.text = @"水波纹圆球";
+    }else if (indexPath.row == 12){
+        cell.textLabel.text = @"WKwebview";
     }
     
     return cell;
@@ -106,6 +129,27 @@
     }else if (indexPath.row == 6){
         RichTextVC *vc = [[RichTextVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 7){
+        
+    }else if (indexPath.row == 8){
+        
+    }else if (indexPath.row == 9){
+        
+    }else  if (indexPath.row == 10){
+        
+        DongHuaViewController *donghua = [[DongHuaViewController alloc] init];
+        [self.navigationController pushViewController:donghua animated:YES];
+        
+    }else if (indexPath.row == 11){
+        
+        BoWenShuiQiuController *donghua = [[BoWenShuiQiuController alloc] init];
+        [self.navigationController pushViewController:donghua animated:YES];
+        
+    }else if (indexPath.row == 12){
+        
+        WKWebDemoController *donghua = [[WKWebDemoController alloc] init];
+        [self.navigationController pushViewController:donghua animated:YES];
+        
     }
     
    
