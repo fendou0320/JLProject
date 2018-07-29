@@ -7,8 +7,9 @@
 //
 
 #import "BaseNavigationController.h"
+#import "MainViewController.h"
 
-@interface BaseNavigationController ()
+@interface BaseNavigationController ()<UINavigationControllerDelegate>
 
 @end
 
@@ -16,9 +17,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.delegate = self;
+    self.navigationBar.translucent = NO;
 }
 
+//二级页面tabbar消失
+#pragma mark -UINavigationControllerDelegate
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    NSInteger count = self.viewControllers.count;
+    MainViewController *mainTBC = (MainViewController *)self.tabBarController;
+    if (count == 1) {
+        mainTBC.tabBar.hidden = NO;
+    }else if (count == 2) {
+        mainTBC.tabBar.hidden = YES;
+    }
+}
+
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    
+    if (self.viewControllers.count > 1) {
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+    [super pushViewController:viewController animated:animated];
+    
+    // 修改tabBra的frame
+    CGRect frame = self.tabBarController.tabBar.frame;
+    frame.origin.y = [UIScreen mainScreen].bounds.size.height - frame.size.height;
+    self.tabBarController.tabBar.frame = frame;
+}
 
 
 

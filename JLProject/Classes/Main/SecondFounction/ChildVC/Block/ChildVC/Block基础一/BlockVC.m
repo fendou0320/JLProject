@@ -104,7 +104,6 @@
     //block各种类型
     [self KindsOfBlock];
     
-    
     //block内存结构--三种类型的block
     /*
     _NSConcreteGlobalBlock 全局的静态 block，不会访问任何外部变量。
@@ -112,7 +111,6 @@
     _NSConcreteMallocBlock 保存在堆中的 block，当引用计数为 0 时会被销毁。
      */
     [self blockStructure];
-    
     
     //block作为参数使用
     [self blockMethodUser];
@@ -310,7 +308,6 @@
         return a*b;
     }];
     DLog(@"使用三：%d", newIndex);
-    
     
 }
 

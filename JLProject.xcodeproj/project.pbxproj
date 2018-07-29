@@ -172,7 +172,6 @@
 		1C21AE361F6511340039163D /* backgroundStar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C21AE321F6511340039163D /* backgroundStar@2x.png */; };
 		1C21AE371F6511340039163D /* foregroundStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C21AE331F6511340039163D /* foregroundStar.png */; };
 		1C21AE381F6511340039163D /* foregroundStar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C21AE341F6511340039163D /* foregroundStar@2x.png */; };
-		1C27ADB92109759B0031C7CF /* BlockVarietySituationsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C27ADB82109759B0031C7CF /* BlockVarietySituationsVC.m */; };
 		1C27ADBD210976780031C7CF /* KeyBoardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C27ADBC210976780031C7CF /* KeyBoardVC.m */; };
 		1C39525A20FF225D0068E37F /* ArchivingFather.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C39525920FF225D0068E37F /* ArchivingFather.m */; };
 		1C39526120FF38150068E37F /* SerializeDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C39526020FF38150068E37F /* SerializeDemo.m */; };
@@ -184,7 +183,6 @@
 		1C4086A51EE101F500E4E363 /* JLProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4086A41EE101F500E4E363 /* JLProjectUITests.m */; };
 		1C4087B31EE1024700E4E363 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C40876C1EE1024700E4E363 /* MainViewController.m */; };
 		1C4DF04D1FD63EFE00C09626 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4DF04C1FD63EFE00C09626 /* XMLDictionary.m */; };
-		1C527EB42102F8D400B6726F /* BlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C527EB32102F8D400B6726F /* BlockVC.m */; };
 		1C6D3C021F2ECFCD00F699BF /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D37B91F2ECFCC00F699BF /* BaseNavigationController.m */; };
 		1C6D3C031F2ECFCD00F699BF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D37BB1F2ECFCC00F699BF /* BaseViewController.m */; };
 		1C6D3EB31F2ECFCE00F699BF /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D3BF21F2ECFCD00F699BF /* UIViewExt.m */; };
@@ -203,6 +201,9 @@
 		1CAF727520F4550F00387413 /* UIView+FontSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CAF726B20F4550F00387413 /* UIView+FontSize.m */; };
 		1CCB1EB8210AC76D004486FD /* RichTextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB1EB7210AC76D004486FD /* RichTextVC.m */; };
 		1CCB1EBB210AC8BA004486FD /* ConfigAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB1EBA210AC8B9004486FD /* ConfigAttributedString.m */; };
+		1CD7CE6C210DAE1900600292 /* BlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD7CE69210DAE1800600292 /* BlockVC.m */; };
+		1CD7CE6D210DAE1900600292 /* BlockVarietySituationsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD7CE6A210DAE1800600292 /* BlockVarietySituationsVC.m */; };
+		1CD7CE71210DAF8000600292 /* BlockInterviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD7CE70210DAF8000600292 /* BlockInterviewVC.m */; };
 		1CF17DA61F2EDB6000EA3B51 /* yinDaoYe0.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CF17DA11F2EDB6000EA3B51 /* yinDaoYe0.png */; };
 		1CF17DA71F2EDB6000EA3B51 /* yinDaoYe1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CF17DA21F2EDB6000EA3B51 /* yinDaoYe1.png */; };
 		1CF17DA81F2EDB6000EA3B51 /* yinDaoYe2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CF17DA31F2EDB6000EA3B51 /* yinDaoYe2.png */; };
@@ -538,8 +539,6 @@
 		1C21AE321F6511340039163D /* backgroundStar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backgroundStar@2x.png"; sourceTree = "<group>"; };
 		1C21AE331F6511340039163D /* foregroundStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foregroundStar.png; sourceTree = "<group>"; };
 		1C21AE341F6511340039163D /* foregroundStar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foregroundStar@2x.png"; sourceTree = "<group>"; };
-		1C27ADB72109759B0031C7CF /* BlockVarietySituationsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockVarietySituationsVC.h; sourceTree = "<group>"; };
-		1C27ADB82109759B0031C7CF /* BlockVarietySituationsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockVarietySituationsVC.m; sourceTree = "<group>"; };
 		1C27ADBB210976780031C7CF /* KeyBoardVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyBoardVC.h; sourceTree = "<group>"; };
 		1C27ADBC210976780031C7CF /* KeyBoardVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyBoardVC.m; sourceTree = "<group>"; };
 		1C39525820FF225D0068E37F /* ArchivingFather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchivingFather.h; sourceTree = "<group>"; };
@@ -565,8 +564,6 @@
 		1C40876D1EE1024700E4E363 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		1C4DF04B1FD63EFE00C09626 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
 		1C4DF04C1FD63EFE00C09626 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
-		1C527EB22102F8D400B6726F /* BlockVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockVC.h; sourceTree = "<group>"; };
-		1C527EB32102F8D400B6726F /* BlockVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockVC.m; sourceTree = "<group>"; };
 		1C6D37B81F2ECFCC00F699BF /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		1C6D37B91F2ECFCC00F699BF /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		1C6D37BA1F2ECFCC00F699BF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -606,6 +603,12 @@
 		1CCB1EB7210AC76D004486FD /* RichTextVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RichTextVC.m; sourceTree = "<group>"; };
 		1CCB1EB9210AC8B9004486FD /* ConfigAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigAttributedString.h; sourceTree = "<group>"; };
 		1CCB1EBA210AC8B9004486FD /* ConfigAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigAttributedString.m; sourceTree = "<group>"; };
+		1CD7CE68210DAE1800600292 /* BlockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockVC.h; sourceTree = "<group>"; };
+		1CD7CE69210DAE1800600292 /* BlockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockVC.m; sourceTree = "<group>"; };
+		1CD7CE6A210DAE1800600292 /* BlockVarietySituationsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockVarietySituationsVC.m; sourceTree = "<group>"; };
+		1CD7CE6B210DAE1800600292 /* BlockVarietySituationsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockVarietySituationsVC.h; sourceTree = "<group>"; };
+		1CD7CE6F210DAF8000600292 /* BlockInterviewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockInterviewVC.h; sourceTree = "<group>"; };
+		1CD7CE70210DAF8000600292 /* BlockInterviewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockInterviewVC.m; sourceTree = "<group>"; };
 		1CF17DA11F2EDB6000EA3B51 /* yinDaoYe0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yinDaoYe0.png; sourceTree = "<group>"; };
 		1CF17DA21F2EDB6000EA3B51 /* yinDaoYe1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yinDaoYe1.png; sourceTree = "<group>"; };
 		1CF17DA31F2EDB6000EA3B51 /* yinDaoYe2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yinDaoYe2.png; sourceTree = "<group>"; };
@@ -1349,13 +1352,12 @@
 		04C4CACC20FCC31900560977 /* ChildVC */ = {
 			isa = PBXGroup;
 			children = (
+				1CD7CE65210DAE1800600292 /* Block */,
 				047404C2210CB3720073EAFA /* RunTime实现KVO */,
-				1C27ADB6210970580031C7CF /* Block应用情景 */,
 				046961822108BDD60069CEC3 /* 自定义转场动画 */,
 				046961772108BA770069CEC3 /* 转场动画 */,
 				0469616F2108A7090069CEC3 /* CoreAnimation动画 */,
 				1C1C51CF21055A510012E286 /* 属性添加分类 */,
-				1C527EB12102F8AE00B6726F /* Block分析 */,
 				1CFD3D442100149200A187D2 /* 实例和类对象和元类 */,
 				04C4CACD20FCC31900560977 /* 深浅拷贝 */,
 				04C4CAD020FCC31900560977 /* RunLoop */,
@@ -1633,15 +1635,6 @@
 			path = star;
 			sourceTree = "<group>";
 		};
-		1C27ADB6210970580031C7CF /* Block应用情景 */ = {
-			isa = PBXGroup;
-			children = (
-				1C27ADB72109759B0031C7CF /* BlockVarietySituationsVC.h */,
-				1C27ADB82109759B0031C7CF /* BlockVarietySituationsVC.m */,
-			);
-			path = "Block应用情景";
-			sourceTree = "<group>";
-		};
 		1C27ADBA2109766A0031C7CF /* 键盘处理 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1749,15 +1742,6 @@
 				1C4DF04C1FD63EFE00C09626 /* XMLDictionary.m */,
 			);
 			path = XMLDictionary;
-			sourceTree = "<group>";
-		};
-		1C527EB12102F8AE00B6726F /* Block分析 */ = {
-			isa = PBXGroup;
-			children = (
-				1C527EB22102F8D400B6726F /* BlockVC.h */,
-				1C527EB32102F8D400B6726F /* BlockVC.m */,
-			);
-			path = "Block分析";
 			sourceTree = "<group>";
 		};
 		1C6D37B71F2ECFCC00F699BF /* Base */ = {
@@ -1879,6 +1863,43 @@
 				1CCB1EB7210AC76D004486FD /* RichTextVC.m */,
 			);
 			path = "富文本";
+			sourceTree = "<group>";
+		};
+		1CD7CE65210DAE1800600292 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				1CD7CE6B210DAE1800600292 /* BlockVarietySituationsVC.h */,
+				1CD7CE6A210DAE1800600292 /* BlockVarietySituationsVC.m */,
+				1CD7CE66210DAE1800600292 /* ChildVC */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
+		1CD7CE66210DAE1800600292 /* ChildVC */ = {
+			isa = PBXGroup;
+			children = (
+				1CD7CE6E210DAF4C00600292 /* Block面试题一 */,
+				1CD7CE67210DAE1800600292 /* Block基础一 */,
+			);
+			path = ChildVC;
+			sourceTree = "<group>";
+		};
+		1CD7CE67210DAE1800600292 /* Block基础一 */ = {
+			isa = PBXGroup;
+			children = (
+				1CD7CE68210DAE1800600292 /* BlockVC.h */,
+				1CD7CE69210DAE1800600292 /* BlockVC.m */,
+			);
+			path = "Block基础一";
+			sourceTree = "<group>";
+		};
+		1CD7CE6E210DAF4C00600292 /* Block面试题一 */ = {
+			isa = PBXGroup;
+			children = (
+				1CD7CE6F210DAF8000600292 /* BlockInterviewVC.h */,
+				1CD7CE70210DAF8000600292 /* BlockInterviewVC.m */,
+			);
+			path = "Block面试题一";
 			sourceTree = "<group>";
 		};
 		1CF17D9F1F2EDB6000EA3B51 /* Image */ = {
@@ -2180,8 +2201,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CD7CE6C210DAE1900600292 /* BlockVC.m in Sources */,
 				04E2BE73210CCE44007D9E3D /* Cat.m in Sources */,
-				1C527EB42102F8D400B6726F /* BlockVC.m in Sources */,
+				1CD7CE71210DAF8000600292 /* BlockInterviewVC.m in Sources */,
 				04C4CB3F20FCC31900560977 /* TopView.m in Sources */,
 				04C4CB5420FCC31900560977 /* YingQianSeCaiLineChat.m in Sources */,
 				04C4CB9020FCC31900560977 /* FourFounctionVC.m in Sources */,
@@ -2210,7 +2232,6 @@
 				04C4CB5E20FCC31900560977 /* MSSCircleLabel.m in Sources */,
 				04C4CB5720FCC31900560977 /* LineChatVC.m in Sources */,
 				04C4CB6E20FCC31900560977 /* TemplateOneItemView.m in Sources */,
-				1C27ADB92109759B0031C7CF /* BlockVarietySituationsVC.m in Sources */,
 				1C1C51D521055B6F0012E286 /* CategoryAddPropertyVC+Person.m in Sources */,
 				04C4CB3720FCC31900560977 /* HuanJingJianCeChat.m in Sources */,
 				1CAF726620F4541500387413 /* NSString+Extern.m in Sources */,
@@ -2328,6 +2349,7 @@
 				04C4CB3920FCC31900560977 /* NotYUANDIANViewController.m in Sources */,
 				04E2BE88210D8238007D9E3D /* WHDebugMonitor.m in Sources */,
 				1C6D3EB71F2ECFCE00F699BF /* RequestManager.m in Sources */,
+				1CD7CE6D210DAE1900600292 /* BlockVarietySituationsVC.m in Sources */,
 				04C4CB6920FCC31900560977 /* LoginController.m in Sources */,
 				04C4CB6720FCC31900560977 /* DropDownController.m in Sources */,
 				04C4CB8D20FCC31900560977 /* Father.m in Sources */,

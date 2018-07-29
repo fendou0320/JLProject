@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/CoreAnimation.h>
 
-@interface SnowViewController : UIViewController
+@interface SnowViewController : BaseViewController
 {
      CAEmitterLayer *flakeLayer;
 }

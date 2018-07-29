@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GiftEffectViewController : UIViewController
+@interface GiftEffectViewController : BaseViewController
 
 @end

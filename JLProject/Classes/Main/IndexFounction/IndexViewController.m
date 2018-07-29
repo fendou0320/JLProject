@@ -66,7 +66,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return 30;
+    return k_TableCellHeight;
 }
 
 
@@ -151,18 +151,74 @@
         [self.navigationController pushViewController:donghua animated:YES];
         
     }
-    
-   
 
-
-
-    
-    
-    
-    
-    
 }
 
-    
+
+
+
+
+
+
+
+/*
+ 
+ - (void)creatSubView{
+ 
+ UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+ btn.frame = CGRectMake(0, 150, kScreenWidth, SIZE_IPHONE6(50));
+ [self.view addSubview:btn];
+ btn.backgroundColor = RandomColor;
+ [btn setTitle:@"1" forState:UIControlStateNormal];
+ [btn addTarget:self action:@selector(btnOne:) forControlEvents:UIControlEventTouchUpInside];
+ 
+ UIButton *btntwo = [UIButton buttonWithType:UIButtonTypeCustom];
+ btntwo.frame = CGRectMake(0, SIZE_IPHONE6(250), kScreenWidth, SIZE_IPHONE6(50));
+ [self.view addSubview:btntwo];
+ btntwo.backgroundColor = RandomColor;
+ [btntwo setTitle:@"2" forState:UIControlStateNormal];
+ [btntwo addTarget:self action:@selector(btnTwo:) forControlEvents:UIControlEventTouchUpInside];
+ 
+ UIButton *btnthree = [UIButton buttonWithType:UIButtonTypeCustom];
+ btnthree.frame = CGRectMake(0, SIZE_IPHONE6(350), kScreenWidth, SIZE_IPHONE6(50));
+ [self.view addSubview:btnthree];
+ btnthree.backgroundColor = RandomColor;
+ [btnthree setTitle:@"3" forState:UIControlStateNormal];
+ [btnthree addTarget:self action:@selector(demoShow:) forControlEvents:UIControlEventTouchUpInside];
+ 
+ UIButton *btnFour = [UIButton buttonWithType:UIButtonTypeCustom];
+ btnFour.frame = CGRectMake(0, SIZE_IPHONE6(450), kScreenWidth, SIZE_IPHONE6(50));
+ [self.view addSubview:btnFour];
+ btnFour.backgroundColor = RandomColor;
+ [btnFour setTitle:@"4" forState:UIControlStateNormal];
+ [btnFour addTarget:self action:@selector(btnFour:) forControlEvents:UIControlEventTouchUpInside];
+ 
+ }
+ 
+ - (void)btnOne: (UIButton *)sender{
+ 
+ }
+ 
+ 
+ - (void)btnTwo: (UIButton *)sender{
+ 
+ 
+ }
+ 
+ - (void)demoShow: (UIButton *)sender{
+ 
+ }
+ 
+ - (void)btnFour: (UIButton *)sender{
+ 
+ }
+
+ */
+
+
+
+
+
+
 
 @end

@@ -16,7 +16,6 @@
 #import "ArchivingVC.h"
 #import "RunLoopVC.h"
 #import "RootClassVC.h"
-#import "BlockVC.h"
 
 #import "CategoryAddPropertyVC.h"
 #import "CategoryAddPropertyVC+Person.h"
@@ -56,7 +55,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return 30;
+    return k_TableCellHeight;
 }
 
 
@@ -90,7 +89,6 @@
     }else if (indexPath.row == 11){
         cell.textLabel.text = @"实例、类对象、元类";
     }else if (indexPath.row == 12){
-        cell.textLabel.text = @"Block分析";
     }else if (indexPath.row == 13){
         cell.textLabel.text = @"分类添加属性";
     }else if (indexPath.row == 14){
@@ -100,7 +98,7 @@
     }else if (indexPath.row == 16){
         cell.textLabel.text = @"自定义转场动画";
     }else if (indexPath.row == 17){
-        cell.textLabel.text = @"block各种情景";
+        cell.textLabel.text = @"block";
     }else if (indexPath.row == 18){
         cell.textLabel.text = @"用RunTime实现KVO";
     }
@@ -170,8 +168,6 @@
         
     }else if (indexPath.row == 12){
         
-        BlockVC *jd = [[BlockVC alloc] init];
-        [self.navigationController pushViewController:jd animated:YES];
         
     }else if (indexPath.row == 13){
         

@@ -27,6 +27,8 @@
 //动态加载图的高度
 #define kLoadingGifHeight 50
 
+#define k_TableCellHeight 50
+
 //登录录入框高度
 #define kLoginAccountHeight 42.0f
 //导航栏按钮距离左右侧宽度

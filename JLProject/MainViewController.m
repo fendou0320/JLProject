@@ -96,7 +96,7 @@
         
         [btn setTitle:title forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor purpleColor] forState:UIControlStateNormal];
-        [btn setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
+//        [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(clickAction:) forControlEvents:UIControlEventTouchUpInside];
         btn.frame = CGRectMake(i * width, 0, width, kTabBarHeight);
 //        btn.backgroundColor = RandomColor;
@@ -122,13 +122,16 @@
 //按钮点击事件
 - (void)clickAction:(UIButton *)btn{
     
-    btn.selected = YES;
-    self.lastBtn.selected = NO;
-    self.lastBtn = btn;
+    if (self.lastBtn == btn) {
+        return;
+    }
     //移动选中视图
     [UIView animateWithDuration:.3 animations:^{
-        
+        [self.lastBtn setTitleColor:[UIColor purpleColor] forState:UIControlStateNormal];
+        [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     }];
+    self.lastBtn.selected = NO;
+    self.lastBtn = btn;
     //切换子控制器
     self.selectedIndex = btn.tag;
 }

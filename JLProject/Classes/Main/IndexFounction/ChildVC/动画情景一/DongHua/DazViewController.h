@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/CoreAnimation.h>
 
-@interface DazViewController : UIViewController
+@interface DazViewController : BaseViewController
 @property (strong) CAEmitterLayer *dazLayer;
 @end
