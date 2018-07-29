@@ -14,7 +14,7 @@ typedef void(^EatBlock) (int a, int b);
 
 @property (nonatomic, copy) EatBlock eatBlock;
 
-
+- (void)beginToEat;
 
 
 @end

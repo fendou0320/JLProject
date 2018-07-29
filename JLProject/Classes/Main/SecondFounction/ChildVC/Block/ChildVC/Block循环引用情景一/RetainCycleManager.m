@@ -11,6 +11,11 @@
 @implementation RetainCycleManager
 
 
+- (void)beginToEat{
+    if (self.eatBlock) {
+        self.eatBlock(100, 200);
+    }
+}
 
 
 @end
