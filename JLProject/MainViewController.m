@@ -12,8 +12,10 @@
 #import "ThirdFounctionVC.h"
 #import "FourFounctionVC.h"
 #import "FiveFounctionVC.h"
-
 #import "BaseNavigationController.h"
+//监控DebugToolTypeMemory | DebugToolTypeCPU | DebugToolTypeFPS
+#import "WHDebugToolManager.h"
+
 
 @interface MainViewController ()
 @property (nonatomic, strong) UIButton *lastBtn;
@@ -24,6 +26,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [[WHDebugToolManager sharedInstance] toggleWith:DebugToolTypeMemory | DebugToolTypeCPU | DebugToolTypeFPS];
+    
     [self creatSubViewCtr];
     [self removeTabbar];
     [self creatTabbar];

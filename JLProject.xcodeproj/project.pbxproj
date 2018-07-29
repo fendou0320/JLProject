@@ -158,6 +158,13 @@
 		04E2BE6F210CC1BC007D9E3D /* WKWebDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2BE51210CC1BC007D9E3D /* WKWebDemoController.m */; };
 		04E2BE70210CC1BC007D9E3D /* WKWebViewText.html in Resources */ = {isa = PBXBuildFile; fileRef = 04E2BE52210CC1BC007D9E3D /* WKWebViewText.html */; };
 		04E2BE73210CCE44007D9E3D /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2BE72210CCE44007D9E3D /* Cat.m */; };
+		04E2BE83210D8238007D9E3D /* WHDebugToolManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2BE76210D8238007D9E3D /* WHDebugToolManager.m */; };
+		04E2BE84210D8238007D9E3D /* WHDebugTempVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2BE7D210D8238007D9E3D /* WHDebugTempVC.m */; };
+		04E2BE85210D8238007D9E3D /* WHDebugFPSMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2BE7E210D8238007D9E3D /* WHDebugFPSMonitor.m */; };
+		04E2BE86210D8238007D9E3D /* WHDebugMemoryMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2BE7F210D8238007D9E3D /* WHDebugMemoryMonitor.m */; };
+		04E2BE87210D8238007D9E3D /* WHDebugConsoleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2BE80210D8238007D9E3D /* WHDebugConsoleLabel.m */; };
+		04E2BE88210D8238007D9E3D /* WHDebugMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2BE81210D8238007D9E3D /* WHDebugMonitor.m */; };
+		04E2BE89210D8238007D9E3D /* WHDebugCpuMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2BE82210D8238007D9E3D /* WHDebugCpuMonitor.m */; };
 		04EFF4052102B07500D89F0D /* AsdkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EFF4042102B07500D89F0D /* AsdkVC.m */; };
 		1C1C51D221055AB60012E286 /* CategoryAddPropertyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C51D121055AB60012E286 /* CategoryAddPropertyVC.m */; };
 		1C1C51D521055B6F0012E286 /* CategoryAddPropertyVC+Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1C51D421055B6F0012E286 /* CategoryAddPropertyVC+Person.m */; };
@@ -505,6 +512,20 @@
 		04E2BE53210CC1BC007D9E3D /* WKWebDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebDemoController.h; sourceTree = "<group>"; };
 		04E2BE71210CCE44007D9E3D /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
 		04E2BE72210CCE44007D9E3D /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		04E2BE75210D8238007D9E3D /* WHDebugTempVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHDebugTempVC.h; sourceTree = "<group>"; };
+		04E2BE76210D8238007D9E3D /* WHDebugToolManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHDebugToolManager.m; sourceTree = "<group>"; };
+		04E2BE77210D8238007D9E3D /* WHDebugConsoleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHDebugConsoleLabel.h; sourceTree = "<group>"; };
+		04E2BE78210D8238007D9E3D /* WHDebugMemoryMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHDebugMemoryMonitor.h; sourceTree = "<group>"; };
+		04E2BE79210D8238007D9E3D /* WHDebugFPSMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHDebugFPSMonitor.h; sourceTree = "<group>"; };
+		04E2BE7A210D8238007D9E3D /* WHDebugMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHDebugMonitor.h; sourceTree = "<group>"; };
+		04E2BE7B210D8238007D9E3D /* WHDebugCpuMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHDebugCpuMonitor.h; sourceTree = "<group>"; };
+		04E2BE7C210D8238007D9E3D /* WHDebugToolManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHDebugToolManager.h; sourceTree = "<group>"; };
+		04E2BE7D210D8238007D9E3D /* WHDebugTempVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHDebugTempVC.m; sourceTree = "<group>"; };
+		04E2BE7E210D8238007D9E3D /* WHDebugFPSMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHDebugFPSMonitor.m; sourceTree = "<group>"; };
+		04E2BE7F210D8238007D9E3D /* WHDebugMemoryMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHDebugMemoryMonitor.m; sourceTree = "<group>"; };
+		04E2BE80210D8238007D9E3D /* WHDebugConsoleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHDebugConsoleLabel.m; sourceTree = "<group>"; };
+		04E2BE81210D8238007D9E3D /* WHDebugMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHDebugMonitor.m; sourceTree = "<group>"; };
+		04E2BE82210D8238007D9E3D /* WHDebugCpuMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHDebugCpuMonitor.m; sourceTree = "<group>"; };
 		04EFF4032102B07500D89F0D /* AsdkVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsdkVC.h; sourceTree = "<group>"; };
 		04EFF4042102B07500D89F0D /* AsdkVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsdkVC.m; sourceTree = "<group>"; };
 		05935B623495A3D744DA63BD /* Pods-JLProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-JLProject/Pods-JLProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -1470,9 +1491,9 @@
 		04E2BE25210CC1BC007D9E3D /* 动画情景一 */ = {
 			isa = PBXGroup;
 			children = (
-				04E2BE26210CC1BC007D9E3D /* DongHua */,
-				04E2BE48210CC1BC007D9E3D /* DongHuaViewController.m */,
 				04E2BE49210CC1BC007D9E3D /* DongHuaViewController.h */,
+				04E2BE48210CC1BC007D9E3D /* DongHuaViewController.m */,
+				04E2BE26210CC1BC007D9E3D /* DongHua */,
 			);
 			path = "动画情景一";
 			sourceTree = "<group>";
@@ -1484,7 +1505,6 @@
 				04E2BE28210CC1BC007D9E3D /* SnowViewController.m */,
 				04E2BE29210CC1BC007D9E3D /* DazViewController.m */,
 				04E2BE2A210CC1BC007D9E3D /* SprayViewController.h */,
-				04E2BE2B210CC1BC007D9E3D /* Resources */,
 				04E2BE40210CC1BC007D9E3D /* GiftEffectViewController.h */,
 				04E2BE41210CC1BC007D9E3D /* UIButton+FlowerExporter.m */,
 				04E2BE42210CC1BC007D9E3D /* DropViewController.h */,
@@ -1493,6 +1513,7 @@
 				04E2BE45210CC1BC007D9E3D /* DazViewController.h */,
 				04E2BE46210CC1BC007D9E3D /* SnowViewController.h */,
 				04E2BE47210CC1BC007D9E3D /* UIButton+FlowerExporter.h */,
+				04E2BE2B210CC1BC007D9E3D /* Resources */,
 			);
 			path = DongHua;
 			sourceTree = "<group>";
@@ -1558,6 +1579,27 @@
 				04E2BE53210CC1BC007D9E3D /* WKWebDemoController.h */,
 			);
 			path = WKwebView;
+			sourceTree = "<group>";
+		};
+		04E2BE74210D8238007D9E3D /* WHDebugTool */ = {
+			isa = PBXGroup;
+			children = (
+				04E2BE75210D8238007D9E3D /* WHDebugTempVC.h */,
+				04E2BE76210D8238007D9E3D /* WHDebugToolManager.m */,
+				04E2BE77210D8238007D9E3D /* WHDebugConsoleLabel.h */,
+				04E2BE78210D8238007D9E3D /* WHDebugMemoryMonitor.h */,
+				04E2BE79210D8238007D9E3D /* WHDebugFPSMonitor.h */,
+				04E2BE7A210D8238007D9E3D /* WHDebugMonitor.h */,
+				04E2BE7B210D8238007D9E3D /* WHDebugCpuMonitor.h */,
+				04E2BE7C210D8238007D9E3D /* WHDebugToolManager.h */,
+				04E2BE7D210D8238007D9E3D /* WHDebugTempVC.m */,
+				04E2BE7E210D8238007D9E3D /* WHDebugFPSMonitor.m */,
+				04E2BE7F210D8238007D9E3D /* WHDebugMemoryMonitor.m */,
+				04E2BE80210D8238007D9E3D /* WHDebugConsoleLabel.m */,
+				04E2BE81210D8238007D9E3D /* WHDebugMonitor.m */,
+				04E2BE82210D8238007D9E3D /* WHDebugCpuMonitor.m */,
+			);
+			path = WHDebugTool;
 			sourceTree = "<group>";
 		};
 		04EFF4022102B05B00D89F0D /* Texture-Asyncdisplaykit */ = {
@@ -1746,6 +1788,7 @@
 		1C6D3B611F2ECFCD00F699BF /* ThirdLib */ = {
 			isa = PBXGroup;
 			children = (
+				04E2BE74210D8238007D9E3D /* WHDebugTool */,
 				1C4DF04A1FD63EFE00C09626 /* XMLDictionary */,
 				1C6D3BF11F2ECFCD00F699BF /* UIViewExt.h */,
 				1C6D3BF21F2ECFCD00F699BF /* UIViewExt.m */,
@@ -2147,6 +2190,7 @@
 				044BC0DC20FE2CC80065F8F9 /* GPUImageVC.m in Sources */,
 				04C4CB4D20FCC31900560977 /* SanDianView.m in Sources */,
 				04C4CB6420FCC31900560977 /* TYCyclePagerView.m in Sources */,
+				04E2BE83210D8238007D9E3D /* WHDebugToolManager.m in Sources */,
 				1C6D3EB51F2ECFCE00F699BF /* AppUtily.m in Sources */,
 				04C4CB7B20FCC31900560977 /* MvvMIndexView.m in Sources */,
 				046961722108A7140069CEC3 /* CoreAnimationVC.m in Sources */,
@@ -2218,11 +2262,15 @@
 				1C6D3C021F2ECFCD00F699BF /* BaseNavigationController.m in Sources */,
 				04C4CB5C20FCC31900560977 /* MSSChineseCalendarManager.m in Sources */,
 				1C6D3C031F2ECFCD00F699BF /* BaseViewController.m in Sources */,
+				04E2BE85210D8238007D9E3D /* WHDebugFPSMonitor.m in Sources */,
 				04C4CB4720FCC31900560977 /* CircleView.m in Sources */,
 				04C4CB2820FCC31900560977 /* HistogramVC.m in Sources */,
+				04E2BE89210D8238007D9E3D /* WHDebugCpuMonitor.m in Sources */,
 				04C4CB8020FCC31900560977 /* UISystemVC.m in Sources */,
+				04E2BE87210D8238007D9E3D /* WHDebugConsoleLabel.m in Sources */,
 				04C4CB6F20FCC31900560977 /* SDCycleScrollView.m in Sources */,
 				1C4086841EE101F500E4E363 /* AppDelegate.m in Sources */,
+				04E2BE86210D8238007D9E3D /* WHDebugMemoryMonitor.m in Sources */,
 				04C4CB8F20FCC31900560977 /* SecondFounctionVC.m in Sources */,
 				04C4CB4C20FCC31900560977 /* SandianViewController.m in Sources */,
 				04C4CB5F20FCC31900560977 /* MSSCalendarHeaderModel.m in Sources */,
@@ -2249,6 +2297,7 @@
 				04C4CB4320FCC31900560977 /* JDzhuzhuangController.m in Sources */,
 				04C4CB5A20FCC31900560977 /* MSSCalendarViewController.m in Sources */,
 				04C4CB5120FCC31900560977 /* CustomLineChat.m in Sources */,
+				04E2BE84210D8238007D9E3D /* WHDebugTempVC.m in Sources */,
 				044BC0D720FE24C50065F8F9 /* AudioVideoVC.m in Sources */,
 				1C4086811EE101F500E4E363 /* main.m in Sources */,
 				04E2BE6F210CC1BC007D9E3D /* WKWebDemoController.m in Sources */,
@@ -2277,6 +2326,7 @@
 				1CFD3D47210014B400A187D2 /* RootClassVC.m in Sources */,
 				1CAF726420F4541500387413 /* UITextView+Placeholder.m in Sources */,
 				04C4CB3920FCC31900560977 /* NotYUANDIANViewController.m in Sources */,
+				04E2BE88210D8238007D9E3D /* WHDebugMonitor.m in Sources */,
 				1C6D3EB71F2ECFCE00F699BF /* RequestManager.m in Sources */,
 				04C4CB6920FCC31900560977 /* LoginController.m in Sources */,
 				04C4CB6720FCC31900560977 /* DropDownController.m in Sources */,
