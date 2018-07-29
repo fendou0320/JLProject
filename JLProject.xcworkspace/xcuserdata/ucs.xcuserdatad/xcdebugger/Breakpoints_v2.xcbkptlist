@@ -19,24 +19,8 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/SecondFounction/ChildVC/Block/ChildVC/Block&#x5faa;&#x73af;&#x5f15;&#x7528;&#x60c5;&#x666f;&#x4e00;/RetainCycleOneVC.m"
-            timestampString = "554556667.197773"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "JLProject/Classes/Main/SecondFounction/ChildVC/Block/ChildVC/Block&#x5faa;&#x73af;&#x5f15;&#x7528;&#x60c5;&#x666f;&#x4e00;/RetainCycleManager.m"
-            timestampString = "554556667.1979049"
+            timestampString = "554558019.498119"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
