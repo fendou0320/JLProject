@@ -133,8 +133,8 @@
         [self.array addObject:@"06"];
     });
     dispatch_group_notify(disgroup, disqueue, ^{
-        NSLog(@"dispatch_group_notify 执行");
-        DLog(@"%@", self.array);
+//        NSLog(@"dispatch_group_notify 执行");
+//        DLog(@"%@", self.array);
     });
     
     FBRetainCycleDetector *detector = [FBRetainCycleDetector new];
