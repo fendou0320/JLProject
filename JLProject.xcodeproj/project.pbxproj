@@ -183,6 +183,8 @@
 		1C4086A51EE101F500E4E363 /* JLProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4086A41EE101F500E4E363 /* JLProjectUITests.m */; };
 		1C4087B31EE1024700E4E363 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C40876C1EE1024700E4E363 /* MainViewController.m */; };
 		1C4DF04D1FD63EFE00C09626 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4DF04C1FD63EFE00C09626 /* XMLDictionary.m */; };
+		1C6272B1210DD889003C344A /* CacheCleanerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6272AD210DD889003C344A /* CacheCleanerPlugin.m */; };
+		1C6272B2210DD889003C344A /* RetainCycleLoggerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6272AE210DD889003C344A /* RetainCycleLoggerPlugin.m */; };
 		1C6D3C021F2ECFCD00F699BF /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D37B91F2ECFCC00F699BF /* BaseNavigationController.m */; };
 		1C6D3C031F2ECFCD00F699BF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D37BB1F2ECFCC00F699BF /* BaseViewController.m */; };
 		1C6D3EB31F2ECFCE00F699BF /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D3BF21F2ECFCD00F699BF /* UIViewExt.m */; };
@@ -211,6 +213,9 @@
 		1CF17DAA1F2EDB6000EA3B51 /* yinDaoYe4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CF17DA51F2EDB6000EA3B51 /* yinDaoYe4.png */; };
 		1CF17DB41F2EF95200EA3B51 /* QiDong1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CF17DB21F2EF95200EA3B51 /* QiDong1@2x.png */; };
 		1CF17DB51F2EF95200EA3B51 /* QiDong2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CF17DB31F2EF95200EA3B51 /* QiDong2.png */; };
+		1CF93E14210DBAE100BDE513 /* RetainCycleOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF93E13210DBAE100BDE513 /* RetainCycleOneVC.m */; };
+		1CF93E17210DBB8600BDE513 /* RetainCycleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF93E16210DBB8600BDE513 /* RetainCycleManager.m */; };
+		1CF93E1A210DBCE300BDE513 /* CategoryAddPropertyVC+Basis.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF93E19210DBCE200BDE513 /* CategoryAddPropertyVC+Basis.m */; };
 		1CFD3D47210014B400A187D2 /* RootClassVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFD3D46210014B400A187D2 /* RootClassVC.m */; };
 		D6BFBAAB767F367E7E7C8EA4 /* libPods-JLProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3F56CED33ED25FEC3286BA /* libPods-JLProject.a */; };
 		FA6F046E2E6E4C653443469C /* libPods-JLProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA4AD2A39877206B34D66F6 /* libPods-JLProjectTests.a */; };
@@ -564,6 +569,10 @@
 		1C40876D1EE1024700E4E363 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		1C4DF04B1FD63EFE00C09626 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
 		1C4DF04C1FD63EFE00C09626 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
+		1C6272AD210DD889003C344A /* CacheCleanerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheCleanerPlugin.m; sourceTree = "<group>"; };
+		1C6272AE210DD889003C344A /* RetainCycleLoggerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetainCycleLoggerPlugin.m; sourceTree = "<group>"; };
+		1C6272AF210DD889003C344A /* CacheCleanerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheCleanerPlugin.h; sourceTree = "<group>"; };
+		1C6272B0210DD889003C344A /* RetainCycleLoggerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetainCycleLoggerPlugin.h; sourceTree = "<group>"; };
 		1C6D37B81F2ECFCC00F699BF /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		1C6D37B91F2ECFCC00F699BF /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		1C6D37BA1F2ECFCC00F699BF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -616,6 +625,14 @@
 		1CF17DA51F2EDB6000EA3B51 /* yinDaoYe4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yinDaoYe4.png; sourceTree = "<group>"; };
 		1CF17DB21F2EF95200EA3B51 /* QiDong1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QiDong1@2x.png"; sourceTree = "<group>"; };
 		1CF17DB31F2EF95200EA3B51 /* QiDong2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QiDong2.png; sourceTree = "<group>"; };
+		1CF93E12210DBAE100BDE513 /* RetainCycleOneVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RetainCycleOneVC.h; sourceTree = "<group>"; };
+		1CF93E13210DBAE100BDE513 /* RetainCycleOneVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RetainCycleOneVC.m; sourceTree = "<group>"; };
+		1CF93E15210DBB8600BDE513 /* RetainCycleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RetainCycleManager.h; sourceTree = "<group>"; };
+		1CF93E16210DBB8600BDE513 /* RetainCycleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RetainCycleManager.m; sourceTree = "<group>"; };
+		1CF93E18210DBCE200BDE513 /* CategoryAddPropertyVC+Basis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CategoryAddPropertyVC+Basis.h"; sourceTree = "<group>"; };
+		1CF93E19210DBCE200BDE513 /* CategoryAddPropertyVC+Basis.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CategoryAddPropertyVC+Basis.m"; sourceTree = "<group>"; };
+		1CF93E38210DD01600BDE513 /* libPINRemoteImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPINRemoteImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CF93E3A210DD1EF00BDE513 /* libPINRemoteImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPINRemoteImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CFD3D45210014B400A187D2 /* RootClassVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootClassVC.h; sourceTree = "<group>"; };
 		1CFD3D46210014B400A187D2 /* RootClassVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootClassVC.m; sourceTree = "<group>"; };
 		55A6B8A3F421E17450CC4886 /* Pods-JLProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JLProject/Pods-JLProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -762,6 +779,8 @@
 			children = (
 				04C4C9E420FCC31900560977 /* IndexViewController.h */,
 				04C4CAC920FCC31900560977 /* IndexViewController.m */,
+				1CF93E18210DBCE200BDE513 /* CategoryAddPropertyVC+Basis.h */,
+				1CF93E19210DBCE200BDE513 /* CategoryAddPropertyVC+Basis.m */,
 				04C4C9E520FCC31900560977 /* ChildVC */,
 			);
 			path = IndexFounction;
@@ -1744,6 +1763,17 @@
 			path = XMLDictionary;
 			sourceTree = "<group>";
 		};
+		1C6272AC210DD889003C344A /* DetectionTool */ = {
+			isa = PBXGroup;
+			children = (
+				1C6272AD210DD889003C344A /* CacheCleanerPlugin.m */,
+				1C6272AE210DD889003C344A /* RetainCycleLoggerPlugin.m */,
+				1C6272AF210DD889003C344A /* CacheCleanerPlugin.h */,
+				1C6272B0210DD889003C344A /* RetainCycleLoggerPlugin.h */,
+			);
+			path = DetectionTool;
+			sourceTree = "<group>";
+		};
 		1C6D37B71F2ECFCC00F699BF /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -1783,6 +1813,7 @@
 		1C6D3BF61F2ECFCD00F699BF /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				1C6272AC210DD889003C344A /* DetectionTool */,
 				1C9CD6C01F4A8E5300901EFD /* CircleProgress */,
 			);
 			path = Tools;
@@ -1878,6 +1909,7 @@
 		1CD7CE66210DAE1800600292 /* ChildVC */ = {
 			isa = PBXGroup;
 			children = (
+				1CF93E11210DBAD000BDE513 /* Block循环引用情景一 */,
 				1CD7CE6E210DAF4C00600292 /* Block面试题一 */,
 				1CD7CE67210DAE1800600292 /* Block基础一 */,
 			);
@@ -1929,6 +1961,17 @@
 			path = yinDaoYe;
 			sourceTree = "<group>";
 		};
+		1CF93E11210DBAD000BDE513 /* Block循环引用情景一 */ = {
+			isa = PBXGroup;
+			children = (
+				1CF93E12210DBAE100BDE513 /* RetainCycleOneVC.h */,
+				1CF93E13210DBAE100BDE513 /* RetainCycleOneVC.m */,
+				1CF93E15210DBB8600BDE513 /* RetainCycleManager.h */,
+				1CF93E16210DBB8600BDE513 /* RetainCycleManager.m */,
+			);
+			path = "Block循环引用情景一";
+			sourceTree = "<group>";
+		};
 		1CFD3D442100149200A187D2 /* 实例和类对象和元类 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1941,6 +1984,8 @@
 		4DE2614ECCD8551261AA527C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1CF93E3A210DD1EF00BDE513 /* libPINRemoteImage.a */,
+				1CF93E38210DD01600BDE513 /* libPINRemoteImage.a */,
 				9F3F56CED33ED25FEC3286BA /* libPods-JLProject.a */,
 				7AA4AD2A39877206B34D66F6 /* libPods-JLProjectTests.a */,
 				10AED592CBB506BAA44C7EAD /* libPods-JLProjectUITests.a */,
@@ -1971,6 +2016,7 @@
 				1C4086791EE101F500E4E363 /* Frameworks */,
 				1C40867A1EE101F500E4E363 /* Resources */,
 				762DE4A9DB2AFA52EF094D0D /* [CP] Copy Pods Resources */,
+				A866743E9934DCAFFB894A54 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1989,6 +2035,8 @@
 				1C4086911EE101F500E4E363 /* Sources */,
 				1C4086921EE101F500E4E363 /* Frameworks */,
 				1C4086931EE101F500E4E363 /* Resources */,
+				E0EFBC67C7DACA17EDFDB948 /* [CP] Embed Pods Frameworks */,
+				6EA0C075FBB5A769D1752F4A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2130,6 +2178,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6EA0C075FBB5A769D1752F4A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JLProjectTests/Pods-JLProjectTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		762DE4A9DB2AFA52EF094D0D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2146,12 +2209,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_miss_etikate.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_1.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_2.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2176,6 +2234,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A866743E9934DCAFFB894A54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JLProject/Pods-JLProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BB115599845B8A3BA6DFCDC2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2192,6 +2265,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0EFBC67C7DACA17EDFDB948 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JLProjectTests/Pods-JLProjectTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2211,6 +2299,7 @@
 				04C4CB6C20FCC31900560977 /* AutoCodeView.m in Sources */,
 				044BC0DC20FE2CC80065F8F9 /* GPUImageVC.m in Sources */,
 				04C4CB4D20FCC31900560977 /* SanDianView.m in Sources */,
+				1CF93E1A210DBCE300BDE513 /* CategoryAddPropertyVC+Basis.m in Sources */,
 				04C4CB6420FCC31900560977 /* TYCyclePagerView.m in Sources */,
 				04E2BE83210D8238007D9E3D /* WHDebugToolManager.m in Sources */,
 				1C6D3EB51F2ECFCE00F699BF /* AppUtily.m in Sources */,
@@ -2245,6 +2334,7 @@
 				04C4CB8520FCC31900560977 /* MethodSwizzlingSonVC.m in Sources */,
 				047404C8210CB4760073EAFA /* PersonRunTimeKVO.m in Sources */,
 				04C4CB6D20FCC31900560977 /* MVVMTwoController.m in Sources */,
+				1CF93E14210DBAE100BDE513 /* RetainCycleOneVC.m in Sources */,
 				04C4CB4920FCC31900560977 /* JLRingChart.m in Sources */,
 				04C4CB8920FCC31900560977 /* AutoreleasePoolVC.m in Sources */,
 				04C4CB2A20FCC31900560977 /* JHLineChart.m in Sources */,
@@ -2293,6 +2383,7 @@
 				1C4086841EE101F500E4E363 /* AppDelegate.m in Sources */,
 				04E2BE86210D8238007D9E3D /* WHDebugMemoryMonitor.m in Sources */,
 				04C4CB8F20FCC31900560977 /* SecondFounctionVC.m in Sources */,
+				1C6272B2210DD889003C344A /* RetainCycleLoggerPlugin.m in Sources */,
 				04C4CB4C20FCC31900560977 /* SandianViewController.m in Sources */,
 				04C4CB5F20FCC31900560977 /* MSSCalendarHeaderModel.m in Sources */,
 				04E2BE55210CC1BC007D9E3D /* SnowViewController.m in Sources */,
@@ -2307,6 +2398,7 @@
 				04C4CB3D20FCC31900560977 /* TableOne.m in Sources */,
 				04C4CB4820FCC31900560977 /* JDyuanhuanController.m in Sources */,
 				04E2BE6B210CC1BC007D9E3D /* SprayViewController.m in Sources */,
+				1C6272B1210DD889003C344A /* CacheCleanerPlugin.m in Sources */,
 				04C4CB3C20FCC31900560977 /* ZuoYouViewController.m in Sources */,
 				04C4CB6020FCC31900560977 /* UIThirdVC.m in Sources */,
 				04E2BE56210CC1BC007D9E3D /* DazViewController.m in Sources */,
@@ -2333,6 +2425,7 @@
 				04E2BE6C210CC1BC007D9E3D /* DongHuaViewController.m in Sources */,
 				04C4CB4420FCC31900560977 /* HistogramView.m in Sources */,
 				1C39525A20FF225D0068E37F /* ArchivingFather.m in Sources */,
+				1CF93E17210DBB8600BDE513 /* RetainCycleManager.m in Sources */,
 				04C4CB7D20FCC31900560977 /* BaseCollectionViewCell.m in Sources */,
 				04C4CB3220FCC31900560977 /* PictureFourViewController.m in Sources */,
 				04C4CB6320FCC31900560977 /* TYPageControl.m in Sources */,
@@ -2513,6 +2606,65 @@
 				INFOPLIST_FILE = JLProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"FMDB\"",
+					"-l\"GPUImage\"",
+					"-l\"JSONModel\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJExtension\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-l\"YYKit\"",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebP\"",
+					"-weak_framework",
+					"\"AssetsLibrary\"",
+					"-weak_framework",
+					"\"MapKit\"",
+					"-weak_framework",
+					"\"Photos\"",
+					"-weak_framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = wangjiangliang.Project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2531,6 +2683,65 @@
 				INFOPLIST_FILE = JLProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"FMDB\"",
+					"-l\"GPUImage\"",
+					"-l\"JSONModel\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJExtension\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-l\"YYKit\"",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebP\"",
+					"-weak_framework",
+					"\"AssetsLibrary\"",
+					"-weak_framework",
+					"\"MapKit\"",
+					"-weak_framework",
+					"\"Photos\"",
+					"-weak_framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = wangjiangliang.Project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;

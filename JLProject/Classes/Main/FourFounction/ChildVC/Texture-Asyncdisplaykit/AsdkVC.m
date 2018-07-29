@@ -7,10 +7,10 @@
 //
 
 #import "AsdkVC.h"
-#import <AsyncDisplayKit/AsyncDisplayKit.h>
+//#import <AsyncDisplayKit/AsyncDisplayKit.h>
 
 @interface AsdkVC ()
-@property (nonatomic, strong) ASTableNode *tableNode;
+//@property (nonatomic, strong) ASTableNode *tableNode;
 
 @end
 

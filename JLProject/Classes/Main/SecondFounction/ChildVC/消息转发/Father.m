@@ -49,6 +49,9 @@ void eat (id objc, SEL _cmd, id obj){
 }
 
 
+- (void)drinkMilk: (NSString *)food{
+    
+}
 
 
 

@@ -8,7 +8,18 @@
 
 #import "BlockInterviewVC.h"
 
-@interface BlockInterviewVC ()
+static NSString *staticString;
+
+@interface BlockInterviewVC (){
+    
+    int indexTwo;
+    NSInteger indexThree;
+    NSString *strOne;
+}
+
+@property (nonatomic, assign) NSInteger indexFour;
+
+@property (nonatomic, copy) NSString *strTwo;
 
 @end
 
@@ -115,26 +126,20 @@ void test1()
 void test2()
 {
     __block int a = 10;
-    
     void (^block)() = ^{
         NSLog(@"a is %d", a);
     };
-    
     a = 20;
-    
     block(); // 20--堆上
 }
 
 void test3()
 {
     static int a = 10;
-    
     void (^block)() = ^{
         NSLog(@"a is %d", a);
     };
-    
     a = 20;
-    
     block(); // 20--堆上
 }
 
@@ -144,12 +149,28 @@ void test4()
     void (^block)() = ^{
         NSLog(@"a is %d", a);
     };
-    
     a = 20;
-    
     block();//20--堆上
 }
-
+/*
+ block的内存管理
+ 无论当前环境是ARC还是MRC,只要block没有访问外部变量,block始终在全局区
+ 
+ MRC情况下
+ block如果访问外部变量,block在栈里
+ 不能对block使用retain,否则不能保存在堆里
+ 只有使用copy,才能放到堆里
+ 
+ ARC情况下
+ block如果访问外部变量,block在堆里
+ block可以使用copy和strong,并且block是一个对象
+ 
+ block的循环引用
+ 如果要在block中直接使用外部强指针会发生错误,使用以下代码在block外部实现可以解决
+ __weak typeof(self) weakSelf = self;
+ 但是如果在block内部使用延时操作还使用弱指针的话会取不到该弱指针,需要在block内部再将弱指针强引用一下
+ __strong typeof(self) strongSelf = weakSelf;
+ */
 
 - (void)creatSubView{
     
@@ -157,28 +178,28 @@ void test4()
     btn.frame = CGRectMake(0, 150, kScreenWidth, SIZE_IPHONE6(50));
     [self.view addSubview:btn];
     btn.backgroundColor = RandomColor;
-    [btn setTitle:@"1" forState:UIControlStateNormal];
+    [btn setTitle:@"四道面试题" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(btnOne:) forControlEvents:UIControlEventTouchUpInside];
     
     UIButton *btntwo = [UIButton buttonWithType:UIButtonTypeCustom];
     btntwo.frame = CGRectMake(0, SIZE_IPHONE6(250), kScreenWidth, SIZE_IPHONE6(50));
     [self.view addSubview:btntwo];
     btntwo.backgroundColor = RandomColor;
-    [btntwo setTitle:@"2" forState:UIControlStateNormal];
+    [btntwo setTitle:@"测试各种类型的变量在block中的打印" forState:UIControlStateNormal];
     [btntwo addTarget:self action:@selector(btnTwo:) forControlEvents:UIControlEventTouchUpInside];
     
     UIButton *btnthree = [UIButton buttonWithType:UIButtonTypeCustom];
     btnthree.frame = CGRectMake(0, SIZE_IPHONE6(350), kScreenWidth, SIZE_IPHONE6(50));
     [self.view addSubview:btnthree];
     btnthree.backgroundColor = RandomColor;
-    [btnthree setTitle:@"3" forState:UIControlStateNormal];
+    [btnthree setTitle:@"" forState:UIControlStateNormal];
     [btnthree addTarget:self action:@selector(demoShow:) forControlEvents:UIControlEventTouchUpInside];
     
     UIButton *btnFour = [UIButton buttonWithType:UIButtonTypeCustom];
     btnFour.frame = CGRectMake(0, SIZE_IPHONE6(450), kScreenWidth, SIZE_IPHONE6(50));
     [self.view addSubview:btnFour];
     btnFour.backgroundColor = RandomColor;
-    [btnFour setTitle:@"4" forState:UIControlStateNormal];
+    [btnFour setTitle:@"" forState:UIControlStateNormal];
     [btnFour addTarget:self action:@selector(btnFour:) forControlEvents:UIControlEventTouchUpInside];
     
 }
@@ -193,9 +214,181 @@ void test4()
 
 
 - (void)btnTwo: (UIButton *)sender{
+   
+    //设置各种变量
+    indexTwo = 10;
+    indexThree = 10;
+    self.indexFour = 10;
+    
+    strOne = @"20";
+    self.strTwo = @"20";
+    
+    //block各种类型
+    //    [self KindsOfBlock];
+    
+    //block内存结构--三种类型的block
+    /*
+     _NSConcreteGlobalBlock 全局的静态 block，不会访问任何外部变量。
+     _NSConcreteStackBlock 保存在栈中的 block，当函数返回时会被销毁。
+     _NSConcreteMallocBlock 保存在堆中的 block，当引用计数为 0 时会被销毁。
+     */
+    [self blockStructure];
+}
+
+- (void)blockStructure{
+    
+    // 开启 ARC 时，block 应该是 _NSConcreteGlobalBlock 类型
+    //--------------_NSConcreteGlobalBlock------------
+    void (^firstBlock)(int, NSString *) = ^void(int a, NSString *b){
+        DLog(@"NSConcreteGlobalBlock");
+    };
+    firstBlock(01,@"01");
+    
+    
+    int a = 10;
+    __block int i = 10;
+    int indexOne = 10;
+    __block int indexOneOne = 10;
+    NSString *strThree = @"10";
+    __block NSString *strthreethree = @"10";
+    //全局变量
+    indexThree = 10;
+    strOne = @"10";
+    //静态全局变量
+    staticString = @"10";
+    //--------------_NSConcreteStackBlock-----------说明这是一个分配在栈上的实例
+    void (^secondBlock)(void) = ^void(void){
+        NSLog(@"局部变量（初始话全为10；block后更改为100）a==%d, （__block修饰）i==%d", a, i);
+        NSLog(@"局部变量（初始话全为10；block后更改为100）%d，（__block修饰）%@",indexOne, strThree);
+        NSLog(@"__block修饰-局部变量（初始话全为10；block后更改为100）%d，（__block修饰）%@",indexOneOne, strthreethree);
+        //打印全局
+        NSLog(@"全局变量（初始话全为10；block后更改为100）%ld，%@",indexThree, strOne);
+        //静态全局变量
+        NSLog(@"静态全局变量（初始话全为10；block后更改为100）%@", staticString);
+    };
+    a = 100;
+    i = 100;
+    indexOne = 100;
+    strThree = @"100";
+    indexOneOne = 100;
+    strthreethree = @"100";
+    //全局
+    indexThree = 100;
+    strOne = @"100";
+    //静态全局变量
+    staticString = @"100";
+    
+    secondBlock();
+    
+    /*
+     转换后的关键代码如下：
+     struct __main_block_impl_0 {
+     struct __block_impl impl;
+     struct __main_block_desc_0* Desc;
+     ***********     int a;              ***********
+     __main_block_impl_0(void *fp, struct __main_block_desc_0 *desc, int _a, int flags=0) : a(_a) {
+     ***********     impl.isa = &_NSConcreteStackBlock;   ***********
+     impl.Flags = flags;
+     impl.FuncPtr = fp;
+     Desc = desc;
+     }
+     };
+     static void __main_block_func_0(struct __main_block_impl_0 *__cself) {
+     int a = __cself->a; // bound by copy
+     printf("%d\n", a);
+     }
+     static struct __main_block_desc_0 {
+     size_t reserved;
+     size_t Block_size;
+     } __main_block_desc_0_DATA = { 0, sizeof(struct __main_block_impl_0)};
+     int main()
+     {
+     int a = 100;
+     void (*block2)(void) = (void (*)())&__main_block_impl_0((void *)__main_block_func_0, &__main_block_desc_0_DATA, a);
+     ((void (*)(__block_impl *))((__block_impl *)block2)->FuncPtr)((__block_impl *)block2);
+     return 0;
+     }
+     在本例中，我们可以看到：
+     本例中，isa 指向 _NSConcreteStackBlock，说明这是一个分配在栈上的实例。
+     main_block_impl_0 中增加了一个变量 a，在 block 中引用的变量 a 实际是在申明 block 时，被复制到 main_block_impl_0 结构体中的那个变量 a。因为这样，我们就能理解，在 block 内部修改变量 a 的内容，不会影响外部的实际变量 a。
+     main_block_impl_0 中由于增加了一个变量 a，所以结构体的大小变大了，该结构体大小被写在了 main_block_desc_0 中。
+     
+     
+     在变量前面增加 __block 关键字：
+     #include <stdio.h>
+     int main()
+     {
+     __block int i = 1024;
+     void (^block1)(void) = ^{
+     printf("%d\n", i);
+     i = 1023;
+     };
+     block1();
+     return 0;
+     }
+     
+     生成的关键代码如下，可以看到，差异相当大：
+     struct __Block_byref_i_0 {
+     void *__isa;
+     __Block_byref_i_0 *__forwarding;
+     int __flags;
+     int __size;
+     int i;
+     };
+     struct __main_block_impl_0 {
+     struct __block_impl impl;
+     struct __main_block_desc_0* Desc;
+     __Block_byref_i_0 *i; // by ref
+     __main_block_impl_0(void *fp, struct __main_block_desc_0 *desc, __Block_byref_i_0 *_i, int flags=0) : i(_i->__forwarding) {
+     impl.isa = &_NSConcreteStackBlock;
+     impl.Flags = flags;
+     impl.FuncPtr = fp;
+     Desc = desc;
+     }
+     };
+     static void __main_block_func_0(struct __main_block_impl_0 *__cself) {
+     __Block_byref_i_0 *i = __cself->i; // bound by ref
+     printf("%d\n", (i->__forwarding->i));
+     (i->__forwarding->i) = 1023;
+     }
+     static void __main_block_copy_0(struct __main_block_impl_0*dst, struct __main_block_impl_0*src) {_Block_object_assign((void*)&dst->i, (void*)src->i, 8);}
+     static void __main_block_dispose_0(struct __main_block_impl_0*src) {_Block_object_dispose((void*)src->i, 8);}
+     static struct __main_block_desc_0 {
+     size_t reserved;
+     size_t Block_size;
+     void (*copy)(struct __main_block_impl_0*, struct __main_block_impl_0*);
+     void (*dispose)(struct __main_block_impl_0*);
+     } __main_block_desc_0_DATA = { 0, sizeof(struct __main_block_impl_0), __main_block_copy_0, __main_block_dispose_0};
+     int main()
+     {
+     __attribute__((__blocks__(byref))) __Block_byref_i_0 i = {(void*)0,(__Block_byref_i_0 *)&i, 0, sizeof(__Block_byref_i_0), 1024};
+     void (*block1)(void) = (void (*)())&__main_block_impl_0((void *)__main_block_func_0, &__main_block_desc_0_DATA, (__Block_byref_i_0 *)&i, 570425344);
+     ((void (*)(__block_impl *))((__block_impl *)block1)->FuncPtr)((__block_impl *)block1);
+     return 0;
+     
+     }
+     
+     从代码中我们可以看到：
+     源码中增加一个名为 __Block_byref_i_0 的结构体，用来保存我们要 capture 并且修改的变量 i。
+     main_block_impl_0 中引用的是 Block_byref_i_0 的结构体指针，这样就可以达到修改外部变量的作用。
+     __Block_byref_i_0 结构体中带有 isa，说明它也是一个对象。
+     我们需要负责 Block_byref_i_0 结构体相关的内存管理，所以 main_block_desc_0 中增加了 copy 和 dispose 函数指针，对于在调用前后修改相应变量的引用计数。
+     
+     */
+    
+    
+    //--------------NSConcreteMallocBlock--------------
+    
+    /*
+     变量的复制
+     对于 block 外的变量引用，block 默认是将其复制到其数据结构中来实现访问的
+     对于用 __block 修饰的外部变量引用，block 是复制其引用地址来实现访问的
+     */
     
     
 }
+
+
 
 - (void)demoShow: (UIButton *)sender{
     

@@ -10,7 +10,16 @@
 #import "MainViewController.h"
 #import "LoginViewController.h"
 
+#if DEBUG
+#import <FBMemoryProfiler.h>
+#import "CacheCleanerPlugin.h"
+#import "RetainCycleLoggerPlugin.h"
+#endif
+
 @interface AppDelegate ()
+{
+    FBMemoryProfiler *memoryProfiler;
+}
 
 @end
 
@@ -19,6 +28,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //检测系统
+    {
+#if DEBUG
+        memoryProfiler = [[FBMemoryProfiler alloc] initWithPlugins:@[[CacheCleanerPlugin new],
+                                                                     [RetainCycleLoggerPlugin new]]
+                                  retainCycleDetectorConfiguration:nil];
+        [memoryProfiler enable];
+#endif
+    }
     
     UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window = window;

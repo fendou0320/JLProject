@@ -22,12 +22,11 @@ target 'JLProject' do
     pod 'MBProgressHUD', '~> 1.0.0'
     pod 'MJExtension'
     pod 'MJRefresh'
-    pod 'HYBUIViewExtension', '~> 2.2'
 
     pod ‘GPUImage’
 
-    pod "Texture"
     pod 'YYKit'
 
+    pod 'FBMemoryProfiler'
 
 end
