@@ -10,6 +10,7 @@
 #import "BlockVC.h"
 #import "BlockInterviewVC.h"
 #import "RetainCycleOneVC.h"
+#import "ProxyVC.h"
 
 @interface BlockVarietySituationsVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -58,7 +59,7 @@
     }else if (indexPath.row == 2){
         cell.textLabel.text = @"Block循环引用情景一";
     }else if (indexPath.row == 3){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"Proxy解循环引用";
     }else if (indexPath.row == 4){
         cell.textLabel.text = @"";
     }else if (indexPath.row == 5){
@@ -112,6 +113,9 @@
         [self.navigationController pushViewController:jd animated:YES];
         
     }else if (indexPath.row == 3){
+        
+        ProxyVC *jd = [[ProxyVC alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
         
     }else if (indexPath.row == 4){
         

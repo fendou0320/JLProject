@@ -24,7 +24,7 @@
 
 
 // 是否iPad
-#define isPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+//#define isPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 //是手机还是ipad
 //#define someThing (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)? ipad: iphone
 

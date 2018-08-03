@@ -26,6 +26,8 @@
 #import "BlockVarietySituationsVC.h"
 #import "RunTimeKVOVC.h"
 
+#import "NSProxyNSObjectVC.h"
+
 @interface SecondFounctionVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -89,6 +91,7 @@
     }else if (indexPath.row == 11){
         cell.textLabel.text = @"实例、类对象、元类";
     }else if (indexPath.row == 12){
+        cell.textLabel.text = @"NSProxy和NSObject";
     }else if (indexPath.row == 13){
         cell.textLabel.text = @"分类添加属性";
     }else if (indexPath.row == 14){
@@ -101,6 +104,8 @@
         cell.textLabel.text = @"block";
     }else if (indexPath.row == 18){
         cell.textLabel.text = @"用RunTime实现KVO";
+    }else if (indexPath.row == 19){
+        
     }
     
     
@@ -168,6 +173,8 @@
         
     }else if (indexPath.row == 12){
         
+        NSProxyNSObjectVC *jd = [[NSProxyNSObjectVC alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
         
     }else if (indexPath.row == 13){
         

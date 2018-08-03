@@ -146,7 +146,6 @@
 
 - (void)btnFour: (UIButton *)sender{
     
-    
     FBRetainCycleDetector *detector = [FBRetainCycleDetector new];
     [detector addCandidate:self];
     NSSet *retainCycles = [detector findRetainCycles];

@@ -15,6 +15,23 @@
 
 @implementation BaseNavigationController
 
+//+ (void)load
+//{
+//    UIBarButtonItem *item=[UIBarButtonItem appearanceWhenContainedIn:self, nil ];
+//    NSMutableDictionary *dic=[NSMutableDictionary dictionary];
+//    dic[NSFontAttributeName]=[UIFont systemFontOfSize:15];
+//    dic[NSForegroundColorAttributeName]=[UIColor blackColor];
+//    [item setTitleTextAttributes:dic forState:UIControlStateNormal];
+//    
+//    UINavigationBar *bar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[self]];
+//    
+//    [bar setBackgroundImage:[UIImage imageWithColor:[UIColor blackColor]] forBarMetrics:UIBarMetricsDefault];
+//    NSMutableDictionary *dicBar=[NSMutableDictionary dictionary];
+//    
+//    dicBar[NSFontAttributeName]=[UIFont systemFontOfSize:15];
+//    [bar setTitleTextAttributes:dic];
+//}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.delegate = self;

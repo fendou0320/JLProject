@@ -7,8 +7,8 @@
 //
 
 #import "ThirdFounctionVC.h"
-
 #import "AudioVideoVC.h"
+#import "DrawGraphicsVC.h"
 
 @interface ThirdFounctionVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -49,7 +49,7 @@
     UITableViewCell *cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
     
     if (indexPath.row == 0){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"图形绘制";
     }else if (indexPath.row == 1){
         cell.textLabel.text = @"";
     }else if (indexPath.row == 2){
@@ -57,7 +57,7 @@
     }else if (indexPath.row == 3){
         cell.textLabel.text = @"音视频编解码";
     }else if (indexPath.row == 4){
-        cell.textLabel.text = @"组件化开发";
+        cell.textLabel.text = @"";
     }
     
     
@@ -68,8 +68,8 @@
     
     if (indexPath.row == 0){
         
-//        DongHuaViewController *donghua = [[DongHuaViewController alloc] init];
-//        [self.navigationController pushViewController:donghua animated:YES];
+        DrawGraphicsVC *donghua = [[DrawGraphicsVC alloc] init];
+        [self.navigationController pushViewController:donghua animated:YES];
         
     }else if (indexPath.row == 1){
         
