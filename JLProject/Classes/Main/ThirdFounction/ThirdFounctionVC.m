@@ -9,6 +9,9 @@
 #import "ThirdFounctionVC.h"
 #import "AudioVideoVC.h"
 #import "DrawGraphicsVC.h"
+#import "GPUImageVC.h"
+#import "AsdkVC.h"
+#import "YYKitVC.h"
 
 @interface ThirdFounctionVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -51,13 +54,13 @@
     if (indexPath.row == 0){
         cell.textLabel.text = @"图形绘制";
     }else if (indexPath.row == 1){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"GPUImage";
     }else if (indexPath.row == 2){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"Texture-asyncdisplaykit";
     }else if (indexPath.row == 3){
         cell.textLabel.text = @"音视频编解码";
     }else if (indexPath.row == 4){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"YYKitVC";
     }
     
     
@@ -73,13 +76,13 @@
         
     }else if (indexPath.row == 1){
         
-//        BoWenShuiQiuController *donghua = [[BoWenShuiQiuController alloc] init];
-//        [self.navigationController pushViewController:donghua animated:YES];
+        GPUImageVC *vc = [[GPUImageVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
         
     }else if (indexPath.row == 2){
         
-//        WKWebDemoController *donghua = [[WKWebDemoController alloc] init];
-//        [self.navigationController pushViewController:donghua animated:YES];
+        AsdkVC *vc = [[AsdkVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
         
     }else if (indexPath.row == 3){
         
@@ -88,7 +91,8 @@
         
     }else if (indexPath.row == 4){
         
-        
+        YYKitVC *vc = [[YYKitVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
         
     }
 }

@@ -7,9 +7,6 @@
 //
 
 #import "FourFounctionVC.h"
-#import "GPUImageVC.h"
-#import "AsdkVC.h"
-#import "YYKitVC.h"
 
 @interface FourFounctionVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -48,11 +45,11 @@
     UITableViewCell *cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
     
     if (indexPath.row == 0){
-        cell.textLabel.text = @"GPUImage";
+        cell.textLabel.text = @"";
     }else if (indexPath.row == 1){
-        cell.textLabel.text = @"Texture-asyncdisplaykit";
+        cell.textLabel.text = @"";
     }else if (indexPath.row == 2){
-        cell.textLabel.text = @"YYKitVC";
+        cell.textLabel.text = @"";
     }else if (indexPath.row == 3){
         cell.textLabel.text = @"";
     }else if (indexPath.row == 4){
@@ -67,25 +64,13 @@
     
     if (indexPath.row == 0){
         
-        GPUImageVC *vc = [[GPUImageVC alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-        
     }else if (indexPath.row == 1){
-       
-        AsdkVC *vc = [[AsdkVC alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
         
     }else if (indexPath.row == 2){
-        
-        YYKitVC *vc = [[YYKitVC alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-      
+
     }else if (indexPath.row == 3){
         
-        
-    }else if (indexPath.row == 4){
-        
-        
+    }else if (indexPath.row == 4){        
         
     }
 }

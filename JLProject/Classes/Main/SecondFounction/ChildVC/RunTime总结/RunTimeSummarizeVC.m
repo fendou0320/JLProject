@@ -1,28 +1,29 @@
 //
-//  SecondFounctionVC.m
+//  RunTimeSummarizeVC.m
 //  JLProject
 //
-//  Created by jiangliangwang on 2018/7/13.
+//  Created by UCS on 2018/8/4.
 //  Copyright © 2018年 wangjiangliang. All rights reserved.
 //
 
-#import "SecondFounctionVC.h"
-#import "CopyTypeVC.h"
-#import "AutoreleasePoolVC.h"
-#import "RunLoopVC.h"
-#import "RootClassVC.h"
-#import "BlockVarietySituationsVC.h"
-#import "NSProxyNSObjectVC.h"
 #import "RunTimeSummarizeVC.h"
-#import "AnimationSummaryVC.h"
-#import "PlaySummaryVC.h"
+#import "RunTimeUseCaseVC.h"
+#import "MessageForwardingVC.h"
+#import "MethodSwizzlingVC.h"
+#import "AssociatedObjectsVC.h"
+#import "ArchivingVC.h"
 
-@interface SecondFounctionVC ()<UITableViewDelegate,UITableViewDataSource>
+#import "CategoryAddPropertyVC.h"
+#import "CategoryAddPropertyVC+Person.h"
+
+#import "RunTimeKVOVC.h"
+
+@interface RunTimeSummarizeVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 
 @end
 
-@implementation SecondFounctionVC
+@implementation RunTimeSummarizeVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -56,23 +57,23 @@
     //    cell.backgroundColor = RandomColor1;
     
     if (indexPath.row == 0){
-        cell.textLabel.text = @"深浅拷贝";
+        cell.textLabel.text = @"分类添加属性";
     }else if (indexPath.row == 1){
-        cell.textLabel.text = @"自动释放池";
+        cell.textLabel.text = @"用RunTime实现KVO";
     }else if (indexPath.row == 2){
-        cell.textLabel.text = @"播放功能";
+        cell.textLabel.text = @"归档、解档和序列化、反序列化";
     }else if (indexPath.row == 3){
-        cell.textLabel.text = @"RunTime总结";
+        cell.textLabel.text = @"RunTime使用情景";
     }else if (indexPath.row == 4){
-        cell.textLabel.text = @"动画总结";
+        cell.textLabel.text = @"消息转发";
     }else if (indexPath.row == 5){
-        cell.textLabel.text = @"Block";
+        cell.textLabel.text = @"MethodSwizzling的使用";
     }else if (indexPath.row == 6){
-        cell.textLabel.text = @"RunLoop";
+        cell.textLabel.text = @"associated objects--关联对象";
     }else if (indexPath.row == 7){
-        cell.textLabel.text = @"实例、类对象、元类";
+        cell.textLabel.text = @"";
     }else if (indexPath.row == 8){
-        cell.textLabel.text = @"NSProxy和NSObject";
+        cell.textLabel.text = @"";
     }else if (indexPath.row == 9){
         cell.textLabel.text = @"";
     }else if (indexPath.row == 10){
@@ -106,92 +107,94 @@
     
     if (indexPath.row == 0){
         
-        CopyTypeVC *jd = [[CopyTypeVC alloc] init];
+        CategoryAddPropertyVC *jd = [[CategoryAddPropertyVC alloc] init];
+        jd.age = @"100岁";
+        jd.name = @"gancao";
+        jd.offset = 50.10;
+        jd.point = CGPointMake(100, 200);
+        NSLog(@"---%@---", jd.age);
+        NSLog(@"name---%@---", jd.name);
+        NSLog(@"name---%f---", jd.offset);
+        NSLog(@"name---%@---", NSStringFromCGPoint(jd.point));
         [self.navigationController pushViewController:jd animated:YES];
         
+      
     }else if (indexPath.row == 1){
         
-        AutoreleasePoolVC *jd = [[AutoreleasePoolVC alloc] init];
+        RunTimeKVOVC *jd = [[RunTimeKVOVC alloc] init];
         [self.navigationController pushViewController:jd animated:YES];
         
     }else if (indexPath.row == 2){
         
-        PlaySummaryVC *jd = [[PlaySummaryVC alloc] init];
+        ArchivingVC *jd = [[ArchivingVC alloc] init];
         [self.navigationController pushViewController:jd animated:YES];
-     
+        
+        
     }else if (indexPath.row == 3){
-        
-        RunTimeSummarizeVC *jd = [[RunTimeSummarizeVC alloc] init];
+    
+        RunTimeUseCaseVC *jd = [[RunTimeUseCaseVC alloc] init];
         [self.navigationController pushViewController:jd animated:YES];
         
-       
     }else if (indexPath.row == 4){
         
-        AnimationSummaryVC *jd = [[AnimationSummaryVC alloc] init];
+        MessageForwardingVC *jd = [[MessageForwardingVC alloc] init];
         [self.navigationController pushViewController:jd animated:YES];
-       
+        
     }else if (indexPath.row == 5){
         
-        BlockVarietySituationsVC *jd = [[BlockVarietySituationsVC alloc] init];
+        MethodSwizzlingVC *jd = [[MethodSwizzlingVC alloc] init];
         [self.navigationController pushViewController:jd animated:YES];
         
     }else if (indexPath.row == 6){
         
-        RunLoopVC *jd = [[RunLoopVC alloc] init];
+        AssociatedObjectsVC *jd = [[AssociatedObjectsVC alloc] init];
         [self.navigationController pushViewController:jd animated:YES];
         
     }else if (indexPath.row == 7){
         
-        RootClassVC *jd = [[RootClassVC alloc] init];
-        [self.navigationController pushViewController:jd animated:YES];
-        
-        
+ 
     }else if (indexPath.row == 8){
         
-        NSProxyNSObjectVC *jd = [[NSProxyNSObjectVC alloc] init];
-        [self.navigationController pushViewController:jd animated:YES];
         
     }else if (indexPath.row == 9){
         
-
+        
         
     }else if (indexPath.row == 10){
         
-       
+        
         
     }else if (indexPath.row == 11){
         
-    
+      
+        
     }else if (indexPath.row == 12){
         
- 
+       
         
     }else if (indexPath.row == 13){
         
-   
+      
     }else if (indexPath.row == 14){
         
+       
         
     }else if (indexPath.row == 15){
-    
         
+       
     }else if (indexPath.row == 16){
         
-        
+     
     }else if (indexPath.row == 17){
         
-    
+      
     }else if (indexPath.row == 18){
         
-    
+
     }
     
     
-    
-    
-    
 }
-
 
 
 @end

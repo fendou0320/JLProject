@@ -14,6 +14,7 @@
 #import "UISystemVC.h"
 #import "KeyBoardVC.h"
 #import "RichTextVC.h"
+#import "JLCameraVC.h"
 
 #import "DongHuaViewController.h"
 #import "WKWebDemoController.h"
@@ -90,7 +91,7 @@
     }else if (indexPath.row == 6){
         cell.textLabel.text = @"富文本";
     }else if (indexPath.row == 7){
-        
+        cell.textLabel.text = @"自定义相机";
     }else if (indexPath.row == 8){
         
     }else if (indexPath.row == 9){
@@ -130,7 +131,8 @@
         RichTextVC *vc = [[RichTextVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.row == 7){
-        
+        JLCameraVC *vc = [[JLCameraVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.row == 8){
         
     }else if (indexPath.row == 9){

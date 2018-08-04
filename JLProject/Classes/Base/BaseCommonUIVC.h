@@ -15,6 +15,8 @@
 @property (nonatomic, strong) UIButton *btnThree;
 @property (nonatomic, strong) UIButton *btnFour;
 
+- (void)setUpBtnUI;
+
 - (void)btnOne: (UIButton *)sender;
 
 - (void)btnTwo: (UIButton *)sender;

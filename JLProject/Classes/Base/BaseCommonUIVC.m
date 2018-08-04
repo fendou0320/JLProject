@@ -17,9 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self setUpBtnUI];
 }
 
-- (void)setUpFourBtnUI{
+- (void)setUpBtnUI{
     
     self.btnOne = [UIButton buttonWithType:UIButtonTypeCustom];
     self.btnOne.frame = CGRectMake(0, SIZE_IPHONE6(0), kScreenWidth, SIZE_IPHONE6(30));
