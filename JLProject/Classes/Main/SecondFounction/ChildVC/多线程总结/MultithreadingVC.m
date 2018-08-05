@@ -1,29 +1,23 @@
 //
-//  SecondFounctionVC.m
+//  MultithreadingVC.m
 //  JLProject
 //
-//  Created by jiangliangwang on 2018/7/13.
+//  Created by UCS on 2018/8/4.
 //  Copyright © 2018年 wangjiangliang. All rights reserved.
 //
 
-#import "SecondFounctionVC.h"
-#import "CopyTypeVC.h"
-#import "AutoreleasePoolVC.h"
-#import "RunLoopVC.h"
-#import "RootClassVC.h"
-#import "BlockVarietySituationsVC.h"
-#import "NSProxyNSObjectVC.h"
-#import "RunTimeSummarizeVC.h"
-#import "AnimationSummaryVC.h"
-#import "PlaySummaryVC.h"
 #import "MultithreadingVC.h"
+#import "GcdDemoOneVC.h"
+#import "GcdDemoTwoVC.h"
+#import "GCDCaseInterviewVC.h"
+#import "GCDGroupCaseVC.h"
 
-@interface SecondFounctionVC ()<UITableViewDelegate,UITableViewDataSource>
+@interface MultithreadingVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 
 @end
 
-@implementation SecondFounctionVC
+@implementation MultithreadingVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -57,25 +51,25 @@
     //    cell.backgroundColor = RandomColor1;
     
     if (indexPath.row == 0){
-        cell.textLabel.text = @"深浅拷贝";
+        cell.textLabel.text = @"GCD串行并行--主队列全局队列";
     }else if (indexPath.row == 1){
-        cell.textLabel.text = @"自动释放池";
+        cell.textLabel.text = @"GCD各种函数";
     }else if (indexPath.row == 2){
-        cell.textLabel.text = @"播放功能";
+        cell.textLabel.text = @"GCD面试题";
     }else if (indexPath.row == 3){
-        cell.textLabel.text = @"RunTime总结";
+        cell.textLabel.text = @"GCD串并行组合";
     }else if (indexPath.row == 4){
-        cell.textLabel.text = @"动画总结";
+        cell.textLabel.text = @"";
     }else if (indexPath.row == 5){
-        cell.textLabel.text = @"Block";
+        cell.textLabel.text = @"";
     }else if (indexPath.row == 6){
-        cell.textLabel.text = @"RunLoop";
+        cell.textLabel.text = @"";
     }else if (indexPath.row == 7){
-        cell.textLabel.text = @"实例、类对象、元类";
+        cell.textLabel.text = @"";
     }else if (indexPath.row == 8){
-        cell.textLabel.text = @"NSProxy和NSObject";
+        cell.textLabel.text = @"";
     }else if (indexPath.row == 9){
-        cell.textLabel.text = @"多线程总结";
+        cell.textLabel.text = @"";
     }else if (indexPath.row == 10){
         cell.textLabel.text = @"";
     }else if (indexPath.row == 11){
@@ -97,9 +91,6 @@
     }else if (indexPath.row == 19){
         
     }
-    
-    
-    
     return cell;
 }
 
@@ -107,93 +98,73 @@
     
     if (indexPath.row == 0){
         
-        CopyTypeVC *jd = [[CopyTypeVC alloc] init];
+        GcdDemoOneVC *jd = [[GcdDemoOneVC alloc] init];
         [self.navigationController pushViewController:jd animated:YES];
         
     }else if (indexPath.row == 1){
         
-        AutoreleasePoolVC *jd = [[AutoreleasePoolVC alloc] init];
+        GcdDemoTwoVC *jd = [[GcdDemoTwoVC alloc] init];
         [self.navigationController pushViewController:jd animated:YES];
         
     }else if (indexPath.row == 2){
         
-        PlaySummaryVC *jd = [[PlaySummaryVC alloc] init];
+        GCDCaseInterviewVC *jd = [[GCDCaseInterviewVC alloc] init];
         [self.navigationController pushViewController:jd animated:YES];
-     
+        
     }else if (indexPath.row == 3){
         
-        RunTimeSummarizeVC *jd = [[RunTimeSummarizeVC alloc] init];
+        GCDGroupCaseVC *jd = [[GCDGroupCaseVC alloc] init];
         [self.navigationController pushViewController:jd animated:YES];
         
-       
     }else if (indexPath.row == 4){
         
-        AnimationSummaryVC *jd = [[AnimationSummaryVC alloc] init];
-        [self.navigationController pushViewController:jd animated:YES];
-       
+        
     }else if (indexPath.row == 5){
         
-        BlockVarietySituationsVC *jd = [[BlockVarietySituationsVC alloc] init];
-        [self.navigationController pushViewController:jd animated:YES];
         
     }else if (indexPath.row == 6){
         
-        RunLoopVC *jd = [[RunLoopVC alloc] init];
-        [self.navigationController pushViewController:jd animated:YES];
+        
         
     }else if (indexPath.row == 7){
         
-        RootClassVC *jd = [[RootClassVC alloc] init];
-        [self.navigationController pushViewController:jd animated:YES];
         
         
     }else if (indexPath.row == 8){
         
-        NSProxyNSObjectVC *jd = [[NSProxyNSObjectVC alloc] init];
-        [self.navigationController pushViewController:jd animated:YES];
         
     }else if (indexPath.row == 9){
         
-        MultithreadingVC *jd = [[MultithreadingVC alloc] init];
-        [self.navigationController pushViewController:jd animated:YES];
+        
         
     }else if (indexPath.row == 10){
         
-       
+        
         
     }else if (indexPath.row == 11){
         
-    
+        
     }else if (indexPath.row == 12){
         
- 
         
     }else if (indexPath.row == 13){
         
-   
+        
     }else if (indexPath.row == 14){
         
         
     }else if (indexPath.row == 15){
-    
+        
         
     }else if (indexPath.row == 16){
         
         
     }else if (indexPath.row == 17){
         
-    
-    }else if (indexPath.row == 18){
         
-    
     }
     
-    
-    
-    
-    
 }
-
 
 
 @end
