@@ -11,6 +11,21 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>FBAllocationTracker.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
+		<key>FBMemoryProfiler.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>20</integer>
+		</dict>
+		<key>FBRetainCycleDetector.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
 		<key>FMDB.xcscheme</key>
 		<dict>
 			<key>isShown</key>

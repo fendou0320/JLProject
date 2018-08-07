@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040D5817211724560092666F /* NSOperationBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D5816211724560092666F /* NSOperationBaseVC.m */; };
 		044BC0D720FE24C50065F8F9 /* AudioVideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BC0D620FE24C50065F8F9 /* AudioVideoVC.m */; };
 		044BC0DC20FE2CC80065F8F9 /* GPUImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BC0DB20FE2CC80065F8F9 /* GPUImageVC.m */; };
 		046961742108AA0A0069CEC3 /* AlipayIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 046961732108AA0A0069CEC3 /* AlipayIcon.png */; };
@@ -259,6 +260,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040D5815211724560092666F /* NSOperationBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSOperationBaseVC.h; sourceTree = "<group>"; };
+		040D5816211724560092666F /* NSOperationBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationBaseVC.m; sourceTree = "<group>"; };
 		044BC0D520FE24C50065F8F9 /* AudioVideoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioVideoVC.h; sourceTree = "<group>"; };
 		044BC0D620FE24C50065F8F9 /* AudioVideoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioVideoVC.m; sourceTree = "<group>"; };
 		044BC0DA20FE2CC80065F8F9 /* GPUImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImageVC.h; sourceTree = "<group>"; };
@@ -729,6 +732,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040D58142117217E0092666F /* NSOperation总结 */ = {
+			isa = PBXGroup;
+			children = (
+				040D5815211724560092666F /* NSOperationBaseVC.h */,
+				040D5816211724560092666F /* NSOperationBaseVC.m */,
+			);
+			path = "NSOperation总结";
+			sourceTree = "<group>";
+		};
 		042373D220F2E50800FCA41F /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
@@ -1919,6 +1931,7 @@
 		1C9234602115B4F2006429C4 /* ChildVC */ = {
 			isa = PBXGroup;
 			children = (
+				040D58142117217E0092666F /* NSOperation总结 */,
 				1C68BAE02116F06F004539B1 /* GCD串并行队列组合 */,
 				1C68BADC2116DC8D004539B1 /* GCD面试题 */,
 				1C9234E22115BC69006429C4 /* GCD情景一 */,
@@ -2619,6 +2632,7 @@
 				1C9234D92115B943006429C4 /* AnimationSummaryVC.m in Sources */,
 				04C4CB4120FCC31900560977 /* JDzhexianController.m in Sources */,
 				1C6F8B5A211281660092A60D /* DrawGraphicsVC.m in Sources */,
+				040D5817211724560092666F /* NSOperationBaseVC.m in Sources */,
 				04C4CB5220FCC31900560977 /* ZXTUViewController.m in Sources */,
 				1CAF727520F4550F00387413 /* UIView+FontSize.m in Sources */,
 				1C9234C12115B4F3006429C4 /* MethodSwizzlingSonVC.m in Sources */,

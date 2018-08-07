@@ -11,6 +11,7 @@
 #import "GcdDemoTwoVC.h"
 #import "GCDCaseInterviewVC.h"
 #import "GCDGroupCaseVC.h"
+#import "NSOperationBaseVC.h"
 
 @interface MultithreadingVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -59,7 +60,7 @@
     }else if (indexPath.row == 3){
         cell.textLabel.text = @"GCD串并行组合";
     }else if (indexPath.row == 4){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"NSOperation总结";
     }else if (indexPath.row == 5){
         cell.textLabel.text = @"";
     }else if (indexPath.row == 6){
@@ -118,6 +119,8 @@
         
     }else if (indexPath.row == 4){
         
+        NSOperationBaseVC *jd = [[NSOperationBaseVC alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
         
     }else if (indexPath.row == 5){
         
