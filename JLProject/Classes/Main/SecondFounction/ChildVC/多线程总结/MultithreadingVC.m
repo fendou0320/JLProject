@@ -13,6 +13,9 @@
 #import "GCDGroupCaseVC.h"
 #import "NSOperationBaseVC.h"
 
+#import "BlockOperationCommonVC.h"
+#import "InvocationOperationCommonVC.h"
+
 @interface MultithreadingVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -62,9 +65,9 @@
     }else if (indexPath.row == 4){
         cell.textLabel.text = @"NSOperation总结";
     }else if (indexPath.row == 5){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"InvocationOperation总结";
     }else if (indexPath.row == 6){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"NSBlockOperation基础";
     }else if (indexPath.row == 7){
         cell.textLabel.text = @"";
     }else if (indexPath.row == 8){
@@ -124,10 +127,13 @@
         
     }else if (indexPath.row == 5){
         
+        InvocationOperationCommonVC *jd = [[InvocationOperationCommonVC alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
         
     }else if (indexPath.row == 6){
         
-        
+        BlockOperationCommonVC *jd = [[BlockOperationCommonVC alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
         
     }else if (indexPath.row == 7){
         

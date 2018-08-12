@@ -7,6 +7,7 @@
 //
 
 #import "NSOperationBaseVC.h"
+#import "JLOperation.h"
 
 @interface NSOperationBaseVC ()
 
@@ -43,47 +44,46 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
-//    [self executeInMainThread];
-    
-    [self executeInNewThread];
-    
-}
-/**
- 在主线程中执行
- */
-- (void)executeInMainThread{
-    
-    /*
-     2、 NSInvocationOperation的使用
-     2.1、手动执行操作。
-     */
-    NSLog(@"创建操作:%@",[NSThread currentThread]);
+//    [self executeInMain];
 
-    NSInvocationOperation *vocationOperation = [[NSInvocationOperation alloc]initWithTarget:self selector:@selector(taskOne) object:nil];
-    [vocationOperation start];
-    
+    [self addMainQueue];
 }
 
-/**
- 在子线程中执行
- */
-- (void)executeInNewThread
+- (void)executeInMain
 {
-    NSLog(@"创建操作:%@",[NSThread currentThread]);
-    [NSThread detachNewThreadSelector:@selector(executeInMainThread) toTarget:self withObject:nil];
+    JLOperation *op = [[JLOperation alloc]initWithData:@""];
+    [op start];
 }
 
-
-- (void)taskOne{
+//和操作队列联合使用
+- (void)addMainQueue
+{
+    NSOperationQueue *mainQueue = [NSOperationQueue mainQueue];
     
-    NSLog(@"执行操作:%@",[NSThread currentThread]);
-    for (NSInteger i = 0; i < 3; i++) {
-        NSLog(@"----%@",[NSThread currentThread]);
-    }
+    JLOperation *op1 = [[JLOperation alloc] initWithData:@"1"];
+    JLOperation *op2 = [[JLOperation alloc] initWithData:@"2"];
+    JLOperation *op3 = [[JLOperation alloc] initWithData:@"3"];
+    
+    [mainQueue addOperation:op1];
+    [mainQueue addOperation:op2];
+    [mainQueue addOperation:op3];
+    
 }
 
-
-
+- (void)addCustomQueue{
+    
+    NSOperationQueue *customQueue = [[NSOperationQueue alloc] init];
+    
+    JLOperation *op1 = [[JLOperation alloc] initWithData:@"1"];
+    JLOperation *op2 = [[JLOperation alloc] initWithData:@"2"];
+    JLOperation *op3 = [[JLOperation alloc] initWithData:@"3"];
+    
+    [customQueue addOperation:op1];
+    [op1 cancel];
+    
+    [customQueue addOperation:op2];
+    [customQueue addOperation:op3];
+    
+}
 
 @end
