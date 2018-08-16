@@ -1,22 +1,29 @@
 //
-//  BaseCommonUIVC.m
+//  NSThreadQIYOne.m
 //  JLProject
 //
-//  Created by UCS on 2018/8/1.
+//  Created by jiangliangwang on 2018/8/14.
 //  Copyright © 2018年 wangjiangliang. All rights reserved.
 //
 
-#import "BaseCommonUIVC.h"
+#import "NSThreadQIYOne.h"
 
-@interface BaseCommonUIVC ()
+@interface NSThreadQIYOne ()
+@property (nonatomic, strong) UIButton *btnOne;
+@property (nonatomic, strong) UIButton *btnTwo;
 @end
 
-@implementation BaseCommonUIVC
+@implementation NSThreadQIYOne
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.title = @"nsthread一直存活，可cancel";
+    
     [self setUpBtnUI];
+    
+    
 }
 
 - (void)setUpBtnUI{
@@ -34,23 +41,11 @@
     self.btnTwo.backgroundColor = RandomColor;
     [self.btnTwo setTitle:@"btnTwo" forState:UIControlStateNormal];
     [self.btnTwo addTarget:self action:@selector(btnTwo:) forControlEvents:UIControlEventTouchUpInside];
-    
-    self.btnThree = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.btnThree.frame = CGRectMake(0, SIZE_IPHONE6(80), kScreenWidth, SIZE_IPHONE6(30));
-    [self.view addSubview:self.btnThree];
-    self.btnThree.backgroundColor = RandomColor;
-    [self.btnThree setTitle:@"btnThree" forState:UIControlStateNormal];
-    [self.btnThree addTarget:self action:@selector(btnThree:) forControlEvents:UIControlEventTouchUpInside];
-    
-    self.btnFour = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.btnFour .frame = CGRectMake(0, SIZE_IPHONE6(120), kScreenWidth, SIZE_IPHONE6(30));
-    [self.view addSubview:self.btnFour ];
-    self.btnFour.backgroundColor = RandomColor;
-    [self.btnFour setTitle:@"btnFour" forState:UIControlStateNormal];
-    [self.btnFour addTarget:self action:@selector(btnFour:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)btnOne: (UIButton *)sender{
+    
+    [AppUtily showAlertViewWithTitle:@"创建完成" message:@"开始执行"];
     
     
 }
@@ -60,15 +55,11 @@
     
 }
 
-- (void)btnThree: (UIButton *)sender{
-    
-    
-}
 
-- (void)btnFour: (UIButton *)sender{
-    
-    
-}
+
+
+
+
 
 
 @end

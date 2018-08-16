@@ -11,6 +11,7 @@
 		040D581B211EF2210092666F /* BlockOperationCommonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D581A211EF2210092666F /* BlockOperationCommonVC.m */; };
 		040D581F211EF32F0092666F /* InvocationOperationCommonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D581E211EF32F0092666F /* InvocationOperationCommonVC.m */; };
 		040D5823211EF7450092666F /* JLOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D5822211EF7450092666F /* JLOperation.m */; };
+		040D5827212259990092666F /* NSThreadQIYOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D5826212259990092666F /* NSThreadQIYOne.m */; };
 		044BC0D720FE24C50065F8F9 /* AudioVideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BC0D620FE24C50065F8F9 /* AudioVideoVC.m */; };
 		044BC0DC20FE2CC80065F8F9 /* GPUImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BC0DB20FE2CC80065F8F9 /* GPUImageVC.m */; };
 		046961742108AA0A0069CEC3 /* AlipayIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 046961732108AA0A0069CEC3 /* AlipayIcon.png */; };
@@ -271,6 +272,8 @@
 		040D581E211EF32F0092666F /* InvocationOperationCommonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvocationOperationCommonVC.m; sourceTree = "<group>"; };
 		040D5821211EF7450092666F /* JLOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLOperation.h; sourceTree = "<group>"; };
 		040D5822211EF7450092666F /* JLOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLOperation.m; sourceTree = "<group>"; };
+		040D5825212259990092666F /* NSThreadQIYOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSThreadQIYOne.h; sourceTree = "<group>"; };
+		040D5826212259990092666F /* NSThreadQIYOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSThreadQIYOne.m; sourceTree = "<group>"; };
 		044BC0D520FE24C50065F8F9 /* AudioVideoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioVideoVC.h; sourceTree = "<group>"; };
 		044BC0D620FE24C50065F8F9 /* AudioVideoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioVideoVC.m; sourceTree = "<group>"; };
 		044BC0DA20FE2CC80065F8F9 /* GPUImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImageVC.h; sourceTree = "<group>"; };
@@ -775,6 +778,15 @@
 				040D5822211EF7450092666F /* JLOperation.m */,
 			);
 			path = "自定义Operation";
+			sourceTree = "<group>";
+		};
+		040D58242122563D0092666F /* NSThread-QIY面试题一 */ = {
+			isa = PBXGroup;
+			children = (
+				040D5825212259990092666F /* NSThreadQIYOne.h */,
+				040D5826212259990092666F /* NSThreadQIYOne.m */,
+			);
+			path = "NSThread-QIY面试题一";
 			sourceTree = "<group>";
 		};
 		042373D220F2E50800FCA41F /* Recovered References */ = {
@@ -1967,6 +1979,7 @@
 		1C9234602115B4F2006429C4 /* ChildVC */ = {
 			isa = PBXGroup;
 			children = (
+				040D58242122563D0092666F /* NSThread-QIY面试题一 */,
 				040D5820211EF6210092666F /* 自定义Operation */,
 				040D581C211EF31A0092666F /* InvocationOperation基础 */,
 				040D5818211EF1FE0092666F /* NSBlockOperation基础 */,
@@ -2710,6 +2723,7 @@
 				04C4CB6820FCC31900560977 /* DropdownMenu.m in Sources */,
 				04C4CB6620FCC31900560977 /* LunBoNewController.m in Sources */,
 				04E2BE69210CC1BC007D9E3D /* UIButton+FlowerExporter.m in Sources */,
+				040D5827212259990092666F /* NSThreadQIYOne.m in Sources */,
 				04C4CB3820FCC31900560977 /* JLLineChat.m in Sources */,
 				04C4CB7420FCC31900560977 /* TAAnimatedDotView.m in Sources */,
 				1C27ADBD210976780031C7CF /* KeyBoardVC.m in Sources */,

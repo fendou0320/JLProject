@@ -12,9 +12,9 @@
 #import "GCDCaseInterviewVC.h"
 #import "GCDGroupCaseVC.h"
 #import "NSOperationBaseVC.h"
-
 #import "BlockOperationCommonVC.h"
 #import "InvocationOperationCommonVC.h"
+#import "NSThreadQIYOne.h"
 
 @interface MultithreadingVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -69,7 +69,7 @@
     }else if (indexPath.row == 6){
         cell.textLabel.text = @"NSBlockOperation基础";
     }else if (indexPath.row == 7){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"NSThread爱奇艺面试题-";
     }else if (indexPath.row == 8){
         cell.textLabel.text = @"";
     }else if (indexPath.row == 9){
