@@ -61,6 +61,8 @@
         cell.textLabel.text = @"音视频编解码";
     }else if (indexPath.row == 4){
         cell.textLabel.text = @"YYKitVC";
+    }else if (indexPath.row == 5){
+        cell.textLabel.text = @"MVVM+rac";
     }
     
     
@@ -90,6 +92,11 @@
         [self.navigationController pushViewController:VC animated:YES];
         
     }else if (indexPath.row == 4){
+        
+        YYKitVC *vc = [[YYKitVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    }else if (indexPath.row == 5){
         
         YYKitVC *vc = [[YYKitVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];

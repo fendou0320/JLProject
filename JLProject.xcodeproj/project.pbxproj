@@ -237,6 +237,7 @@
 		1CBBBFEF21264448005D51C9 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBBBFE121264448005D51C9 /* Cat.m */; };
 		1CBBBFF021264448005D51C9 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBBBFE321264448005D51C9 /* Son.m */; };
 		1CBBBFF121264448005D51C9 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBBBFE521264448005D51C9 /* Dog.m */; };
+		1CBBBFF521264B6C005D51C9 /* MVVMRACVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBBBFF421264B6C005D51C9 /* MVVMRACVC.m */; };
 		1CCB1EB8210AC76D004486FD /* RichTextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB1EB7210AC76D004486FD /* RichTextVC.m */; };
 		1CCB1EBB210AC8BA004486FD /* ConfigAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB1EBA210AC8B9004486FD /* ConfigAttributedString.m */; };
 		1CF17DA61F2EDB6000EA3B51 /* yinDaoYe0.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CF17DA11F2EDB6000EA3B51 /* yinDaoYe0.png */; };
@@ -710,6 +711,8 @@
 		1CBBBFE521264448005D51C9 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		1CBBBFE621264448005D51C9 /* Father.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
 		1CBBBFE721264448005D51C9 /* MessageSendVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageSendVC.h; sourceTree = "<group>"; };
+		1CBBBFF321264B6C005D51C9 /* MVVMRACVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMRACVC.h; sourceTree = "<group>"; };
+		1CBBBFF421264B6C005D51C9 /* MVVMRACVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMRACVC.m; sourceTree = "<group>"; };
 		1CCB1EB6210AC76D004486FD /* RichTextVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RichTextVC.h; sourceTree = "<group>"; };
 		1CCB1EB7210AC76D004486FD /* RichTextVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RichTextVC.m; sourceTree = "<group>"; };
 		1CCB1EB9210AC8B9004486FD /* ConfigAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigAttributedString.h; sourceTree = "<group>"; };
@@ -1488,6 +1491,7 @@
 		04C4CAF620FCC31900560977 /* ChildVC */ = {
 			isa = PBXGroup;
 			children = (
+				1CBBBFF221264B45005D51C9 /* MVVM使用 */,
 				1C6F8B57211281270092A60D /* 图形绘制 */,
 				044BC0D420FE247D0065F8F9 /* 音视频编解码 */,
 			);
@@ -2303,6 +2307,15 @@
 			path = MessageForwardingVC;
 			sourceTree = "<group>";
 		};
+		1CBBBFF221264B45005D51C9 /* MVVM使用 */ = {
+			isa = PBXGroup;
+			children = (
+				1CBBBFF321264B6C005D51C9 /* MVVMRACVC.h */,
+				1CBBBFF421264B6C005D51C9 /* MVVMRACVC.m */,
+			);
+			path = "MVVM使用";
+			sourceTree = "<group>";
+		};
 		1CCB1EB5210AC719004486FD /* 富文本 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2674,6 +2687,7 @@
 				1C9234CB2115B4F3006429C4 /* CategoryAddPropertyVC+Person.m in Sources */,
 				04C4CB7820FCC31900560977 /* TQStarRatingView.m in Sources */,
 				1C9234CA2115B4F3006429C4 /* CategoryAddPropertyVC.m in Sources */,
+				1CBBBFF521264B6C005D51C9 /* MVVMRACVC.m in Sources */,
 				04C4CB3020FCC31900560977 /* TableViewOpenController.m in Sources */,
 				04C4CB7220FCC31900560977 /* TADotView.m in Sources */,
 				1C4807D921113C9E009C2532 /* YYLabelVC.m in Sources */,
