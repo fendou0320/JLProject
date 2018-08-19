@@ -180,6 +180,9 @@
 		1C6D40532113D980008430A0 /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6D40522113D980008430A0 /* UIImage+Category.m */; };
 		1C6D759A1F2F231D00E54A58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C6D75991F2F231D00E54A58 /* Assets.xcassets */; };
 		1C6F8B5A211281660092A60D /* DrawGraphicsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6F8B59211281660092A60D /* DrawGraphicsVC.m */; };
+		1C708E352127F6B400AF4AC9 /* QIYPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C708E342127F6B400AF4AC9 /* QIYPlayer.m */; };
+		1C888444212954C700A41EAC /* QIYNSThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C888443212954C700A41EAC /* QIYNSThread.m */; };
+		1C8884482129558C00A41EAC /* NSThreadQIYTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8884472129558C00A41EAC /* NSThreadQIYTwo.m */; };
 		1C89BA5B1EF7EC43003240EC /* FriendsList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C89BA521EF7EC43003240EC /* FriendsList.plist */; };
 		1C92344221155C48006429C4 /* JLCameraVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C92344121155C48006429C4 /* JLCameraVC.m */; };
 		1C92344521155D3A006429C4 /* JLCustomCameraVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C92344421155D3A006429C4 /* JLCustomCameraVC.m */; };
@@ -597,6 +600,12 @@
 		1C6D75991F2F231D00E54A58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C6F8B58211281660092A60D /* DrawGraphicsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawGraphicsVC.h; sourceTree = "<group>"; };
 		1C6F8B59211281660092A60D /* DrawGraphicsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawGraphicsVC.m; sourceTree = "<group>"; };
+		1C708E332127F6B400AF4AC9 /* QIYPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QIYPlayer.h; sourceTree = "<group>"; };
+		1C708E342127F6B400AF4AC9 /* QIYPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QIYPlayer.m; sourceTree = "<group>"; };
+		1C888442212954C700A41EAC /* QIYNSThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QIYNSThread.h; sourceTree = "<group>"; };
+		1C888443212954C700A41EAC /* QIYNSThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QIYNSThread.m; sourceTree = "<group>"; };
+		1C8884462129558C00A41EAC /* NSThreadQIYTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSThreadQIYTwo.h; sourceTree = "<group>"; };
+		1C8884472129558C00A41EAC /* NSThreadQIYTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSThreadQIYTwo.m; sourceTree = "<group>"; };
 		1C89BA521EF7EC43003240EC /* FriendsList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FriendsList.plist; sourceTree = "<group>"; };
 		1C92344021155C48006429C4 /* JLCameraVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLCameraVC.h; sourceTree = "<group>"; };
 		1C92344121155C48006429C4 /* JLCameraVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLCameraVC.m; sourceTree = "<group>"; };
@@ -803,6 +812,8 @@
 			children = (
 				040D5825212259990092666F /* NSThreadQIYOne.h */,
 				040D5826212259990092666F /* NSThreadQIYOne.m */,
+				1C708E332127F6B400AF4AC9 /* QIYPlayer.h */,
+				1C708E342127F6B400AF4AC9 /* QIYPlayer.m */,
 			);
 			path = "NSThread-QIY面试题一";
 			sourceTree = "<group>";
@@ -1874,6 +1885,17 @@
 			path = "图形绘制";
 			sourceTree = "<group>";
 		};
+		1C8884452129556800A41EAC /* NSThread-QIY面试题二 */ = {
+			isa = PBXGroup;
+			children = (
+				1C8884462129558C00A41EAC /* NSThreadQIYTwo.h */,
+				1C8884472129558C00A41EAC /* NSThreadQIYTwo.m */,
+				1C888442212954C700A41EAC /* QIYNSThread.h */,
+				1C888443212954C700A41EAC /* QIYNSThread.m */,
+			);
+			path = "NSThread-QIY面试题二";
+			sourceTree = "<group>";
+		};
 		1C92343F21155C0F006429C4 /* 自定义相机 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1999,6 +2021,7 @@
 		1C9234602115B4F2006429C4 /* ChildVC */ = {
 			isa = PBXGroup;
 			children = (
+				1C8884452129556800A41EAC /* NSThread-QIY面试题二 */,
 				040D58242122563D0092666F /* NSThread-QIY面试题一 */,
 				040D5820211EF6210092666F /* 自定义Operation */,
 				040D581C211EF31A0092666F /* InvocationOperation基础 */,
@@ -2755,6 +2778,7 @@
 				1C9234D92115B943006429C4 /* AnimationSummaryVC.m in Sources */,
 				04C4CB4120FCC31900560977 /* JDzhexianController.m in Sources */,
 				1C6F8B5A211281660092A60D /* DrawGraphicsVC.m in Sources */,
+				1C8884482129558C00A41EAC /* NSThreadQIYTwo.m in Sources */,
 				040D5817211724560092666F /* NSOperationBaseVC.m in Sources */,
 				04C4CB5220FCC31900560977 /* ZXTUViewController.m in Sources */,
 				1CAF727520F4550F00387413 /* UIView+FontSize.m in Sources */,
@@ -2792,6 +2816,7 @@
 				04C4CB6820FCC31900560977 /* DropdownMenu.m in Sources */,
 				04C4CB6620FCC31900560977 /* LunBoNewController.m in Sources */,
 				04E2BE69210CC1BC007D9E3D /* UIButton+FlowerExporter.m in Sources */,
+				1C708E352127F6B400AF4AC9 /* QIYPlayer.m in Sources */,
 				040D5827212259990092666F /* NSThreadQIYOne.m in Sources */,
 				04C4CB3820FCC31900560977 /* JLLineChat.m in Sources */,
 				04C4CB7420FCC31900560977 /* TAAnimatedDotView.m in Sources */,
@@ -2811,6 +2836,7 @@
 				04C4CB4320FCC31900560977 /* JDzhuzhuangController.m in Sources */,
 				04C4CB5A20FCC31900560977 /* MSSCalendarViewController.m in Sources */,
 				04C4CB5120FCC31900560977 /* CustomLineChat.m in Sources */,
+				1C888444212954C700A41EAC /* QIYNSThread.m in Sources */,
 				04E2BE84210D8238007D9E3D /* WHDebugTempVC.m in Sources */,
 				044BC0D720FE24C50065F8F9 /* AudioVideoVC.m in Sources */,
 				1C92344221155C48006429C4 /* JLCameraVC.m in Sources */,

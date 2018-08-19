@@ -4,28 +4,18 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            scope = "0"
-            stopOnStyle = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/SecondFounction/ChildVC/Block/ChildVC/Block&#x5faa;&#x73af;&#x5f15;&#x7528;&#x60c5;&#x666f;&#x4e00;/RetainCycleManager.m"
-            timestampString = "554558221.916962"
+            filePath = "JLProject/Classes/Main/SecondFounction/ChildVC/&#x591a;&#x7ebf;&#x7a0b;&#x603b;&#x7ed3;/ChildVC/NSThread-QIY&#x9762;&#x8bd5;&#x9898;&#x4e00;/NSThreadQIYOne.m"
+            timestampString = "556364878.155547"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "-beginToEat"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "-btnfour:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -35,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/SecondFounction/ChildVC/NSProxy&#x548c;NSObject/NSProxyNSObjectVC.m"
-            timestampString = "554947354.52255"
+            filePath = "JLProject/Classes/Main/SecondFounction/ChildVC/&#x591a;&#x7ebf;&#x7a0b;&#x603b;&#x7ed3;/ChildVC/NSThread-QIY&#x9762;&#x8bd5;&#x9898;&#x4e00;/QIYPlayer.m"
+            timestampString = "556364878.155628"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
+            landmarkName = "-playAction"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -51,61 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/SecondFounction/ChildVC/NSProxy&#x548c;NSObject/JLProxyA.m"
-            timestampString = "554863510.4546469"
+            filePath = "JLProject/Classes/Main/SecondFounction/ChildVC/&#x591a;&#x7ebf;&#x7a0b;&#x603b;&#x7ed3;/ChildVC/NSThread-QIY&#x9762;&#x8bd5;&#x9898;&#x4e00;/QIYPlayer.m"
+            timestampString = "556364878.155687"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "-methodSignatureForSelector:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/SecondFounction/ChildVC/NSProxy&#x548c;NSObject/JLProxyA.m"
-            timestampString = "554863510.45473"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "-forwardInvocation:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/SecondFounction/ChildVC/NSProxy&#x548c;NSObject/JLProxyB.m"
-            timestampString = "554863510.454801"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "-forwardInvocation:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/SecondFounction/ChildVC/NSProxy&#x548c;NSObject/JLProxyB.m"
-            timestampString = "554863510.454867"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "-methodSignatureForSelector:"
+            startingLineNumber = "172"
+            endingLineNumber = "172"
+            landmarkName = "-playAction"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -15,6 +15,7 @@
 #import "BlockOperationCommonVC.h"
 #import "InvocationOperationCommonVC.h"
 #import "NSThreadQIYOne.h"
+#import "NSThreadQIYTwo.h"
 
 @interface MultithreadingVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -71,7 +72,7 @@
     }else if (indexPath.row == 7){
         cell.textLabel.text = @"NSThread爱奇艺面试题-";
     }else if (indexPath.row == 8){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"NSThread-QIY面试题二";
     }else if (indexPath.row == 9){
         cell.textLabel.text = @"";
     }else if (indexPath.row == 10){
@@ -137,10 +138,13 @@
         
     }else if (indexPath.row == 7){
         
-        
+        NSThreadQIYOne *jd = [[NSThreadQIYOne alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
         
     }else if (indexPath.row == 8){
         
+        NSThreadQIYTwo *jd = [[NSThreadQIYTwo alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
         
     }else if (indexPath.row == 9){
         
