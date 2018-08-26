@@ -12,6 +12,7 @@
 		040D581F211EF32F0092666F /* InvocationOperationCommonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D581E211EF32F0092666F /* InvocationOperationCommonVC.m */; };
 		040D5823211EF7450092666F /* JLOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D5822211EF7450092666F /* JLOperation.m */; };
 		040D5827212259990092666F /* NSThreadQIYOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D5826212259990092666F /* NSThreadQIYOne.m */; };
+		042CDB1C213015C000FA51E8 /* MVVMRACOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 042CDB1B213015C000FA51E8 /* MVVMRACOneVC.m */; };
 		044BC0D720FE24C50065F8F9 /* AudioVideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BC0D620FE24C50065F8F9 /* AudioVideoVC.m */; };
 		044BC0DC20FE2CC80065F8F9 /* GPUImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BC0DB20FE2CC80065F8F9 /* GPUImageVC.m */; };
 		046961742108AA0A0069CEC3 /* AlipayIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 046961732108AA0A0069CEC3 /* AlipayIcon.png */; };
@@ -283,6 +284,8 @@
 		040D5822211EF7450092666F /* JLOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLOperation.m; sourceTree = "<group>"; };
 		040D5825212259990092666F /* NSThreadQIYOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSThreadQIYOne.h; sourceTree = "<group>"; };
 		040D5826212259990092666F /* NSThreadQIYOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSThreadQIYOne.m; sourceTree = "<group>"; };
+		042CDB1A213015C000FA51E8 /* MVVMRACOneVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMRACOneVC.h; sourceTree = "<group>"; };
+		042CDB1B213015C000FA51E8 /* MVVMRACOneVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMRACOneVC.m; sourceTree = "<group>"; };
 		044BC0D520FE24C50065F8F9 /* AudioVideoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioVideoVC.h; sourceTree = "<group>"; };
 		044BC0D620FE24C50065F8F9 /* AudioVideoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioVideoVC.m; sourceTree = "<group>"; };
 		044BC0DA20FE2CC80065F8F9 /* GPUImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImageVC.h; sourceTree = "<group>"; };
@@ -823,6 +826,23 @@
 			children = (
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		042CDB182130159200FA51E8 /* ChildVC */ = {
+			isa = PBXGroup;
+			children = (
+				042CDB19213015B500FA51E8 /* MVVMRACOneVC */,
+			);
+			path = ChildVC;
+			sourceTree = "<group>";
+		};
+		042CDB19213015B500FA51E8 /* MVVMRACOneVC */ = {
+			isa = PBXGroup;
+			children = (
+				042CDB1A213015C000FA51E8 /* MVVMRACOneVC.h */,
+				042CDB1B213015C000FA51E8 /* MVVMRACOneVC.m */,
+			);
+			path = MVVMRACOneVC;
 			sourceTree = "<group>";
 		};
 		044BC0D420FE247D0065F8F9 /* 音视频编解码 */ = {
@@ -2335,6 +2355,7 @@
 			children = (
 				1CBBBFF321264B6C005D51C9 /* MVVMRACVC.h */,
 				1CBBBFF421264B6C005D51C9 /* MVVMRACVC.m */,
+				042CDB182130159200FA51E8 /* ChildVC */,
 			);
 			path = "MVVM使用";
 			sourceTree = "<group>";
@@ -2410,7 +2431,6 @@
 				1C4086791EE101F500E4E363 /* Frameworks */,
 				1C40867A1EE101F500E4E363 /* Resources */,
 				762DE4A9DB2AFA52EF094D0D /* [CP] Copy Pods Resources */,
-				A866743E9934DCAFFB894A54 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2429,8 +2449,6 @@
 				1C4086911EE101F500E4E363 /* Sources */,
 				1C4086921EE101F500E4E363 /* Frameworks */,
 				1C4086931EE101F500E4E363 /* Resources */,
-				E0EFBC67C7DACA17EDFDB948 /* [CP] Embed Pods Frameworks */,
-				6EA0C075FBB5A769D1752F4A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2572,21 +2590,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6EA0C075FBB5A769D1752F4A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JLProjectTests/Pods-JLProjectTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		762DE4A9DB2AFA52EF094D0D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2603,7 +2606,12 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_miss_etikate.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_1.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_2.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2628,21 +2636,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A866743E9934DCAFFB894A54 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JLProject/Pods-JLProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		BB115599845B8A3BA6DFCDC2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2659,21 +2652,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E0EFBC67C7DACA17EDFDB948 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JLProjectTests/Pods-JLProjectTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2823,6 +2801,7 @@
 				1C27ADBD210976780031C7CF /* KeyBoardVC.m in Sources */,
 				04C4CB3D20FCC31900560977 /* TableOne.m in Sources */,
 				04C4CB4820FCC31900560977 /* JDyuanhuanController.m in Sources */,
+				042CDB1C213015C000FA51E8 /* MVVMRACOneVC.m in Sources */,
 				04E2BE6B210CC1BC007D9E3D /* SprayViewController.m in Sources */,
 				1C6272B1210DD889003C344A /* CacheCleanerPlugin.m in Sources */,
 				04C4CB3C20FCC31900560977 /* ZuoYouViewController.m in Sources */,

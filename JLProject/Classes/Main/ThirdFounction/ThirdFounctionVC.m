@@ -12,6 +12,7 @@
 #import "GPUImageVC.h"
 #import "AsdkVC.h"
 #import "YYKitVC.h"
+#import "MVVMRACVC.h"
 
 @interface ThirdFounctionVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -98,7 +99,7 @@
         
     }else if (indexPath.row == 5){
         
-        YYKitVC *vc = [[YYKitVC alloc] init];
+        MVVMRACVC *vc = [[MVVMRACVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
         
     }

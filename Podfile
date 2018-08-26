@@ -29,4 +29,7 @@ target 'JLProject' do
 
     pod 'FBMemoryProfiler'
 
+    # use_frameworks!
+    pod 'ReactiveObjC'
+
 end
