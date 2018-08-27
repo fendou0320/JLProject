@@ -7,6 +7,7 @@
 //
 
 #import "MVVMRACOneVC.h"
+#import "LoginViewModel.h"
 
 @interface MVVMRACOneVC ()
 @property (nonatomic, strong) UILabel *promptLabel;
@@ -14,6 +15,9 @@
 @property (nonatomic, strong) UITextField *accountField;
 @property (nonatomic, strong) UITextField *passWordField;
 @property (nonatomic, strong) UIButton *sureBtn;
+
+@property (nonatomic, strong) LoginViewModel *loginViewModel;
+
 @end
 
 @implementation MVVMRACOneVC
@@ -62,8 +66,31 @@
 
 - (void)bindViewModel
 {
-        
-        
+    @weakify(self)
+    
+    RAC(self.loginViewModel, account) = self.accountField.rac_textSignal;
+    RAC(self.loginViewModel, password) = self.passWordField.rac_textSignal;
+    RAC(self.sureBtn, enabled) = self.loginViewModel.loginEnableSingal;
+    RAC(self.promptLabel, text) = self.loginViewModel.statusSubject;
+    
+    //头像信号的订阅
+    [RACObserve(self.loginViewModel, iconUrl) subscribeNext:^(id  _Nullable x) {
+        @strongify(self)
+        self.headImage.image = [UIImage imageNamed:x];
+    } error:^(NSError * _Nullable error) {
+    }];
+    
+//    //登录按钮能否使用
+//    [self.loginViewModel.loginEnableSingal subscribeNext:^(id  _Nullable x) {
+//        @strongify(self)
+//        
+//        UIColor *backgroundColor = (x.integerValue == 0)?[UIColor lightGrayColor]:[UIColor blueColor];
+//        
+//        self.sureBtn
+//    }];
+//    
+//    self.headImage
+    
 }
 
     

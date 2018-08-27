@@ -8,6 +8,9 @@
 
 #import "MVVMRACVC.h"
 #import "MVVMRACOneVC.h"
+#import "MVVMRACTwoVC.h"
+#import "MVVMRACThreeVC.h"
+#import "MVVMRACFourVC.h"
 
 @interface MVVMRACVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -73,11 +76,11 @@
     if (indexPath.row == 0){
         cell.textLabel.text = @"MVVMRACOneVC";
     }else if (indexPath.row == 1){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"MVVMRACTwoVC";
     }else if (indexPath.row == 2){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"MVVMRACThreeVC";
     }else if (indexPath.row == 3){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"MVVMRACFourVC";
     }else if (indexPath.row == 4){
         cell.textLabel.text = @"";
     }else if (indexPath.row == 5){
@@ -97,8 +100,24 @@
         
     }else if (indexPath.row == 1){
         
-       
+        UIStoryboard *story = [UIStoryboard storyboardWithName:@"ThirdFounction" bundle:nil];
+        MVVMRACTwoVC *vc = [story instantiateViewControllerWithIdentifier:@"MVVMRACTwoVCID"];
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    }else if (indexPath.row == 2){
+        
+        UIStoryboard *story = [UIStoryboard storyboardWithName:@"ThirdFounction" bundle:nil];
+        MVVMRACThreeVC *vc = [story instantiateViewControllerWithIdentifier:@"MVVMRACThreeVC"];
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    }else if (indexPath.row == 3){
+        
+        UIStoryboard *story = [UIStoryboard storyboardWithName:@"ThirdFounction" bundle:nil];
+        MVVMRACFourVC *vc = [story instantiateViewControllerWithIdentifier:@"MVVMRACFourVC"];
+        [self.navigationController pushViewController:vc animated:YES];
     }
+    
+    
 }
 
 

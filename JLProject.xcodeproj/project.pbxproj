@@ -149,6 +149,14 @@
 		04E2BE87210D8238007D9E3D /* WHDebugConsoleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2BE80210D8238007D9E3D /* WHDebugConsoleLabel.m */; };
 		04E2BE88210D8238007D9E3D /* WHDebugMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2BE81210D8238007D9E3D /* WHDebugMonitor.m */; };
 		04E2BE89210D8238007D9E3D /* WHDebugCpuMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E2BE82210D8238007D9E3D /* WHDebugCpuMonitor.m */; };
+		04E888662133FEAB00BC4FF1 /* MVVMRACTwoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E888642133FEAA00BC4FF1 /* MVVMRACTwoView.m */; };
+		04E888672133FEAB00BC4FF1 /* MVVMRACTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E888652133FEAA00BC4FF1 /* MVVMRACTwoVC.m */; };
+		04E8886B21341BD700BC4FF1 /* MVVMRACThreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8886A21341BD700BC4FF1 /* MVVMRACThreeVC.m */; };
+		04E8886F213423DE00BC4FF1 /* MVVMRACFourVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8886E213423DE00BC4FF1 /* MVVMRACFourVC.m */; };
+		04E888722134270400BC4FF1 /* MVVMRACFourOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E888712134270400BC4FF1 /* MVVMRACFourOneVC.m */; };
+		04E888742134326100BC4FF1 /* firstHuiBian.s in Sources */ = {isa = PBXBuildFile; fileRef = 04E888732134326100BC4FF1 /* firstHuiBian.s */; };
+		04EFB52A2133E3FB00C72D90 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB5292133E3FB00C72D90 /* LoginViewModel.m */; };
+		04EFB5332133F8BD00C72D90 /* ThirdFounction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EFB5322133F8BD00C72D90 /* ThirdFounction.storyboard */; };
 		04EFF4052102B07500D89F0D /* AsdkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EFF4042102B07500D89F0D /* AsdkVC.m */; };
 		1C21AE351F6511340039163D /* backgroundStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C21AE311F6511340039163D /* backgroundStar.png */; };
 		1C21AE361F6511340039163D /* backgroundStar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C21AE321F6511340039163D /* backgroundStar@2x.png */; };
@@ -535,6 +543,20 @@
 		04E2BE80210D8238007D9E3D /* WHDebugConsoleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHDebugConsoleLabel.m; sourceTree = "<group>"; };
 		04E2BE81210D8238007D9E3D /* WHDebugMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHDebugMonitor.m; sourceTree = "<group>"; };
 		04E2BE82210D8238007D9E3D /* WHDebugCpuMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHDebugCpuMonitor.m; sourceTree = "<group>"; };
+		04E888622133FEAA00BC4FF1 /* MVVMRACTwoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMRACTwoView.h; sourceTree = "<group>"; };
+		04E888632133FEAA00BC4FF1 /* MVVMRACTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMRACTwoVC.h; sourceTree = "<group>"; };
+		04E888642133FEAA00BC4FF1 /* MVVMRACTwoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMRACTwoView.m; sourceTree = "<group>"; };
+		04E888652133FEAA00BC4FF1 /* MVVMRACTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMRACTwoVC.m; sourceTree = "<group>"; };
+		04E8886921341BD700BC4FF1 /* MVVMRACThreeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMRACThreeVC.h; sourceTree = "<group>"; };
+		04E8886A21341BD700BC4FF1 /* MVVMRACThreeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMRACThreeVC.m; sourceTree = "<group>"; };
+		04E8886D213423DE00BC4FF1 /* MVVMRACFourVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMRACFourVC.h; sourceTree = "<group>"; };
+		04E8886E213423DE00BC4FF1 /* MVVMRACFourVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMRACFourVC.m; sourceTree = "<group>"; };
+		04E888702134270400BC4FF1 /* MVVMRACFourOneVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMRACFourOneVC.h; sourceTree = "<group>"; };
+		04E888712134270400BC4FF1 /* MVVMRACFourOneVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMRACFourOneVC.m; sourceTree = "<group>"; };
+		04E888732134326100BC4FF1 /* firstHuiBian.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = firstHuiBian.s; sourceTree = "<group>"; };
+		04EFB5282133E3FB00C72D90 /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		04EFB5292133E3FB00C72D90 /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		04EFB5322133F8BD00C72D90 /* ThirdFounction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThirdFounction.storyboard; sourceTree = "<group>"; };
 		04EFF4032102B07500D89F0D /* AsdkVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsdkVC.h; sourceTree = "<group>"; };
 		04EFF4042102B07500D89F0D /* AsdkVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsdkVC.m; sourceTree = "<group>"; };
 		05935B623495A3D744DA63BD /* Pods-JLProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-JLProject/Pods-JLProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -831,6 +853,9 @@
 		042CDB182130159200FA51E8 /* ChildVC */ = {
 			isa = PBXGroup;
 			children = (
+				04E8886C213423D200BC4FF1 /* MVVMRACFourVC */,
+				04E8886821341BC100BC4FF1 /* MVVMRACThreeVC */,
+				04E888612133FEAA00BC4FF1 /* MVVMRACTwoVC */,
 				042CDB19213015B500FA51E8 /* MVVMRACOneVC */,
 			);
 			path = ChildVC;
@@ -841,6 +866,8 @@
 			children = (
 				042CDB1A213015C000FA51E8 /* MVVMRACOneVC.h */,
 				042CDB1B213015C000FA51E8 /* MVVMRACOneVC.m */,
+				04EFB5282133E3FB00C72D90 /* LoginViewModel.h */,
+				04EFB5292133E3FB00C72D90 /* LoginViewModel.m */,
 			);
 			path = MVVMRACOneVC;
 			sourceTree = "<group>";
@@ -1514,6 +1541,7 @@
 			children = (
 				04C4CB2620FCC31900560977 /* ThirdFounctionVC.h */,
 				04C4CAF520FCC31900560977 /* ThirdFounctionVC.m */,
+				04EFB5322133F8BD00C72D90 /* ThirdFounction.storyboard */,
 				04C4CAF620FCC31900560977 /* ChildVC */,
 			);
 			path = ThirdFounction;
@@ -1643,6 +1671,37 @@
 			path = WHDebugTool;
 			sourceTree = "<group>";
 		};
+		04E888612133FEAA00BC4FF1 /* MVVMRACTwoVC */ = {
+			isa = PBXGroup;
+			children = (
+				04E888632133FEAA00BC4FF1 /* MVVMRACTwoVC.h */,
+				04E888652133FEAA00BC4FF1 /* MVVMRACTwoVC.m */,
+				04E888622133FEAA00BC4FF1 /* MVVMRACTwoView.h */,
+				04E888642133FEAA00BC4FF1 /* MVVMRACTwoView.m */,
+			);
+			path = MVVMRACTwoVC;
+			sourceTree = "<group>";
+		};
+		04E8886821341BC100BC4FF1 /* MVVMRACThreeVC */ = {
+			isa = PBXGroup;
+			children = (
+				04E8886921341BD700BC4FF1 /* MVVMRACThreeVC.h */,
+				04E8886A21341BD700BC4FF1 /* MVVMRACThreeVC.m */,
+			);
+			path = MVVMRACThreeVC;
+			sourceTree = "<group>";
+		};
+		04E8886C213423D200BC4FF1 /* MVVMRACFourVC */ = {
+			isa = PBXGroup;
+			children = (
+				04E8886D213423DE00BC4FF1 /* MVVMRACFourVC.h */,
+				04E8886E213423DE00BC4FF1 /* MVVMRACFourVC.m */,
+				04E888702134270400BC4FF1 /* MVVMRACFourOneVC.h */,
+				04E888712134270400BC4FF1 /* MVVMRACFourOneVC.m */,
+			);
+			path = MVVMRACFourVC;
+			sourceTree = "<group>";
+		};
 		04EFF4022102B05B00D89F0D /* Texture-Asyncdisplaykit */ = {
 			isa = PBXGroup;
 			children = (
@@ -1717,6 +1776,7 @@
 			children = (
 				1CF17D9F1F2EDB6000EA3B51 /* Image */,
 				1C4086801EE101F500E4E363 /* main.m */,
+				04E888732134326100BC4FF1 /* firstHuiBian.s */,
 				1C40876D1EE1024700E4E363 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
@@ -2539,6 +2599,7 @@
 				04E2BE70210CC1BC007D9E3D /* WKWebViewText.html in Resources */,
 				04E2BE61210CC1BC007D9E3D /* ic_menu_yellowpig.png in Resources */,
 				1CF17DAA1F2EDB6000EA3B51 /* yinDaoYe4.png in Resources */,
+				04EFB5332133F8BD00C72D90 /* ThirdFounction.storyboard in Resources */,
 				1CF17DA71F2EDB6000EA3B51 /* yinDaoYe1.png in Resources */,
 				04E2BE63210CC1BC007D9E3D /* ic_menu_bluepig2.png in Resources */,
 				04E2BE58210CC1BC007D9E3D /* ic_menu_bluepig.png in Resources */,
@@ -2680,7 +2741,9 @@
 				1C9234B12115B4F3006429C4 /* CoreAnimationVC.m in Sources */,
 				1C92344521155D3A006429C4 /* JLCustomCameraVC.m in Sources */,
 				04C4CB6420FCC31900560977 /* TYCyclePagerView.m in Sources */,
+				04E888672133FEAB00BC4FF1 /* MVVMRACTwoVC.m in Sources */,
 				1C9234B32115B4F3006429C4 /* RootClassVC.m in Sources */,
+				04E8886F213423DE00BC4FF1 /* MVVMRACFourVC.m in Sources */,
 				04E2BE83210D8238007D9E3D /* WHDebugToolManager.m in Sources */,
 				1C6D3EB51F2ECFCE00F699BF /* AppUtily.m in Sources */,
 				1C9234C92115B4F3006429C4 /* ArchivingPerson.m in Sources */,
@@ -2714,6 +2777,7 @@
 				1C6D40532113D980008430A0 /* UIImage+Category.m in Sources */,
 				04C4CB4E20FCC31900560977 /* TemplateListView.m in Sources */,
 				04C4CB2F20FCC31900560977 /* LHY_HeaderView.m in Sources */,
+				04EFB52A2133E3FB00C72D90 /* LoginViewModel.m in Sources */,
 				1C9234CD2115B4F3006429C4 /* PersonRunTimeKVO.m in Sources */,
 				1CBBBFEE21264448005D51C9 /* Father.m in Sources */,
 				04C4CB5020FCC31900560977 /* TemplateListViewController.m in Sources */,
@@ -2760,6 +2824,7 @@
 				040D5817211724560092666F /* NSOperationBaseVC.m in Sources */,
 				04C4CB5220FCC31900560977 /* ZXTUViewController.m in Sources */,
 				1CAF727520F4550F00387413 /* UIView+FontSize.m in Sources */,
+				04E888662133FEAB00BC4FF1 /* MVVMRACTwoView.m in Sources */,
 				1C9234C12115B4F3006429C4 /* MethodSwizzlingSonVC.m in Sources */,
 				1C9234BA2115B4F3006429C4 /* JLWeakProxy.m in Sources */,
 				04C4CB2C20FCC31900560977 /* JHLineItemView.m in Sources */,
@@ -2826,8 +2891,11 @@
 				1CCB1EBB210AC8BA004486FD /* ConfigAttributedString.m in Sources */,
 				04C4CB5B20FCC31900560977 /* MSSCalendarCollectionReusableView.m in Sources */,
 				04C4CB4A20FCC31900560977 /* JLCircleChart.m in Sources */,
+				04E8886B21341BD700BC4FF1 /* MVVMRACThreeVC.m in Sources */,
 				1C9234C52115B4F3006429C4 /* AssociatedObjectsVC.m in Sources */,
 				1CAF727320F4550F00387413 /* NSDictionary+SetNullWithStr.m in Sources */,
+				04E888722134270400BC4FF1 /* MVVMRACFourOneVC.m in Sources */,
+				04E888742134326100BC4FF1 /* firstHuiBian.s in Sources */,
 				1C4087B31EE1024700E4E363 /* MainViewController.m in Sources */,
 				1CAF727420F4550F00387413 /* UIFont+Fit.m in Sources */,
 				1C9234B82115B4F3006429C4 /* JLProxyB.m in Sources */,

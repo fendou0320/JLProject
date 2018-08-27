@@ -72,10 +72,6 @@
     UITableViewCell *cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
     //    cell.backgroundColor = RandomColor1;
     
-    
-    
-    
-    
     if (indexPath.row == 0){
         cell.textLabel.text = @"深浅拷贝";
     }else if (indexPath.row == 1){
