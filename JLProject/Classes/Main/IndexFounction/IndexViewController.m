@@ -15,10 +15,25 @@
 #import "KeyBoardVC.h"
 #import "RichTextVC.h"
 #import "JLCameraVC.h"
-
+#import "MoneyIncreaseVC.h"
 #import "DongHuaViewController.h"
 #import "WKWebDemoController.h"
 #import "BoWenShuiQiuController.h"
+#import "PopUpController.h"
+#import "JLWebViewVC.h"
+#import "MarketChartViewController.h"
+
+#include <ifaddrs.h>
+#include <arpa/inet.h>
+#include <net/if.h>
+
+#define IOS_CELLULAR    @"pdp_ip0"
+#define IOS_WIFI        @"en0"
+#define IOS_VPN         @"utun0"
+#define IP_ADDR_IPv4    @"ipv4"
+#define IP_ADDR_IPv6    @"ipv6"
+
+
 
 @interface IndexViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -38,6 +53,8 @@
     NSString *identifierForVendor = [[UIDevice currentDevice].identifierForVendor UUIDString];
     NSLog(@"唯一标示符%@", identifierForVendor);
     
+    NSLog(@"ip地址--- %@", [self getIPAddresses]);
+    
     //抛出异常
     NSMutableArray *array = [NSMutableArray arrayWithCapacity:1];
     if (!array) {
@@ -48,8 +65,6 @@
         // 抛出异常方式二
         @throw [NSException exceptionWithName:@"UrlError" reason:@"传入的url有异常！" userInfo:nil];
     }
- 
-    
     
     _tableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStylePlain];
     //设置数据源，注意必须实现对应的UITableViewDataSource协议
@@ -93,15 +108,19 @@
     }else if (indexPath.row == 7){
         cell.textLabel.text = @"自定义相机";
     }else if (indexPath.row == 8){
-        
+        cell.textLabel.text = @"弹窗";
     }else if (indexPath.row == 9){
-
+        cell.textLabel.text = @"金钱数字逐渐增长";
     }else if (indexPath.row == 10){
         cell.textLabel.text = @"各种动画";
     }else if (indexPath.row == 11){
         cell.textLabel.text = @"水波纹圆球";
     }else if (indexPath.row == 12){
         cell.textLabel.text = @"WKwebview";
+    }else if (indexPath.row == 13){
+        cell.textLabel.text = @"webview";
+    }else if (indexPath.row == 14){
+        cell.textLabel.text = @"点击横屏";
     }
     
     return cell;
@@ -134,9 +153,11 @@
         JLCameraVC *vc = [[JLCameraVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.row == 8){
-        
+        PopUpController *vc = [[PopUpController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.row == 9){
-        
+        MoneyIncreaseVC *vc = [[MoneyIncreaseVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }else  if (indexPath.row == 10){
         
         DongHuaViewController *donghua = [[DongHuaViewController alloc] init];
@@ -150,6 +171,16 @@
     }else if (indexPath.row == 12){
         
         WKWebDemoController *donghua = [[WKWebDemoController alloc] init];
+        [self.navigationController pushViewController:donghua animated:YES];
+        
+    }else if (indexPath.row == 13){
+        
+        JLWebViewVC *donghua = [[JLWebViewVC alloc] init];
+        [self.navigationController pushViewController:donghua animated:YES];
+        
+    }else if (indexPath.row == 14){
+        
+        MarketChartViewController *donghua = [[MarketChartViewController alloc] init];
         [self.navigationController pushViewController:donghua animated:YES];
         
     }
@@ -218,6 +249,60 @@
  */
 
 
+- (NSString *)getIPAddress:(BOOL)preferIPv4
+{
+    NSArray *searchArray = preferIPv4 ?
+    @[ IOS_VPN @"/" IP_ADDR_IPv4, IOS_VPN @"/" IP_ADDR_IPv6, IOS_WIFI @"/" IP_ADDR_IPv4, IOS_WIFI @"/" IP_ADDR_IPv6, IOS_CELLULAR @"/" IP_ADDR_IPv4, IOS_CELLULAR @"/" IP_ADDR_IPv6 ] :
+    @[ IOS_VPN @"/" IP_ADDR_IPv6, IOS_VPN @"/" IP_ADDR_IPv4, IOS_WIFI @"/" IP_ADDR_IPv6, IOS_WIFI @"/" IP_ADDR_IPv4, IOS_CELLULAR @"/" IP_ADDR_IPv6, IOS_CELLULAR @"/" IP_ADDR_IPv4 ] ;
+    NSDictionary *addresses = [self getIPAddresses];
+    NSLog(@"addresses: %@", addresses);
+    __block NSString *address;
+    [searchArray enumerateObjectsUsingBlock:^(NSString *key, NSUInteger idx, BOOL *stop)
+     {
+         address = addresses[key];
+         if(address) *stop = YES;
+     } ];
+    return address ? address : @"0.0.0.0";
+}
+
+- (NSDictionary *)getIPAddresses
+{
+    NSMutableDictionary *addresses = [NSMutableDictionary dictionaryWithCapacity:8];
+    // retrieve the current interfaces - returns 0 on success
+    struct ifaddrs *interfaces;
+    if(!getifaddrs(&interfaces)) {
+        // Loop through linked list of interfaces
+        struct ifaddrs *interface;
+        for(interface=interfaces; interface; interface=interface->ifa_next) {
+            if(!(interface->ifa_flags & IFF_UP) /* || (interface->ifa_flags & IFF_LOOPBACK) */ ) {
+                continue; // deeply nested code harder to read
+            }
+            const struct sockaddr_in *addr = (const struct sockaddr_in*)interface->ifa_addr;
+            char addrBuf[ MAX(INET_ADDRSTRLEN, INET6_ADDRSTRLEN) ];
+            if(addr && (addr->sin_family==AF_INET || addr->sin_family==AF_INET6)) {
+                NSString *name = [NSString stringWithUTF8String:interface->ifa_name];
+                NSString *type;
+                if(addr->sin_family == AF_INET) {
+                    if(inet_ntop(AF_INET, &addr->sin_addr, addrBuf, INET_ADDRSTRLEN)) {
+                        type = IP_ADDR_IPv4;
+                    }
+                } else {
+                    const struct sockaddr_in6 *addr6 = (const struct sockaddr_in6*)interface->ifa_addr;
+                    if(inet_ntop(AF_INET6, &addr6->sin6_addr, addrBuf, INET6_ADDRSTRLEN)) {
+                        type = IP_ADDR_IPv6;
+                    }
+                }
+                if(type) {
+                    NSString *key = [NSString stringWithFormat:@"%@/%@", name, type];
+                    addresses[key] = [NSString stringWithUTF8String:addrBuf];
+                }
+            }
+        }
+        // Free memory
+        freeifaddrs(interfaces);
+    }
+    return [addresses count] ? addresses : nil;
+}
 
 
 

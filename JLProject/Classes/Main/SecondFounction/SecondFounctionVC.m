@@ -19,6 +19,8 @@
 #import "MultithreadingVC.h"
 #import "MessageSendVC.h"
 
+#import <GTCountSDK.h>
+
 @interface SecondFounctionVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -39,6 +41,16 @@
  10、属性、@synthesize
  11、ffmpeg
  */
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+//    eventId    自定义事件 Id，需要在个数后台配置才能生效
+//    args    自定义属性，用于扩展统计需要
+    [GTCountSDK trackCountEvent:@"002" withArgs:@{@"002":@"cvalue1"}];
+
+}
+
 
 
 - (void)viewDidLoad {

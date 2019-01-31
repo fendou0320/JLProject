@@ -154,7 +154,6 @@
 		04E8886B21341BD700BC4FF1 /* MVVMRACThreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8886A21341BD700BC4FF1 /* MVVMRACThreeVC.m */; };
 		04E8886F213423DE00BC4FF1 /* MVVMRACFourVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8886E213423DE00BC4FF1 /* MVVMRACFourVC.m */; };
 		04E888722134270400BC4FF1 /* MVVMRACFourOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E888712134270400BC4FF1 /* MVVMRACFourOneVC.m */; };
-		04E888742134326100BC4FF1 /* firstHuiBian.s in Sources */ = {isa = PBXBuildFile; fileRef = 04E888732134326100BC4FF1 /* firstHuiBian.s */; };
 		04EFB52A2133E3FB00C72D90 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EFB5292133E3FB00C72D90 /* LoginViewModel.m */; };
 		04EFB5332133F8BD00C72D90 /* ThirdFounction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EFB5322133F8BD00C72D90 /* ThirdFounction.storyboard */; };
 		04EFF4052102B07500D89F0D /* AsdkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EFF4042102B07500D89F0D /* AsdkVC.m */; };
@@ -260,6 +259,21 @@
 		1CF17DB41F2EF95200EA3B51 /* QiDong1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CF17DB21F2EF95200EA3B51 /* QiDong1@2x.png */; };
 		1CF17DB51F2EF95200EA3B51 /* QiDong2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CF17DB31F2EF95200EA3B51 /* QiDong2.png */; };
 		1CF93E1A210DBCE300BDE513 /* CategoryAddPropertyVC+Basis.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF93E19210DBCE200BDE513 /* CategoryAddPropertyVC+Basis.m */; };
+		3710D1902166243C002C96F0 /* JiShiLunBoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3710D18F2166243C002C96F0 /* JiShiLunBoVC.m */; };
+		372B340D2182AE680078D02B /* WKWebDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 372B340A2182AE680078D02B /* WKWebDemoController.m */; };
+		372B340E2182AE680078D02B /* WKWebViewText.html in Resources */ = {isa = PBXBuildFile; fileRef = 372B340B2182AE680078D02B /* WKWebViewText.html */; };
+		372B34112182AE970078D02B /* JLWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 372B34102182AE970078D02B /* JLWebViewVC.m */; };
+		37410D422148980500503D5C /* PopUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37410D412148980500503D5C /* PopUpController.m */; };
+		37410D482148995500503D5C /* CustomPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37410D462148995500503D5C /* CustomPopUpView.m */; };
+		37410D492148995500503D5C /* YCMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37410D472148995500503D5C /* YCMenuView.m */; };
+		37456F55215DC5CF00CF8727 /* JLClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 37456F54215DC5CF00CF8727 /* JLClassInfo.m */; };
+		3758BFDB214A775100AA7503 /* DashBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758BFDA214A775100AA7503 /* DashBoardView.m */; };
+		3758BFDE214A776A00AA7503 /* DashBoardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758BFDD214A776A00AA7503 /* DashBoardController.m */; };
+		3767C2B02202C5D200BB9C56 /* MarketChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3767C2AF2202C5D200BB9C56 /* MarketChartViewController.m */; };
+		377AFB062148A2C700EF4529 /* NSObject+JLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 377AFB052148A2C700EF4529 /* NSObject+JLModel.m */; };
+		37A5D143214B91DF001CA992 /* MoneyIncreaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A5D142214B91DF001CA992 /* MoneyIncreaseVC.m */; };
+		37A5D146214B9232001CA992 /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A5D144214B9232001CA992 /* UICountingLabel.m */; };
+		37ADD4082151F322005478F7 /* DashDemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 37ADD4072151F322005478F7 /* DashDemoModel.m */; };
 		D6BFBAAB767F367E7E7C8EA4 /* libPods-JLProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3F56CED33ED25FEC3286BA /* libPods-JLProject.a */; };
 		FA6F046E2E6E4C653443469C /* libPods-JLProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA4AD2A39877206B34D66F6 /* libPods-JLProjectTests.a */; };
 /* End PBXBuildFile section */
@@ -553,7 +567,6 @@
 		04E8886E213423DE00BC4FF1 /* MVVMRACFourVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMRACFourVC.m; sourceTree = "<group>"; };
 		04E888702134270400BC4FF1 /* MVVMRACFourOneVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMRACFourOneVC.h; sourceTree = "<group>"; };
 		04E888712134270400BC4FF1 /* MVVMRACFourOneVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMRACFourOneVC.m; sourceTree = "<group>"; };
-		04E888732134326100BC4FF1 /* firstHuiBian.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = firstHuiBian.s; sourceTree = "<group>"; };
 		04EFB5282133E3FB00C72D90 /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
 		04EFB5292133E3FB00C72D90 /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		04EFB5322133F8BD00C72D90 /* ThirdFounction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThirdFounction.storyboard; sourceTree = "<group>"; };
@@ -762,6 +775,35 @@
 		1CF93E19210DBCE200BDE513 /* CategoryAddPropertyVC+Basis.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CategoryAddPropertyVC+Basis.m"; sourceTree = "<group>"; };
 		1CF93E38210DD01600BDE513 /* libPINRemoteImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPINRemoteImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF93E3A210DD1EF00BDE513 /* libPINRemoteImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPINRemoteImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3710D18E2166243C002C96F0 /* JiShiLunBoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JiShiLunBoVC.h; sourceTree = "<group>"; };
+		3710D18F2166243C002C96F0 /* JiShiLunBoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JiShiLunBoVC.m; sourceTree = "<group>"; };
+		372B340A2182AE680078D02B /* WKWebDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebDemoController.m; sourceTree = "<group>"; };
+		372B340B2182AE680078D02B /* WKWebViewText.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WKWebViewText.html; sourceTree = "<group>"; };
+		372B340C2182AE680078D02B /* WKWebDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebDemoController.h; sourceTree = "<group>"; };
+		372B340F2182AE970078D02B /* JLWebViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLWebViewVC.h; sourceTree = "<group>"; };
+		372B34102182AE970078D02B /* JLWebViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLWebViewVC.m; sourceTree = "<group>"; };
+		37410D402148980500503D5C /* PopUpController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopUpController.h; sourceTree = "<group>"; };
+		37410D412148980500503D5C /* PopUpController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopUpController.m; sourceTree = "<group>"; };
+		37410D442148995500503D5C /* YCMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCMenuView.h; sourceTree = "<group>"; };
+		37410D452148995500503D5C /* CustomPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPopUpView.h; sourceTree = "<group>"; };
+		37410D462148995500503D5C /* CustomPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPopUpView.m; sourceTree = "<group>"; };
+		37410D472148995500503D5C /* YCMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMenuView.m; sourceTree = "<group>"; };
+		37456F53215DC5CF00CF8727 /* JLClassInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLClassInfo.h; sourceTree = "<group>"; };
+		37456F54215DC5CF00CF8727 /* JLClassInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLClassInfo.m; sourceTree = "<group>"; };
+		3758BFD9214A775100AA7503 /* DashBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashBoardView.h; sourceTree = "<group>"; };
+		3758BFDA214A775100AA7503 /* DashBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashBoardView.m; sourceTree = "<group>"; };
+		3758BFDC214A776A00AA7503 /* DashBoardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DashBoardController.h; sourceTree = "<group>"; };
+		3758BFDD214A776A00AA7503 /* DashBoardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashBoardController.m; sourceTree = "<group>"; };
+		3767C2AE2202C5D200BB9C56 /* MarketChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarketChartViewController.h; sourceTree = "<group>"; };
+		3767C2AF2202C5D200BB9C56 /* MarketChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarketChartViewController.m; sourceTree = "<group>"; };
+		377AFB042148A2C700EF4529 /* NSObject+JLModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+JLModel.h"; sourceTree = "<group>"; };
+		377AFB052148A2C700EF4529 /* NSObject+JLModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JLModel.m"; sourceTree = "<group>"; };
+		37A5D141214B91DF001CA992 /* MoneyIncreaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoneyIncreaseVC.h; sourceTree = "<group>"; };
+		37A5D142214B91DF001CA992 /* MoneyIncreaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyIncreaseVC.m; sourceTree = "<group>"; };
+		37A5D144214B9232001CA992 /* UICountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
+		37A5D145214B9232001CA992 /* UICountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
+		37ADD4062151F322005478F7 /* DashDemoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DashDemoModel.h; sourceTree = "<group>"; };
+		37ADD4072151F322005478F7 /* DashDemoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashDemoModel.m; sourceTree = "<group>"; };
 		55A6B8A3F421E17450CC4886 /* Pods-JLProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JLProject/Pods-JLProject.debug.xcconfig"; sourceTree = "<group>"; };
 		7AA4AD2A39877206B34D66F6 /* libPods-JLProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JLProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F3F56CED33ED25FEC3286BA /* libPods-JLProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JLProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -946,6 +988,11 @@
 		04C4C9E520FCC31900560977 /* ChildVC */ = {
 			isa = PBXGroup;
 			children = (
+				3767C2AD2202A72700BB9C56 /* 点击横屏 */,
+				372B34092182AE680078D02B /* WKwebView */,
+				3710D18D21662418002C96F0 /* 计时轮播 */,
+				37A5D140214B91AE001CA992 /* 金钱数字逐渐增长 */,
+				373E0C8621476FA900C408A3 /* 自定义弹窗 */,
 				1C92343F21155C0F006429C4 /* 自定义相机 */,
 				04E2BE25210CC1BC007D9E3D /* 动画情景一 */,
 				04E2BE4A210CC1BC007D9E3D /* 水波纹 */,
@@ -966,16 +1013,9 @@
 			children = (
 				04C4C9E920FCC31900560977 /* HistogramVC.h */,
 				04C4C9E820FCC31900560977 /* HistogramVC.m */,
-				04C4C9E720FCC31900560977 /* ChildVC */,
+				3758BFD4214A702C00AA7503 /* ChildVC */,
 			);
 			path = "柱状图";
-			sourceTree = "<group>";
-		};
-		04C4C9E720FCC31900560977 /* ChildVC */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ChildVC;
 			sourceTree = "<group>";
 		};
 		04C4C9EA20FCC31900560977 /* 折线图 */ = {
@@ -1776,7 +1816,6 @@
 			children = (
 				1CF17D9F1F2EDB6000EA3B51 /* Image */,
 				1C4086801EE101F500E4E363 /* main.m */,
-				04E888732134326100BC4FF1 /* firstHuiBian.s */,
 				1C40876D1EE1024700E4E363 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
@@ -1919,6 +1958,7 @@
 		1C6D3BF61F2ECFCD00F699BF /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				377AFB0221489E8B00EF4529 /* JLKit */,
 				1C6272AC210DD889003C344A /* DetectionTool */,
 				1C9CD6C01F4A8E5300901EFD /* CircleProgress */,
 			);
@@ -2456,6 +2496,108 @@
 			path = yinDaoYe;
 			sourceTree = "<group>";
 		};
+		3710D18D21662418002C96F0 /* 计时轮播 */ = {
+			isa = PBXGroup;
+			children = (
+				3710D18E2166243C002C96F0 /* JiShiLunBoVC.h */,
+				3710D18F2166243C002C96F0 /* JiShiLunBoVC.m */,
+			);
+			path = "计时轮播";
+			sourceTree = "<group>";
+		};
+		372B34092182AE680078D02B /* WKwebView */ = {
+			isa = PBXGroup;
+			children = (
+				372B340A2182AE680078D02B /* WKWebDemoController.m */,
+				372B340B2182AE680078D02B /* WKWebViewText.html */,
+				372B340C2182AE680078D02B /* WKWebDemoController.h */,
+				372B340F2182AE970078D02B /* JLWebViewVC.h */,
+				372B34102182AE970078D02B /* JLWebViewVC.m */,
+			);
+			path = WKwebView;
+			sourceTree = "<group>";
+		};
+		373E0C8621476FA900C408A3 /* 自定义弹窗 */ = {
+			isa = PBXGroup;
+			children = (
+				37410D432148995500503D5C /* ChildView */,
+				37410D402148980500503D5C /* PopUpController.h */,
+				37410D412148980500503D5C /* PopUpController.m */,
+			);
+			path = "自定义弹窗";
+			sourceTree = "<group>";
+		};
+		37410D432148995500503D5C /* ChildView */ = {
+			isa = PBXGroup;
+			children = (
+				37410D442148995500503D5C /* YCMenuView.h */,
+				37410D472148995500503D5C /* YCMenuView.m */,
+				37410D452148995500503D5C /* CustomPopUpView.h */,
+				37410D462148995500503D5C /* CustomPopUpView.m */,
+			);
+			path = ChildView;
+			sourceTree = "<group>";
+		};
+		3758BFD4214A702C00AA7503 /* ChildVC */ = {
+			isa = PBXGroup;
+			children = (
+				3758BFD8214A775100AA7503 /* 仪表盘 */,
+			);
+			path = ChildVC;
+			sourceTree = "<group>";
+		};
+		3758BFD8214A775100AA7503 /* 仪表盘 */ = {
+			isa = PBXGroup;
+			children = (
+				3758BFDC214A776A00AA7503 /* DashBoardController.h */,
+				3758BFDD214A776A00AA7503 /* DashBoardController.m */,
+				3758BFD9214A775100AA7503 /* DashBoardView.h */,
+				3758BFDA214A775100AA7503 /* DashBoardView.m */,
+				37ADD4062151F322005478F7 /* DashDemoModel.h */,
+				37ADD4072151F322005478F7 /* DashDemoModel.m */,
+			);
+			path = "仪表盘";
+			sourceTree = "<group>";
+		};
+		3767C2AD2202A72700BB9C56 /* 点击横屏 */ = {
+			isa = PBXGroup;
+			children = (
+				3767C2AE2202C5D200BB9C56 /* MarketChartViewController.h */,
+				3767C2AF2202C5D200BB9C56 /* MarketChartViewController.m */,
+			);
+			path = "点击横屏";
+			sourceTree = "<group>";
+		};
+		377AFB0221489E8B00EF4529 /* JLKit */ = {
+			isa = PBXGroup;
+			children = (
+				377AFB032148A2AB00EF4529 /* JLModel */,
+			);
+			path = JLKit;
+			sourceTree = "<group>";
+		};
+		377AFB032148A2AB00EF4529 /* JLModel */ = {
+			isa = PBXGroup;
+			children = (
+				377AFB042148A2C700EF4529 /* NSObject+JLModel.h */,
+				377AFB052148A2C700EF4529 /* NSObject+JLModel.m */,
+				37456F53215DC5CF00CF8727 /* JLClassInfo.h */,
+				37456F54215DC5CF00CF8727 /* JLClassInfo.m */,
+			);
+			path = JLModel;
+			sourceTree = "<group>";
+		};
+		37A5D140214B91AE001CA992 /* 金钱数字逐渐增长 */ = {
+			isa = PBXGroup;
+			children = (
+				37A5D145214B9232001CA992 /* UICountingLabel.h */,
+				37A5D144214B9232001CA992 /* UICountingLabel.m */,
+				37A5D141214B91DF001CA992 /* MoneyIncreaseVC.h */,
+				37A5D142214B91DF001CA992 /* MoneyIncreaseVC.m */,
+			);
+			path = "金钱数字逐渐增长";
+			sourceTree = "<group>";
+		};
 		4DE2614ECCD8551261AA527C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2628,6 +2770,7 @@
 				04C4CB3420FCC31900560977 /* 123.jpg in Resources */,
 				1C21AE361F6511340039163D /* backgroundStar@2x.png in Resources */,
 				1C3F65341F4548410052E821 /* 288x360.jpg in Resources */,
+				372B340E2182AE680078D02B /* WKWebViewText.html in Resources */,
 				04E2BE5D210CC1BC007D9E3D /* love@2x.png in Resources */,
 				04E2BE5F210CC1BC007D9E3D /* FFTspark.png in Resources */,
 				1CF17DB51F2EF95200EA3B51 /* QiDong2.png in Resources */,
@@ -2739,13 +2882,17 @@
 				1C9234D62115B55E006429C4 /* RunTimeSummarizeVC.m in Sources */,
 				1CF93E1A210DBCE300BDE513 /* CategoryAddPropertyVC+Basis.m in Sources */,
 				1C9234B12115B4F3006429C4 /* CoreAnimationVC.m in Sources */,
+				37410D422148980500503D5C /* PopUpController.m in Sources */,
+				37456F55215DC5CF00CF8727 /* JLClassInfo.m in Sources */,
 				1C92344521155D3A006429C4 /* JLCustomCameraVC.m in Sources */,
 				04C4CB6420FCC31900560977 /* TYCyclePagerView.m in Sources */,
+				37ADD4082151F322005478F7 /* DashDemoModel.m in Sources */,
 				04E888672133FEAB00BC4FF1 /* MVVMRACTwoVC.m in Sources */,
 				1C9234B32115B4F3006429C4 /* RootClassVC.m in Sources */,
 				04E8886F213423DE00BC4FF1 /* MVVMRACFourVC.m in Sources */,
 				04E2BE83210D8238007D9E3D /* WHDebugToolManager.m in Sources */,
 				1C6D3EB51F2ECFCE00F699BF /* AppUtily.m in Sources */,
+				3710D1902166243C002C96F0 /* JiShiLunBoVC.m in Sources */,
 				1C9234C92115B4F3006429C4 /* ArchivingPerson.m in Sources */,
 				04C4CB7B20FCC31900560977 /* MvvMIndexView.m in Sources */,
 				1C9234CB2115B4F3006429C4 /* CategoryAddPropertyVC+Person.m in Sources */,
@@ -2773,6 +2920,7 @@
 				04C4CB5720FCC31900560977 /* LineChatVC.m in Sources */,
 				04C4CB6E20FCC31900560977 /* TemplateOneItemView.m in Sources */,
 				04C4CB3720FCC31900560977 /* HuanJingJianCeChat.m in Sources */,
+				37410D482148995500503D5C /* CustomPopUpView.m in Sources */,
 				1CAF726620F4541500387413 /* NSString+Extern.m in Sources */,
 				1C6D40532113D980008430A0 /* UIImage+Category.m in Sources */,
 				04C4CB4E20FCC31900560977 /* TemplateListView.m in Sources */,
@@ -2781,9 +2929,12 @@
 				1C9234CD2115B4F3006429C4 /* PersonRunTimeKVO.m in Sources */,
 				1CBBBFEE21264448005D51C9 /* Father.m in Sources */,
 				04C4CB5020FCC31900560977 /* TemplateListViewController.m in Sources */,
+				3758BFDE214A776A00AA7503 /* DashBoardController.m in Sources */,
 				1C9234B02115B4F3006429C4 /* CustomTransitionAnimationVC.m in Sources */,
+				3767C2B02202C5D200BB9C56 /* MarketChartViewController.m in Sources */,
 				04E2BE6D210CC1BC007D9E3D /* YAWaveView.m in Sources */,
 				04C4CB6D20FCC31900560977 /* MVVMTwoController.m in Sources */,
+				37A5D146214B9232001CA992 /* UICountingLabel.m in Sources */,
 				04C4CB4920FCC31900560977 /* JLRingChart.m in Sources */,
 				1CBBBFEC21264448005D51C9 /* ADCHero.m in Sources */,
 				04C4CB2A20FCC31900560977 /* JHLineChart.m in Sources */,
@@ -2800,6 +2951,7 @@
 				1C9CD6C31F4A8E5300901EFD /* CircleProgress.m in Sources */,
 				04C4CB6A20FCC31900560977 /* LoginViewController.m in Sources */,
 				1C9234BC2115B4F3006429C4 /* BlockVC.m in Sources */,
+				377AFB062148A2C700EF4529 /* NSObject+JLModel.m in Sources */,
 				1C9234B22115B4F3006429C4 /* TransitionAnimationVC.m in Sources */,
 				1C6D3EB61F2ECFCE00F699BF /* MonitoringNetwork.m in Sources */,
 				1CBBBFE821264448005D51C9 /* MessageSendVC.m in Sources */,
@@ -2815,6 +2967,7 @@
 				04C4CB3E20FCC31900560977 /* TopViewController.m in Sources */,
 				04C4CB3620FCC31900560977 /* PictureViewController.m in Sources */,
 				04C4CB3A20FCC31900560977 /* butongCircle.m in Sources */,
+				37410D492148995500503D5C /* YCMenuView.m in Sources */,
 				04C4CB2E20FCC31900560977 /* LHY_FriendsListCell.m in Sources */,
 				04C4CB4020FCC31900560977 /* TopViewChannalButton.m in Sources */,
 				1C9234D92115B943006429C4 /* AnimationSummaryVC.m in Sources */,
@@ -2825,6 +2978,7 @@
 				04C4CB5220FCC31900560977 /* ZXTUViewController.m in Sources */,
 				1CAF727520F4550F00387413 /* UIView+FontSize.m in Sources */,
 				04E888662133FEAB00BC4FF1 /* MVVMRACTwoView.m in Sources */,
+				372B34112182AE970078D02B /* JLWebViewVC.m in Sources */,
 				1C9234C12115B4F3006429C4 /* MethodSwizzlingSonVC.m in Sources */,
 				1C9234BA2115B4F3006429C4 /* JLWeakProxy.m in Sources */,
 				04C4CB2C20FCC31900560977 /* JHLineItemView.m in Sources */,
@@ -2894,8 +3048,8 @@
 				04E8886B21341BD700BC4FF1 /* MVVMRACThreeVC.m in Sources */,
 				1C9234C52115B4F3006429C4 /* AssociatedObjectsVC.m in Sources */,
 				1CAF727320F4550F00387413 /* NSDictionary+SetNullWithStr.m in Sources */,
+				372B340D2182AE680078D02B /* WKWebDemoController.m in Sources */,
 				04E888722134270400BC4FF1 /* MVVMRACFourOneVC.m in Sources */,
-				04E888742134326100BC4FF1 /* firstHuiBian.s in Sources */,
 				1C4087B31EE1024700E4E363 /* MainViewController.m in Sources */,
 				1CAF727420F4550F00387413 /* UIFont+Fit.m in Sources */,
 				1C9234B82115B4F3006429C4 /* JLProxyB.m in Sources */,
@@ -2931,6 +3085,8 @@
 				04C4CB6520FCC31900560977 /* TYCyclePagerTransformLayout.m in Sources */,
 				1C9234AF2115B4F3006429C4 /* CopyTypeVC.m in Sources */,
 				1CAF726520F4541500387413 /* UILabel+Alignment.m in Sources */,
+				3758BFDB214A775100AA7503 /* DashBoardView.m in Sources */,
+				37A5D143214B91DF001CA992 /* MoneyIncreaseVC.m in Sources */,
 				1CBBBFEB21264448005D51C9 /* MessageForwardDemoOneVC.m in Sources */,
 				1C9234B72115B4F3006429C4 /* NSProxyNSObjectVC.m in Sources */,
 			);

@@ -56,4 +56,53 @@
 #define kSANDIANTUHeight 416/2
 
 
+// font
+#define JRRelateFont(font)      kRelateFont(font)
+#define JRFont8                 JRRelateFont(8)
+#define JRFont10                JRRelateFont(10)
+#define JRFont11                JRRelateFont(11)
+#define JRFont12                JRRelateFont(12)
+#define JRFont13                JRRelateFont(13)
+#define JRFont14                JRRelateFont(14)
+#define JRFont15                JRRelateFont(15)
+#define JRFont16                JRRelateFont(16)
+#define JRFont17                JRRelateFont(17)
+#define JRFont18                JRRelateFont(18)
+#define JRFont20                JRRelateFont(20)
+#define JRFont24                JRRelateFont(24)
+#define JRFont36                JRRelateFont(36)
+
+// bold font
+#define JRRelateBoldFont(font)  kRelateBoldFont(font)
+#define JRBoldFont8             JRRelateBoldFont(8)
+#define JRBoldFont10            JRRelateBoldFont(10)
+#define JRBoldFont11            JRRelateBoldFont(11)
+#define JRBoldFont12            JRRelateBoldFont(12)
+#define JRBoldFont13            JRRelateBoldFont(13)
+#define JRBoldFont14            JRRelateBoldFont(14)
+#define JRBoldFont15            JRRelateBoldFont(15)
+#define JRBoldFont16            JRRelateBoldFont(16)
+#define JRBoldFont17            JRRelateBoldFont(17)
+#define JRBoldFont18            JRRelateBoldFont(18)
+#define JRBoldFont20            JRRelateBoldFont(20)
+#define JRBoldFont24            JRRelateBoldFont(24)
+#define JRBoldFont36            JRRelateBoldFont(36)
+
+#define kRelateToIphone6(length)            ((length)*(kScreenWidth)/(375.0f))
+
+#define kRelate(length)                     kRelateToIphone6(length)
+
+#define kRelateFont(font)                   [UIFont systemFontOfSize:kRelateToIphone6(font)]
+
+#define kRelateBoldFont(font)               [UIFont boldSystemFontOfSize:kRelateToIphone6(font)]
+
+// length
+#define JRRelate(length)        kRelateToIphone6(length)
+#define JRMargin8                 JRRelate(8.f)
+#define JRMargin10                JRRelate(10.f)
+#define JRMargin12                JRRelate(12.f)
+#define JRMargin15                JRRelate(15.f)
+#define JRMargin20                JRRelate(20.f)
+
+
 #endif /* SizeDef_h */

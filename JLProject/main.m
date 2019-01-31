@@ -20,12 +20,12 @@
  return a+b+x;
  }
  */
-int sum (int a, int b);
+//int sum (int a, int b);
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
       
-        NSLog(@"%d", sum(10, 30));
+//        NSLog(@"%d", sum(10, 30));
         
 //        NSString * (^myBlcok)(int, NSString *) = ^NSString *(int a, NSString *b){
 //            return [NSString stringWithFormat:@"传入的参数分别为：%d,%@", a , b];

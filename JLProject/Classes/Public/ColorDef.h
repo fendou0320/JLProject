@@ -73,7 +73,6 @@
 #define COLOR_GAOJING_Green [UIColor greenColor]
 #define COLOR_GAOJING_PurpleColor [UIColor purpleColor]
 
-
 #define COLOR_CHATLINE_ZUOBIAO HEXToRGB(@"#8b8b8b")
 //虚线
 #define COLOR_LINECHAT_XUXIAN HEXToRGB(@"#222222")
@@ -96,6 +95,7 @@
 #define PMFont(F) [UIFont fontWithName:@"PingFangSC-Medium" size:F]
 
 #define SHFont(F) [UIFont fontWithName:@"SourceHanSansCN-Regular" size:F]
+
 
 
 #endif /* ColorDef_h */

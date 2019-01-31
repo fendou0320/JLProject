@@ -49,6 +49,16 @@
     //TODO    通知更新需要做的事情
     //FIXME   你想要修改的bug
     
+    // 状态栏(statusbar)
+    CGRect rectStatus = [[UIApplication sharedApplication] statusBarFrame];
+    NSLog(@"状态栏-status width - %f", rectStatus.size.width); // 宽度
+    NSLog(@"状态栏-status height - %f", rectStatus.size.height);  // 高度
+    
+    // 导航栏（navigationbar）
+    CGRect rectNav = self.navigationController.navigationBar.frame;
+    NSLog(@"导航栏-nav width - %f", rectNav.size.width); // 宽度
+    NSLog(@"导航栏-nav height - %f", rectNav.size.height);  // 高度
+    
     _tableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 20, kScreenWidth, kScreenHeight) style:UITableViewStyleGrouped];
     //设置数据源，注意必须实现对应的UITableViewDataSource协议
     _tableView.dataSource=self;
@@ -162,8 +172,8 @@
         [self.navigationController pushViewController:top animated:YES];
     }else if (indexPath.row == 10){
         
-        //        WebViewController *top = [[WebViewController alloc] init];
-        //        [self.navigationController pushViewController:top animated:YES];
+//        WebViewController *top = [[WebViewController alloc] init];
+//        [self.navigationController pushViewController:top animated:YES];
     }else if (indexPath.row == 11){
         
         SandianViewController *top = [[SandianViewController alloc] init];

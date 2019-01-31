@@ -7,6 +7,7 @@
 //
 
 #import "HistogramVC.h"
+#import "DashBoardController.h"
 
 @interface HistogramVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -50,7 +51,7 @@
     //    cell.backgroundColor = RandomColor1;
     
     if (indexPath.row == 0) {
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"仪表盘";
     }else if (indexPath.row == 1){
         cell.textLabel.text = @"";
     }else if (indexPath.row == 2){
@@ -108,6 +109,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if (indexPath.row == 0) {
+        
+        DashBoardController *dashBoardView = [[DashBoardController alloc] init];
+        [self.navigationController pushViewController:dashBoardView animated:YES];
         
     }else if (indexPath.row == 1){
         

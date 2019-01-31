@@ -16,6 +16,14 @@
 #import "RetainCycleLoggerPlugin.h"
 #endif
 
+//个推统计集成
+#import <GTCountSDK.h>
+//APP id
+#define kGcAppId @"8QcsHZdv9c8iS0U3oPU6l3"
+//渠道名称 如果为 nil,默认为 'appstore'
+#define channelId @"appstore"
+
+
 @interface AppDelegate ()
 {
     FBMemoryProfiler *memoryProfiler;
@@ -28,7 +36,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
     //检测系统
     {
 #if DEBUG
@@ -38,19 +45,21 @@
         [memoryProfiler enable];
 #endif
     }
+    // 启动个数 SDK
+    [GTCountSDK startSDKWithAppId:kGcAppId withChannelId:@"appstore"];
+    // 使用 SDK 实例的 reportStrategy 属性设置上报策略。
+    [[GTCountSDK sharedInstance] setReportStrategy:GESHU_STRATEGY_WIFI_ONLY];
+    // 使用 SDK 实例的 sessionTime 属性获取 sessionTime 的值。
+    NSLog(@"sessionTime %ld",[[GTCountSDK sharedInstance]sessionTime]);
     
     UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window = window;
     [self.window makeKeyAndVisible];
     self.window.rootViewController = [[MainViewController alloc] init];
-    
     //启动网络监听
     AFNetworkReachabilityStatus status = [MonitoringNetwork monitoringNetworkState];
-
-    
     //登录页
 //    [LoginViewController showInview: self.window.rootViewController.view];
-
     
     return YES;
 }
@@ -65,7 +74,6 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    
     //允许后台播放音乐
     [application beginBackgroundTaskWithExpirationHandler:nil];
 }
@@ -85,6 +93,14 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
+    if (self.isForceLandscape) {
+        return UIInterfaceOrientationMaskLandscape;
+    }else{
+        return UIInterfaceOrientationMaskPortrait;
+    }
+    return UIInterfaceOrientationMaskPortrait;
+}
 
 
 

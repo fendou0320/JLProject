@@ -16,12 +16,61 @@
 //监控DebugToolTypeMemory | DebugToolTypeCPU | DebugToolTypeFPS
 #import "WHDebugToolManager.h"
 
+@interface StockModel : NSObject
+
+@property(nonatomic,copy) NSString *stockId;
+@property(nonatomic,copy) NSString *price;
+
+@end
+
+@implementation StockModel
+
+@end
+
+
+@interface StockCell : UITableViewCell
+
+@property (nonatomic,strong) UILabel *priceLab;
+@property (nonatomic,strong) StockModel *model;
+
+- (void)updateViewWithData:(StockModel *)model;
+
+@end
+
+@implementation StockCell
+
+- (void)updateViewWithData:(StockModel *)model {
+    
+    
+}
+
+@end
+
 
 @interface MainViewController ()
 @property (nonatomic, strong) UIButton *lastBtn;
+
+@property(nonatomic,strong) NSArray *stocks;
+
+@property(nonatomic,strong) UITableView *stockTable;
+
 @end
 
 @implementation MainViewController
+
+
+- (void)datachanged {
+    
+    
+    
+}
+
+
+
+
+
+
+
 
 #pragma mark - 第一次使用当前类的时候对设置UITabBarItem的主题
 + (void)initialize
