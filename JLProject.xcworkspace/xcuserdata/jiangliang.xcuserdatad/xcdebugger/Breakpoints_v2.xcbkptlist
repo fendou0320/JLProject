@@ -9,29 +9,109 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/SecondFounction/SecondFounctionVC.m"
-            timestampString = "561435607.017179"
+            filePath = "JLProject/Classes/Main/FourFounction/ChildVC/Face++&#x4f7f;&#x7528;/DemoMegNetwork.mm"
+            timestampString = "575439437.424049"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "-viewWillAppear:"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "-queryDemoMGFaceIDAntiSpoofingVerifyWithBizToken:verify:success:failure:"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__89-[DemoMegNetwork queryDemoMGFaceIDAntiSpoofingVerifyWithBizToken:verify:success:failure:]_block_invoke_4"
+                  moduleName = "JLProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiangliang/Desktop/JLProject/JLProject/Classes/Main/FourFounction/ChildVC/Face++%E4%BD%BF%E7%94%A8/DemoMegNetwork.mm"
+                  timestampString = "575439437.764273"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__89-[DemoMegNetwork queryDemoMGFaceIDAntiSpoofingVerifyWithBizToken:verify:success:failure:]_block_invoke_5"
+                  moduleName = "JLProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiangliang/Desktop/JLProject/JLProject/Classes/Main/FourFounction/ChildVC/Face++%E4%BD%BF%E7%94%A8/DemoMegNetwork.mm"
+                  timestampString = "575439437.766185"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/IndexFounction/ChildVC/&#x70b9;&#x51fb;&#x6a2a;&#x5c4f;/MarketChartViewController.m"
-            timestampString = "570611127.2966419"
+            filePath = "JLProject/Classes/Main/FourFounction/ChildVC/Face++&#x4f7f;&#x7528;/DemoMegNetwork.mm"
+            timestampString = "575439437.42434"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "-gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "-queryDemoMGFaceIDAntiSpoofingVerifyWithBizToken:verify:success:failure:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__89-[DemoMegNetwork queryDemoMGFaceIDAntiSpoofingVerifyWithBizToken:verify:success:failure:]_block_invoke_2"
+                  moduleName = "JLProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiangliang/Desktop/JLProject/JLProject/Classes/Main/FourFounction/ChildVC/Face++%E4%BD%BF%E7%94%A8/DemoMegNetwork.mm"
+                  timestampString = "575439437.881564"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__89-[DemoMegNetwork queryDemoMGFaceIDAntiSpoofingVerifyWithBizToken:verify:success:failure:]_block_invoke_3"
+                  moduleName = "JLProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiangliang/Desktop/JLProject/JLProject/Classes/Main/FourFounction/ChildVC/Face++%E4%BD%BF%E7%94%A8/DemoMegNetwork.mm"
+                  timestampString = "575439437.883749"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JLProject/Classes/Main/FourFounction/ChildVC/Face++&#x4f7f;&#x7528;/DemoMegNetwork.mm"
+            timestampString = "575439437.424397"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "-queryDemoMGFaceIDAntiSpoofingVerifyWithBizToken:verify:success:failure:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +121,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/IndexFounction/ChildVC/&#x70b9;&#x51fb;&#x6a2a;&#x5c4f;/MarketChartViewController.m"
-            timestampString = "570611127.2970051"
+            filePath = "JLProject/Classes/Main/FourFounction/ChildVC/Face++&#x4f7f;&#x7528;/DemoMegNetwork.mm"
+            timestampString = "575439437.424445"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "-queryDemoMGFaceIDAntiSpoofingVerifyWithBizToken:verify:success:failure:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,13 +137,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/IndexFounction/ChildVC/&#x70b9;&#x51fb;&#x6a2a;&#x5c4f;/MarketChartViewController.m"
-            timestampString = "570611127.29724"
+            filePath = "JLProject/Classes/Main/FourFounction/ChildVC/Face++&#x4f7f;&#x7528;/FaceDemoController.m"
+            timestampString = "575439437.424492"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "-gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "-startDetect:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -73,13 +153,45 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/IndexFounction/ChildVC/&#x70b9;&#x51fb;&#x6a2a;&#x5c4f;/MarketChartViewController.m"
-            timestampString = "570611127.2974631"
+            filePath = "JLProject/Classes/Main/FourFounction/ChildVC/Face++&#x4f7f;&#x7528;/FaceDemoController.m"
+            timestampString = "575439437.424662"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "-doTapChange:"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "-startDetect:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JLProject/Classes/Main/FourFounction/ChildVC/Face++&#x4f7f;&#x7528;/DemoMegNetwork.mm"
+            timestampString = "575439437.42471"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "-getFaceIDSignStr"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JLProject/Classes/Main/FourFounction/ChildVC/Face++&#x4f7f;&#x7528;/FaceDemoController.m"
+            timestampString = "575439437.424751"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "-startDetect:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

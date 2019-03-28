@@ -72,6 +72,17 @@
     _tableView.delegate = self;
     [self.view addSubview:_tableView];
 
+    
+//    //
+//    NSDictionary *dic = @{@"key":@""};
+//    
+//    NSString *key = [dic objectForKey:@"key"];
+//    NSString *name = [dic objectForKey:@"name"];
+//    
+//    NSLog(@"%@-%@", key, name);
+//    
+//    NSArray *crasharray = @[@"1",@"2"];
+//    NSLog(@"%@", crasharray[19]);
 }
 
 

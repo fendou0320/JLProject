@@ -7,6 +7,7 @@
 //
 
 #import "FourFounctionVC.h"
+#import "FaceDemoController.h"
 
 @interface FourFounctionVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -45,7 +46,7 @@
     UITableViewCell *cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
     
     if (indexPath.row == 0){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"face id 人脸识别";
     }else if (indexPath.row == 1){
         cell.textLabel.text = @"";
     }else if (indexPath.row == 2){
@@ -63,7 +64,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if (indexPath.row == 0){
-        
+        FaceDemoController *vc = [[FaceDemoController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.row == 1){
         
     }else if (indexPath.row == 2){

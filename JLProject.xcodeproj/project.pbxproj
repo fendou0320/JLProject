@@ -260,6 +260,16 @@
 		1CF17DB51F2EF95200EA3B51 /* QiDong2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CF17DB31F2EF95200EA3B51 /* QiDong2.png */; };
 		1CF93E1A210DBCE300BDE513 /* CategoryAddPropertyVC+Basis.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF93E19210DBCE200BDE513 /* CategoryAddPropertyVC+Basis.m */; };
 		3710D1902166243C002C96F0 /* JiShiLunBoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3710D18F2166243C002C96F0 /* JiShiLunBoVC.m */; };
+		3710F3D3224B5AEF000D61F8 /* ConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3710F3D2224B5AEF000D61F8 /* ConnectionViewController.m */; };
+		3710F3E5224B6747000D61F8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3710F3E4224B6747000D61F8 /* CoreMedia.framework */; };
+		3710F3E7224B6768000D61F8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3710F3E6224B6768000D61F8 /* SystemConfiguration.framework */; };
+		3710F3F3224B6B92000D61F8 /* DemoMegNetwork.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3710F3E9224B6B91000D61F8 /* DemoMegNetwork.mm */; };
+		3710F3F4224B6B92000D61F8 /* FaceDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3710F3EB224B6B91000D61F8 /* FaceDemoController.m */; };
+		3710F3F5224B6B92000D61F8 /* MGFaceIDBaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3710F3EE224B6B91000D61F8 /* MGFaceIDBaseKit.framework */; };
+		3710F3F6224B6B92000D61F8 /* MGFaceIDLiveDetect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3710F3EF224B6B91000D61F8 /* MGFaceIDLiveDetect.framework */; };
+		3710F3F7224B6B92000D61F8 /* MGFaceIDLiveCustomDetect.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3710F3F1224B6B91000D61F8 /* MGFaceIDLiveCustomDetect.bundle */; };
+		3710F3F9224B6BF7000D61F8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3710F3F8224B6BF7000D61F8 /* CoreMotion.framework */; };
+		3710F3FB224B6C1C000D61F8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3710F3FA224B6C1C000D61F8 /* AVFoundation.framework */; };
 		372B340D2182AE680078D02B /* WKWebDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 372B340A2182AE680078D02B /* WKWebDemoController.m */; };
 		372B340E2182AE680078D02B /* WKWebViewText.html in Resources */ = {isa = PBXBuildFile; fileRef = 372B340B2182AE680078D02B /* WKWebViewText.html */; };
 		372B34112182AE970078D02B /* JLWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 372B34102182AE970078D02B /* JLWebViewVC.m */; };
@@ -271,6 +281,9 @@
 		3758BFDE214A776A00AA7503 /* DashBoardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3758BFDD214A776A00AA7503 /* DashBoardController.m */; };
 		3767C2B02202C5D200BB9C56 /* MarketChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3767C2AF2202C5D200BB9C56 /* MarketChartViewController.m */; };
 		377AFB062148A2C700EF4529 /* NSObject+JLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 377AFB052148A2C700EF4529 /* NSObject+JLModel.m */; };
+		377E0FE0222BCCCA00251F2F /* NSDictionary+NilSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 377E0FD9222BCCCA00251F2F /* NSDictionary+NilSafe.m */; };
+		377E0FE1222BCCCA00251F2F /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 377E0FDD222BCCCA00251F2F /* NSObject+Swizzling.m */; };
+		377E0FE2222BCCCA00251F2F /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 377E0FDF222BCCCA00251F2F /* NSArray+Safe.m */; };
 		37A5D143214B91DF001CA992 /* MoneyIncreaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A5D142214B91DF001CA992 /* MoneyIncreaseVC.m */; };
 		37A5D146214B9232001CA992 /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A5D144214B9232001CA992 /* UICountingLabel.m */; };
 		37ADD4082151F322005478F7 /* DashDemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 37ADD4072151F322005478F7 /* DashDemoModel.m */; };
@@ -777,6 +790,19 @@
 		1CF93E3A210DD1EF00BDE513 /* libPINRemoteImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPINRemoteImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3710D18E2166243C002C96F0 /* JiShiLunBoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JiShiLunBoVC.h; sourceTree = "<group>"; };
 		3710D18F2166243C002C96F0 /* JiShiLunBoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JiShiLunBoVC.m; sourceTree = "<group>"; };
+		3710F3D1224B5AEF000D61F8 /* ConnectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectionViewController.h; sourceTree = "<group>"; };
+		3710F3D2224B5AEF000D61F8 /* ConnectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConnectionViewController.m; sourceTree = "<group>"; };
+		3710F3E4224B6747000D61F8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		3710F3E6224B6768000D61F8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3710F3E9224B6B91000D61F8 /* DemoMegNetwork.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DemoMegNetwork.mm; sourceTree = "<group>"; };
+		3710F3EA224B6B91000D61F8 /* FaceDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDemoController.h; sourceTree = "<group>"; };
+		3710F3EB224B6B91000D61F8 /* FaceDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceDemoController.m; sourceTree = "<group>"; };
+		3710F3EE224B6B91000D61F8 /* MGFaceIDBaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MGFaceIDBaseKit.framework; sourceTree = "<group>"; };
+		3710F3EF224B6B91000D61F8 /* MGFaceIDLiveDetect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MGFaceIDLiveDetect.framework; sourceTree = "<group>"; };
+		3710F3F1224B6B91000D61F8 /* MGFaceIDLiveCustomDetect.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MGFaceIDLiveCustomDetect.bundle; sourceTree = "<group>"; };
+		3710F3F2224B6B91000D61F8 /* DemoMegNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoMegNetwork.h; sourceTree = "<group>"; };
+		3710F3F8224B6BF7000D61F8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		3710F3FA224B6C1C000D61F8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		372B340A2182AE680078D02B /* WKWebDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebDemoController.m; sourceTree = "<group>"; };
 		372B340B2182AE680078D02B /* WKWebViewText.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WKWebViewText.html; sourceTree = "<group>"; };
 		372B340C2182AE680078D02B /* WKWebDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebDemoController.h; sourceTree = "<group>"; };
@@ -798,6 +824,13 @@
 		3767C2AF2202C5D200BB9C56 /* MarketChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarketChartViewController.m; sourceTree = "<group>"; };
 		377AFB042148A2C700EF4529 /* NSObject+JLModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+JLModel.h"; sourceTree = "<group>"; };
 		377AFB052148A2C700EF4529 /* NSObject+JLModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JLModel.m"; sourceTree = "<group>"; };
+		377E0FD9222BCCCA00251F2F /* NSDictionary+NilSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NilSafe.m"; sourceTree = "<group>"; };
+		377E0FDA222BCCCA00251F2F /* NSArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
+		377E0FDB222BCCCA00251F2F /* NSObject+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
+		377E0FDC222BCCCA00251F2F /* NSDictionary+NilSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NilSafe.h"; sourceTree = "<group>"; };
+		377E0FDD222BCCCA00251F2F /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
+		377E0FDE222BCCCA00251F2F /* Swzzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swzzling.h; sourceTree = "<group>"; };
+		377E0FDF222BCCCA00251F2F /* NSArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
 		37A5D141214B91DF001CA992 /* MoneyIncreaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoneyIncreaseVC.h; sourceTree = "<group>"; };
 		37A5D142214B91DF001CA992 /* MoneyIncreaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyIncreaseVC.m; sourceTree = "<group>"; };
 		37A5D144214B9232001CA992 /* UICountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
@@ -816,7 +849,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3710F3FB224B6C1C000D61F8 /* AVFoundation.framework in Frameworks */,
+				3710F3F9224B6BF7000D61F8 /* CoreMotion.framework in Frameworks */,
+				3710F3F5224B6B92000D61F8 /* MGFaceIDBaseKit.framework in Frameworks */,
+				3710F3E7224B6768000D61F8 /* SystemConfiguration.framework in Frameworks */,
+				3710F3E5224B6747000D61F8 /* CoreMedia.framework in Frameworks */,
 				D6BFBAAB767F367E7E7C8EA4 /* libPods-JLProject.a in Frameworks */,
+				3710F3F6224B6B92000D61F8 /* MGFaceIDLiveDetect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -926,6 +965,7 @@
 		044BC0D820FE2CA20065F8F9 /* ChildVC */ = {
 			isa = PBXGroup;
 			children = (
+				3710F3E8224B6B91000D61F8 /* Face++使用 */,
 				1C4807D121113B91009C2532 /* YYKit探究 */,
 				04EFF4022102B05B00D89F0D /* Texture-Asyncdisplaykit */,
 				044BC0D920FE2CBD0065F8F9 /* GPUImage使用 */,
@@ -1533,8 +1573,6 @@
 			isa = PBXGroup;
 			children = (
 				04C4CAC320FCC31900560977 /* ChildVC */,
-				04C4CAC720FCC31900560977 /* UISystemVC.m */,
-				04C4CAC820FCC31900560977 /* UISystemVC.h */,
 			);
 			path = "UI系统控件";
 			sourceTree = "<group>";
@@ -1542,6 +1580,9 @@
 		04C4CAC320FCC31900560977 /* ChildVC */ = {
 			isa = PBXGroup;
 			children = (
+				04C4CAC820FCC31900560977 /* UISystemVC.h */,
+				04C4CAC720FCC31900560977 /* UISystemVC.m */,
+				3710F3CB224B59A2000D61F8 /* ConnectionView */,
 				04C4CAC420FCC31900560977 /* 原生日历 */,
 			);
 			path = ChildVC;
@@ -2030,6 +2071,7 @@
 		1C9234472115B4F2006429C4 /* ChildVC */ = {
 			isa = PBXGroup;
 			children = (
+				377E0FD8222BCCCA00251F2F /* JLSafeSetting */,
 				1CBBBFCF21264448005D51C9 /* 消息转发 */,
 				1C9234DA2115BADC006429C4 /* 播放总结 */,
 				1C9234482115B4F2006429C4 /* 深浅拷贝 */,
@@ -2505,6 +2547,53 @@
 			path = "计时轮播";
 			sourceTree = "<group>";
 		};
+		3710F3CB224B59A2000D61F8 /* ConnectionView */ = {
+			isa = PBXGroup;
+			children = (
+				3710F3D1224B5AEF000D61F8 /* ConnectionViewController.h */,
+				3710F3D2224B5AEF000D61F8 /* ConnectionViewController.m */,
+			);
+			path = ConnectionView;
+			sourceTree = "<group>";
+		};
+		3710F3E8224B6B91000D61F8 /* Face++使用 */ = {
+			isa = PBXGroup;
+			children = (
+				3710F3F2224B6B91000D61F8 /* DemoMegNetwork.h */,
+				3710F3E9224B6B91000D61F8 /* DemoMegNetwork.mm */,
+				3710F3EA224B6B91000D61F8 /* FaceDemoController.h */,
+				3710F3EB224B6B91000D61F8 /* FaceDemoController.m */,
+				3710F3EC224B6B91000D61F8 /* Face++Sdk */,
+			);
+			path = "Face++使用";
+			sourceTree = "<group>";
+		};
+		3710F3EC224B6B91000D61F8 /* Face++Sdk */ = {
+			isa = PBXGroup;
+			children = (
+				3710F3ED224B6B91000D61F8 /* framework */,
+				3710F3F0224B6B91000D61F8 /* resource */,
+			);
+			path = "Face++Sdk";
+			sourceTree = "<group>";
+		};
+		3710F3ED224B6B91000D61F8 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				3710F3EE224B6B91000D61F8 /* MGFaceIDBaseKit.framework */,
+				3710F3EF224B6B91000D61F8 /* MGFaceIDLiveDetect.framework */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		3710F3F0224B6B91000D61F8 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				3710F3F1224B6B91000D61F8 /* MGFaceIDLiveCustomDetect.bundle */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
 		372B34092182AE680078D02B /* WKwebView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2587,6 +2676,20 @@
 			path = JLModel;
 			sourceTree = "<group>";
 		};
+		377E0FD8222BCCCA00251F2F /* JLSafeSetting */ = {
+			isa = PBXGroup;
+			children = (
+				377E0FD9222BCCCA00251F2F /* NSDictionary+NilSafe.m */,
+				377E0FDA222BCCCA00251F2F /* NSArray+Safe.h */,
+				377E0FDB222BCCCA00251F2F /* NSObject+Swizzling.h */,
+				377E0FDC222BCCCA00251F2F /* NSDictionary+NilSafe.h */,
+				377E0FDD222BCCCA00251F2F /* NSObject+Swizzling.m */,
+				377E0FDE222BCCCA00251F2F /* Swzzling.h */,
+				377E0FDF222BCCCA00251F2F /* NSArray+Safe.m */,
+			);
+			path = JLSafeSetting;
+			sourceTree = "<group>";
+		};
 		37A5D140214B91AE001CA992 /* 金钱数字逐渐增长 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2601,6 +2704,10 @@
 		4DE2614ECCD8551261AA527C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3710F3FA224B6C1C000D61F8 /* AVFoundation.framework */,
+				3710F3F8224B6BF7000D61F8 /* CoreMotion.framework */,
+				3710F3E6224B6768000D61F8 /* SystemConfiguration.framework */,
+				3710F3E4224B6747000D61F8 /* CoreMedia.framework */,
 				1CF93E3A210DD1EF00BDE513 /* libPINRemoteImage.a */,
 				1CF93E38210DD01600BDE513 /* libPINRemoteImage.a */,
 				9F3F56CED33ED25FEC3286BA /* libPods-JLProject.a */,
@@ -2691,7 +2798,7 @@
 				TargetAttributes = {
 					1C40867B1EE101F500E4E363 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = YR5W2N3P98;
+						DevelopmentTeam = DAEKU72LQU;
 						ProvisioningStyle = Automatic;
 					};
 					1C4086941EE101F500E4E363 = {
@@ -2713,6 +2820,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -2770,6 +2878,7 @@
 				04C4CB3420FCC31900560977 /* 123.jpg in Resources */,
 				1C21AE361F6511340039163D /* backgroundStar@2x.png in Resources */,
 				1C3F65341F4548410052E821 /* 288x360.jpg in Resources */,
+				3710F3F7224B6B92000D61F8 /* MGFaceIDLiveCustomDetect.bundle in Resources */,
 				372B340E2182AE680078D02B /* WKWebViewText.html in Resources */,
 				04E2BE5D210CC1BC007D9E3D /* love@2x.png in Resources */,
 				04E2BE5F210CC1BC007D9E3D /* FFTspark.png in Resources */,
@@ -2929,6 +3038,7 @@
 				1C9234CD2115B4F3006429C4 /* PersonRunTimeKVO.m in Sources */,
 				1CBBBFEE21264448005D51C9 /* Father.m in Sources */,
 				04C4CB5020FCC31900560977 /* TemplateListViewController.m in Sources */,
+				377E0FE2222BCCCA00251F2F /* NSArray+Safe.m in Sources */,
 				3758BFDE214A776A00AA7503 /* DashBoardController.m in Sources */,
 				1C9234B02115B4F3006429C4 /* CustomTransitionAnimationVC.m in Sources */,
 				3767C2B02202C5D200BB9C56 /* MarketChartViewController.m in Sources */,
@@ -2983,6 +3093,7 @@
 				1C9234BA2115B4F3006429C4 /* JLWeakProxy.m in Sources */,
 				04C4CB2C20FCC31900560977 /* JHLineItemView.m in Sources */,
 				04C4CB3520FCC31900560977 /* ZoomImageView.m in Sources */,
+				377E0FE0222BCCCA00251F2F /* NSDictionary+NilSafe.m in Sources */,
 				1CBBBFEA21264448005D51C9 /* MVPHero.m in Sources */,
 				04C4CB6220FCC31900560977 /* CyclePagerView.m in Sources */,
 				04C4CB3320FCC31900560977 /* PictureThreeController.m in Sources */,
@@ -3005,6 +3116,7 @@
 				04E2BE86210D8238007D9E3D /* WHDebugMemoryMonitor.m in Sources */,
 				04C4CB8F20FCC31900560977 /* SecondFounctionVC.m in Sources */,
 				1C6272B2210DD889003C344A /* RetainCycleLoggerPlugin.m in Sources */,
+				3710F3F3224B6B92000D61F8 /* DemoMegNetwork.mm in Sources */,
 				04C4CB4C20FCC31900560977 /* SandianViewController.m in Sources */,
 				1C9234B92115B4F3006429C4 /* ProxyVC.m in Sources */,
 				04C4CB5F20FCC31900560977 /* MSSCalendarHeaderModel.m in Sources */,
@@ -3027,6 +3139,7 @@
 				04C4CB6020FCC31900560977 /* UIThirdVC.m in Sources */,
 				04E2BE56210CC1BC007D9E3D /* DazViewController.m in Sources */,
 				04C4CB5D20FCC31900560977 /* MSSCalendarManager.m in Sources */,
+				3710F3D3224B5AEF000D61F8 /* ConnectionViewController.m in Sources */,
 				04C4CB4B20FCC31900560977 /* FZyuanhuanController.m in Sources */,
 				04C4CB2B20FCC31900560977 /* FZzhexianController.m in Sources */,
 				040D5823211EF7450092666F /* JLOperation.m in Sources */,
@@ -3061,6 +3174,7 @@
 				04C4CB3220FCC31900560977 /* PictureFourViewController.m in Sources */,
 				04C4CB6320FCC31900560977 /* TYPageControl.m in Sources */,
 				04E2BE6A210CC1BC007D9E3D /* GiftEffectViewController.m in Sources */,
+				377E0FE1222BCCCA00251F2F /* NSObject+Swizzling.m in Sources */,
 				04C4CB6B20FCC31900560977 /* SuiJiYanZhengMaController.m in Sources */,
 				1C4DF04D1FD63EFE00C09626 /* XMLDictionary.m in Sources */,
 				04C4CB3B20FCC31900560977 /* TableTwo.m in Sources */,
@@ -3073,6 +3187,7 @@
 				04C4CB6920FCC31900560977 /* LoginController.m in Sources */,
 				04C4CB6720FCC31900560977 /* DropDownController.m in Sources */,
 				1C6D3EB81F2ECFCE00F699BF /* RequestXMLManager.m in Sources */,
+				3710F3F4224B6B92000D61F8 /* FaceDemoController.m in Sources */,
 				04C4CB9120FCC31900560977 /* ThirdFounctionVC.m in Sources */,
 				04C4CB7120FCC31900560977 /* SDCollectionViewCell.m in Sources */,
 				1C6D3EB31F2ECFCE00F699BF /* UIViewExt.m in Sources */,
@@ -3231,8 +3346,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = YR5W2N3P98;
+				DEVELOPMENT_TEAM = DAEKU72LQU;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JLProject/Classes/Main/FourFounction/ChildVC/Face++使用/Face++Sdk/framework",
+				);
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = JLProject/PrefixHeader.pch;
 				INFOPLIST_FILE = JLProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -3296,7 +3416,7 @@
 					"-weak_framework",
 					"\"UIKit\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = wangjiangliang.Project;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sina.licaishi-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -3308,8 +3428,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = YR5W2N3P98;
+				DEVELOPMENT_TEAM = DAEKU72LQU;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JLProject/Classes/Main/FourFounction/ChildVC/Face++使用/Face++Sdk/framework",
+				);
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = JLProject/PrefixHeader.pch;
 				INFOPLIST_FILE = JLProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -3373,7 +3498,7 @@
 					"-weak_framework",
 					"\"UIKit\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = wangjiangliang.Project;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sina.licaishi-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

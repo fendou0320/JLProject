@@ -8,6 +8,7 @@
 
 #import "UISystemVC.h"
 #import "yuanshengriliViewController.h"
+#import "ConnectionViewController.h"
 
 @interface UISystemVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -53,7 +54,7 @@
     if (indexPath.row == 0) {
         cell.textLabel.text = @"原生日历";
     }else if (indexPath.row == 1){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"ConnectionViewController 实验";
     }else if (indexPath.row == 2){
         cell.textLabel.text = @"";
     }else if (indexPath.row == 3){
@@ -109,10 +110,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if (indexPath.row == 0) {
+        
         yuanshengriliViewController *jd = [[yuanshengriliViewController alloc] init];
         [self.navigationController pushViewController:jd animated:YES];
         
     }else if (indexPath.row == 1){
+        
+        ConnectionViewController *jd = [[ConnectionViewController alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
         
     }else if (indexPath.row == 2){
         

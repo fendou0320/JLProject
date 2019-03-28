@@ -33,11 +33,11 @@ int main(int argc, char * argv[]) {
 //        NSLog(@"%@", myBlcok(100, @"200"));
         
         
-#if DEBUG
-        [FBAssociationManager hook];
-        [[FBAllocationTrackerManager sharedManager] startTrackingAllocations];
-        [[FBAllocationTrackerManager sharedManager] enableGenerations];
-#endif
+//#if DEBUG
+//        [FBAssociationManager hook];
+//        [[FBAllocationTrackerManager sharedManager] startTrackingAllocations];
+//        [[FBAllocationTrackerManager sharedManager] enableGenerations];
+//#endif
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }

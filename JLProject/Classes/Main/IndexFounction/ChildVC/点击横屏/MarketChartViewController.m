@@ -154,7 +154,7 @@
     AppDelegate *appdelegate=(AppDelegate *)[UIApplication sharedApplication].delegate;
     appdelegate.isForcePortrait=NO;
     appdelegate.isForceLandscape=YES;
-    [appdelegate application:[UIApplication sharedApplication] supportedInterfaceOrientationsForWindow:VC.view.window];
+//    [appdelegate application:[UIApplication sharedApplication] supportedInterfaceOrientationsForWindow:VC.view.window];
     //强制翻转屏幕，Home键在右边。
     [[UIDevice currentDevice] setValue:@(UIInterfaceOrientationLandscapeRight) forKey:@"orientation"];
     //刷新
