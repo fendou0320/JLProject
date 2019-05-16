@@ -20,6 +20,107 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLName</key>
+            <string>com.sina</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>wb3314332845</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLName</key>
+            <string>com.sina.licaishiiphone</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>lcsqsnewtime</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLName</key>
+            <string>weixin</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>wxbb92168f14920547</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLName</key>
+            <string>licaishi_iOS</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>licaishiiphone</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLName</key>
+            <string>com.sina.licaishi</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>licaishi</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLName</key>
+            <string>com.sina.sinalicaishi</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>sinalicaishi</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLName</key>
+            <string>GrowingIO</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>growing.b9084ac7861a5c07</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLName</key>
+            <string>alipaylcs</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>lcslicaishisinapayios</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLName</key>
+            <string>com.sina.sinalicaishi</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>sinajr</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>prefs</string>
+            </array>
+        </dict>
+    </array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -34,8 +135,8 @@
 	<key>NSCalendarsUsageDescription</key>
 	<string>我们需要获取您的日历权限</string>
 	<key>NSCameraUsageDescription</key>
-	<string>我们需要获取您的相机权限</string>
-	<key>NSContactsUsageDescription</key>
+<!--    <string>我们需要获取您的相机权限</string>-->
+<!--    <key>NSContactsUsageDescription</key>-->
 	<string>我们需要获取您的联系人权限</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>我们需要获取您的位置信息</string>

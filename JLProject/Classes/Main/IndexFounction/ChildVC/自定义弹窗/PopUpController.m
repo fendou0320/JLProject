@@ -68,14 +68,15 @@
     hud.offset = CGPointMake(0.f, -kScreenHeight/2);//MBProgressMaxOffset
     [hud hideAnimated:YES afterDelay:3.f];
 
+ 
     
 }
 
 - (void)btnFour: (UIButton *)sender{
     
+ 
     
 }
-
 
 
 

@@ -98,6 +98,9 @@
 
 #pragma mark - Detect
 - (void)startDetect:(UIButton *)sender {
+    
+    self.bizTokenStr = @"1555314002,a02b3ac7-ef94-4632-a406-320c05f68f00";
+    
     sender.userInteractionEnabled = NO;
     MGFaceIDLiveDetectError* error;
     MGFaceIDLiveDetectManager* detectManager = [[MGFaceIDLiveDetectManager alloc] initMGFaceIDLiveDetectManagerWithBizToken:self.bizTokenStr

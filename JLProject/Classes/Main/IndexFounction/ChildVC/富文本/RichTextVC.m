@@ -20,24 +20,26 @@
     // Do any additional setup after loading the view.
     self.title = @"富文本";
     
-//    NSString *contentStr = @"1、游戏基本信息内容\n2、游戏相关资质信息内容\n如：软件著作权证书、运营登记证书\n3、相关媒资信息文件\n如：游戏宣传片、游戏宣传海报、游戏主题曲等\n4、游戏文件数据包\n如果是网页游戏，请上传游戏开发包如果是平台游戏，请上传游戏数据包如果是端游，请上传游戏文件";//
-    NSString *firstString = @"1、游戏基本信息内容";
-    NSString *secondString = @"2、游戏相关资质信息内容";
-    NSString *secondContentString = @"如：软件著作权证书、运营登记证书";
-    NSString *threeString = @"3、相关媒资信息文件";
-    NSString *threeContentStr = @"如：游戏宣传片、游戏宣传海报、游戏主题曲等";
-    NSString *fourString = @"4、游戏文件数据包";
-    NSString *fourContentStr = @"如果是网页游戏，请上传游戏开发包;\n如果是平台游戏，请上传游戏数据包;\n如果是端游，请上传游戏文件;";
-
-    NSString *contentString = [NSString stringWithFormat:@"%@\n%@\n%@\n%@\n%@\n%@\n%@\n", firstString, secondString, secondContentString, threeString, threeContentStr, fourString, fourContentStr];
     
-    NSRange firstStringRange = [contentString rangeOfString:firstString];
-    NSRange secondStringRange = [contentString rangeOfString:secondString];
-    NSRange secondContentStrRange = [contentString rangeOfString:secondContentString];
-    NSRange threeStringRange = [contentString rangeOfString:threeString];
-    NSRange threeContentStrRange = [contentString rangeOfString:threeContentStr];
-    NSRange fourStringRange = [contentString rangeOfString:fourString];
-    NSRange fourContentStrRange = [contentString rangeOfString:fourContentStr];
+//
+////    NSString *contentStr = @"1、游戏基本信息内容\n2、游戏相关资质信息内容\n如：软件著作权证书、运营登记证书\n3、相关媒资信息文件\n如：游戏宣传片、游戏宣传海报、游戏主题曲等\n4、游戏文件数据包\n如果是网页游戏，请上传游戏开发包如果是平台游戏，请上传游戏数据包如果是端游，请上传游戏文件";//
+//    NSString *firstString = @"1、游戏基本信息内容";
+//    NSString *secondString = @"2、游戏相关资质信息内容";
+//    NSString *secondContentString = @"如：软件著作权证书、运营登记证书";
+//    NSString *threeString = @"3、相关媒资信息文件";
+//    NSString *threeContentStr = @"如：游戏宣传片、游戏宣传海报、游戏主题曲等";
+//    NSString *fourString = @"4、游戏文件数据包";
+//    NSString *fourContentStr = @"如果是网页游戏，请上传游戏开发包;\n如果是平台游戏，请上传游戏数据包;\n如果是端游，请上传游戏文件;";
+//
+//    NSString *contentString = [NSString stringWithFormat:@"%@\n%@\n%@\n%@\n%@\n%@\n%@\n", firstString, secondString, secondContentString, threeString, threeContentStr, fourString, fourContentStr];
+//
+//    NSRange firstStringRange = [contentString rangeOfString:firstString];
+//    NSRange secondStringRange = [contentString rangeOfString:secondString];
+//    NSRange secondContentStrRange = [contentString rangeOfString:secondContentString];
+//    NSRange threeStringRange = [contentString rangeOfString:threeString];
+//    NSRange threeContentStrRange = [contentString rangeOfString:threeContentStr];
+//    NSRange fourStringRange = [contentString rangeOfString:fourString];
+//    NSRange fourContentStrRange = [contentString rangeOfString:fourContentStr];
     
     
     _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 100, kScreenWidth-20, 500)];
@@ -45,47 +47,55 @@
 //    _titleLabel.backgroundColor = RandomColor;
     _titleLabel.textColor = COLOR_333333;
     _titleLabel.numberOfLines = 0;
-    _titleLabel.textAlignment = NSTextAlignmentLeft;
-    
-    UIFont *bigFont = [UIFont systemFontWithSize:15];
-    UIFont *smallFont = [UIFont systemFontWithSize:12];
-    
-    NSArray *array = @[[ConfigAttributedString font:bigFont range:[contentString range]],
-                       
-                       [ConfigAttributedString foregroundColor:COLOR_333333 range:firstStringRange],
-                       [ConfigAttributedString font:bigFont range:firstStringRange],
-                       [ConfigAttributedString paragraphStyle:[self commonStyle] range:firstStringRange],
-
-                       [ConfigAttributedString foregroundColor:COLOR_333333 range:secondStringRange],
-                       [ConfigAttributedString font:bigFont range:secondStringRange],
-                       [ConfigAttributedString paragraphStyle:[self commonStyle] range:secondStringRange],
-                       
-                       [ConfigAttributedString foregroundColor:COLOR_999999 range:secondContentStrRange],
-                       [ConfigAttributedString font:smallFont range:secondContentStrRange],
-                       [ConfigAttributedString paragraphStyle:[self indentationStyle] range:secondContentStrRange],
-                       
-                       [ConfigAttributedString foregroundColor:COLOR_333333 range:threeStringRange],
-                       [ConfigAttributedString font:bigFont range:threeStringRange],
-                       [ConfigAttributedString paragraphStyle:[self commonStyle] range:threeStringRange],
-                       
-                       [ConfigAttributedString foregroundColor:COLOR_999999 range:threeContentStrRange],
-                       [ConfigAttributedString font:smallFont range:threeContentStrRange],
-                       [ConfigAttributedString paragraphStyle:[self indentationStyle] range:threeContentStrRange],
-
-                       [ConfigAttributedString foregroundColor:COLOR_333333 range:fourStringRange],
-                       [ConfigAttributedString font:bigFont range:fourStringRange],
-                       [ConfigAttributedString paragraphStyle:[self commonStyle] range:fourStringRange],
-                       
-                       [ConfigAttributedString foregroundColor:COLOR_999999 range:fourContentStrRange],
-                       [ConfigAttributedString font:smallFont range:fourContentStrRange],
-                       [ConfigAttributedString paragraphStyle:[self indentationStyle] range:fourContentStrRange],
-                       ];
+//    _titleLabel.textAlignment = NSTextAlignmentLeft;
     
     
-    NSMutableAttributedString *newAttributedString = [contentString createAttributedStringAndConfig:array];
+    NSNumber *string = [NSNumber numberWithFloat:9513.53];//@"9513.53"
+    _titleLabel.text = [string stringValue];
     
-    _titleLabel.attributedText = newAttributedString;
     
+    
+    return;
+//
+//    UIFont *bigFont = [UIFont systemFontWithSize:15];
+//    UIFont *smallFont = [UIFont systemFontWithSize:12];
+//
+//    NSArray *array = @[[ConfigAttributedString font:bigFont range:[contentString range]],
+//
+//                       [ConfigAttributedString foregroundColor:COLOR_333333 range:firstStringRange],
+//                       [ConfigAttributedString font:bigFont range:firstStringRange],
+//                       [ConfigAttributedString paragraphStyle:[self commonStyle] range:firstStringRange],
+//
+//                       [ConfigAttributedString foregroundColor:COLOR_333333 range:secondStringRange],
+//                       [ConfigAttributedString font:bigFont range:secondStringRange],
+//                       [ConfigAttributedString paragraphStyle:[self commonStyle] range:secondStringRange],
+//
+//                       [ConfigAttributedString foregroundColor:COLOR_999999 range:secondContentStrRange],
+//                       [ConfigAttributedString font:smallFont range:secondContentStrRange],
+//                       [ConfigAttributedString paragraphStyle:[self indentationStyle] range:secondContentStrRange],
+//
+//                       [ConfigAttributedString foregroundColor:COLOR_333333 range:threeStringRange],
+//                       [ConfigAttributedString font:bigFont range:threeStringRange],
+//                       [ConfigAttributedString paragraphStyle:[self commonStyle] range:threeStringRange],
+//
+//                       [ConfigAttributedString foregroundColor:COLOR_999999 range:threeContentStrRange],
+//                       [ConfigAttributedString font:smallFont range:threeContentStrRange],
+//                       [ConfigAttributedString paragraphStyle:[self indentationStyle] range:threeContentStrRange],
+//
+//                       [ConfigAttributedString foregroundColor:COLOR_333333 range:fourStringRange],
+//                       [ConfigAttributedString font:bigFont range:fourStringRange],
+//                       [ConfigAttributedString paragraphStyle:[self commonStyle] range:fourStringRange],
+//
+//                       [ConfigAttributedString foregroundColor:COLOR_999999 range:fourContentStrRange],
+//                       [ConfigAttributedString font:smallFont range:fourContentStrRange],
+//                       [ConfigAttributedString paragraphStyle:[self indentationStyle] range:fourContentStrRange],
+//                       ];
+//
+//
+//    NSMutableAttributedString *newAttributedString = [contentString createAttributedStringAndConfig:array];
+//
+//    _titleLabel.attributedText = newAttributedString;
+//
     
     
 }

@@ -22,6 +22,10 @@
 #import "PopUpController.h"
 #import "JLWebViewVC.h"
 #import "MarketChartViewController.h"
+#import "JRCreditIndexController.h"
+#import "JiShiLunBoVC.h"
+#import "OpenOtherAppController.h"
+#import "OpenPDFController.h"
 
 #include <ifaddrs.h>
 #include <arpa/inet.h>
@@ -132,6 +136,14 @@
         cell.textLabel.text = @"webview";
     }else if (indexPath.row == 14){
         cell.textLabel.text = @"点击横屏";
+    }else if (indexPath.row == 15){
+        cell.textLabel.text = @"xinyong ";
+    }else if (indexPath.row == 16){
+        cell.textLabel.text = @"ceshi ";
+    }else if (indexPath.row == 17){
+        cell.textLabel.text = @"打开其他APP两种方式";
+    }else if (indexPath.row == 17){
+        cell.textLabel.text = @"打开PDF";
     }
     
     return cell;
@@ -194,7 +206,25 @@
         MarketChartViewController *donghua = [[MarketChartViewController alloc] init];
         [self.navigationController pushViewController:donghua animated:YES];
         
+    }else if (indexPath.row == 15){
+        
+        JRCreditIndexController *vc = [[JRCreditIndexController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 16){
+        
+        JiShiLunBoVC *vc = [[JiShiLunBoVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 17){
+        
+        OpenOtherAppController *vc = [[OpenOtherAppController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 18){
+        
+        OpenPDFController *vc = [[OpenPDFController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
+    
+    
 
 }
 

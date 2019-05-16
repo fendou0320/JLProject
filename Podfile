@@ -33,7 +33,12 @@ target 'JLProject' do
 
     pod 'FBMemoryProfiler'
 
+    pod 'WebViewJavascriptBridge', '~> 6.0'
+    
     # use_frameworks!
     pod 'ReactiveObjC'
+    
+    
+    
 
 end

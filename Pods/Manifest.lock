@@ -33,6 +33,7 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - WebViewJavascriptBridge (6.0.3)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -50,6 +51,7 @@ DEPENDENCIES:
   - MJRefresh
   - ReactiveObjC
   - SDWebImage (~> 3.8)
+  - WebViewJavascriptBridge (~> 6.0)
   - YYKit
 
 SPEC REPOS:
@@ -68,6 +70,7 @@ SPEC REPOS:
     - MJRefresh
     - ReactiveObjC
     - SDWebImage
+    - WebViewJavascriptBridge
     - YYKit
 
 SPEC CHECKSUMS:
@@ -85,8 +88,9 @@ SPEC CHECKSUMS:
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 5d42f47f272f39c200991a937747092459bb2a09
+PODFILE CHECKSUM: ded5d56f7bca1857a9def8da5a2140266cb8365d
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1

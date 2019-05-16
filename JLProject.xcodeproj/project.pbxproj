@@ -267,12 +267,16 @@
 		3710F3F4224B6B92000D61F8 /* FaceDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3710F3EB224B6B91000D61F8 /* FaceDemoController.m */; };
 		3710F3F5224B6B92000D61F8 /* MGFaceIDBaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3710F3EE224B6B91000D61F8 /* MGFaceIDBaseKit.framework */; };
 		3710F3F6224B6B92000D61F8 /* MGFaceIDLiveDetect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3710F3EF224B6B91000D61F8 /* MGFaceIDLiveDetect.framework */; };
-		3710F3F7224B6B92000D61F8 /* MGFaceIDLiveCustomDetect.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3710F3F1224B6B91000D61F8 /* MGFaceIDLiveCustomDetect.bundle */; };
 		3710F3F9224B6BF7000D61F8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3710F3F8224B6BF7000D61F8 /* CoreMotion.framework */; };
 		3710F3FB224B6C1C000D61F8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3710F3FA224B6C1C000D61F8 /* AVFoundation.framework */; };
+		371362B02287958700D043B1 /* PrivacyPolicy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 371362AE2287958700D043B1 /* PrivacyPolicy.pdf */; };
+		371362B12287958700D043B1 /* RegiserAgreement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 371362AF2287958700D043B1 /* RegiserAgreement.pdf */; };
+		371362B4228795AE00D043B1 /* OpenPDFController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371362B3228795AE00D043B1 /* OpenPDFController.m */; };
 		372B340D2182AE680078D02B /* WKWebDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 372B340A2182AE680078D02B /* WKWebDemoController.m */; };
 		372B340E2182AE680078D02B /* WKWebViewText.html in Resources */ = {isa = PBXBuildFile; fileRef = 372B340B2182AE680078D02B /* WKWebViewText.html */; };
 		372B34112182AE970078D02B /* JLWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 372B34102182AE970078D02B /* JLWebViewVC.m */; };
+		3736ED942276E16E00500695 /* OpenOtherAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3736ED932276E16E00500695 /* OpenOtherAppController.m */; };
+		373B951E22646D8800B9D7C3 /* MGFaceIDLiveCustomDetect.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 373B951D22646D8800B9D7C3 /* MGFaceIDLiveCustomDetect.bundle */; };
 		37410D422148980500503D5C /* PopUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37410D412148980500503D5C /* PopUpController.m */; };
 		37410D482148995500503D5C /* CustomPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37410D462148995500503D5C /* CustomPopUpView.m */; };
 		37410D492148995500503D5C /* YCMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37410D472148995500503D5C /* YCMenuView.m */; };
@@ -284,6 +288,7 @@
 		377E0FE0222BCCCA00251F2F /* NSDictionary+NilSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 377E0FD9222BCCCA00251F2F /* NSDictionary+NilSafe.m */; };
 		377E0FE1222BCCCA00251F2F /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 377E0FDD222BCCCA00251F2F /* NSObject+Swizzling.m */; };
 		377E0FE2222BCCCA00251F2F /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 377E0FDF222BCCCA00251F2F /* NSArray+Safe.m */; };
+		379F39C92256115A00D4625F /* JRCreditIndexController.m in Sources */ = {isa = PBXBuildFile; fileRef = 379F39C82256115A00D4625F /* JRCreditIndexController.m */; };
 		37A5D143214B91DF001CA992 /* MoneyIncreaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A5D142214B91DF001CA992 /* MoneyIncreaseVC.m */; };
 		37A5D146214B9232001CA992 /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A5D144214B9232001CA992 /* UICountingLabel.m */; };
 		37ADD4082151F322005478F7 /* DashDemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 37ADD4072151F322005478F7 /* DashDemoModel.m */; };
@@ -799,15 +804,21 @@
 		3710F3EB224B6B91000D61F8 /* FaceDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceDemoController.m; sourceTree = "<group>"; };
 		3710F3EE224B6B91000D61F8 /* MGFaceIDBaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MGFaceIDBaseKit.framework; sourceTree = "<group>"; };
 		3710F3EF224B6B91000D61F8 /* MGFaceIDLiveDetect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MGFaceIDLiveDetect.framework; sourceTree = "<group>"; };
-		3710F3F1224B6B91000D61F8 /* MGFaceIDLiveCustomDetect.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MGFaceIDLiveCustomDetect.bundle; sourceTree = "<group>"; };
 		3710F3F2224B6B91000D61F8 /* DemoMegNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoMegNetwork.h; sourceTree = "<group>"; };
 		3710F3F8224B6BF7000D61F8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		3710F3FA224B6C1C000D61F8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		371362AE2287958700D043B1 /* PrivacyPolicy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = PrivacyPolicy.pdf; sourceTree = "<group>"; };
+		371362AF2287958700D043B1 /* RegiserAgreement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = RegiserAgreement.pdf; sourceTree = "<group>"; };
+		371362B2228795AE00D043B1 /* OpenPDFController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenPDFController.h; sourceTree = "<group>"; };
+		371362B3228795AE00D043B1 /* OpenPDFController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenPDFController.m; sourceTree = "<group>"; };
 		372B340A2182AE680078D02B /* WKWebDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebDemoController.m; sourceTree = "<group>"; };
 		372B340B2182AE680078D02B /* WKWebViewText.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WKWebViewText.html; sourceTree = "<group>"; };
 		372B340C2182AE680078D02B /* WKWebDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebDemoController.h; sourceTree = "<group>"; };
 		372B340F2182AE970078D02B /* JLWebViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLWebViewVC.h; sourceTree = "<group>"; };
 		372B34102182AE970078D02B /* JLWebViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLWebViewVC.m; sourceTree = "<group>"; };
+		3736ED922276E16E00500695 /* OpenOtherAppController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenOtherAppController.h; sourceTree = "<group>"; };
+		3736ED932276E16E00500695 /* OpenOtherAppController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenOtherAppController.m; sourceTree = "<group>"; };
+		373B951D22646D8800B9D7C3 /* MGFaceIDLiveCustomDetect.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MGFaceIDLiveCustomDetect.bundle; sourceTree = "<group>"; };
 		37410D402148980500503D5C /* PopUpController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopUpController.h; sourceTree = "<group>"; };
 		37410D412148980500503D5C /* PopUpController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopUpController.m; sourceTree = "<group>"; };
 		37410D442148995500503D5C /* YCMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCMenuView.h; sourceTree = "<group>"; };
@@ -831,6 +842,8 @@
 		377E0FDD222BCCCA00251F2F /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
 		377E0FDE222BCCCA00251F2F /* Swzzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swzzling.h; sourceTree = "<group>"; };
 		377E0FDF222BCCCA00251F2F /* NSArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
+		379F39C72256115A00D4625F /* JRCreditIndexController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRCreditIndexController.h; sourceTree = "<group>"; };
+		379F39C82256115A00D4625F /* JRCreditIndexController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRCreditIndexController.m; sourceTree = "<group>"; };
 		37A5D141214B91DF001CA992 /* MoneyIncreaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoneyIncreaseVC.h; sourceTree = "<group>"; };
 		37A5D142214B91DF001CA992 /* MoneyIncreaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyIncreaseVC.m; sourceTree = "<group>"; };
 		37A5D144214B9232001CA992 /* UICountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
@@ -1028,6 +1041,9 @@
 		04C4C9E520FCC31900560977 /* ChildVC */ = {
 			isa = PBXGroup;
 			children = (
+				371362AD2287954B00D043B1 /* 打开PDF文件 */,
+				3736ED912276E12A00500695 /* 打开其他APP */,
+				379F39C62256115A00D4625F /* JRCreditIndex */,
 				3767C2AD2202A72700BB9C56 /* 点击横屏 */,
 				372B34092182AE680078D02B /* WKwebView */,
 				3710D18D21662418002C96F0 /* 计时轮播 */,
@@ -2571,8 +2587,8 @@
 		3710F3EC224B6B91000D61F8 /* Face++Sdk */ = {
 			isa = PBXGroup;
 			children = (
+				373B951C22646D8800B9D7C3 /* resource */,
 				3710F3ED224B6B91000D61F8 /* framework */,
-				3710F3F0224B6B91000D61F8 /* resource */,
 			);
 			path = "Face++Sdk";
 			sourceTree = "<group>";
@@ -2586,12 +2602,15 @@
 			path = framework;
 			sourceTree = "<group>";
 		};
-		3710F3F0224B6B91000D61F8 /* resource */ = {
+		371362AD2287954B00D043B1 /* 打开PDF文件 */ = {
 			isa = PBXGroup;
 			children = (
-				3710F3F1224B6B91000D61F8 /* MGFaceIDLiveCustomDetect.bundle */,
+				371362AE2287958700D043B1 /* PrivacyPolicy.pdf */,
+				371362AF2287958700D043B1 /* RegiserAgreement.pdf */,
+				371362B2228795AE00D043B1 /* OpenPDFController.h */,
+				371362B3228795AE00D043B1 /* OpenPDFController.m */,
 			);
-			path = resource;
+			path = "打开PDF文件";
 			sourceTree = "<group>";
 		};
 		372B34092182AE680078D02B /* WKwebView */ = {
@@ -2604,6 +2623,23 @@
 				372B34102182AE970078D02B /* JLWebViewVC.m */,
 			);
 			path = WKwebView;
+			sourceTree = "<group>";
+		};
+		3736ED912276E12A00500695 /* 打开其他APP */ = {
+			isa = PBXGroup;
+			children = (
+				3736ED922276E16E00500695 /* OpenOtherAppController.h */,
+				3736ED932276E16E00500695 /* OpenOtherAppController.m */,
+			);
+			path = "打开其他APP";
+			sourceTree = "<group>";
+		};
+		373B951C22646D8800B9D7C3 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				373B951D22646D8800B9D7C3 /* MGFaceIDLiveCustomDetect.bundle */,
+			);
+			path = resource;
 			sourceTree = "<group>";
 		};
 		373E0C8621476FA900C408A3 /* 自定义弹窗 */ = {
@@ -2688,6 +2724,16 @@
 				377E0FDF222BCCCA00251F2F /* NSArray+Safe.m */,
 			);
 			path = JLSafeSetting;
+			sourceTree = "<group>";
+		};
+		379F39C62256115A00D4625F /* JRCreditIndex */ = {
+			isa = PBXGroup;
+			children = (
+				379F39C72256115A00D4625F /* JRCreditIndexController.h */,
+				379F39C82256115A00D4625F /* JRCreditIndexController.m */,
+			);
+			name = JRCreditIndex;
+			path = WKwebView/JRCreditIndex;
 			sourceTree = "<group>";
 		};
 		37A5D140214B91AE001CA992 /* 金钱数字逐渐增长 */ = {
@@ -2849,6 +2895,8 @@
 				04E2BE70210CC1BC007D9E3D /* WKWebViewText.html in Resources */,
 				04E2BE61210CC1BC007D9E3D /* ic_menu_yellowpig.png in Resources */,
 				1CF17DAA1F2EDB6000EA3B51 /* yinDaoYe4.png in Resources */,
+				371362B02287958700D043B1 /* PrivacyPolicy.pdf in Resources */,
+				371362B12287958700D043B1 /* RegiserAgreement.pdf in Resources */,
 				04EFB5332133F8BD00C72D90 /* ThirdFounction.storyboard in Resources */,
 				1CF17DA71F2EDB6000EA3B51 /* yinDaoYe1.png in Resources */,
 				04E2BE63210CC1BC007D9E3D /* ic_menu_bluepig2.png in Resources */,
@@ -2878,7 +2926,7 @@
 				04C4CB3420FCC31900560977 /* 123.jpg in Resources */,
 				1C21AE361F6511340039163D /* backgroundStar@2x.png in Resources */,
 				1C3F65341F4548410052E821 /* 288x360.jpg in Resources */,
-				3710F3F7224B6B92000D61F8 /* MGFaceIDLiveCustomDetect.bundle in Resources */,
+				373B951E22646D8800B9D7C3 /* MGFaceIDLiveCustomDetect.bundle in Resources */,
 				372B340E2182AE680078D02B /* WKWebViewText.html in Resources */,
 				04E2BE5D210CC1BC007D9E3D /* love@2x.png in Resources */,
 				04E2BE5F210CC1BC007D9E3D /* FFTspark.png in Resources */,
@@ -2909,7 +2957,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-JLProject/Pods-JLProject-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-JLProject/Pods-JLProject-resources.sh",
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
@@ -2928,7 +2976,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JLProject/Pods-JLProject-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JLProject/Pods-JLProject-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9C326DDC12D635C383C9B140 /* [CP] Check Pods Manifest.lock */ = {
@@ -3012,6 +3060,7 @@
 				04C4CB7220FCC31900560977 /* TADotView.m in Sources */,
 				1C4807D921113C9E009C2532 /* YYLabelVC.m in Sources */,
 				04C4CB8120FCC31900560977 /* IndexViewController.m in Sources */,
+				379F39C92256115A00D4625F /* JRCreditIndexController.m in Sources */,
 				04C4CB7920FCC31900560977 /* CostomsStarView.m in Sources */,
 				1C9234BB2115B4F3006429C4 /* BlockInterviewVC.m in Sources */,
 				1CCB1EB8210AC76D004486FD /* RichTextVC.m in Sources */,
@@ -3044,6 +3093,7 @@
 				3767C2B02202C5D200BB9C56 /* MarketChartViewController.m in Sources */,
 				04E2BE6D210CC1BC007D9E3D /* YAWaveView.m in Sources */,
 				04C4CB6D20FCC31900560977 /* MVVMTwoController.m in Sources */,
+				371362B4228795AE00D043B1 /* OpenPDFController.m in Sources */,
 				37A5D146214B9232001CA992 /* UICountingLabel.m in Sources */,
 				04C4CB4920FCC31900560977 /* JLRingChart.m in Sources */,
 				1CBBBFEC21264448005D51C9 /* ADCHero.m in Sources */,
@@ -3057,6 +3107,7 @@
 				04C4CB4620FCC31900560977 /* TemplateOneView.m in Sources */,
 				04C4CB4F20FCC31900560977 /* JLProgressLine.m in Sources */,
 				04C4CB2920FCC31900560977 /* FZzhuzhuangController.m in Sources */,
+				3736ED942276E16E00500695 /* OpenOtherAppController.m in Sources */,
 				04C4CB7C20FCC31900560977 /* BaseCollectionView.m in Sources */,
 				1C9CD6C31F4A8E5300901EFD /* CircleProgress.m in Sources */,
 				04C4CB6A20FCC31900560977 /* LoginViewController.m in Sources */,
