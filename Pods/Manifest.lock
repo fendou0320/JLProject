@@ -25,6 +25,7 @@ PODS:
   - GCSDK (2.1.1.0)
   - GPUImage (0.1.7)
   - JSONModel (1.7.0)
+  - lottie-ios (2.5.3)
   - Masonry (1.1.0)
   - MBProgressHUD (1.0.0)
   - MJExtension (3.0.15.1)
@@ -44,6 +45,7 @@ DEPENDENCIES:
   - GCSDK
   - GPUImage
   - JSONModel
+  - lottie-ios
   - Masonry
   - MBProgressHUD (~> 1.0.0)
   - MJExtension
@@ -62,6 +64,7 @@ SPEC REPOS:
     - GCSDK
     - GPUImage
     - JSONModel
+    - lottie-ios
     - Masonry
     - MBProgressHUD
     - MJExtension
@@ -79,6 +82,7 @@ SPEC CHECKSUMS:
   GCSDK: 62278916563e88aad30035c02876c1d17faafa47
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
@@ -87,6 +91,6 @@ SPEC CHECKSUMS:
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 5d42f47f272f39c200991a937747092459bb2a09
+PODFILE CHECKSUM: 4751e7247c2bc8ec06cb469ed25ee7bda6cc192a
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1

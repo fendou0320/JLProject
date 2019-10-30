@@ -17,11 +17,18 @@
 #import "JLCameraVC.h"
 #import "MoneyIncreaseVC.h"
 #import "DongHuaViewController.h"
-#import "WKWebDemoController.h"
 #import "BoWenShuiQiuController.h"
 #import "PopUpController.h"
-#import "JLWebViewVC.h"
 #import "MarketChartViewController.h"
+#import "OpenOtherAppController.h"
+#import "OpenPDFController.h"
+#import "JLTextfieldVC.h"
+#import "JLLoadingVC.h"
+#import "SecurityOpenAccountVC.h"
+#import "WKSecurityOpenAccountVC.h"
+#import "DropdownLoadingVC.h"
+#import "GifLoadingVC.h"
+#import "StatisticalStepsVC.h"
 
 #include <ifaddrs.h>
 #include <arpa/inet.h>
@@ -32,7 +39,6 @@
 #define IOS_VPN         @"utun0"
 #define IP_ADDR_IPv4    @"ipv4"
 #define IP_ADDR_IPv6    @"ipv6"
-
 
 
 @interface IndexViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -71,7 +77,6 @@
     _tableView.dataSource=self;
     _tableView.delegate = self;
     [self.view addSubview:_tableView];
-
 }
 
 
@@ -89,7 +94,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
-//    cell.backgroundColor = RandomColor1;
+    
     
     if (indexPath.row == 0) {
         cell.textLabel.text = @"柱状图";
@@ -116,11 +121,25 @@
     }else if (indexPath.row == 11){
         cell.textLabel.text = @"水波纹圆球";
     }else if (indexPath.row == 12){
-        cell.textLabel.text = @"WKwebview";
+        cell.textLabel.text = @"打开其他APP两种方式";
     }else if (indexPath.row == 13){
-        cell.textLabel.text = @"webview";
+        cell.textLabel.text = @"打开PDF";
     }else if (indexPath.row == 14){
         cell.textLabel.text = @"点击横屏";
+    }else if (indexPath.row == 15){
+        cell.textLabel.text = @"输入框各种样式";
+    }else if (indexPath.row == 16){
+        cell.textLabel.text = @"上拉、下拉、加载动画";
+    }else if (indexPath.row == 17){
+        cell.textLabel.text = @"uiwebview证券开户";
+    }else if (indexPath.row == 18){
+        cell.textLabel.text = @"WKwebview证券开户";
+    }else if (indexPath.row == 19){
+        cell.textLabel.text = @"下拉动画";
+    }else if (indexPath.row == 20){
+        cell.textLabel.text = @"gif首次加载";
+    }else if (indexPath.row == 21){
+        cell.textLabel.text = @"计步功能";
     }
     
     return cell;
@@ -170,20 +189,57 @@
         
     }else if (indexPath.row == 12){
         
-        WKWebDemoController *donghua = [[WKWebDemoController alloc] init];
-        [self.navigationController pushViewController:donghua animated:YES];
+        OpenOtherAppController *vc = [[OpenOtherAppController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
         
     }else if (indexPath.row == 13){
         
-        JLWebViewVC *donghua = [[JLWebViewVC alloc] init];
-        [self.navigationController pushViewController:donghua animated:YES];
+        OpenPDFController *vc = [[OpenPDFController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
         
     }else if (indexPath.row == 14){
         
         MarketChartViewController *donghua = [[MarketChartViewController alloc] init];
         [self.navigationController pushViewController:donghua animated:YES];
         
+    }else if (indexPath.row == 15){
+        
+        JLTextfieldVC *donghua = [[JLTextfieldVC alloc] init];
+        [self.navigationController pushViewController:donghua animated:YES];
+        
+    }else if (indexPath.row == 16){
+        
+        JLLoadingVC *donghua = [[JLLoadingVC alloc] init];
+        [self.navigationController pushViewController:donghua animated:YES];
+        
+    }else if (indexPath.row == 17){
+        
+        SecurityOpenAccountVC *donghua = [[SecurityOpenAccountVC alloc] init];
+        [self.navigationController pushViewController:donghua animated:YES];
+        
+    }else if (indexPath.row == 18){
+        
+        WKSecurityOpenAccountVC *donghua = [[WKSecurityOpenAccountVC alloc] init];
+        [self.navigationController pushViewController:donghua animated:YES];
+        
+    }else if (indexPath.row == 19){
+        
+        DropdownLoadingVC *vc = [[DropdownLoadingVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    }else if (indexPath.row == 20){
+        
+        GifLoadingVC *vc = [[GifLoadingVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    }else if (indexPath.row == 21){
+        
+        StatisticalStepsVC *vc = [[StatisticalStepsVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        
     }
+    
+    
 
 }
 

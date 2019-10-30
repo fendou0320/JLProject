@@ -35,5 +35,7 @@ target 'JLProject' do
 
     # use_frameworks!
     pod 'ReactiveObjC'
+    
+    pod 'lottie-ios'
 
 end

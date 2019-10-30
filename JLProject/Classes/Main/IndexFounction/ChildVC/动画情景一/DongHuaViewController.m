@@ -12,6 +12,9 @@
 #import "DazViewController.h"
 #import "SprayViewController.h"
 #import "SnowViewController.h"
+#import "JRAccountLoadingVC.h"
+#import "JLlayerVC.h"
+#import "LottieVC.h"
 
 @interface DongHuaViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong,nonatomic) UITableView *tableView;
@@ -37,7 +40,7 @@ static NSString *reuseIdentifier = @"reuserCell";
 
 
 - (void) _initTabelView{
-    _titles = @[@"粒子掉落",@"直播礼物冒泡效果",@"烟花效果",@"喷射效果",@"雪花飘落"];
+    _titles = @[@"粒子掉落",@"直播礼物冒泡效果",@"烟花效果",@"喷射效果",@"雪花飘落",@"新浪金融账户动画效果",@"layer", @"Lottie 动画"];
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     tableView.delegate = self;
     tableView.dataSource = self;
@@ -63,27 +66,38 @@ static NSString *reuseIdentifier = @"reuserCell";
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     switch (indexPath.row) {
-            case 0:{
-                [self.navigationController pushViewController:[[DropViewController alloc] init] animated:YES];
-                break;
-            }
-            case 1:{
-                [self.navigationController pushViewController:[[GiftEffectViewController alloc] init] animated:YES];
-                break;
-            }
-            case 2:{
-                [self.navigationController pushViewController:[[DazViewController alloc] init] animated:YES];
-                break;
-            }
-            case 3:{
-                [self.navigationController pushViewController:[[SprayViewController alloc] init] animated:YES];
-                break;
-            }
-            case 4:{
-                [self.navigationController pushViewController:[[SnowViewController alloc] init] animated:YES];
-                break;
-            }
-            
+        case 0:{
+            [self.navigationController pushViewController:[[DropViewController alloc] init] animated:YES];
+            break;
+        }
+        case 1:{
+            [self.navigationController pushViewController:[[GiftEffectViewController alloc] init] animated:YES];
+            break;
+        }
+        case 2:{
+            [self.navigationController pushViewController:[[DazViewController alloc] init] animated:YES];
+            break;
+        }
+        case 3:{
+            [self.navigationController pushViewController:[[SprayViewController alloc] init] animated:YES];
+            break;
+        }
+        case 4:{
+            [self.navigationController pushViewController:[[SnowViewController alloc] init] animated:YES];
+            break;
+        }
+        case 5:{
+            [self.navigationController pushViewController:[[JRAccountLoadingVC alloc] init] animated:YES];
+            break;
+        }
+        case 6:{
+            [self.navigationController pushViewController:[[JLlayerVC alloc] init] animated:YES];
+            break;
+        }
+        case 7:{
+            [self.navigationController pushViewController:[[LottieVC alloc] init] animated:YES];
+            break;
+        }
         default:
             break;
     }

@@ -1,85 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
+   uuid = "69CCC3CF-414A-44D0-821E-DA0974BF3F2E"
    type = "0"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
+            uuid = "98D52AE9-7E41-4887-AC72-8EF34745029B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/SecondFounction/SecondFounctionVC.m"
-            timestampString = "561435607.017179"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "02A758DD-9629-4FEB-875C-638F6E935DC3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JLProject/Classes/Main/IndexFounction/ChildVC/&#x8ba1;&#x6b65;&#x529f;&#x80fd;/StatisticalStepsManager.m"
+            timestampString = "589961170.420728"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "-viewWillAppear:"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "-readStepCount"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            uuid = "0E20332D-FCC5-4E35-A99B-AEC49CAFCAE9"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/IndexFounction/ChildVC/&#x70b9;&#x51fb;&#x6a2a;&#x5c4f;/MarketChartViewController.m"
-            timestampString = "570611127.2966419"
+            filePath = "JLProject/Classes/Main/IndexFounction/ChildVC/&#x8ba1;&#x6b65;&#x529f;&#x80fd;/StatisticalStepsSecondManager.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "-gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "-setUpHealthStore"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0E20332D-FCC5-4E35-A99B-AEC49CAFCAE9 - 5f1b132bd5d6a1ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[StatisticalStepsSecondManager setUpHealthStore]"
+                  moduleName = "JLProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiangliang/Desktop/JLProject/JLProject/Classes/Main/IndexFounction/ChildVC/%E8%AE%A1%E6%AD%A5%E5%8A%9F%E8%83%BD/StatisticalStepsSecondManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "143">
+               </Location>
+               <Location
+                  uuid = "0E20332D-FCC5-4E35-A99B-AEC49CAFCAE9 - b7bb0edf7faacbc6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__49-[StatisticalStepsSecondManager setUpHealthStore]_block_invoke"
+                  moduleName = "JLProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiangliang/Desktop/JLProject/JLProject/Classes/Main/IndexFounction/ChildVC/%E8%AE%A1%E6%AD%A5%E5%8A%9F%E8%83%BD/StatisticalStepsSecondManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "75">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "728B452E-2C13-4561-8AE7-DD79A31E6A1E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JLProject/Classes/Main/IndexFounction/ChildVC/&#x8ba1;&#x6b65;&#x529f;&#x80fd;/StatisticalStepsSecondManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "-setUpHealthStore"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "EF2480A3-3314-4010-A361-041982047389"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/IndexFounction/ChildVC/&#x70b9;&#x51fb;&#x6a2a;&#x5c4f;/MarketChartViewController.m"
-            timestampString = "570611127.2970051"
+            filePath = "JLProject/Classes/Main/IndexFounction/ChildVC/&#x8ba1;&#x6b65;&#x529f;&#x80fd;/StatisticalStepsSecondManager.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "-setUpHealthStore"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "6C702566-48D2-4B0F-B400-055EB96A3A23"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/IndexFounction/ChildVC/&#x70b9;&#x51fb;&#x6a2a;&#x5c4f;/MarketChartViewController.m"
-            timestampString = "570611127.29724"
+            filePath = "JLProject/Classes/Main/IndexFounction/ChildVC/&#x8ba1;&#x6b65;&#x529f;&#x80fd;/StatisticalStepsSecondManager.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "-gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "JLProject/Classes/Main/IndexFounction/ChildVC/&#x70b9;&#x51fb;&#x6a2a;&#x5c4f;/MarketChartViewController.m"
-            timestampString = "570611127.2974631"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "-doTapChange:"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "-setUpHealthStore"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

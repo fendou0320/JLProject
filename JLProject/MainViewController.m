@@ -15,62 +15,28 @@
 #import "BaseNavigationController.h"
 //监控DebugToolTypeMemory | DebugToolTypeCPU | DebugToolTypeFPS
 #import "WHDebugToolManager.h"
+//#import "JLGifPlayerTool.h"
+//#import "UITabBarItem+JLTabBarItem.h"
+//#import "UIBarItem+JLBarItem.h"
+//#import "UITabBar+JLTabbar.h"
 
-@interface StockModel : NSObject
-
-@property(nonatomic,copy) NSString *stockId;
-@property(nonatomic,copy) NSString *price;
-
-@end
-
-@implementation StockModel
-
-@end
-
-
-@interface StockCell : UITableViewCell
-
-@property (nonatomic,strong) UILabel *priceLab;
-@property (nonatomic,strong) StockModel *model;
-
-- (void)updateViewWithData:(StockModel *)model;
-
-@end
-
-@implementation StockCell
-
-- (void)updateViewWithData:(StockModel *)model {
-    
-    
-}
-
-@end
-
-
-@interface MainViewController ()
+@interface MainViewController ()<UITabBarControllerDelegate>
+//{
+//    JLGifPlayerTool *addGifView;//加载gif名
+//}
 @property (nonatomic, strong) UIButton *lastBtn;
-
 @property(nonatomic,strong) NSArray *stocks;
-
 @property(nonatomic,strong) UITableView *stockTable;
+
+@property (nonatomic,assign) NSInteger index;
 
 @end
 
 @implementation MainViewController
 
-
 - (void)datachanged {
     
-    
-    
 }
-
-
-
-
-
-
-
 
 #pragma mark - 第一次使用当前类的时候对设置UITabBarItem的主题
 + (void)initialize
@@ -95,7 +61,23 @@
     
     [[WHDebugToolManager sharedInstance] toggleWith:DebugToolTypeMemory | DebugToolTypeCPU | DebugToolTypeFPS];
     
+    self.delegate = self;
+    
     [self setUpAllChildVc];
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue-Bold" size:10.0f],
+                                                        
+                                                        NSForegroundColorAttributeName : [UIColor redColor]
+                                                        
+                                                        } forState:UIControlStateSelected];
+    
+    //设置tabbar  未选中文字的颜色
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue-Bold" size:10.0f],
+                                                        
+                                                        NSForegroundColorAttributeName : [UIColor colorWithRed:145/255.0 green:158/255.0 blue:180/255.0 alpha:1]
+                                                        
+                                                        } forState:UIControlStateNormal];
     
 }
 
@@ -141,13 +123,173 @@
     UIImage *mySelectedImage = [UIImage imageNamed:selectedImage];
     mySelectedImage = [mySelectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
-    Vc.tabBarItem.selectedImage = mySelectedImage;
+    
+    Vc.tabBarItem.selectedImage = mySelectedImage;//[UIImage sd_animatedGIFNamed:@"jr_tab_1_1_1"];
     
     Vc.tabBarItem.title = title;
     Vc.navigationItem.title = title;
     [self addChildViewController:nav];
     
 }
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
+    
+//    NSString *gifName = @"";
+//    if (self.selectedIndex == 0) {
+//        gifName = @"home";
+//    }
+//    else if (self.selectedIndex == 1) {
+//        gifName = @"epluse";
+//    }
+//    else if (self.selectedIndex == 4) {
+//        gifName = @"Mine";
+//    }
+//    if (gifName.length>0) {
+//        JLGifPlayerTool *addGif =  [[JLGifPlayerTool alloc]init];
+//        if (addGifView) {
+//            [addGifView remove];
+//        }
+//        [addGif startAnimateGifMethod:gifName toView:viewController.tabBarItem.gs_imageView];
+//        addGifView = addGif;
+//    }
+}
+
+// 点击tabbarItem自动调用
+-(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
+{
+    
+//    NSInteger index = [self.tabBar.items indexOfObject:item];
+////
+//    if (index != _index) {
+////        [self animationWithIndex:index];
+//        [self tabBarImageAnimation:index];
+//        _index = index;
+//    }
+    
+}
+
+////第一种方法：通过接收点击事件对每个tabbar item的点击都执行动画
+//- (void)animationWithIndex:(NSInteger) index {
+//    NSMutableArray * tabbarbuttonArray = [NSMutableArray array];
+//    for (UIView *tabBarButton in self.tabBar.subviews) {
+//        if ([tabBarButton isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+//            [tabbarbuttonArray addObject:tabBarButton];
+//        }
+//    }
+//    /**
+//     CABasicAnimation类的使用方式就是基本的关键帧动画。
+//     所谓关键帧动画，就是将Layer的属性作为KeyPath来注册，指定动画的起始帧和结束帧，然后自动计算和实现中间的过渡动画的一种动画方式。
+//     */
+//    CABasicAnimation*pulse = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+//    pulse.timingFunction= [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+//    pulse.duration = 0.2;
+//    pulse.repeatCount= 1;
+//    pulse.autoreverses= YES;
+//    pulse.fromValue= [NSNumber numberWithFloat:0.7];
+//    pulse.toValue= [NSNumber numberWithFloat:1.3];
+//    [[tabbarbuttonArray[index] layer]
+//     addAnimation:pulse forKey:nil];
+//}
+//
+////第二种方法：只想对某一个item的点击执行动画，且只有图片动，文字不动。并且其余图标的点击不带动画
+//- (void)tabBarImageAnimation:(NSInteger) index{
+//
+//    NSMutableArray * tabbarbuttonArray = [NSMutableArray array];
+//    for (UIView *tabBarButton in self.tabBar.subviews) {
+//        if ([tabBarButton isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+//            [tabbarbuttonArray addObject:tabBarButton];
+//        }
+//    }
+//    UIView *tabBarButton = tabbarbuttonArray[index];
+//    for (UIControl *tabBarButtonItem in tabBarButton.subviews) {
+////        if ([tabBarButtonItem isKindOfClass:NSClassFromString(@"UITabBarButtonLabel")]) {
+////            UILabel *label = (UILabel *)tabBarButtonItem;
+////        }
+////        if ([tabBarButtonItem isKindOfClass:NSClassFromString(@"UITabBarSwappableImageView")]) {
+////            //---将下面的动画代码块拷贝到此并修改最后一行addAnimation的layer对象即可---
+////            UIImageView *imageView = (UIImageView *)tabBarButtonItem;
+////            //添加动画
+////            [UIView animateWithDuration:0.5 animations:^{
+////                imageView.image = [UIImage imageNamed:@"1"];
+////                imageView.image = [UIImage imageNamed:@"2"];
+////                imageView.image = [UIImage imageNamed:@"3"];
+////                imageView.image = [UIImage imageNamed:@"4"];
+////                imageView.image = [UIImage imageNamed:@"5"];
+////                imageView.image = [UIImage imageNamed:@"6"];
+////            } completion:^(BOOL finished) {
+////
+////            }];
+////        }
+//    }
+//}
+
+
+/*
+ 
+ 1、带重力效果的弹跳
+ CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.translation.y"];
+ //通过初中物理重力公式计算出的位移y值数组
+ animation.values = @[@0.0, @-4.15, @-7.26, @-9.34, @-10.37, @-9.34, @-7.26, @-4.15, @0.0, @2.0, @-2.9, @-4.94, @-6.11, @-6.42, @-5.86, @-4.44, @-2.16, @0.0];
+ animation.duration = 0.8;
+ animation.beginTime = CACurrentMediaTime() + 1;
+ [imageView.layer addAnimation:animation forKey:nil];
+ 
+ 2、先放大，再缩小
+ //放大效果，并回到原位
+ CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+ //速度控制函数，控制动画运行的节奏
+ animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+ animation.duration = 0.2;       //执行时间
+ animation.repeatCount = 1;      //执行次数
+ animation.autoreverses = YES;    //完成动画后会回到执行动画之前的状态
+ animation.fromValue = [NSNumber numberWithFloat:0.7];   //初始伸缩倍数
+ animation.toValue = [NSNumber numberWithFloat:1.3];     //结束伸缩倍数
+ [[arry[index] layer] addAnimation:animation forKey:nil];
+ 
+ 3、Z轴旋转
+ //z轴旋转180度
+ CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+ //速度控制函数，控制动画运行的节奏
+ animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+ animation.duration = 0.2;       //执行时间
+ animation.repeatCount = 1;      //执行次数
+ animation.removedOnCompletion = YES;
+ animation.fromValue = [NSNumber numberWithFloat:0];   //初始伸缩倍数
+ animation.toValue = [NSNumber numberWithFloat:M_PI];     //结束伸缩倍数
+ [[arry[index] layer] addAnimation:animation forKey:nil];
+ 
+ 4、Y轴位移
+ //向上移动
+ CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.translation.y"];
+ //速度控制函数，控制动画运行的节奏
+ animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+ animation.duration = 0.2;       //执行时间
+ animation.repeatCount = 1;      //执行次数
+ animation.removedOnCompletion = YES;
+ animation.fromValue = [NSNumber numberWithFloat:0];   //初始伸缩倍数
+ animation.toValue = [NSNumber numberWithFloat:-10];     //结束伸缩倍数
+ [[arry[index] layer] addAnimation:animation forKey:nil];
+ 
+ 5、放大并保持
+ //放大效果
+ CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+ //速度控制函数，控制动画运行的节奏
+ animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+ animation.duration = 0.2;       //执行时间
+ animation.repeatCount = 1;      //执行次数
+ animation.removedOnCompletion = NO;
+ animation.fillMode = kCAFillModeForwards;           //保证动画效果延续
+ animation.fromValue = [NSNumber numberWithFloat:1.0];   //初始伸缩倍数
+ animation.toValue = [NSNumber numberWithFloat:1.15];     //结束伸缩倍数
+ [[arry[index] layer] addAnimation:animation forKey:nil];
+ //移除其他tabbar的动画
+ for (int i = 0; i<arry.count; i++) {
+ if (i != index) {
+ [[arry[i] layer] removeAllAnimations];
+ }
+ }
+ 
+ */
 
 
 /*

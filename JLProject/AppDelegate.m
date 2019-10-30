@@ -27,6 +27,7 @@
 @interface AppDelegate ()
 {
     FBMemoryProfiler *memoryProfiler;
+    dispatch_source_t _timer;
 }
 
 @end
@@ -76,6 +77,8 @@
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     //允许后台播放音乐
     [application beginBackgroundTaskWithExpirationHandler:nil];
+    //杀进程之前打印堆栈信息
+    [self beforeCrash];
 }
 
 
@@ -102,6 +105,25 @@
     return UIInterfaceOrientationMaskPortrait;
 }
 
-
+- (void)beforeCrash{
+    
+    __block n = 0;
+    _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_main_queue());
+    dispatch_source_set_timer(_timer, DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC, 0);
+    // 计时器的触发block
+    dispatch_source_set_event_handler(_timer, ^{
+        ++n;
+        if (n > 180) {
+            dispatch_source_cancel(_timer);
+        }
+    });
+    dispatch_source_set_cancel_handler(_timer, ^{
+        //打印当前的进程
+        NSLog(@"退到后台－－－%@",[NSThread callStackSymbols]);
+        NSLog(@"退到后台－－－%@",[NSThread callStackReturnAddresses]);
+    });
+    dispatch_resume(_timer);
+    
+}
 
 @end
