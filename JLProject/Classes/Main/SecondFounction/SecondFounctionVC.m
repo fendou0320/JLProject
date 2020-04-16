@@ -18,8 +18,9 @@
 #import "PlaySummaryVC.h"
 #import "MultithreadingVC.h"
 #import "MessageSendVC.h"
-
+#import "SMLagMonitorVC.h"
 #import <GTCountSDK.h>
+#import "RunloopVC2.h"
 
 @interface SecondFounctionVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -109,9 +110,9 @@
     }else if (indexPath.row == 11){
         cell.textLabel.text = @"动态库和静态库";
     }else if (indexPath.row == 12){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"Runloop监控卡顿";
     }else if (indexPath.row == 13){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"Runloop创建常驻线程";
     }else if (indexPath.row == 14){
         cell.textLabel.text = @"";
     }else if (indexPath.row == 15){
@@ -195,10 +196,13 @@
         
     }else if (indexPath.row == 12){
         
-        
+        SMLagMonitorVC *jd = [[SMLagMonitorVC alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
         
     }else if (indexPath.row == 13){
         
+         RunloopVC2 *jd = [[RunloopVC2 alloc] init];
+        [self.navigationController pushViewController:jd animated:YES];
         
     }else if (indexPath.row == 14){
         

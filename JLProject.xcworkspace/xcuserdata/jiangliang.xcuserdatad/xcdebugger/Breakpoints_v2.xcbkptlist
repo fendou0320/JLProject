@@ -48,29 +48,29 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "0E20332D-FCC5-4E35-A99B-AEC49CAFCAE9 - 5f1b132bd5d6a1ed"
+                  uuid = "0E20332D-FCC5-4E35-A99B-AEC49CAFCAE9 - 49e989959b3e126b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "-[StatisticalStepsSecondManager setUpHealthStore]"
                   moduleName = "JLProject"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jiangliang/Desktop/JLProject/JLProject/Classes/Main/IndexFounction/ChildVC/%E8%AE%A1%E6%AD%A5%E5%8A%9F%E8%83%BD/StatisticalStepsSecondManager.m"
+                  urlString = "file:///Users/jiangliang/Desktop/JLCoding/JLProject/JLProject/Classes/Main/IndexFounction/ChildVC/%E8%AE%A1%E6%AD%A5%E5%8A%9F%E8%83%BD/StatisticalStepsSecondManager.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "42"
                   endingLineNumber = "42"
-                  offsetFromSymbolStart = "143">
+                  offsetFromSymbolStart = "135">
                </Location>
                <Location
-                  uuid = "0E20332D-FCC5-4E35-A99B-AEC49CAFCAE9 - b7bb0edf7faacbc6"
+                  uuid = "0E20332D-FCC5-4E35-A99B-AEC49CAFCAE9 - a149946131427840"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "__49-[StatisticalStepsSecondManager setUpHealthStore]_block_invoke"
                   moduleName = "JLProject"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jiangliang/Desktop/JLProject/JLProject/Classes/Main/IndexFounction/ChildVC/%E8%AE%A1%E6%AD%A5%E5%8A%9F%E8%83%BD/StatisticalStepsSecondManager.m"
+                  urlString = "file:///Users/jiangliang/Desktop/JLCoding/JLProject/JLProject/Classes/Main/IndexFounction/ChildVC/%E8%AE%A1%E6%AD%A5%E5%8A%9F%E8%83%BD/StatisticalStepsSecondManager.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "43"
@@ -125,6 +125,54 @@
             startingLineNumber = "43"
             endingLineNumber = "43"
             landmarkName = "-setUpHealthStore"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AF41E5A0-9D13-43F4-9162-F6EF2BAA1DF7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JLProject/Classes/Main/IndexFounction/ChildVC/&#x6253;&#x5f00;PDF&#x6587;&#x4ef6;/OpenPDFController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "-menu:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32216229-26B4-4DD0-ABE2-E451FF655B25"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JLProject/Classes/Main/IndexFounction/ChildVC/&#x6253;&#x5f00;PDF&#x6587;&#x4ef6;/OpenPDFController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "-canPerformAction:withSender:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5BE14384-F27D-4222-AD98-4E07CC30EEDE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JLProject/Classes/Main/FourFounction/ChildVC/&#x9012;&#x5f52;&#x8ba1;&#x7b97;&#x4ece;1&#x52a0;&#x5230;100&#x7684;&#x503c;/recursionVC.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "-maxinumWithSystem64:systemNum:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -7,6 +7,7 @@
 //
 
 #import "FourFounctionVC.h"
+#import "recursionVC.h"
 
 @interface FourFounctionVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -16,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"算法";
     self.view.backgroundColor = [UIColor whiteColor];
     //创建一个分组样式的UITableView
     _tableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 20, kScreenWidth, kScreenHeight) style:UITableViewStylePlain];
@@ -45,7 +47,7 @@
     UITableViewCell *cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
     
     if (indexPath.row == 0){
-        cell.textLabel.text = @"";
+        cell.textLabel.text = @"使用递归, 计算从1加到100的值";
     }else if (indexPath.row == 1){
         cell.textLabel.text = @"";
     }else if (indexPath.row == 2){
@@ -63,6 +65,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if (indexPath.row == 0){
+        
+        recursionVC *donghua = [[recursionVC alloc] init];
+        [self.navigationController pushViewController:donghua animated:YES];
         
     }else if (indexPath.row == 1){
         
