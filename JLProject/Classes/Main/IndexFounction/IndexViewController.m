@@ -33,6 +33,9 @@
 #import "UIBezierPathVC.h"
 #import "UIBezierPathVC1.h"
 #import "SendEmailVC.h"
+#import "Animation1.h"
+#import "Animation2.h"
+#import "TouchVC.h"
 
 #include <ifaddrs.h>
 #include <arpa/inet.h>
@@ -76,7 +79,7 @@
         @throw [NSException exceptionWithName:@"UrlError" reason:@"传入的url有异常！" userInfo:nil];
     }
     
-    _tableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStylePlain];
+    _tableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - 120) style:UITableViewStylePlain];
     //设置数据源，注意必须实现对应的UITableViewDataSource协议
     _tableView.dataSource=self;
     _tableView.delegate = self;
@@ -152,6 +155,12 @@
         cell.textLabel.text = @"贝塞尔曲线动态绘制";
     }else if (indexPath.row == 25){
         cell.textLabel.text = @"发送邮件";
+    }else if (indexPath.row == 26){
+        cell.textLabel.text = @"动画";
+    }else if (indexPath.row == 27){
+        cell.textLabel.text = @"开始和结束比较慢, 中间比较快的⻉塞尔曲线";
+    }else if (indexPath.row == 28){
+        cell.textLabel.text = @"响应者链";
     }
     
     return cell;
@@ -269,7 +278,23 @@
         SendEmailVC *vc = [[SendEmailVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
         
+    }else if (indexPath.row == 26){
+        
+        Animation1 *vc = [[Animation1 alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    }else if (indexPath.row == 27){
+        
+        Animation2 *vc = [[Animation2 alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    }else if (indexPath.row == 28){
+        
+        TouchVC *vc = [[TouchVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
+    
+    
 
 }
 

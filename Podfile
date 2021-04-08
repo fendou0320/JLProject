@@ -25,7 +25,9 @@ target 'JLProject' do
     pod 'MJExtension'
     pod 'MJRefresh'
 
-    pod ‘GPUImage’
+    pod 'WebViewJavascriptBridge', '~> 6.0'
+    
+    pod 'GPUImage'
 
     pod 'GCSDK'
 
